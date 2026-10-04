@@ -3372,7 +3372,7 @@
 "workday:fanniemae/wd1/FannieMaeCareers": {
 "added": "2026-10-04",
 "name": "Fannie Mae",
-"ok": true
+"ok": false
 },
 "workday:fanniemae/wd1/fanniemaecareers": {
 "added": "2026-10-04",
@@ -4687,7 +4687,7 @@
 "workday:sonyglobal/wd1/SonyJapanCareers": {
 "added": "2026-10-04",
 "name": "Sony AI (Japan)",
-"ok": true
+"ok": false
 },
 "workday:soti/wd3/SOTI-Next-Gen": {
 "added": "2026-10-04",
@@ -4702,7 +4702,7 @@
 "workday:spartannash/wd1/SpartanNash_Careers": {
 "added": "2026-10-04",
 "name": "SpartanNash",
-"ok": true
+"ok": false
 },
 "workday:spgi/wd5/Kensho_Careers": {
 "added": "2026-10-04",
@@ -4822,12 +4822,12 @@
 "workday:tencent/wd1/Tencent_Careers": {
 "added": "2026-10-04",
 "name": "Tencent",
-"ok": false
+"ok": true
 },
 "workday:tencent/wd1/tencent_careers": {
 "added": "2026-10-04",
 "name": "Tencent",
-"ok": false
+"ok": true
 },
 "workday:thehartford/wd5/Careers_External": {
 "added": "2026-10-04",
@@ -4887,22 +4887,22 @@
 "workday:trimble/wd1/TrimbleCareers": {
 "added": "2026-10-04",
 "name": "Trimble",
-"ok": false
+"ok": true
 },
 "workday:trwd/wd1/TRWDCareers": {
 "added": "2026-10-04",
 "name": "Tarrant Regional Water District",
-"ok": false
+"ok": true
 },
 "workday:ttc/wd1/Toro_External_Careers": {
 "added": "2026-10-04",
 "name": "The Toro Company",
-"ok": false
+"ok": true
 },
 "workday:ttc/wd1/toro_external_careers": {
 "added": "2026-10-04",
 "name": "The Toro Company",
-"ok": false
+"ok": true
 },
 "workday:tysonfoods/wd5/TSN": {
 "added": "2026-10-04",
@@ -4917,22 +4917,22 @@
 "workday:uline/wd1/Uline_Careers": {
 "added": "2026-10-04",
 "name": "Uline",
-"ok": false
+"ok": true
 },
 "workday:uline/wd1/uline_careers": {
 "added": "2026-10-04",
 "name": "Uline",
-"ok": false
+"ok": true
 },
 "workday:usaa/wd1/USAAJOBSWD": {
 "added": "2026-10-04",
 "name": "USAA",
-"ok": false
+"ok": true
 },
 "workday:usbank/wd1/US_Bank_Careers": {
 "added": "2026-10-04",
 "name": "U.S. Bank",
-"ok": false
+"ok": true
 },
 "workday:usfoods/wd1/usfoodscareersExternal": {
 "added": "2026-10-04",
@@ -4942,17 +4942,17 @@
 "workday:usfoods/wd1/usfoodscareersexternal": {
 "added": "2026-10-04",
 "name": "US Foods",
-"ok": false
+"ok": true
 },
 "workday:utaustin/wd1/utstudent": {
 "added": "2026-10-04",
 "name": "University of Texas at Austin",
-"ok": false
+"ok": true
 },
 "workday:uva/wd1/uvastudentjobs": {
 "added": "2026-10-04",
 "name": "University of Virginia",
-"ok": false
+"ok": true
 },
 "workday:valeo/wd3/valeo_jobs": {
 "added": "2026-10-04",
@@ -5042,22 +5042,22 @@
 "workday:wonder/wd1/WG": {
 "added": "2026-10-04",
 "name": "Wonder",
-"ok": false
+"ok": true
 },
 "workday:worldvision/wd1/worldvisioninternational": {
 "added": "2026-10-04",
 "name": "World Vision",
-"ok": false
+"ok": true
 },
 "workday:xcelenergy/wd1/External": {
 "added": "2026-10-04",
 "name": "Xcel Energy",
-"ok": false
+"ok": true
 },
 "workday:xcelenergy/wd1/external": {
 "added": "2026-10-04",
 "name": "Xcel Energy",
-"ok": false
+"ok": true
 },
 "workday:xerispharma/wd503/xerispharmaceuticalscareers": {
 "added": "2026-10-04",
