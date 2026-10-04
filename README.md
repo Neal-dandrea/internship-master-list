@@ -6,7 +6,8 @@ and from company career sites, with duplicates merged.
 **The list is at https://neal-dandrea.github.io/internship-master-list/**
 
 It refreshes four times a day. You can filter by degree level (PhD, MS), field,
-region, how recently a role was posted, and whether it is a co-op.
+region, how recently a role was posted, experience asked, eligibility rules and
+match score, and you can search by city, state or country.
 
 ## Where the listings come from
 
@@ -53,9 +54,40 @@ The resumes are not in this repository. The scoring run reads a private profile
 from a repository secret, and only the number and the resume's name are
 published.
 
+## The meaning score
+
+The keyword score only sees words from a fixed vocabulary. A second score reads
+meaning. It uses a small open-source embedding model (BAAI/bge-small-en-v1.5,
+run on the CPU through the fastembed library), which places sentences with
+similar meaning close together. So "experience training robot policies from
+human demonstrations" lands next to a resume line about imitation learning,
+although the two share no keywords.
+
+1. The resume is split into its statements, such as each bullet and each skills
+   line.
+2. The posting is split into sentences, with boilerplate such as the equal
+   opportunity notice and the benefits list removed.
+3. Each posting sentence is paired with the closest resume statement. The score
+   blends how strong the best dozen pairings are with how well the requirement
+   sentences are covered on average.
+
+Nothing is sent to any service. The page shows the mean of the keyword score
+and the meaning score unless you pick one. A posting with too little text gets
+no meaning score.
+
+## Requirements read from the posting
+
+A similarity score cannot read a number, so "5+ years" and "1 year" look alike
+to it. `requirements.py` reads those details by pattern matching. It looks for
+years of experience asked, degrees named, a minimum GPA, citizenship and
+clearance rules, a statement that the employer will not sponsor a visa,
+graduation years, and named credentials. These are facts about the posting. They
+show as tags and drive the experience filter. Nothing about the reader is stored
+or compared, and the patterns can miss or misread a requirement.
+
 ## Running it yourself
 
-It needs Python 3 and PyYAML.
+It needs Python 3 and PyYAML, plus fastembed for the meaning score.
 
 ```bash
 python3 collect.py                 # boards and career sites, about a minute
@@ -68,13 +100,22 @@ python3 match.py --build-profile General=cv.pdf Quant=quant.pdf
 python3 match.py --gaps
 ```
 
-A profile lives in `private/profile.json`, which git ignores. To score in the
-scheduled run, store the same JSON as a repository secret named
-`RESUME_PROFILE`. Building a profile needs `pdftotext`.
+The keyword profile lives in `private/profile.json` and the resume statements
+for the meaning score in `private/statements.json`. Git ignores both. To score
+in the scheduled run, store them as repository secrets named `RESUME_PROFILE`
+and `RESUME_STATEMENTS`. Reading a PDF needs `pdftotext`, and the meaning score
+needs `pip install fastembed`.
+
+```bash
+python3 semantic.py --build-statements General=cv.pdf Quant=quant.pdf
+python3 semantic.py --rescore      # after a resume changes
+```
 
 | File | What it holds |
 |---|---|
-| `docs/data.json` | Every active listing. The page reads this |
+| `docs/list.json` | Every active listing, with the fields the page shows |
+| `docs/data.json` | The same listings with every field |
+| `data/semantic.json` | The meaning score of each posting |
 | `docs/listings.csv` | The same list for a spreadsheet |
 | `data/seen.json` | The day each listing was first seen |
 | `data/companies.json` | The career sites to check |

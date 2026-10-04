@@ -44,6 +44,7 @@ import urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 from typing import Callable, Dict, List, Optional, Set
 
+import requirements
 import skills
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -54,15 +55,27 @@ PROFILE = os.path.join(HERE, "private", "profile.json")
 # vocabulary changes, without fetching anything again.
 TEXTS = os.path.join(HERE, "private", "descriptions.json.gz")
 MAX_TRIES = 3            # give up on a description after this many failed runs
+# Descriptions read during this run, by posting id. The embedding score and the
+# requirement extraction need the text itself, which is not kept in the
+# repository, so they work from this.
+FRESH: Dict[str, str] = {}
 
 
 # ── reading a description ───────────────────────────────────────────────────
 _TAGS = re.compile(r"<(script|style)[^>]*>.*?</\1>|<[^>]+>", re.S | re.I)
 
 
+_BLOCK = re.compile(r"<\s*(br|/p|/li|/div|/h[1-6]|/tr|/ul|/ol|li|p)\b[^>]*>", re.I)
+
+
 def plain(markup: str) -> str:
+    """Text with the markup removed. List items and paragraphs stay on their own
+    lines, because a bulleted requirement is a sentence of its own even though
+    it has no full stop."""
     text = html.unescape(html.unescape(markup or ""))
-    return re.sub(r"\s+", " ", _TAGS.sub(" ", text)).strip()
+    text = _TAGS.sub(" ", _BLOCK.sub("\n", text))
+    lines = (" ".join(line.split()) for line in text.split("\n"))
+    return "\n".join(line for line in lines if line)
 
 
 _WORKDAY = re.compile(r"https?://([a-z0-9-]+)\.(wd\d+)\.myworkdayjobs\.com/"
@@ -165,7 +178,8 @@ def read_descriptions(listings: List[dict], fetch: Callable, budget: int,
     """Fill the term cache for up to `budget` postings that have none yet.
 
     Returns the cache, pruned to the postings that are still active. Each entry
-    is {"t": [terms], "b": "d" for description or "t" for title only, "n": tries}.
+    is {"t": [terms], "b": "d" for description or "t" for title only, "n": tries,
+    "q": the hard requirements found in the description (see requirements.py)}.
     """
     cache = _load(TERMS, {})
     cache = {r["id"]: cache[r["id"]] for r in listings if r["id"] in cache}
@@ -195,8 +209,10 @@ def read_descriptions(listings: List[dict], fetch: Callable, budget: int,
             terms = title_terms(rec)
             if len(text) > 200:
                 terms |= skills.extract(text)
-                cache[rec["id"]] = {"t": sorted(terms), "b": "d", "n": tries}
+                cache[rec["id"]] = {"t": sorted(terms), "b": "d", "n": tries,
+                                    "q": requirements.extract(text)}
                 texts[rec["id"]] = text
+                FRESH[rec["id"]] = text
             else:
                 cache[rec["id"]] = {"t": sorted(terms), "b": "t", "n": tries}
             done += 1
@@ -242,6 +258,7 @@ def reextract() -> None:
         if pid in texts:
             terms |= skills.extract(texts[pid])
             entry["b"] = "d"
+            entry["q"] = requirements.extract(texts[pid])
             redone += 1
         elif entry["b"] == "d":
             continue                 # no stored text for it; leave its terms alone
@@ -296,6 +313,11 @@ def enrich(listings: List[dict], fetch: Callable, budget: int, progress=None) ->
     cache = read_descriptions(listings, fetch, budget, progress=progress)
     profile = load_profile()
     described = sum(1 for e in cache.values() if e["b"] == "d")
+    for r in listings:
+        if cache[r["id"]].get("q"):
+            r["req"] = cache[r["id"]]["q"]
+        else:
+            r.pop("req", None)
     if not profile:
         for r in listings:
             for k in ("match", "match_resume", "match_basis"):
@@ -321,12 +343,28 @@ def enrich(listings: List[dict], fetch: Callable, budget: int, progress=None) ->
 
 
 # ── command line ────────────────────────────────────────────────────────────
+def resume_text(path: str) -> str:
+    """Plain text of a resume in PDF or Word format."""
+    if path.lower().endswith(".docx"):
+        import zipfile
+        with zipfile.ZipFile(path) as z:
+            xml = z.read("word/document.xml").decode("utf-8")
+        # Word splits a word across formatting runs, so tags are removed without
+        # adding a space, except for paragraph ends and tabs.
+        xml = re.sub(r"<w:tab/>|<w:br/>", " ", xml.replace("</w:p>", "\n"))
+        text = html.unescape(re.sub(r"<[^>]+>", "", xml))
+    else:
+        text = subprocess.run(["pdftotext", "-layout", path, "-"],
+                              capture_output=True, text=True, check=True).stdout
+    return re.sub(r"[ \t]+", " ", text)
+
+
+
 def build_profile(pairs: List[str]) -> None:
     out = {}
     for pair in pairs:
         name, path = pair.split("=", 1)
-        text = subprocess.run(["pdftotext", "-layout", os.path.expanduser(path), "-"],
-                              capture_output=True, text=True, check=True).stdout
+        text = resume_text(os.path.expanduser(path))
         out[name] = sorted(skills.expand(skills.extract(text)))
         print(f"  {name}: {len(out[name])} terms")
     os.makedirs(os.path.dirname(PROFILE), exist_ok=True)

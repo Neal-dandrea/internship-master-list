@@ -21,12 +21,19 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pyyaml
+      - run: pip install pyyaml fastembed
+      # The embedding model is a 130 MB download, so it is kept between runs.
+      - uses: actions/cache@v4
+        with:
+          path: /home/runner/.cache/fastembed
+          key: fastembed-bge-small-en-v1.5
       - run: python collect.py
         env:
           # The resume profile is a repository secret. It is never written to
           # the repository. Without it the run still works and adds no scores.
           RESUME_PROFILE: ${{ secrets.RESUME_PROFILE }}
+          RESUME_STATEMENTS: ${{ secrets.RESUME_STATEMENTS }}
+          FASTEMBED_CACHE_PATH: /home/runner/.cache/fastembed
       - name: Commit the refreshed data
         run: |
           git config user.name "github-actions[bot]"

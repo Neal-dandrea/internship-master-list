@@ -13,7 +13,8 @@ Two kinds of source feed the list.
 The collector then merges duplicates, tags each listing (degree level, co-op,
 field, region), tracks what it has seen before, and writes
 
-    docs/data.json         every active listing, which the web page reads
+    docs/data.json         every active listing, with every field
+    docs/list.json         the same listings with only what the web page shows
     docs/listings.csv      the same, flat, for a spreadsheet
     data/seen.json         id -> date first seen (the state between runs)
     data/companies.json    the career sites to check
@@ -50,6 +51,7 @@ from typing import Callable, Dict, List, Optional
 
 import ats
 import match
+import semantic
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
@@ -612,9 +614,12 @@ def load_json(path: str, default):
         return default
 
 
+PAGE_FIELDS = {"company", "title", "url", "locations", "places", "posted", "first_seen", "match", "match_basis", "match_resume", "sem", "sem_resume", "req", "tracks", "sources", "phd", "ms", "coop", "regions", "pay", "sponsorship"}
+
+
 def slim(rec: dict) -> dict:
     """The record as published. Drops what is empty or repeats another field."""
-    out = {k: v for k, v in rec.items() if v not in ("", [], None)}
+    out = {k: v for k, v in rec.items() if v not in ("", [], None, {})}
     if out.get("urls") == [rec["url"]]:
         del out["urls"]
     for k in ("phd", "ms", "coop"):
@@ -650,16 +655,30 @@ def write_outputs(listings: List[dict], new: List[dict], report: Dict[str, str],
                    "baseline": min((r["first_seen"] for r in listings), default=""),
                    "listings": [slim(r) for r in listings]}, fh,
                   separators=(",", ":"))
+    # The page reads this smaller file. It carries only the fields the page shows.
+    with open(os.path.join(DOCS, "list.json"), "w") as fh:
+        json.dump({"generated": dt.datetime.now(dt.timezone.utc)
+                                  .isoformat(timespec="seconds"),
+                   "sources": report,
+                   "baseline": min((r["first_seen"] for r in listings), default=""),
+                   "listings": [{k: v for k, v in slim(r).items() if k in PAGE_FIELDS}
+                                for r in listings]}, fh, separators=(",", ":"))
     cols = ["first_seen", "posted", "match", "match_resume", "match_basis",
-            "company", "title", "locations", "regions",
+            "sem", "sem_resume", "years", "degrees_asked", "gpa", "citizen",
+            "clearance", "no_sponsor", "company", "title", "locations", "regions",
             "phd", "ms", "coop", "tracks", "degrees", "sponsorship", "pay",
             "sources", "url", "id"]
     with open(os.path.join(DOCS, "listings.csv"), "w", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(cols)
         for r in listings:
-            w.writerow(["; ".join(r[c]) if isinstance(r.get(c), list) else r.get(c, "")
-                        for c in cols])
+            q = r.get("req") or {}
+            flat = dict(r, years=q.get("years", ""), degrees_asked=q.get("degrees", []),
+                        gpa=q.get("gpa", ""), citizen="yes" if q.get("citizen") else "",
+                        clearance="yes" if q.get("clearance") else "",
+                        no_sponsor="yes" if q.get("no_sponsor") else "")
+            w.writerow(["; ".join(flat[c]) if isinstance(flat.get(c), list)
+                        else flat.get(c, "") for c in cols])
     # One report per day. A second run on the same day adds a section to it and
     # never replaces what an earlier run found.
     path = os.path.join(OUT, f"new_{TODAY.isoformat()}.md")
@@ -819,6 +838,15 @@ def main() -> int:
     report["match"] = (f"{m['described']} of {len(listings)} descriptions read"
                        + ("" if m["scored"] else ", no resume profile so no scores"))
     print(f"  {'match':14s} {report['match']}  ({time.time() - t0:.1f}s)", flush=True)
+
+    # Score by meaning with a small open-source embedding model. On the machine
+    # that keeps the description text, anything still unscored is filled in.
+    t0 = time.time()
+    stored = match._load_texts() if os.path.exists(match.TEXTS) else None
+    sem = semantic.enrich(listings, match.FRESH, stored)
+    report["meaning"] = (f"{sem['scored']} listings scored, {sem.get('new', 0)} new"
+                         if sem["scored"] else f"skipped, {sem.get('note', '')}")
+    print(f"  {'meaning':14s} {report['meaning']}  ({time.time() - t0:.1f}s)", flush=True)
 
     path = write_outputs(listings, new, report, first_run)
     with open(os.path.join(DATA, "seen.json"), "w") as fh:
