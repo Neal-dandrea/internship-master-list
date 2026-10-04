@@ -2,7 +2,10 @@ name: Update listings
 
 on:
   schedule:
-    - cron: "17 */8 * * *"     # three times a day, off the hour
+    # 8 AM, 12 PM, 4 PM and 8 PM Eastern. GitHub schedules in UTC and does not
+    # follow daylight saving time, so both possible UTC hours are listed and the
+    # "gate" job below lets only the right one through.
+    - cron: "5 0,1,12,13,16,17,20,21 * * *"
   workflow_dispatch:
 
 permissions:
@@ -13,7 +16,22 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  gate:
+    runs-on: ubuntu-latest
+    outputs:
+      go: ${{ steps.check.outputs.go }}
+    steps:
+      - id: check
+        run: |
+          hour=$(TZ=America/New_York date +%H)
+          echo "Eastern hour is $hour"
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || echo " 08 12 16 20 " | grep -q " $hour "; then
+            echo "go=yes" >> "$GITHUB_OUTPUT"
+          fi
+
   update:
+    needs: gate
+    if: needs.gate.outputs.go == 'yes'
     runs-on: ubuntu-latest
     timeout-minutes: 20
     steps:

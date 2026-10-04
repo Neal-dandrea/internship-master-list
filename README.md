@@ -5,7 +5,7 @@ and from company career sites, with duplicates merged.
 
 **The list is at https://neal-dandrea.github.io/internship-master-list/**
 
-It refreshes three times a day. You can filter by degree level (PhD, MS), field,
+It refreshes four times a day, at 8 AM, 12 PM, 4 PM and 8 PM Eastern. You can filter by degree level (PhD, MS), field,
 region, how recently a role was posted, experience asked, eligibility rules and
 match score, and you can search by city, state or country.
 
