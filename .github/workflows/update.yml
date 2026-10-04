@@ -2,7 +2,7 @@ name: Update listings
 
 on:
   schedule:
-    - cron: "17 */6 * * *"     # four times a day, off the hour
+    - cron: "17 */8 * * *"     # three times a day, off the hour
   workflow_dispatch:
 
 permissions:
