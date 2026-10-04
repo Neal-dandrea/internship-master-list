@@ -43,6 +43,7 @@ import socket
 import sys
 import tarfile
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 from typing import Callable, Dict, List, Optional
@@ -79,8 +80,15 @@ def fetch(url: str, timeout: int = 60, json_body: Optional[dict] = None) -> byte
         headers["Content-Type"] = "application/json"
         data = json.dumps(json_body).encode()
     req = urllib.request.Request(url, headers=headers, data=data)
-    with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+    # A site that says "too many requests" is asked again after a pause.
+    for pause in (3, 8, None):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read()
+        except urllib.error.HTTPError as e:
+            if e.code not in (429, 503) or pause is None:
+                raise
+            time.sleep(pause)
 
 
 def fetch_text(url: str) -> str:
