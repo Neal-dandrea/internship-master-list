@@ -31,6 +31,28 @@ board reports, so read the posting before relying on them.
   in the title
 - **US, International, Remote** come from the location text
 
+## The match score
+
+Each listing carries a score from 0 to 100 that compares the posting with the
+maintainer's resumes. It is personal to the maintainer, so treat it as their
+view of the list and not as a rating of the job.
+
+1. The posting's description is read once and reduced to the skills and topics
+   it mentions, using the vocabulary in `skills.py`.
+2. Each resume is reduced to its skills and topics the same way.
+3. The score is how much of what the posting mentions is on the resume. Rare,
+   specific skills count for more than common ones, and a posting that says
+   very little is pulled toward the middle so that two matching words do not
+   outrank ten of twelve.
+
+When there are several resumes, a listing takes its best score and names the
+resume that produced it. When a description cannot be read, the score comes
+from the title alone and is shown with a dashed outline.
+
+The resumes are not in this repository. The scoring run reads a private profile
+from a repository secret, and only the number and the resume's name are
+published.
+
 ## Running it yourself
 
 It needs Python 3 and PyYAML.
@@ -39,7 +61,16 @@ It needs Python 3 and PyYAML.
 python3 collect.py                 # boards and career sites, about a minute
 python3 collect.py --no-careers    # boards only, a few seconds
 python3 collect.py --only simplify,openquant
+python3 collect.py --describe 0    # skip reading descriptions
+
+# build your own private profile, then see what postings ask for that it lacks
+python3 match.py --build-profile General=cv.pdf Quant=quant.pdf
+python3 match.py --gaps
 ```
+
+A profile lives in `private/profile.json`, which git ignores. To score in the
+scheduled run, store the same JSON as a repository secret named
+`RESUME_PROFILE`. Building a profile needs `pdftotext`.
 
 | File | What it holds |
 |---|---|
@@ -47,6 +78,7 @@ python3 collect.py --only simplify,openquant
 | `docs/listings.csv` | The same list for a spreadsheet |
 | `data/seen.json` | The day each listing was first seen |
 | `data/companies.json` | The career sites to check |
+| `data/terms.json` | The skills each posting mentions, read once and kept |
 | `out/new_<date>.md` | What appeared since the last run. Not committed |
 
 ## How it decides things
@@ -66,6 +98,6 @@ python3 collect.py --only simplify,openquant
 
 ## Adding a source
 
-A board is one function in `collect.py` that returns listings in the common
+A skill is one line in `skills.py`. A board is one function in `collect.py` that returns listings in the common
 shape, plus one line in `SOURCES`. A careers platform is one function in
 `ats.py`, plus one line in `READERS` and a link pattern in `_PATTERNS`.

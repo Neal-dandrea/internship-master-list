@@ -10,12 +10,14 @@
     --bg:#f7f8fa; --panel:#ffffff; --ink:#1b1f24; --dim:#5d6672; --line:#dfe3e8;
     --accent:#1f5fbf; --accent-ink:#ffffff; --chip:#eef1f5; --chip-ink:#2b3440;
     --phd:#6b3fa0; --ms:#1f7a5a; --coop:#a05a1f; --new:#b3261e; --row:#f1f4f8;
+    --hi-bg:#d7f0e0; --hi-ink:#0f5a34; --mid-bg:#fbeecb; --mid-ink:#6f4e00;
   }
   @media (prefers-color-scheme: dark){
     :root{
       --bg:#111418; --panel:#191d23; --ink:#e6e9ee; --dim:#98a2b0; --line:#2a3038;
       --accent:#6ea8ff; --accent-ink:#0d1117; --chip:#242a32; --chip-ink:#d5dae2;
       --phd:#c3a1ee; --ms:#7fd4b0; --coop:#e6b17a; --new:#ff8a80; --row:#1e232a;
+      --hi-bg:#163d29; --hi-ink:#9be3b9; --mid-bg:#40330f; --mid-ink:#f0d48a;
     }
   }
   *{box-sizing:border-box}
@@ -57,6 +59,14 @@
   .tag.coop{color:var(--coop);border:1px solid currentColor;background:transparent}
   .tag.new{color:var(--new);border:1px solid currentColor;background:transparent}
   .tag.note{color:var(--dim);border:1px dashed var(--line);background:transparent}
+  td.match{white-space:nowrap;text-align:right;min-width:74px}
+  .score{display:inline-block;min-width:38px;text-align:center;font-weight:700;
+         font-variant-numeric:tabular-nums;border-radius:8px;padding:2px 7px;
+         background:var(--chip);color:var(--chip-ink)}
+  .score.hi{background:var(--hi-bg);color:var(--hi-ink)}
+  .score.mid{background:var(--mid-bg);color:var(--mid-ink)}
+  .score.weak{opacity:.7;font-weight:600;border:1px dashed var(--line);background:transparent}
+  .fit{display:block;font-size:11.5px;color:var(--dim);margin-top:2px}
   .more{display:block;margin:16px auto 0;font:inherit;padding:9px 18px;border-radius:8px;
         border:1px solid var(--line);background:var(--panel);color:var(--ink);cursor:pointer}
   .empty{padding:40px 10px;text-align:center;color:var(--dim)}
@@ -69,6 +79,8 @@
     td{border:0;padding:1px 0}
     td.date{font-size:12px}
     td.src{display:none}
+    td.match{text-align:left}
+    .fit{display:inline;margin-left:6px}
     .count{flex-basis:100%;margin-left:0}
   }
 </style>
@@ -104,13 +116,24 @@
     <option value="coop">Co-ops only</option>
     <option value="direct">Found on a company site only</option>
   </select>
+  <select id="minmatch" aria-label="Minimum match" hidden>
+    <option value="">Any match score</option>
+    <option value="40">Match 40 and up</option>
+    <option value="50">Match 50 and up</option>
+    <option value="60">Match 60 and up</option>
+    <option value="70">Match 70 and up</option>
+  </select>
+  <select id="sort" aria-label="Sort" hidden>
+    <option value="new">Newest first</option>
+    <option value="match">Best match first</option>
+  </select>
   <span class="count" id="count"></span>
   <div class="chips" id="tracks" role="group" aria-label="Field"></div>
 </div></div>
 
 <main>
   <table>
-    <thead><tr><th>Posted</th><th>Company</th><th>Role</th><th>Location</th><th>Seen on</th></tr></thead>
+    <thead><tr><th>Posted</th><th class="mcol" hidden>Match</th><th>Company</th><th>Role</th><th>Location</th><th>Seen on</th></tr></thead>
     <tbody id="rows"></tbody>
   </table>
   <div class="empty" id="empty" hidden>No listings match these filters.</div>
@@ -119,6 +142,10 @@
 
 <footer>
   <p id="srcline"></p>
+  <p id="matchnote" hidden>The match score, from 0 to 100, compares what a posting's description asks for
+     with the resumes of the person who maintains this list, so it is personal to them. Rare and specific
+     skills count for more than common ones. A dashed score was worked out from the title alone, because
+     the description could not be read. The label under a score names the resume that fit best.</p>
   <p>Listings are gathered automatically from public job boards and company career sites, then merged.
      Tags such as PhD, MS and the field are guesses made from the title and from what each board reports,
      so read the posting before relying on them. A date is the day a source says the role was posted,
@@ -132,7 +159,8 @@
 const TRACKS = ["Robotics","AI/ML","Research","Quant","Software","Data","Hardware"];
 const PAGE = 150;
 let ALL = [], view = [], shown = 0, today = "", baseline = "";
-const state = {q:"", level:"", region:"", age:"7", kind:"", tracks:[]};
+const state = {q:"", level:"", region:"", age:"7", kind:"", tracks:[], minmatch:"", sort:"new"};
+let hasMatch = false;
 const $ = id => document.getElementById(id);
 
 function esc(s){
@@ -156,6 +184,7 @@ function load(){
   if(!Array.isArray(state.tracks)) state.tracks = [];
   $("q").value = state.q; $("level").value = state.level; $("region").value = state.region;
   $("age").value = state.age; $("kind").value = state.kind;
+  $("minmatch").value = state.minmatch; $("sort").value = state.sort;
   $("tracks").innerHTML = TRACKS.map(t =>
     `<button class="chip" data-t="${esc(t)}" aria-pressed="${state.tracks.includes(t)}">${esc(t)}</button>`).join("");
 }
@@ -174,8 +203,11 @@ function apply(){
     if(cutoff && dayOf(r) < cutoff) return false;
     if(state.tracks.length && !state.tracks.some(t => (r.tracks || []).includes(t))) return false;
     if(words.length && !words.every(w => r._hay.includes(w))) return false;
+    if(hasMatch && state.minmatch && !((r.match || 0) >= Number(state.minmatch))) return false;
     return true;
   });
+  if(hasMatch && state.sort === "match")
+    view.sort((a,b) => (b.match || 0) - (a.match || 0) || dayOf(b).localeCompare(dayOf(a)));
   shown = 0; $("rows").innerHTML = "";
   $("count").textContent = view.length.toLocaleString() + " of " + ALL.length.toLocaleString() + " listings";
   $("empty").hidden = view.length > 0;
@@ -195,8 +227,17 @@ function rowHtml(r){
   if(/citizen/i.test(r.sponsorship || "")) tags.push('<span class="tag note">US citizenship required</span>');
   else if(/does not offer/i.test(r.sponsorship || "")) tags.push('<span class="tag note">No sponsorship</span>');
   const src = r.sources.map(s => s === "careers" ? "company site" : s).join(", ");
+  let match = "";
+  if(hasMatch){
+    const v = r.match;
+    const cls = r.match_basis === "title" ? "weak" : (v >= 60 ? "hi" : (v >= 45 ? "mid" : ""));
+    const why = r.match_basis === "title" ? "Scored from the title only" : "Scored from the full description";
+    match = `<td class="match">` + (v === undefined ? "" :
+      `<span class="score ${cls}" title="${why}">${v}</span><span class="fit">${esc(r.match_resume || "")}</span>`) + `</td>`;
+  }
   return `<tr>
     <td class="date">${esc(r.posted || (r.first_seen > baseline ? "seen " + r.first_seen : "no date"))}</td>
+    ${match}
     <td class="co">${esc(r.company)}</td>
     <td><a href="${esc(safeUrl(r.url))}" target="_blank" rel="noopener noreferrer">${esc(r.title)}</a>
         <div class="tags">${tags.join("")}</div></td>
@@ -217,7 +258,7 @@ function wire(){
     clearTimeout(timer);
     timer = setTimeout(() => { state.q = e.target.value; apply(); }, 120);
   });
-  for(const id of ["level","region","age","kind"])
+  for(const id of ["level","region","age","kind","minmatch","sort"])
     $(id).addEventListener("change", e => { state[id] = e.target.value; apply(); });
   $("tracks").addEventListener("click", e => {
     const b = e.target.closest(".chip"); if(!b) return;
@@ -234,6 +275,8 @@ fetch("data.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
   ALL = (d.listings || []).map(r => Object.assign({sources:[], locations:[], tracks:[], regions:[]}, r));
   today = (d.generated || "").slice(0,10);
   baseline = d.baseline || "";
+  hasMatch = ALL.some(r => r.match !== undefined);
+  for(const el of [$("minmatch"), $("sort"), $("matchnote"), document.querySelector("th.mcol")]) el.hidden = !hasMatch;
   for(const r of ALL)
     r._hay = (r.company + " " + r.title + " " + (r.locations || []).join(" ")).toLowerCase();
   ALL.sort((a,b) => dayOf(b).localeCompare(dayOf(a)) || a.company.localeCompare(b.company));

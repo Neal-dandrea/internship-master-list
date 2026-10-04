@@ -48,6 +48,7 @@ import urllib.request
 from typing import Callable, Dict, List, Optional
 
 import ats
+import match
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
@@ -567,14 +568,15 @@ def write_outputs(listings: List[dict], new: List[dict], report: Dict[str, str],
                    "baseline": min((r["first_seen"] for r in listings), default=""),
                    "listings": [slim(r) for r in listings]}, fh,
                   separators=(",", ":"))
-    cols = ["first_seen", "posted", "company", "title", "locations", "regions",
+    cols = ["first_seen", "posted", "match", "match_resume", "match_basis",
+            "company", "title", "locations", "regions",
             "phd", "ms", "coop", "tracks", "degrees", "sponsorship", "pay",
             "sources", "url", "id"]
     with open(os.path.join(DOCS, "listings.csv"), "w", newline="") as fh:
         w = csv.writer(fh)
         w.writerow(cols)
         for r in listings:
-            w.writerow(["; ".join(r[c]) if isinstance(r[c], list) else r[c]
+            w.writerow(["; ".join(r[c]) if isinstance(r.get(c), list) else r.get(c, "")
                         for c in cols])
     # One report per day. A second run on the same day adds a section to it and
     # never replaces what an earlier run found.
@@ -642,6 +644,9 @@ def main() -> int:
     ap.add_argument("--only", default="", help="comma-separated board names")
     ap.add_argument("--no-careers", action="store_true",
                     help="skip the company career sites")
+    ap.add_argument("--describe", type=int, default=600, metavar="N",
+                    help="read at most N new posting descriptions this run "
+                         "(default 600, 0 to skip)")
     ap.add_argument("--list", action="store_true", help="show the boards and stop")
     a = ap.parse_args()
     if a.list:
@@ -721,6 +726,16 @@ def main() -> int:
                      r["company"].lower())
     listings.sort(key=key, reverse=True)
     new.sort(key=key, reverse=True)
+
+    # Read descriptions and score each listing against the resume profile.
+    t0 = time.time()
+    m = match.enrich(listings, lambda url, json_body=None: fetch(url, 20, json_body),
+                     a.describe,
+                     progress=lambda n, total: print(f"    descriptions {n}/{total}",
+                                                     flush=True))
+    report["match"] = (f"{m['described']} of {len(listings)} descriptions read"
+                       + ("" if m["scored"] else ", no resume profile so no scores"))
+    print(f"  {'match':14s} {report['match']}  ({time.time() - t0:.1f}s)", flush=True)
 
     path = write_outputs(listings, new, report, first_run)
     with open(os.path.join(DATA, "seen.json"), "w") as fh:
