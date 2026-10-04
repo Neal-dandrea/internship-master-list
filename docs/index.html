@@ -34,7 +34,7 @@
                 flex-wrap:wrap;gap:8px 10px;align-items:center}
   input[type=search],select{font:inherit;color:var(--ink);background:var(--panel);
        border:1px solid var(--line);border-radius:8px;padding:7px 10px;min-height:36px}
-  input[type=search]{flex:1 1 240px;min-width:0}
+  input[type=search]{flex:1 1 200px;min-width:0}
   .chips{display:flex;flex-wrap:wrap;gap:6px;flex-basis:100%}
   .chip{font:inherit;font-size:13px;border:1px solid var(--line);background:var(--panel);
         color:var(--chip-ink);border-radius:999px;padding:4px 11px;cursor:pointer}
@@ -92,7 +92,8 @@
 </header>
 
 <div class="controls"><div class="in">
-  <input type="search" id="q" placeholder="Search company, title or location" aria-label="Search">
+  <input type="search" id="q" placeholder="Search company or title" aria-label="Search company or title">
+  <input type="search" id="where" placeholder="City, state or country" aria-label="City, state or country">
   <select id="level" aria-label="Degree level">
     <option value="">Any degree level</option>
     <option value="phd">PhD roles</option>
@@ -159,7 +160,7 @@
 const TRACKS = ["Robotics","AI/ML","Research","Quant","Software","Data","Hardware"];
 const PAGE = 150;
 let ALL = [], view = [], shown = 0, today = "", baseline = "";
-const state = {q:"", level:"", region:"", age:"7", kind:"", tracks:[], minmatch:"", sort:"new"};
+const state = {q:"", where:"", level:"", region:"", age:"7", kind:"", tracks:[], minmatch:"", sort:"new"};
 let hasMatch = false;
 const $ = id => document.getElementById(id);
 
@@ -181,8 +182,13 @@ function load(){
     const saved = JSON.parse(localStorage.getItem("iml-filters") || "null");
     if(saved && typeof saved === "object") Object.assign(state, saved);
   }catch(e){}
+  // A link can carry filters, for example ?where=ohio&age=30&minmatch=60
+  const params = new URLSearchParams(location.search);
+  for(const k of ["q","where","level","region","age","kind","minmatch","sort"])
+    if(params.has(k)) state[k] = params.get(k);
+  if(params.has("tracks")) state.tracks = params.get("tracks").split(",").filter(Boolean);
   if(!Array.isArray(state.tracks)) state.tracks = [];
-  $("q").value = state.q; $("level").value = state.level; $("region").value = state.region;
+  $("q").value = state.q; $("where").value = state.where; $("level").value = state.level; $("region").value = state.region;
   $("age").value = state.age; $("kind").value = state.kind;
   $("minmatch").value = state.minmatch; $("sort").value = state.sort;
   $("tracks").innerHTML = TRACKS.map(t =>
@@ -194,6 +200,10 @@ function apply(){
   const q = state.q.trim().toLowerCase();
   const words = q ? q.split(/\s+/) : [];
   const cutoff = state.age ? daysAgo(Number(state.age)) : "";
+  // Location search. Every word typed must be found. A short word such as OH,
+  // UK or NY has to equal a whole word in the location, so "OH" does not match
+  // "John". Longer words match anywhere, so "cincin" finds Cincinnati.
+  const whereWords = state.where.trim().toLowerCase().split(/[\s,]+/).filter(Boolean);
   view = ALL.filter(r => {
     if(state.level === "phd" && !r.phd) return false;
     if(state.level === "grad" && !(r.phd || r.ms)) return false;
@@ -203,6 +213,7 @@ function apply(){
     if(cutoff && dayOf(r) < cutoff) return false;
     if(state.tracks.length && !state.tracks.some(t => (r.tracks || []).includes(t))) return false;
     if(words.length && !words.every(w => r._hay.includes(w))) return false;
+    if(whereWords.length && !whereWords.every(w => w.length <= 3 ? r._locTokens.has(w) : r._loc.includes(w))) return false;
     if(hasMatch && state.minmatch && !((r.match || 0) >= Number(state.minmatch))) return false;
     return true;
   });
@@ -254,10 +265,11 @@ function more(){
 
 function wire(){
   let timer = null;
-  $("q").addEventListener("input", e => {
-    clearTimeout(timer);
-    timer = setTimeout(() => { state.q = e.target.value; apply(); }, 120);
-  });
+  for(const id of ["q","where"])
+    $(id).addEventListener("input", e => {
+      clearTimeout(timer);
+      timer = setTimeout(() => { state[id] = e.target.value; apply(); }, 120);
+    });
   for(const id of ["level","region","age","kind","minmatch","sort"])
     $(id).addEventListener("change", e => { state[id] = e.target.value; apply(); });
   $("tracks").addEventListener("click", e => {
@@ -277,8 +289,11 @@ fetch("data.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
   baseline = d.baseline || "";
   hasMatch = ALL.some(r => r.match !== undefined);
   for(const el of [$("minmatch"), $("sort"), $("matchnote"), document.querySelector("th.mcol")]) el.hidden = !hasMatch;
-  for(const r of ALL)
-    r._hay = (r.company + " " + r.title + " " + (r.locations || []).join(" ")).toLowerCase();
+  for(const r of ALL){
+    r._hay = (r.company + " " + r.title).toLowerCase();
+    r._loc = ((r.locations || []).join(" ") + " " + (r.places || []).join(" ")).toLowerCase();
+    r._locTokens = new Set(r._loc.split(/[^a-z0-9]+/).filter(Boolean));
+  }
   ALL.sort((a,b) => dayOf(b).localeCompare(dayOf(a)) || a.company.localeCompare(b.company));
   const when = d.generated ? new Date(d.generated).toLocaleString(undefined, {dateStyle:"medium", timeStyle:"short"}) : "";
   $("sub").textContent = `${ALL.length.toLocaleString()} active internships and co-ops, updated ${when}`;

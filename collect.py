@@ -502,6 +502,79 @@ def region_of(locations: List[str]) -> List[str]:
     return out
 
 
+_STATE_NAMES = dict(zip(
+    "AL AK AZ AR CA CO CT DE FL GA HI ID IL IN IA KS KY LA ME MD MA MI MN MS MO MT NE NV "
+    "NH NJ NM NY NC ND OH OK OR PA RI SC SD TN TX UT VT VA WA WV WI WY DC".split(),
+    ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut",
+     "Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa",
+     "Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan",
+     "Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada",
+     "New Hampshire", "New Jersey", "New Mexico", "New York", "North Carolina",
+     "North Dakota", "Ohio", "Oklahoma", "Oregon", "Pennsylvania", "Rhode Island",
+     "South Carolina", "South Dakota", "Tennessee", "Texas", "Utah", "Vermont", "Virginia",
+     "Washington", "West Virginia", "Wisconsin", "Wyoming", "District of Columbia"]))
+_CA_PROVINCES = {"ON": "Ontario", "QC": "Quebec", "BC": "British Columbia", "AB": "Alberta",
+                 "MB": "Manitoba", "SK": "Saskatchewan", "NS": "Nova Scotia",
+                 "NB": "New Brunswick"}
+_COUNTRIES = [
+    ("Canada", r"canada|toronto|vancouver|montr[eé]al|ottawa|waterloo|calgary"),
+    ("United Kingdom", r"united kingdom|\buk\b|england|scotland|london|cambridge, (uk|gb)|\bgbr?\b"),
+    ("Germany", r"germany|deutschland|berlin|munich|m[uü]nchen|\bdeu?\b"),
+    ("France", r"france|paris|\bfra\b"),
+    ("India", r"india|bangalore|bengaluru|hyderabad|pune|mumbai|gurgaon|chennai|\bind\b"),
+    ("China", r"china|shanghai|beijing|shenzhen|hangzhou|\bchn\b"),
+    ("Japan", r"japan|tokyo|\bjpn\b"),
+    ("Singapore", r"singapore|\bsgp\b"),
+    ("Ireland", r"ireland|dublin|\birl\b"),
+    ("Netherlands", r"netherlands|amsterdam|eindhoven|\bnld\b"),
+    ("Switzerland", r"switzerland|z[uü]rich|geneva|\bche\b"),
+    ("Israel", r"israel|tel aviv|\bisr\b"),
+    ("Australia", r"australia|sydney|melbourne|\baus\b"),
+    ("Poland", r"poland|warsaw|krak[oó]w|\bpol\b"),
+    ("Spain", r"spain|madrid|barcelona|\besp\b"),
+    ("Italy", r"italy|milan|rome\b|\bita\b"),
+    ("Sweden", r"sweden|stockholm|\bswe\b(?! intern)"),
+    ("Mexico", r"mexico|\bmex\b"),
+    ("Brazil", r"bra[sz]il|s[aã]o paulo|\bbra\b"),
+    ("South Korea", r"korea|seoul|\bkor\b"),
+    ("Taiwan", r"taiwan|taipei|hsinchu|\btwn\b"),
+    ("Hong Kong", r"hong kong|\bhkg\b"),
+    ("Romania", r"romania|bucharest"),
+    ("Hungary", r"hungary|budapest"),
+    ("Malaysia", r"malaysia|kuala lumpur|penang"),
+    ("Philippines", r"philippines|manila"),
+    ("United Arab Emirates", r"emirates|dubai|abu dhabi|\buae\b"),
+]
+_COUNTRY_PATS = [(name, re.compile(pat, re.I)) for name, pat in _COUNTRIES]
+
+
+def places_of(locations: List[str], regions: List[str]) -> List[str]:
+    """State and country names a posting's locations imply, spelled out, so a
+    search for "Ohio" finds "Cincinnati, OH" and "Canada" finds "Toronto, ON"."""
+    out: List[str] = []
+
+    def add(name: str):
+        if name not in out:
+            out.append(name)
+
+    for loc in locations:
+        codes = _STATE_CODE.findall(loc)
+        for c in codes:
+            if c in _STATE_NAMES:
+                add(_STATE_NAMES[c])
+            elif c in _CA_PROVINCES and not _US_NAMES.search(loc):
+                add(_CA_PROVINCES[c]); add("Canada")
+        for name in _STATE_NAMES.values():
+            if re.search(r"\b" + re.escape(name) + r"\b", loc, re.I):
+                add(name)
+        for name, pat in _COUNTRY_PATS:
+            if pat.search(loc):
+                add(name)
+    if "US" in regions:
+        add("United States")
+    return out
+
+
 def tag(rec: dict) -> None:
     title = rec["title"]
     degrees = " ".join(rec["degrees"])
@@ -519,6 +592,7 @@ def tag(rec: dict) -> None:
             tracks.append(t)
     rec["tracks"] = tracks
     rec["regions"] = region_of(rec["locations"])
+    rec["places"] = places_of(rec["locations"], rec["regions"])
 
 
 # ── state and output ────────────────────────────────────────────────────────
@@ -544,7 +618,7 @@ def slim(rec: dict) -> dict:
 _DEFAULTS = {"urls": None, "locations": [], "posted": None, "degrees": [],
              "categories": [], "sponsorship": "", "pay": "", "notes": [],
              "sources": [], "ats": [], "phd": False, "ms": False, "coop": False,
-             "tracks": [], "regions": []}
+             "tracks": [], "regions": [], "places": []}
 
 
 def unslim(rec: dict) -> dict:
@@ -712,6 +786,7 @@ def main() -> int:
         boards = set(p.get("sources", [])) - {"careers"}
         sites = set(p.get("ats", []))
         if (boards & skipped) or (sites and not careers_ran) or (sites & set(failed_sites)):
+            tag(p)                # so a carried-over listing gets any new tags
             listings.append(p)
 
     new = []
