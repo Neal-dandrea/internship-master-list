@@ -43,5 +43,7 @@ jobs:
             echo "No changes."
           else
             git commit -m "Refresh listings"
-            git push
+            # If someone pushed while this ran, leave it for the next run
+            # instead of failing.
+            git push || echo "The repository changed during the run. The next run will publish."
           fi
