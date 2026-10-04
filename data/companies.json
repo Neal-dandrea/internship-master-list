@@ -2599,6 +2599,11 @@
 "name": "Ameren",
 "ok": true
 },
+"workday:american/wd1/au": {
+"added": "2026-10-04",
+"name": "American University",
+"ok": true
+},
 "workday:americancentury/wd5/AmericanCenturyInvestments": {
 "added": "2026-10-04",
 "name": "American Century Investments",
@@ -2657,6 +2662,11 @@
 "workday:ardian/wd103/ArdianCareers": {
 "added": "2026-10-04",
 "name": "Ardian",
+"ok": true
+},
+"workday:argonne/wd1/Argonne_Careers": {
+"added": "2026-10-04",
+"name": "Argonne National Laboratory",
 "ok": true
 },
 "workday:arlo/wd12/external_careers": {
@@ -2737,6 +2747,11 @@
 "workday:axcelis/wd1/axcelis": {
 "added": "2026-10-04",
 "name": "Axcelis Technologies",
+"ok": true
+},
+"workday:axos/wd5/Axos": {
+"added": "2026-10-04",
+"name": "Axos Bank",
 "ok": true
 },
 "workday:azmag/wd108/magcareers": {
@@ -4429,6 +4444,11 @@
 "name": "Palo Alto Networks",
 "ok": true
 },
+"workday:parsons/wd5/search": {
+"added": "2026-10-04",
+"name": "Parsons",
+"ok": true
+},
 "workday:pentair/wd5/pentair_careers": {
 "added": "2026-10-04",
 "name": "Pentair",
@@ -4602,6 +4622,11 @@
 "workday:rockwellautomation/wd1/External_Rockwell_Automation": {
 "added": "2026-10-04",
 "name": "Rockwell Automation",
+"ok": true
+},
+"workday:rollsroyce/wd3/Intern_Graduate": {
+"added": "2026-10-04",
+"name": "Rolls-Royce",
 "ok": true
 },
 "workday:rrhs/wd5/RRH": {
@@ -4947,27 +4972,27 @@
 "workday:umd/wd1/UMCP": {
 "added": "2026-10-04",
 "name": "University of Maryland - College Park",
-"ok": true
+"ok": false
 },
 "workday:usaa/wd1/USAAJOBSWD": {
 "added": "2026-10-04",
 "name": "USAA",
-"ok": true
+"ok": false
 },
 "workday:usbank/wd1/US_Bank_Careers": {
 "added": "2026-10-04",
 "name": "U.S. Bank",
-"ok": true
+"ok": false
 },
 "workday:usfoods/wd1/usfoodscareersExternal": {
 "added": "2026-10-04",
 "name": "US Foods",
-"ok": true
+"ok": false
 },
 "workday:usfoods/wd1/usfoodscareersexternal": {
 "added": "2026-10-04",
 "name": "US Foods",
-"ok": true
+"ok": false
 },
 "workday:utaustin/wd1/utstudent": {
 "added": "2026-10-04",
