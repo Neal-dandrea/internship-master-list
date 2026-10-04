@@ -4582,7 +4582,7 @@
 "workday:rockwellautomation/wd1/External_Rockwell_Automation": {
 "added": "2026-10-04",
 "name": "Rockwell Automation",
-"ok": false
+"ok": true
 },
 "workday:rrhs/wd5/RRH": {
 "added": "2026-10-04",
@@ -4592,7 +4592,7 @@
 "workday:ryan/wd1/Students-Graduates": {
 "added": "2026-10-04",
 "name": "Ryan",
-"ok": false
+"ok": true
 },
 "workday:ryancompanies/wd5/ryancompanies": {
 "added": "2026-10-04",
@@ -4602,7 +4602,7 @@
 "workday:saabusa/wd1/saab_careers": {
 "added": "2026-10-04",
 "name": "Saab",
-"ok": false
+"ok": true
 },
 "workday:salesforce/wd12/External_Career_Site": {
 "added": "2026-10-04",
@@ -4632,7 +4632,7 @@
 "workday:sbdinc/wd1/Stanley_Black_Decker_Career_Site": {
 "added": "2026-10-04",
 "name": "Stanley Black & Decker",
-"ok": false
+"ok": true
 },
 "workday:sec/wd3/Samsung_Careers": {
 "added": "2026-10-04",
@@ -4642,32 +4642,32 @@
 "workday:selinc/wd1/SEL": {
 "added": "2026-10-04",
 "name": "Schweitzer Engineering Laboratories",
-"ok": false
+"ok": true
 },
 "workday:semtech/wd1/SemtechCareers": {
 "added": "2026-10-04",
 "name": "Semtech",
-"ok": false
+"ok": true
 },
 "workday:sifive/wd1/sifivecareers": {
 "added": "2026-10-04",
 "name": "SiFive",
-"ok": false
+"ok": true
 },
 "workday:simon/wd1/Simon": {
 "added": "2026-10-04",
 "name": "Simon Property Group",
-"ok": false
+"ok": true
 },
 "workday:simon/wd1/simon": {
 "added": "2026-10-04",
 "name": "Simon Property Group",
-"ok": false
+"ok": true
 },
 "workday:sjindustries/wd1/sji": {
 "added": "2026-10-04",
 "name": "SJI - South Jersey Industries",
-"ok": false
+"ok": true
 },
 "workday:smucker/wd5/US_External_Careers": {
 "added": "2026-10-04",
@@ -4677,17 +4677,17 @@
 "workday:snc/wd1/snc_external_career_site": {
 "added": "2026-10-04",
 "name": "Sierra Nevada Corporation",
-"ok": false
+"ok": true
 },
 "workday:sonos/wd1/Sonos": {
 "added": "2026-10-04",
 "name": "Sonos",
-"ok": false
+"ok": true
 },
 "workday:sonyglobal/wd1/SonyJapanCareers": {
 "added": "2026-10-04",
 "name": "Sony AI (Japan)",
-"ok": false
+"ok": true
 },
 "workday:soti/wd3/SOTI-Next-Gen": {
 "added": "2026-10-04",
@@ -4702,7 +4702,7 @@
 "workday:spartannash/wd1/SpartanNash_Careers": {
 "added": "2026-10-04",
 "name": "SpartanNash",
-"ok": false
+"ok": true
 },
 "workday:spgi/wd5/Kensho_Careers": {
 "added": "2026-10-04",
@@ -4737,12 +4737,12 @@
 "workday:stryker/wd1/StrykerCareers": {
 "added": "2026-10-04",
 "name": "Stryker",
-"ok": false
+"ok": true
 },
 "workday:stryker/wd1/strykercareers": {
 "added": "2026-10-04",
 "name": "Stryker",
-"ok": false
+"ok": true
 },
 "workday:sunlife/wd3/Campus": {
 "added": "2026-10-04",
@@ -4757,12 +4757,12 @@
 "workday:swa/wd1/external": {
 "added": "2026-10-04",
 "name": "Southwest Airlines",
-"ok": false
+"ok": true
 },
 "workday:swbc/wd1/swbccareers": {
 "added": "2026-10-04",
 "name": "SWBC",
-"ok": false
+"ok": true
 },
 "workday:symbotic/wd504/Symbotic": {
 "added": "2026-10-04",
@@ -4782,12 +4782,12 @@
 "workday:tamus/wd1/System-wide_External": {
 "added": "2026-10-04",
 "name": "Texas A&M University System",
-"ok": false
+"ok": true
 },
 "workday:tamus/wd1/pvamu_external": {
 "added": "2026-10-04",
 "name": "Prairie View A&M University",
-"ok": false
+"ok": true
 },
 "workday:tcenergy/wd3/CAREER_SITE_TC": {
 "added": "2026-10-04",
@@ -4812,12 +4812,12 @@
 "workday:tencent/wd1/Lightspeed": {
 "added": "2026-10-04",
 "name": "Tencent",
-"ok": false
+"ok": true
 },
 "workday:tencent/wd1/OA_Huoshui_Platform": {
 "added": "2026-10-04",
 "name": "Tencent",
-"ok": false
+"ok": true
 },
 "workday:tencent/wd1/Tencent_Careers": {
 "added": "2026-10-04",
@@ -4937,7 +4937,7 @@
 "workday:usfoods/wd1/usfoodscareersExternal": {
 "added": "2026-10-04",
 "name": "US Foods",
-"ok": false
+"ok": true
 },
 "workday:usfoods/wd1/usfoodscareersexternal": {
 "added": "2026-10-04",
@@ -5067,6 +5067,6 @@
 "workday:zoll/wd5/ZOLLMedicalCorp": {
 "added": "2026-10-04",
 "name": "ZOLL Medical",
-"ok": false
+"ok": true
 }
 }
