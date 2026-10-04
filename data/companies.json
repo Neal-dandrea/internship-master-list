@@ -604,6 +604,11 @@
 "name": "Niural",
 "ok": true
 },
+"ashby:normalcomputing": {
+"added": "2026-10-04",
+"name": "Normal Computing",
+"ok": true
+},
 "ashby:northwoodspace": {
 "added": "2026-10-04",
 "name": "northwoodspace",
@@ -777,6 +782,11 @@
 "ashby:revel": {
 "added": "2026-10-04",
 "name": "Revel",
+"ok": true
+},
+"ashby:reviserobotics": {
+"added": "2026-10-04",
+"name": "Revise Robotics",
 "ok": true
 },
 "ashby:rhoda-ai": {
@@ -2039,6 +2049,11 @@
 "name": "Stand Together",
 "ok": true
 },
+"lever:thea.energy": {
+"added": "2026-10-04",
+"name": "Thea Energy",
+"ok": true
+},
 "lever:tri": {
 "added": "2026-10-04",
 "name": "Toyota Research Institute",
@@ -2337,6 +2352,11 @@
 "workable:coretek-services": {
 "added": "2026-10-04",
 "name": "Coretek Services",
+"ok": true
+},
+"workable:cornerstone-research-group-inc": {
+"added": "2026-10-04",
+"name": "CRG Defense",
 "ok": true
 },
 "workable:disa-technologies": {
@@ -3372,7 +3392,7 @@
 "workday:fanniemae/wd1/FannieMaeCareers": {
 "added": "2026-10-04",
 "name": "Fannie Mae",
-"ok": false
+"ok": true
 },
 "workday:fanniemae/wd1/fanniemaecareers": {
 "added": "2026-10-04",
@@ -4687,7 +4707,7 @@
 "workday:sonyglobal/wd1/SonyJapanCareers": {
 "added": "2026-10-04",
 "name": "Sony AI (Japan)",
-"ok": false
+"ok": true
 },
 "workday:soti/wd3/SOTI-Next-Gen": {
 "added": "2026-10-04",
@@ -4702,7 +4722,7 @@
 "workday:spartannash/wd1/SpartanNash_Careers": {
 "added": "2026-10-04",
 "name": "SpartanNash",
-"ok": false
+"ok": true
 },
 "workday:spgi/wd5/Kensho_Careers": {
 "added": "2026-10-04",
@@ -4922,6 +4942,11 @@
 "workday:uline/wd1/uline_careers": {
 "added": "2026-10-04",
 "name": "Uline",
+"ok": true
+},
+"workday:umd/wd1/UMCP": {
+"added": "2026-10-04",
+"name": "University of Maryland - College Park",
 "ok": true
 },
 "workday:usaa/wd1/USAAJOBSWD": {
