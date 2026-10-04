@@ -1,0 +1,210 @@
+"""ats.py — read internship postings straight from company career sites.
+
+Most companies host their careers page on one of a few platforms, and each
+platform has a public feed that the careers page itself reads. Given a company's
+identifier on a platform, these functions return that company's internship
+postings in the collector's common shape.
+
+The company list is not hand-written. `discover` reads the links that the job
+boards point at and pulls the identifiers out of them, so every company a board
+has ever listed gets checked at the source from then on. That catches postings
+before a board picks them up.
+"""
+from __future__ import annotations
+
+import datetime as dt
+import json
+import re
+import urllib.parse
+from concurrent.futures import ThreadPoolExecutor
+from typing import Callable, Dict, List, Optional, Tuple
+
+TODAY = dt.date.today()
+
+# What counts as an internship when a feed returns every job at the company.
+INTERN = re.compile(
+    r"\b(intern|interns|internship|internships|co-?op|co-?ops|"
+    r"student researcher|research resident|phd resident|"
+    r"summer analyst|summer associate|working student|werkstudent)\b", re.I)
+STALE_YEAR = re.compile(r"\b20(1\d|2[0-5])\b")
+
+
+def is_internship(title: str) -> bool:
+    return bool(INTERN.search(title or "")) and not STALE_YEAR.search(title or "")
+
+
+# ── finding company identifiers in board links ──────────────────────────────
+_PATTERNS = [
+    ("greenhouse", re.compile(r"greenhouse\.io/(?:embed/job_app\?for=)?([A-Za-z0-9_-]+)(?=/jobs|&|$)")),
+    ("lever", re.compile(r"jobs\.(?:eu\.)?lever\.co/([A-Za-z0-9_.-]+)")),
+    ("ashby", re.compile(r"jobs\.ashbyhq\.com/([A-Za-z0-9_.%-]+)")),
+    ("smartrecruiters", re.compile(r"jobs\.smartrecruiters\.com/([A-Za-z0-9_-]+)")),
+    ("workable", re.compile(r"apply\.workable\.com/([A-Za-z0-9_-]+)(?=/j/)")),
+]
+_WORKDAY = re.compile(r"https?://([a-z0-9-]+)\.(wd\d+)\.myworkdayjobs\.com/"
+                      r"(?:[a-z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]+)")
+_NOT_TOKENS = {"embed", "jobs", "j", "job", "careers", "api", "wday"}
+
+
+def discover(url: str) -> Optional[Tuple[str, str]]:
+    """(platform, identifier) for a posting link, or None if it is not one we read."""
+    m = _WORKDAY.search(url)
+    if m and m.group(3).lower() not in _NOT_TOKENS:
+        return "workday", "/".join(m.groups())
+    for name, pat in _PATTERNS:
+        m = pat.search(url)
+        if m and m.group(1).lower() not in _NOT_TOKENS:
+            return name, urllib.parse.unquote(m.group(1))
+    return None
+
+
+# ── one reader per platform ─────────────────────────────────────────────────
+# Each takes (identifier, company name, fetch, listing) and returns listings.
+def _date(text) -> Optional[str]:
+    return (str(text)[:10] or None) if text else None
+
+
+def greenhouse(token, company, fetch, listing):
+    doc = json.loads(fetch(f"https://boards-api.greenhouse.io/v1/boards/{token}/jobs"))
+    return [listing("careers", company, j["title"], j["absolute_url"],
+                    location=(j.get("location") or {}).get("name") or "",
+                    posted=_date(j.get("first_published") or j.get("updated_at")))
+            for j in doc.get("jobs", []) if is_internship(j.get("title"))]
+
+
+def lever(token, company, fetch, listing):
+    doc = json.loads(fetch(f"https://api.lever.co/v0/postings/{token}?mode=json"))
+    out = []
+    for j in doc if isinstance(doc, list) else []:
+        cat = j.get("categories") or {}
+        # "Internal" must not count, so the commitment is matched as a word.
+        if not (is_internship(j.get("text")) or
+                re.search(r"\bintern(ship)?s?\b", cat.get("commitment") or "", re.I)):
+            continue
+        if STALE_YEAR.search(j.get("text") or ""):
+            continue
+        posted = None
+        if j.get("createdAt"):
+            posted = dt.datetime.fromtimestamp(
+                j["createdAt"] / 1000, dt.timezone.utc).date().isoformat()
+        out.append(listing("careers", company, j["text"], j["hostedUrl"],
+                           location="; ".join(cat.get("allLocations") or
+                                              [cat.get("location") or ""]),
+                           posted=posted))
+    return out
+
+
+def ashby(token, company, fetch, listing):
+    doc = json.loads(fetch("https://api.ashbyhq.com/posting-api/job-board/"
+                           + urllib.parse.quote(token)))
+    out = []
+    for j in doc.get("jobs", []):
+        if not (is_internship(j.get("title")) or j.get("employmentType") == "Intern"):
+            continue
+        if STALE_YEAR.search(j.get("title") or ""):
+            continue
+        loc = j.get("location") or ""
+        if j.get("isRemote") and "remote" not in loc.lower():
+            loc = (loc + "; Remote").strip("; ")
+        out.append(listing("careers", company, j["title"], j["jobUrl"],
+                           location=loc, posted=_date(j.get("publishedAt"))))
+    return out
+
+
+def smartrecruiters(token, company, fetch, listing):
+    doc = json.loads(fetch("https://api.smartrecruiters.com/v1/companies/"
+                           f"{token}/postings?q=intern&limit=100"))
+    out = []
+    for j in doc.get("content", []):
+        if not is_internship(j.get("name")):
+            continue
+        loc = j.get("location") or {}
+        where = loc.get("fullLocation") or ", ".join(
+            x for x in (loc.get("city"), loc.get("region"), loc.get("country")) if x)
+        if loc.get("remote"):
+            where = (where + "; Remote").strip("; ")
+        out.append(listing("careers", company, j["name"],
+                           f"https://jobs.smartrecruiters.com/{token}/{j['id']}",
+                           location=where, posted=_date(j.get("releasedDate"))))
+    return out
+
+
+def workable(token, company, fetch, listing):
+    doc = json.loads(fetch(f"https://apply.workable.com/api/v1/widget/accounts/{token}"))
+    return [listing("careers", company, j["title"], j["url"],
+                    location=", ".join(x for x in (j.get("city"), j.get("state"),
+                                                   j.get("country")) if x),
+                    posted=_date(j.get("published_on")))
+            for j in doc.get("jobs", []) if is_internship(j.get("title"))]
+
+
+def _workday_posted(text: str) -> Optional[str]:
+    """'Posted Today' / 'Posted Yesterday' / 'Posted 3 Days Ago' -> a date.
+    'Posted 30+ Days Ago' has no real date, so it stays None."""
+    t = (text or "").lower()
+    if "today" in t:
+        return TODAY.isoformat()
+    if "yesterday" in t:
+        return (TODAY - dt.timedelta(days=1)).isoformat()
+    m = re.search(r"(\d+)(\+?) days? ago", t)
+    if m and not m.group(2):
+        return (TODAY - dt.timedelta(days=int(m.group(1)))).isoformat()
+    return None
+
+
+def workday(token, company, fetch, listing, max_pages: int = 5):
+    tenant, wd, site = token.split("/")
+    base = f"https://{tenant}.{wd}.myworkdayjobs.com"
+    out, offset = [], 0
+    for _ in range(max_pages):
+        doc = json.loads(fetch(f"{base}/wday/cxs/{tenant}/{site}/jobs",
+                               json_body={"appliedFacets": {}, "limit": 20,
+                                          "offset": offset, "searchText": "intern"}))
+        posts = doc.get("jobPostings") or []
+        for j in posts:
+            if not j.get("externalPath") or not is_internship(j.get("title")):
+                continue
+            out.append(listing("careers", company, j["title"],
+                               f"{base}/{site}{j['externalPath']}",
+                               location=j.get("locationsText") or "",
+                               posted=_workday_posted(j.get("postedOn"))))
+        offset += 20
+        if len(posts) < 20 or offset >= int(doc.get("total") or 0):
+            break
+    return out
+
+
+READERS: Dict[str, Callable] = {
+    "greenhouse": greenhouse, "lever": lever, "ashby": ashby,
+    "smartrecruiters": smartrecruiters, "workable": workable, "workday": workday,
+}
+
+
+def collect(companies: Dict[str, dict], fetch, listing, workers: int = 16,
+            progress=None) -> Tuple[List[dict], Dict[str, str]]:
+    """Read every company in the registry. Returns (listings, failures).
+
+    `companies` maps "platform:identifier" to {"name": ...}. A company whose
+    feed fails is reported in `failures` and does not stop the others.
+    """
+    def one(key: str):
+        platform, token = key.split(":", 1)
+        try:
+            rows = READERS[platform](token, companies[key]["name"], fetch, listing)
+            for r in rows:
+                r["ats"] = key
+            return key, rows, None
+        except Exception as e:                            # noqa: BLE001
+            return key, [], f"{type(e).__name__}: {str(e)[:80]}"
+
+    rows: List[dict] = []
+    failures: Dict[str, str] = {}
+    keys = [k for k in companies if k.split(":", 1)[0] in READERS]
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        for n, (key, got, err) in enumerate(pool.map(one, keys), 1):
+            rows += got
+            if err:
+                failures[key] = err
+            if progress and n % 100 == 0:
+                progress(n, len(keys))
+    return rows, failures
