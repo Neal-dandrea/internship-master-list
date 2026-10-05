@@ -18,58 +18,10 @@
   "note": "Research Scientist Intern (PhD) roles are listed here, including FAIR. Returned HTTP 400 to curl (bot protection), opens in a browser"
  },
  {
-  "name": "Apple",
-  "url": "https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN",
-  "platform": "custom",
-  "note": "Team filter Students > Internships; AIML residency and ML research intern roles"
- },
- {
-  "name": "Amazon",
-  "url": "https://www.amazon.jobs/content/en/career-programs/university",
-  "platform": "custom",
-  "note": "Applied Scientist Intern is the PhD track"
- },
- {
-  "name": "Amazon Science",
-  "url": "https://www.amazon.science/careers",
-  "platform": "custom",
-  "note": "Research-facing landing page, postings link back to amazon.jobs"
- },
- {
-  "name": "Amazon Robotics",
-  "url": "https://www.amazon.jobs/content/en/teams/ftr/amazon-robotics",
-  "platform": "custom",
-  "note": "Team page on amazon.jobs"
- },
- {
   "name": "Tesla",
   "url": "https://www.tesla.com/careers/search/?type=3",
   "platform": "custom",
   "note": "type=3 is Internship; includes Optimus and Autopilot roles; Akamai bot wall usually blocks curl"
- },
- {
-  "name": "TikTok",
-  "url": "https://lifeattiktok.com/early-careers",
-  "platform": "custom",
-  "note": "Early careers hub, search is JS rendered"
- },
- {
-  "name": "ByteDance",
-  "url": "https://joinbytedance.com/search",
-  "platform": "custom",
-  "note": "JS rendered search; Seed and AI Lab intern roles"
- },
- {
-  "name": "IBM",
-  "url": "https://www.ibm.com/careers/search",
-  "platform": "custom",
-  "note": "Filter by Internship; IBM Research roles are included"
- },
- {
-  "name": "IBM Research",
-  "url": "https://www.ibm.com/careers/research",
-  "platform": "custom",
-  "note": "Research landing page"
  },
  {
   "name": "LinkedIn",
@@ -139,11 +91,6 @@
   "note": "SEED research interns"
  },
  {
-  "name": "Honda",
-  "url": "https://careers.honda.com/us/en",
-  "platform": "Phenom"
- },
- {
   "name": "Honda Research Institute USA",
   "url": "https://usa.honda-ri.com/careers",
   "platform": "custom",
@@ -166,12 +113,6 @@
   "url": "https://careers.twosigma.com/",
   "platform": "Avature",
   "note": "Root returns 200. The /careers/SearchJobs path 302s then 404s for curl"
- },
- {
-  "name": "Bloomberg",
-  "url": "https://bloomberg.avature.net/careers/SearchJobs",
-  "platform": "Avature",
-  "note": "Includes Bloomberg AI and CTO office PhD internships"
  },
  {
   "name": "Renaissance Technologies",
@@ -215,11 +156,6 @@
   "platform": "custom"
  },
  {
-  "name": "Arm",
-  "url": "https://careers.arm.com/emerging-talent",
-  "platform": "custom"
- },
- {
   "name": "TSMC",
   "url": "https://careers.tsmc.com/en_US/careers/SearchJobs",
   "platform": "Avature",
@@ -231,42 +167,16 @@
   "platform": "custom"
  },
  {
-  "name": "Seagate",
-  "url": "https://seagatecareers.com/",
-  "platform": "SuccessFactors"
- },
- {
-  "name": "Keysight",
-  "url": "https://jobs.keysight.com/external",
-  "platform": "custom"
- },
- {
-  "name": "Sony AI",
-  "url": "https://ai.sony/join-us",
-  "platform": "custom",
-  "note": "Research internships; Sony corporate Workday sites are in candidates.json"
- },
- {
   "name": "Lockheed Martin",
   "url": "https://www.lockheedmartinjobs.com/",
   "platform": "TalentBrew (Radancy)",
   "note": "Site root answers curl with a 302; deeper search paths redirected curl to a 404 page, so search for 'intern' in a browser"
  },
  {
-  "name": "L3Harris",
-  "url": "https://careers.l3harris.com/en/search-jobs/intern",
-  "platform": "TalentBrew (Radancy)"
- },
- {
   "name": "General Atomics",
   "url": "https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25539&siteid=5313",
   "platform": "BrassRing",
   "note": "ga-careers.com redirects to this BrassRing search"
- },
- {
-  "name": "BAE Systems",
-  "url": "https://jobs.baesystems.com/global/en/search-results?keywords=intern",
-  "platform": "Phenom"
  },
  {
   "name": "SAIC",
@@ -301,17 +211,6 @@
   "name": "KUKA",
   "url": "https://www.kuka.com/en-us/career",
   "platform": "custom"
- },
- {
-  "name": "Teradyne / Universal Robots",
-  "url": "https://jobs.teradyne.com/",
-  "platform": "custom"
- },
- {
-  "name": "Allen Institute for AI (AI2)",
-  "url": "https://allenai.org/careers",
-  "platform": "custom",
-  "note": "Research internships year round"
  },
  {
   "name": "Mila",
@@ -349,11 +248,6 @@
  {
   "name": "Los Alamos National Laboratory",
   "url": "https://lanl.jobs/",
-  "platform": "custom"
- },
- {
-  "name": "Pacific Northwest National Laboratory",
-  "url": "https://careers.pnnl.gov/",
   "platform": "custom"
  },
  {
@@ -474,11 +368,6 @@
   "note": "Summer student and technical student programs"
  },
  {
-  "name": "Booking.com",
-  "url": "https://jobs.booking.com/booking/jobs",
-  "platform": "custom"
- },
- {
   "name": "Baidu",
   "url": "https://talent.baidu.com/jobs/",
   "platform": "custom",
@@ -489,17 +378,6 @@
   "url": "https://www.engineersgate.com/",
   "platform": "custom",
   "note": "Quant fund, home page only"
- },
- {
-  "name": "Savannah River National Laboratory",
-  "url": "https://www.srnl.gov/careers/",
-  "platform": "custom"
- },
- {
-  "name": "NCAR / UCAR",
-  "url": "https://www.ucar.edu/opportunities/careers",
-  "platform": "custom",
-  "note": "Includes SIParCS HPC and ML internships"
  },
  {
   "name": "Institute for Defense Analyses",
@@ -534,12 +412,6 @@
   "url": "https://research.adobe.com/careers/internships/",
   "platform": "custom",
   "note": "Program page. Postings are on Adobe Workday (in candidates.json)"
- },
- {
-  "name": "NVIDIA Research",
-  "url": "https://www.nvidia.com/en-us/research/",
-  "platform": "custom",
-  "note": "Program page. Postings are on NVIDIA Workday (in candidates.json)"
  },
  {
   "name": "Jefferson Lab",

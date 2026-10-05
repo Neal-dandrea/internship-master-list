@@ -103,8 +103,10 @@ def _norm(name: str) -> str:
     return re.sub(r"[^a-z0-9]", "", (name or "").lower())
 
 
-def write(docs_dir: str, data_dir: str, found: List[dict], failing: List[dict]) -> int:
-    """Merge the three origins and write docs/manual.json. Returns the count."""
+def write(docs_dir: str, data_dir: str, found: List[dict], failing: List[dict],
+          read_names=()) -> int:
+    """Merge the three origins and write docs/manual.json. Returns the count.
+    `read_names` are employers a reader already covers, which are left out."""
     try:
         with open(os.path.join(data_dir, "manual.json")) as fh:
             curated = json.load(fh)
@@ -122,6 +124,14 @@ def write(docs_dir: str, data_dir: str, found: List[dict], failing: List[dict]) 
             merged[k].setdefault("example", e["example"])
         else:
             merged[k] = dict(e)
+    read = {_norm(name) for name in read_names}
+    for k in list(merged):
+        # A board may spell an employer a little differently from its own site,
+        # as in "Old Mission" and "Old Mission Capital".
+        near = merged[k].get("origin") == "boards" and len(k) >= 5 and any(
+            len(r) >= 5 and (r.startswith(k) or k.startswith(r)) for r in read)
+        if k in read or near:
+            del merged[k]
     for e in failing:
         merged.setdefault(_norm(e["name"]), e)
     rows = sorted(merged.values(), key=lambda e: (-e.get("count", 0), e["name"].lower()))

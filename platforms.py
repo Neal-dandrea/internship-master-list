@@ -242,6 +242,34 @@ _RMK_LOC = re.compile(r'section-location-value[^>]*>(.*?)</|class="jobLocation[^
 _RMK_TOTAL = re.compile(r"of\s+(?:<b>)?\s*([\d,]+)\s*(?:</b>)?\s*(?:Jobs|Results)", re.I)
 
 
+def _rmk_feed(token, company, fetch, listing, want, keywords):
+    out, seen = [], set()
+    for word in keywords or [""]:
+        feed = _page(fetch, f"https://{token}/services/rss/job/?locale=en_US"
+                            f"&keywords=({urllib.parse.quote(word)})")
+        for item in re.findall(r"<item>(.*?)</item>", feed, re.S):
+            link = re.search(r"<link>(.*?)</link>", item, re.S)
+            title = re.search(r"<title>(?:<!\[CDATA\[)?(.*?)(?:\]\]>)?</title>", item, re.S)
+            if not link or not title or link.group(1) in seen:
+                continue
+            seen.add(link.group(1))
+            # A title ends with its place in brackets, as in "Engineer (Austin, TX, US)".
+            m = re.match(r"(.*)\(([^()]*)\)\s*$", _html.unescape(title.group(1)).strip(), re.S)
+            name, where = (m.group(1).strip(), m.group(2).strip()) if m else (title.group(1), "")
+            if not want(name):
+                continue
+            when = re.search(r"<pubDate>(.*?)</pubDate>", item)
+            posted = None
+            if when:
+                try:
+                    posted = dt.datetime.strptime(when.group(1)[5:16], "%d %b %Y").date().isoformat()
+                except ValueError:
+                    pass
+            out.append(listing("careers", company, name, _html.unescape(link.group(1)).split("?")[0],
+                               location=where, posted=posted))
+    return out
+
+
 def rmk(token, company, fetch, listing, want, keywords, max_pages: int = 4):
     """SAP SuccessFactors career sites. The identifier is the careers host. The
     results are a web page in one of two layouts, both read here."""
@@ -251,6 +279,10 @@ def rmk(token, company, fetch, listing, want, keywords, max_pages: int = 4):
             page = _page(fetch, f"https://{token}/search/?q=&title={urllib.parse.quote(word)}"
                                 f"&sortColumn=referencedate&sortDirection=desc&startrow={n * 100}")
             chunks = re.split(r'<tr class="data-row|<li class="job-tile', page)[1:]
+            if not chunks and "rmk-jobs-search" in page:
+                # The newest layout draws its results in the browser, but the page
+                # still advertises a feed of the search, which is read instead.
+                return _rmk_feed(token, company, fetch, listing, want, keywords)
             new = 0
             for chunk in chunks:
                 m = _RMK_LINK.search(chunk)
@@ -395,6 +427,35 @@ _TALEO_BODY = {
 _TALEO_PORTALS: Dict[str, str] = {}
 
 
+_TALEO_CLASSIC = re.compile(
+    r"api\.fillList\('requisitionListInterface', 'listRequisition', \[(.*?)\]\);", re.S)
+
+
+def _taleo_classic(base, section, company, fetch, listing, want, keywords, first):
+    """Older Taleo sections write the first page of results into the search page
+    itself, and take a keyword in the address. Each keyword's first page is read."""
+    out, seen = [], set()
+    for word in keywords or [""]:
+        page = first if not word else _page(
+            fetch, f"{base}/{section}/jobsearch.ftl?lang=en&keyword={urllib.parse.quote_plus(word)}")
+        m = _TALEO_CLASSIC.search(page)
+        vals = re.findall(r"'((?:[^'\\]|\\.)*)'", m.group(1)) if m else []
+        starts = [i for i in range(len(vals) - 5) if vals[i] in ("true", "false")
+                  and vals[i + 1] in ("true", "false") and vals[i + 2].isdigit()
+                  and vals[i + 4] == vals[i + 2]]
+        for a, b in zip(starts, starts[1:] + [len(vals)]):
+            row = vals[a:b]
+            number, title = row[2], _html.unescape(row[3].replace("\\'", "'")).strip()
+            if number in seen or not want(title):
+                continue
+            seen.add(number)
+            where = next((v for v in row[11:17] if v and v not in ("true", "false")), "")
+            out.append(listing("careers", company, title,
+                               f"{base}/{section}/jobdetail.ftl?job={number}&lang=en",
+                               location=_html.unescape(where)))
+    return out
+
+
 def taleo(token, company, fetch, listing, want, keywords, max_pages: int = 6):
     """Taleo career sections. The identifier is tenant/section, as in the address
     tenant.taleo.net/careersection/section/. The search needs a number that the
@@ -404,6 +465,8 @@ def taleo(token, company, fetch, listing, want, keywords, max_pages: int = 6):
     if token not in _TALEO_PORTALS:
         page = _page(fetch, f"{base}/{section}/jobsearch.ftl?lang=en")
         m = re.search(r"portalNo:\s*'(\d+)'", page)
+        if not m and _TALEO_CLASSIC.search(page):
+            return _taleo_classic(base, section, company, fetch, listing, want, keywords, page)
         if not m:
             raise ValueError("this career section does not offer a search")
         _TALEO_PORTALS[token] = m.group(1)
@@ -496,7 +559,7 @@ def probe(host: str, fetch) -> Optional[str]:
         pass
     try:
         page = _page(fetch, f"https://{host}/search/?q=&startrow=0")
-        if "jobTitle-link" in page:
+        if "jobTitle-link" in page or "rmk-jobs-search" in page:
             return f"rmk:{host}"
     except Exception:                                     # noqa: BLE001
         pass

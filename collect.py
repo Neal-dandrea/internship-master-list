@@ -992,7 +992,7 @@ def main() -> int:
                for k, e in companies.items() if e.get("worked") and e.get("fails", 0) >= 6]
     by_hand = manual.write(DOCS, DATA,
                            manual.from_listings(board_rows, ats.discover, hosts_read(companies)),
-                           failing)
+                           failing, [e["name"] for e in companies.values() if e.get("worked")])
     waiting = write_timing(listings)
 
     path = write_outputs(listings, new, report, first_run,

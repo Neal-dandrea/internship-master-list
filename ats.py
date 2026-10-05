@@ -521,6 +521,10 @@ def rmk(token, company, fetch, listing, max_pages: int = 5):
                      f"&sortDirection=desc&startrow={n * 100}").decode("utf-8", errors="replace")
         # Each posting is a table row or a tile. Split on either marker.
         chunks = re.split(r'<tr class="data-row|<li class="job-tile', page)[1:]
+        if not chunks and "rmk-jobs-search" in page:
+            # The newest layout draws results in the browser, so its feed is read.
+            return platforms._rmk_feed(token, company, fetch, listing, is_internship,
+                                       ["intern", "internship", "co-op"])
         new = 0
         for chunk in chunks:
             m = _RMK_LINK.search(chunk)
