@@ -41,6 +41,8 @@ def main() -> int:
     ap.add_argument("--slice", nargs=2, type=int, metavar=("N", "OF"),
                     help="only candidates in slice N of OF (N counts from 0)")
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--platform", default="", help="only this platform, such as workday")
+    ap.add_argument("--skip", default="", help="platforms to leave out, comma-separated")
     ap.add_argument("--workers", type=int, default=24)
     a = ap.parse_args()
 
@@ -52,6 +54,10 @@ def main() -> int:
         n, of = a.slice
         todo = [k for k in todo
                 if int(hashlib.sha1(k.encode()).hexdigest(), 16) % of == n]
+    if a.platform:
+        todo = [k for k in todo if k.split(":", 1)[0] == a.platform]
+    skip = {x.strip() for x in a.skip.split(",") if x.strip()}
+    todo = [k for k in todo if k.split(":", 1)[0] not in skip]
     if a.limit:
         todo = todo[:a.limit]
     print(f"  {len(todo)} candidates to read ({len(candidates)} known, "
