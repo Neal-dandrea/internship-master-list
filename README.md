@@ -17,9 +17,41 @@ Credit for the curation belongs to them.
 
 **Company career sites.** Every link a board points at shows which careers
 platform that company uses. The company is then remembered in
-`data/companies.json`, and its own feed is read on every run. Six platforms are
-supported, which are Workday, Greenhouse, Ashby, Lever, SmartRecruiters and
-Workable. This is how a role can show up here before any board lists it.
+`data/companies.json`, and its own feed is read on every run. The supported
+platforms are Workday, Oracle Cloud, iCIMS, Eightfold, UKG, Greenhouse, Ashby,
+Lever, SmartRecruiters and Workable. An identifier that never answers is dropped
+after a few runs.
+
+**Careers pages with no feed.** Many employers and platforms publish no feed at
+all. For a number of them, the request their own careers page makes when an
+ordinary visitor opens it was worked out and is used here, with no login. That
+covers the platforms in `platforms.py` (Rippling, BambooHR, Pinpoint, Breezy,
+Recruitee, Teamtailor, Personio, Gem, Dover, Paylocity, JazzHR, Jobvite, SAP
+SuccessFactors, Phenom, Radancy, Avature and Taleo) and a few employers with
+software of their own (TikTok, ByteDance, Amazon, Apple, IBM and D. E. Shaw).
+None of these is a published feed, so any of them can stop working without
+notice. A site that refuses automated visitors is left alone and listed on the
+"Check by hand" tab instead.
+
+Some employers run a known platform under their own address, so a posting link
+does not show which one. A few such addresses are tested on each run, and the
+results are kept in `data/probed.json`. This is how a role can show up here before any board lists it.
+
+## The other two tabs
+
+**Not posted yet.** For each company that posted internships last summer, this
+shows the day its first listing appeared then and what it has posted so far this
+year. Companies tend to open at about the same time each year, so that day, one
+year on, is a rough guide to when to look. The history comes from older copies
+of the SimplifyJobs data file, read once by `history.py` into
+`data/history.json`. It is a guide and not a promise.
+
+**Check by hand.** Some employers run their careers pages on their own software,
+or on a platform there is no reader for, so their openings cannot be pulled in.
+They are logged here with a link. The list is built on every run from job board
+listings that point at such a site, with a count of the postings seen, plus the
+employers named in `data/manual.json` and any career site whose feed has stopped
+answering. The code is in `manual.py`.
 
 ## What the tags mean
 
@@ -85,6 +117,21 @@ graduation years, and named credentials. These are facts about the posting. They
 show as tags and drive the experience filter. Nothing about the reader is stored
 or compared, and the patterns can miss or misread a requirement.
 
+## Finding more employers
+
+`data/candidates.json` holds tens of thousands of company career sites gathered
+from public lists. Reading all of them on every run would be slow and would
+lean on those sites for no reason, since most never post a internship. So
+`survey.py` reads each candidate once in a while, and a site that has a
+internship open at that moment is added to `data/companies.json`, which
+is what the regular run reads. A scheduled job surveys one seventh of the
+candidates each night, so every candidate is looked at once a week.
+
+The candidate list was put together from the links in public internship and
+new-graduate job boards and from two open datasets of career site addresses:
+[kalil0321/ats-scrapers](https://github.com/kalil0321/ats-scrapers) (MIT) and
+[datascry/openroles](https://github.com/datascry/openroles) (CC BY-SA 4.0).
+
 ## Running it yourself
 
 It needs Python 3 and PyYAML, plus fastembed for the meaning score.
@@ -119,6 +166,10 @@ python3 semantic.py --rescore      # after a resume changes
 | `docs/listings.csv` | The same list for a spreadsheet |
 | `data/seen.json` | The day each listing was first seen |
 | `data/companies.json` | The career sites to check |
+| `data/history.json` | When each company first posted last summer |
+| `data/manual.json` | Employers to check by hand, written by hand |
+| `docs/timing.json` | What the "Not posted yet" tab shows |
+| `docs/manual.json` | What the "Check by hand" tab shows |
 | `data/terms.json` | The skills each posting mentions, read once and kept |
 | `out/new_<date>.md` | What appeared since the last run. Not committed |
 

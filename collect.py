@@ -53,6 +53,7 @@ from typing import Callable, Dict, List, Optional
 
 import ats
 import manual
+import platforms
 import match
 import semantic
 
@@ -61,7 +62,7 @@ DATA = os.path.join(HERE, "data")
 DOCS = os.path.join(HERE, "docs")
 OUT = os.path.join(HERE, "out")
 RAW = "https://raw.githubusercontent.com"
-UA = "internship-finder/1.0 (personal job search; python-urllib)"
+UA = "Mozilla/5.0 (compatible; internship-finder/1.0; personal job search)"
 TODAY = dt.date.today()
 
 
@@ -78,8 +79,10 @@ def _ipv4_only(host, port, family=0, *args, **kwargs):
 socket.getaddrinfo = _ipv4_only
 
 
-def fetch(url: str, timeout: int = 60, json_body: Optional[dict] = None) -> bytes:
-    headers = {"User-Agent": UA, "Accept": "application/json, text/plain, */*"}
+def fetch(url: str, timeout: int = 60, json_body: Optional[dict] = None,
+          headers: Optional[dict] = None) -> bytes:
+    headers = {"User-Agent": UA, "Accept": "application/json, text/plain, */*",
+               **(headers or {})}
     data = None
     if json_body is not None:
         headers["Content-Type"] = "application/json"
@@ -645,6 +648,9 @@ def unslim(rec: dict) -> dict:
     return out
 
 
+# Descriptions that arrive with a listing, so they need no second request.
+INLINE_TEXT: Dict[str, str] = {}
+
 CYCLE_START = "2026-06-01"       # postings from this day on count as this year's
 
 
@@ -802,6 +808,41 @@ def keep(rec: dict) -> bool:
 
 
 NEVER_WORKED_TRIES = 4
+PROBES_PER_RUN = 25
+
+
+def hosts_read(companies: Dict[str, dict]) -> List[str]:
+    """Careers hosts that a reader covers although their links do not show it."""
+    return [k.split(":", 1)[1].split("/")[0].split("|")[0] for k in companies
+            if k.split(":", 1)[0] in ("jibe", "rmk", "radancy", "phenom", "avature")]
+
+
+def probe_unknown_sites(companies: Dict[str, dict], board_rows: List[dict]) -> int:
+    """Some employers run a known careers platform under their own address, so a
+    posting link does not show which one. A few such addresses are tested on
+    each run to see whether a known platform answers, and the result is kept in
+    data/probed.json so no address is tested twice. Returns how many were added."""
+    path = os.path.join(DATA, "probed.json")
+    probed = load_json(path, {})
+    unknown = [e for e in manual.from_listings(board_rows, ats.discover, hosts_read(companies))
+               if e["platform"] == "Own site"]
+    unknown.sort(key=lambda e: -e["count"])
+    added = tested = 0
+    for e in unknown:
+        host = urllib.parse.urlsplit(e["url"]).netloc
+        if not host or host in probed:
+            continue
+        if tested >= PROBES_PER_RUN:
+            break
+        tested += 1
+        key = platforms.probe(host, lambda url, json_body=None, **kw: fetch(url, 12, json_body, **kw))
+        probed[host] = key or ""
+        if key and key not in companies:
+            companies[key] = {"name": e["name"], "added": TODAY.isoformat(), "from": "probe"}
+            added += 1
+    with open(path, "w") as fh:
+        json.dump(probed, fh, indent=0, sort_keys=True)
+    return added
 
 
 def update_registry(companies: Dict[str, dict], rows: List[dict]) -> int:
@@ -860,13 +901,18 @@ def main() -> int:
     os.makedirs(DATA, exist_ok=True)
     companies = load_json(os.path.join(DATA, "companies.json"), {})
     added = update_registry(companies, rows)
+    added += probe_unknown_sites(companies, board_rows)
     failed_sites: Dict[str, str] = {}
     careers_ran = not a.no_careers
     if careers_ran:
         t0 = time.time()
         got, failed_sites = ats.collect(
-            companies, lambda url, json_body=None: fetch(url, 25, json_body), listing,
+            companies, lambda url, json_body=None, headers=None: fetch(url, 25, json_body, headers), listing,
             progress=lambda n, total: print(f"    careers {n}/{total}", flush=True))
+        for r in got:                 # a description that came with the listing
+            if r.get("_text"):
+                INLINE_TEXT[r["url"]] = match.plain(r["_text"])
+            r.pop("_text", None)
         rows += got
         report["careers"] = (f"{len(got)} listings from {len(companies)} company "
                              f"sites, {len(failed_sites)} unreachable")
@@ -922,7 +968,7 @@ def main() -> int:
     # Read descriptions and score each listing against the resume profile.
     t0 = time.time()
     m = match.enrich(listings, lambda url, json_body=None: fetch(url, 20, json_body),
-                     a.describe,
+                     a.describe, inline=INLINE_TEXT,
                      progress=lambda n, total: print(f"    descriptions {n}/{total}",
                                                      flush=True))
     report["match"] = (f"{m['described']} of {len(listings)} descriptions read"
@@ -944,7 +990,9 @@ def main() -> int:
                 "platform": k.split(":", 1)[0].title(), "origin": "feed not answering",
                 "note": f"Its job feed has not answered for {e['fails']} runs in a row"}
                for k, e in companies.items() if e.get("worked") and e.get("fails", 0) >= 6]
-    by_hand = manual.write(DOCS, DATA, manual.from_listings(board_rows, ats.discover), failing)
+    by_hand = manual.write(DOCS, DATA,
+                           manual.from_listings(board_rows, ats.discover, hosts_read(companies)),
+                           failing)
     waiting = write_timing(listings)
 
     path = write_outputs(listings, new, report, first_run,

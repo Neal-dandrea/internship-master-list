@@ -68,15 +68,19 @@ def _site_key(url: str):
     return host, f"https://{p.netloc}"
 
 
-def from_listings(rows: List[dict], discover) -> List[dict]:
+def from_listings(rows: List[dict], discover, known_hosts=()) -> List[dict]:
     """Employer sites behind board listings that no reader understands.
 
     `rows` are raw board rows (company, url). `discover(url)` returns something
-    truthy when a reader exists for that link."""
+    truthy when a reader exists for that link. `known_hosts` are careers hosts
+    that are read some other way, so they are not unreadable either."""
+    known = {h.lower().removeprefix("www.") for h in known_hosts}
     groups: Dict[str, dict] = {}
     for r in rows:
         url = r.get("url") or ""
         if not url.startswith("http") or discover(url):
+            continue
+        if urllib.parse.urlsplit(url).netloc.lower().removeprefix("www.") in known:
             continue
         if any(a in url for a in AGGREGATORS):
             continue

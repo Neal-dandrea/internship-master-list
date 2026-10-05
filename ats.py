@@ -19,6 +19,8 @@ import urllib.parse
 from concurrent.futures import ThreadPoolExecutor
 from typing import Callable, Dict, List, Optional, Tuple
 
+import platforms
+
 TODAY = dt.date.today()
 
 # What counts as an internship when a feed returns every job at the company.
@@ -43,20 +45,51 @@ _PATTERNS = [
 ]
 _WORKDAY = re.compile(r"https?://([a-z0-9-]+)\.(wd\d+)\.myworkdayjobs\.com/"
                       r"(?:[a-z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]+)")
+# The same sites are also reached as wdN.myworkdaysite.com/recruiting/TENANT/SITE.
+_WORKDAYSITE = re.compile(r"https?://(wd\d+)\.myworkdaysite\.com/(?:[a-z]{2}-[A-Z]{2}/)?"
+                          r"recruiting/([a-z0-9_-]+)/([A-Za-z0-9_-]+)", re.I)
 _ORACLE = re.compile(r"https?://([a-z0-9.-]+\.oraclecloud\.com)/hcmUI/CandidateExperience/"
                      r"[a-z-]+/sites/([A-Za-z0-9_-]+)")
 _ICIMS = re.compile(r"https?://([a-z0-9-]+)\.icims\.com")
 _EIGHTFOLD = re.compile(r"https?://([a-z0-9-]+\.eightfold\.ai)")
 _UKG = re.compile(r"https?://((?:recruiting2?\.ultipro\.com|[a-z0-9.-]+\.ukg\.net))/"
                   r"([A-Za-z0-9]+)/JobBoard/([0-9a-fA-F-]{36})")
+_MORE_PATTERNS = [
+    ("rippling", re.compile(r"ats\.rippling\.com/(?:[a-z]{2}-[A-Z]{2}/)?([^/?#]+)/jobs")),
+    ("bamboohr", re.compile(r"https?://([a-z0-9-]+)\.bamboohr\.com/")),
+    ("pinpoint", re.compile(r"https?://([a-z0-9-]+)\.pinpointhq\.com")),
+    ("breezy", re.compile(r"https?://([a-z0-9-]+)\.breezy\.hr")),
+    ("jazzhr", re.compile(r"https?://([a-z0-9-]+)\.applytojob\.com/")),
+    ("jobvite", re.compile(r"jobs\.jobvite\.com/(?:careers/)?([^/?#]+)/(?:job|jobs|search)")),
+]
+# Employers with a reader of their own, recognised by their careers address.
+_FIXED_SITES = [
+    ("atsx", "tiktok", "lifeattiktok.com"), ("atsx", "bytedance", "jobs.bytedance.com"),
+    ("atsx", "bytedance", "joinbytedance.com"), ("amazon", "jobs", "amazon.jobs"),
+    ("apple", "jobs", "jobs.apple.com"),
+    ("eightfold", "apply.careers.microsoft.com|microsoft.com", "careers.microsoft.com"),
+    ("eightfold", "careers.qualcomm.com|qualcomm.com", "careers.qualcomm.com"),
+    ("deshaw", "jobs", "deshaw.com/careers"), ("ibm", "jobs", "careers.ibm.com"),
+    ("jibe", "careers.amd.com", "careers.amd.com"), ("jibe", "jobs.keysight.com", "jobs.keysight.com"),
+    ("jibe", "careers.garmin.com", "careers.garmin.com"),
+    ("rmk", "jobs.l3harris.com", "jobs.l3harris.com"), ("rmk", "careers.qorvo.com", "careers.qorvo.com"),
+    ("radancy", "jobs.boeing.com", "jobs.boeing.com"),
+    ("radancy", "www.disneycareers.com/en", "disneycareers.com"),
+    ("avature", "bloomberg.avature.net/careers", "bloomberg.avature.net"),
+]
 _NOT_TOKENS = {"embed", "jobs", "j", "job", "careers", "api", "wday"}
 
 
 def discover(url: str) -> Optional[Tuple[str, str]]:
     """(platform, identifier) for a posting link, or None if it is not one we read."""
     m = _WORKDAY.search(url)
-    if m and m.group(3).lower() not in _NOT_TOKENS:
+    # "Careers" and "jobs" are common names for a Workday site, so they are fine
+    # here even though they are not company names elsewhere.
+    if m and m.group(3).lower() not in ("wday", "api", "job"):
         return "workday", "/".join(m.groups())
+    m = _WORKDAYSITE.search(url)
+    if m:
+        return "workday", f"{m.group(2)}/{m.group(1)}/{m.group(3)}"
     m = _ORACLE.search(url)
     if m:
         return "oracle", "/".join(m.groups())
@@ -69,6 +102,12 @@ def discover(url: str) -> Optional[Tuple[str, str]]:
     m = _UKG.search(url)
     if m:
         return "ukg", "/".join(m.groups())
+    found = platforms.discover(url)
+    if found:
+        return found
+    for name, key, host in _FIXED_SITES:
+        if host in url:
+            return name, key
     for name, pat in _PATTERNS:
         m = pat.search(url)
         if m and m.group(1).lower() not in _NOT_TOKENS:
@@ -346,10 +385,322 @@ def ukg(token, company, fetch, listing, max_jobs: int = 300):
     return out
 
 
+# ── readers worked out by watching what each careers page itself requests ────
+# None of these is a published feed. Each is the request the employer's own
+# careers page makes, or the page itself, read without logging in. They can
+# change without notice, and a reader that stops working simply reports that.
+def _text(html_text: str) -> str:
+    import html as _html
+    return " ".join(_html.unescape(re.sub(r"<[^>]+>", " ", html_text or "")).split())
+
+
+def jibe(token, company, fetch, listing, max_pages: int = 6):
+    """Career sites on iCIMS's newer front end. The identifier is the careers host."""
+    out = []
+    for page in range(1, max_pages + 1):
+        doc = json.loads(fetch(f"https://{token}/api/jobs?keywords=intern&page={page}"
+                               f"&limit=100&sortBy=posted_date&descending=true"))
+        jobs = doc.get("jobs") or []
+        for item in jobs:
+            j = item.get("data") or {}
+            if not is_internship(j.get("title")):
+                continue
+            url = ((j.get("meta_data") or {}).get("canonical_url")
+                   or f"https://{token}/jobs/{j.get('slug') or j.get('req_id')}")
+            row = listing("careers", company, j["title"], url,
+                          location=j.get("full_location") or j.get("location_name") or "",
+                          posted=_date(j.get("posted_date")))
+            row["_text"] = " ".join(str(j.get(k) or "") for k in
+                                    ("description", "qualifications", "responsibilities"))
+            out.append(row)
+        if len(jobs) < 100 or page * 100 >= int(doc.get("totalCount") or 0):
+            break
+    return out
+
+
+def rippling(token, company, fetch, listing):
+    doc = json.loads(fetch(f"https://ats.rippling.com/api/v2/board/{token}/jobs"
+                           f"?page=0&pageSize=500"))
+    return [listing("careers", company, j["name"], j["url"],
+                    location="; ".join(x.get("name") or "" for x in j.get("locations") or []))
+            for j in doc.get("items") or [] if is_internship(j.get("name"))]
+
+
+def bamboohr(token, company, fetch, listing):
+    doc = json.loads(fetch(f"https://{token}.bamboohr.com/careers/list"))
+    out = []
+    for j in doc.get("result") or []:
+        title = j.get("jobOpeningName") or ""
+        if STALE_YEAR.search(title):
+            continue
+        if not (is_internship(title) or (j.get("employmentStatusLabel") or "") == "Intern"):
+            continue
+        loc = j.get("location") or {}
+        where = ", ".join(x for x in (loc.get("city"), loc.get("state")) if x)
+        if j.get("isRemote"):
+            where = (where + "; Remote").strip("; ")
+        out.append(listing("careers", company, title,
+                           f"https://{token}.bamboohr.com/careers/{j['id']}", location=where))
+    return out
+
+
+def pinpoint(token, company, fetch, listing):
+    doc = json.loads(fetch(f"https://{token}.pinpointhq.com/postings.json"))
+    out = []
+    for j in doc.get("data") or []:
+        if not (is_internship(j.get("title")) or j.get("employment_type") == "internship"):
+            continue
+        if STALE_YEAR.search(j.get("title") or ""):
+            continue
+        row = listing("careers", company, j["title"], j["url"],
+                      location=(j.get("location") or {}).get("name") or "")
+        row["_text"] = " ".join(str(j.get(k) or "") for k in
+                                ("description", "key_responsibilities",
+                                 "skills_knowledge_expertise"))
+        out.append(row)
+    return out
+
+
+def breezy(token, company, fetch, listing):
+    doc = json.loads(fetch(f"https://{token}.breezy.hr/json?verbose=true"))
+    out = []
+    for j in doc if isinstance(doc, list) else []:
+        kind = ((j.get("type") or {}).get("name") or "")
+        if not (is_internship(j.get("name")) or "intern" in kind.lower()):
+            continue
+        row = listing("careers", company, j["name"], j["url"],
+                      location=(j.get("location") or {}).get("name") or "",
+                      posted=_date(j.get("published_date")))
+        row["_text"] = j.get("description") or ""
+        out.append(row)
+    return out
+
+
+_JAZZ = re.compile(r'<li class="list-group-item">.*?<a href="(https://[^"]+/apply/[A-Za-z0-9]+/[^"]*)">'
+                   r"\s*(.*?)\s*</a>.*?fa-map-marker'></i>(.*?)</li>", re.S)
+
+
+def jazzhr(token, company, fetch, listing):
+    page = fetch(f"https://{token}.applytojob.com/apply").decode("utf-8", errors="replace")
+    return [listing("careers", company, _text(title), url, location=_text(loc))
+            for url, title, loc in _JAZZ.findall(page) if is_internship(_text(title))]
+
+
+_JOBVITE = re.compile(r'<td class="jv-job-list-name">\s*<a href="(/[^"/]+/job/[A-Za-z0-9]+)">(.*?)</a>'
+                      r'\s*</td>\s*<td class="jv-job-list-location">(.*?)</td>', re.S)
+
+
+def jobvite(token, company, fetch, listing, max_pages: int = 4):
+    out = []
+    for p in range(max_pages):
+        page = fetch(f"https://jobs.jobvite.com/{token}/search?q=intern&p={p}").decode(
+            "utf-8", errors="replace")
+        rows = _JOBVITE.findall(page)
+        for path, title, loc in rows:
+            if is_internship(_text(title)):
+                out.append(listing("careers", company, _text(title),
+                                   "https://jobs.jobvite.com" + path, location=_text(loc)))
+        if len(rows) < 50 or "jv-pagination-next" not in page:
+            break
+    return out
+
+
+_RMK_LINK = re.compile(r'<a[^>]*class="[^"]*jobTitle-link[^"]*"[^>]*href="(/job/[^"]+)"[^>]*>(.*?)</a>'
+                       r'|<a[^>]*href="(/job/[^"]+)"[^>]*class="[^"]*jobTitle-link[^"]*"[^>]*>(.*?)</a>',
+                       re.S)
+_RMK_LOC = re.compile(r'section-location-value[^>]*>(.*?)</|class="jobLocation[^"]*"[^>]*>(.*?)</', re.S)
+_RMK_TOTAL = re.compile(r"of\s+(?:<b>)?\s*([\d,]+)\s*(?:</b>)?\s*(?:Jobs|Results)", re.I)
+
+
+def rmk(token, company, fetch, listing, max_pages: int = 5):
+    """SAP SuccessFactors career sites. The identifier is the careers host. The
+    results are a web page in one of two layouts, both read here."""
+    out, seen = [], set()
+    for n in range(max_pages):
+        page = fetch(f"https://{token}/search/?q=&title=intern&sortColumn=referencedate"
+                     f"&sortDirection=desc&startrow={n * 100}").decode("utf-8", errors="replace")
+        # Each posting is a table row or a tile. Split on either marker.
+        chunks = re.split(r'<tr class="data-row|<li class="job-tile', page)[1:]
+        new = 0
+        for chunk in chunks:
+            m = _RMK_LINK.search(chunk)
+            if not m:
+                continue
+            path = m.group(1) or m.group(3)
+            title = _text(m.group(2) or m.group(4))
+            if path in seen:
+                continue
+            seen.add(path)
+            new += 1
+            if not is_internship(title):
+                continue
+            where = ""
+            for g1, g2 in _RMK_LOC.findall(chunk):       # skip the "Location" label itself
+                text = _text(g1 or g2)
+                if text and text.lower() != "location":
+                    where = text
+                    break
+            out.append(listing("careers", company, title, f"https://{token}{path}",
+                               location=where))
+        total = _RMK_TOTAL.search(page)
+        if not new or (total and (n + 1) * 100 >= int(total.group(1).replace(",", ""))):
+            break
+    return out
+
+
+# TikTok and ByteDance run the same careers software. Each needs its own
+# "website-path" header, and a posting's public address differs from the API's.
+_ATSX = {
+    "tiktok": ("https://api.lifeattiktok.com", "tiktok", "https://lifeattiktok.com/search/{id}"),
+    "bytedance": ("https://jobs.bytedance.com", "en", "https://joinbytedance.com/search/{id}"),
+}
+
+
+def atsx(token, company, fetch, listing, max_jobs: int = 2500):
+    base, site, link = _ATSX[token]
+    out, offset = [], 0
+    while offset < max_jobs:
+        doc = json.loads(fetch(
+            base + "/api/v1/public/supplier/search/job/posts",
+            json_body={"recruitment_id_list": ["202"],        # 202 is "Intern"
+                       "job_category_id_list": [], "subject_id_list": [],
+                       "location_code_list": [], "keyword": "", "limit": 100,
+                       "offset": offset},
+            headers={"website-path": site}))
+        data = doc.get("data") or {}
+        rows = data.get("job_post_list") or []
+        for j in rows:
+            if STALE_YEAR.search(j.get("title") or ""):
+                continue
+            place, parts = j.get("city_info") or {}, []
+            while place and len(parts) < 3:
+                if place.get("en_name"):
+                    parts.append(place["en_name"])
+                place = place.get("parent") or {}
+            row = listing("careers", company, j["title"], link.format(id=j["id"]),
+                          location=", ".join(parts))
+            row["_text"] = (j.get("description") or "") + "\n" + (j.get("requirement") or "")
+            out.append(row)
+        offset += 100
+        if len(rows) < 100 or offset >= int(data.get("count") or 0):
+            break
+    return out
+
+
+def amazon(token, company, fetch, listing, max_jobs: int = 1000):
+    out, offset = [], 0
+    while offset < max_jobs:
+        doc = json.loads(fetch("https://www.amazon.jobs/en/search.json?base_query=intern"
+                               f"&result_limit=100&offset={offset}&sort=recent"))
+        rows = doc.get("jobs") or []
+        for j in rows:
+            if not (is_internship(j.get("title")) or j.get("is_intern")):
+                continue
+            posted = None
+            try:
+                posted = dt.datetime.strptime(" ".join((j.get("posted_date") or "").split()),
+                                              "%B %d, %Y").date().isoformat()
+            except ValueError:
+                pass
+            row = listing("careers", company, j["title"],
+                          "https://www.amazon.jobs" + j["job_path"],
+                          location=j.get("normalized_location") or "", posted=posted)
+            row["_text"] = " ".join(str(j.get(k) or "") for k in
+                                    ("description", "basic_qualifications",
+                                     "preferred_qualifications"))
+            out.append(row)
+        offset += 100
+        if len(rows) < 100 or offset >= int(doc.get("hits") or 0):
+            break
+    return out
+
+
+_APPLE = re.compile(r'__staticRouterHydrationData\s*=\s*JSON\.parse\("(.*?)"\);', re.S)
+
+
+def apple_state(page: str) -> dict:
+    m = _APPLE.search(page)
+    return json.loads(json.loads('"' + m.group(1) + '"')) if m else {}
+
+
+def apple(token, company, fetch, listing, max_pages: int = 15):
+    out = []
+    for n in range(1, max_pages + 1):
+        page = fetch("https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN"
+                     f"&sort=newest&page={n}").decode("utf-8", errors="replace")
+        search = (apple_state(page).get("loaderData") or {}).get("search") or {}
+        rows = search.get("searchResults") or []
+        for j in rows:
+            where = "; ".join(x.get("name") or "" for x in j.get("locations") or [])
+            out.append(listing(
+                "careers", company, j["postingTitle"],
+                f"https://jobs.apple.com/en-us/details/{j['positionId']}/"
+                f"{j.get('transformedPostingTitle') or ''}",
+                location=where, posted=_date(j.get("postDateInGMT"))))
+        if len(rows) < 20 or n * 20 >= int(search.get("totalRecords") or 0):
+            break
+    return out
+
+
+def deshaw(token, company, fetch, listing):
+    """D. E. Shaw lists its internships inside its careers page."""
+    page = fetch("https://www.deshaw.com/careers").decode("utf-8", errors="replace")
+    m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', page, re.S)
+    props = json.loads(m.group(1))["props"]["pageProps"]
+    out = []
+    for j in props.get("internships") or []:
+        data = j.get("data") or j
+        out.append(listing("careers", company, j.get("displayName") or data.get("displayName"),
+                           "https://www.deshaw.com/careers/" + str(data.get("jobUrl") or j.get("jobUrl")),
+                           location="; ".join(o.get("name") or "" for o in
+                                              (j.get("office") or data.get("office") or []))))
+    return out
+
+
+def ibm(token, company, fetch, listing, max_jobs: int = 300):
+    out, start = [], 0
+    while start < max_jobs:
+        doc = json.loads(fetch("https://www-api.ibm.com/search/api/v2", json_body={
+            "appId": "careers", "scopes": ["careers2"],
+            "query": {"bool": {"must": [{"simple_query_string": {
+                "query": "intern", "fields": ["title^3", "description^2", "body^1"]}}]}},
+            "size": 30, "from": start, "sort": [{"dcdate": "desc"}, {"_score": "desc"}],
+            "lang": "zz", "localeSelector": {}, "sm": {"query": "intern", "lang": "zz"},
+            "_source": ["_id", "title", "url", "description", "language", "entitled",
+                        "field_keyword_17", "field_keyword_08", "field_keyword_18",
+                        "field_keyword_19", "dcdate"]}))
+        hits = (doc.get("hits") or {}).get("hits") or []
+        for h in hits:
+            j = h.get("_source") or {}
+            if not (is_internship(j.get("title")) or j.get("field_keyword_18") == "Internship"):
+                continue
+            row = listing("careers", company, j["title"], j["url"],
+                          location=j.get("field_keyword_19") or "", posted=_date(j.get("dcdate")))
+            row["_text"] = j.get("description") or ""
+            out.append(row)
+        start += 30
+        total = ((doc.get("hits") or {}).get("total") or {}).get("value") or 0
+        if len(hits) < 30 or start >= int(total):
+            break
+    return out
+
+
+def _generic(reader):
+    """Wrap a reader from platforms.py, which serves both boards, for this one:
+    keep internships, and search for "intern" where a search is needed."""
+    return lambda token, company, fetch, listing: reader(
+        token, company, fetch, listing, is_internship, ["intern"])
+
+
 READERS: Dict[str, Callable] = {
+    **{name: _generic(fn) for name, fn in platforms.READERS.items()},
+    "deshaw": deshaw, "ibm": ibm,
     "greenhouse": greenhouse, "lever": lever, "ashby": ashby,
     "smartrecruiters": smartrecruiters, "workable": workable, "workday": workday,
     "oracle": oracle, "icims": icims, "eightfold": eightfold, "ukg": ukg,
+    "jibe": jibe, "rippling": rippling, "bamboohr": bamboohr, "pinpoint": pinpoint,
+    "breezy": breezy, "jazzhr": jazzhr, "jobvite": jobvite, "rmk": rmk,
+    "atsx": atsx, "amazon": amazon, "apple": apple,
 }
 
 

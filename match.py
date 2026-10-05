@@ -95,7 +95,7 @@ _JSONLD = re.compile(r'<script[^>]+type="application/ld\+json"[^>]*>(.*?)</scrip
 def _jsonld_description(page: str) -> str:
     for block in _JSONLD.findall(page):
         try:
-            doc = json.loads(block)
+            doc = json.loads(block, strict=False)      # some pages leave raw newlines in
         except ValueError:
             continue
         for item in (doc if isinstance(doc, list) else [doc]):
@@ -156,6 +156,34 @@ def describe(url: str, ats: List[str], fetch: Callable, ashby_cache: dict) -> st
         return plain(" ".join(str(item.get(k) or "") for k in (
             "ExternalDescriptionStr", "ExternalQualificationsStr",
             "ExternalResponsibilitiesStr", "CorporateDescriptionStr")))
+    m = re.search(r"ats\.rippling\.com/(?:[a-z]{2}-[A-Z]{2}/)?([^/?#]+)/jobs/([0-9a-f-]{36})", url)
+    if m:
+        doc = json.loads(fetch(f"https://ats.rippling.com/api/v2/board/{m.group(1)}/jobs/{m.group(2)}"))
+        d = doc.get("description") or {}
+        return plain((d.get("role") or "") + " " + (d.get("company") or ""))
+    m = re.search(r"https?://([a-z0-9-]+)\.bamboohr\.com/careers/(\d+)", url)
+    if m:
+        doc = json.loads(fetch(f"https://{m.group(1)}.bamboohr.com/careers/{m.group(2)}/detail"))
+        return plain(((doc.get("result") or {}).get("jobOpening") or {}).get("description") or "")
+    m = re.search(r"https?://(apply\.careers\.microsoft\.com)/careers/job/(\d+)", url)
+    if m:
+        doc = json.loads(fetch(f"https://{m.group(1)}/api/pcsx/position_details"
+                               f"?position_id={m.group(2)}&domain=microsoft.com&hl=en"))
+        return plain((doc.get("data") or {}).get("jobDescription") or "")
+    if "jobs.apple.com" in url:
+        import ats as _ats
+        jobs = ((_ats.apple_state(fetch(url).decode("utf-8", errors="replace"))
+                 .get("loaderData") or {}).get("jobDetails") or {}).get("jobsData") or {}
+        return plain(" \n ".join(str(jobs.get(k) or "") for k in (
+            "jobSummary", "description", "minimumQualifications", "preferredQualifications")))
+    page = fetch(url).decode("utf-8", errors="replace")
+    # SuccessFactors and Jobvite pages mark the description in the page itself.
+    for pat in (r'itemprop="description"[^>]*>(.*?)</span>\s*</div>|class="jobdescription"[^>]*>(.*?)</span>',
+                r'<div class="jv-job-detail-description">(.*?)</div>\s*<div class="jv-job-detail'):
+        m = re.search(pat, page, re.S)
+        if m and len(plain(next(g for g in m.groups() if g))) > 200:
+            return plain(next(g for g in m.groups() if g))
+    return _jsonld_description(page)
     # Anything else: many career pages embed the posting as structured data.
     return _jsonld_description(fetch(url).decode("utf-8", errors="replace"))
 
@@ -174,13 +202,15 @@ def title_terms(rec: dict) -> Set[str]:
 
 
 def read_descriptions(listings: List[dict], fetch: Callable, budget: int,
-                      workers: int = 8, progress=None) -> Dict[str, dict]:
+                      workers: int = 8, progress=None,
+                      inline: Optional[Dict[str, str]] = None) -> Dict[str, dict]:
     """Fill the term cache for up to `budget` postings that have none yet.
 
     Returns the cache, pruned to the postings that are still active. Each entry
     is {"t": [terms], "b": "d" for description or "t" for title only, "n": tries,
     "q": the hard requirements found in the description (see requirements.py)}.
     """
+    inline = inline or {}
     cache = _load(TERMS, {})
     cache = {r["id"]: cache[r["id"]] for r in listings if r["id"] in cache}
     todo = [r for r in listings
@@ -192,6 +222,9 @@ def read_descriptions(listings: List[dict], fetch: Callable, budget: int,
     def one(rec: dict):
         text = ""
         for url in rec.get("urls") or [rec["url"]]:
+            if len(inline.get(url, "")) > 200:       # it came with the listing
+                text = inline[url]
+                break
             try:
                 text = describe(url, rec.get("ats") or [], fetch, ashby_cache)
             except Exception:                              # noqa: BLE001
@@ -307,10 +340,11 @@ def score(job: Set[str], resume: Set[str], w: Dict[str, float]) -> int:
 PRIOR, PRIOR_WEIGHT, FULL_DEPTH = 0.1, 14.0, 28.0
 
 
-def enrich(listings: List[dict], fetch: Callable, budget: int, progress=None) -> dict:
+def enrich(listings: List[dict], fetch: Callable, budget: int, progress=None,
+           inline: Optional[Dict[str, str]] = None) -> dict:
     """Read descriptions, then set match / match_resume / match_basis on each
     listing. Returns counts for the run report."""
-    cache = read_descriptions(listings, fetch, budget, progress=progress)
+    cache = read_descriptions(listings, fetch, budget, progress=progress, inline=inline)
     profile = load_profile()
     described = sum(1 for e in cache.values() if e["b"] == "d")
     for r in listings:

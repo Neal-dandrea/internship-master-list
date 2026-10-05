@@ -1,0 +1,549 @@
+[
+ {
+  "name": "Google",
+  "url": "https://www.google.com/about/careers/applications/jobs/results/?employment_type=INTERN",
+  "platform": "custom",
+  "note": "Filter employment_type=INTERN; PhD roles appear as 'Student Researcher' and 'PhD Software Engineering Intern'"
+ },
+ {
+  "name": "Google (students hub)",
+  "url": "https://www.google.com/about/careers/applications/students/",
+  "platform": "custom",
+  "note": "Student Researcher program and intern landing page"
+ },
+ {
+  "name": "Meta",
+  "url": "https://www.metacareers.com/jobs?roles[0]=Internship",
+  "platform": "custom",
+  "note": "Research Scientist Intern (PhD) roles are listed here, including FAIR. Returned HTTP 400 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "Apple",
+  "url": "https://jobs.apple.com/en-us/search?team=internships-STDNT-INTRN",
+  "platform": "custom",
+  "note": "Team filter Students > Internships; AIML residency and ML research intern roles"
+ },
+ {
+  "name": "Amazon",
+  "url": "https://www.amazon.jobs/content/en/career-programs/university",
+  "platform": "custom",
+  "note": "Applied Scientist Intern is the PhD track"
+ },
+ {
+  "name": "Amazon Science",
+  "url": "https://www.amazon.science/careers",
+  "platform": "custom",
+  "note": "Research-facing landing page, postings link back to amazon.jobs"
+ },
+ {
+  "name": "Amazon Robotics",
+  "url": "https://www.amazon.jobs/content/en/teams/ftr/amazon-robotics",
+  "platform": "custom",
+  "note": "Team page on amazon.jobs"
+ },
+ {
+  "name": "Tesla",
+  "url": "https://www.tesla.com/careers/search/?type=3",
+  "platform": "custom",
+  "note": "type=3 is Internship; includes Optimus and Autopilot roles; Akamai bot wall usually blocks curl"
+ },
+ {
+  "name": "TikTok",
+  "url": "https://lifeattiktok.com/early-careers",
+  "platform": "custom",
+  "note": "Early careers hub, search is JS rendered"
+ },
+ {
+  "name": "ByteDance",
+  "url": "https://joinbytedance.com/search",
+  "platform": "custom",
+  "note": "JS rendered search; Seed and AI Lab intern roles"
+ },
+ {
+  "name": "IBM",
+  "url": "https://www.ibm.com/careers/search",
+  "platform": "custom",
+  "note": "Filter by Internship; IBM Research roles are included"
+ },
+ {
+  "name": "IBM Research",
+  "url": "https://www.ibm.com/careers/research",
+  "platform": "custom",
+  "note": "Research landing page"
+ },
+ {
+  "name": "LinkedIn",
+  "url": "https://careers.linkedin.com/students",
+  "platform": "custom"
+ },
+ {
+  "name": "Shopify",
+  "url": "https://www.shopify.com/careers",
+  "platform": "custom"
+ },
+ {
+  "name": "Epic Systems",
+  "url": "https://careers.epic.com/jobs/",
+  "platform": "custom"
+ },
+ {
+  "name": "MathWorks",
+  "url": "https://www.mathworks.com/company/jobs/opportunities/search?job_type_id%5B%5D=1756",
+  "platform": "custom",
+  "note": "Engineering Development Group and intern roles. Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "Intuit",
+  "url": "https://jobs.intuit.com/search-jobs/intern",
+  "platform": "TalentBrew (Radancy)"
+ },
+ {
+  "name": "SAP",
+  "url": "https://jobs.sap.com/search/?q=intern",
+  "platform": "SuccessFactors",
+  "note": "Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "Siemens",
+  "url": "https://jobs.siemens.com/en_US/externaljobs",
+  "platform": "Avature",
+  "note": "Includes Siemens EDA and Siemens Technology research. Platform label is from the URL pattern, not confirmed"
+ },
+ {
+  "name": "Huawei",
+  "url": "https://career.huawei.com/reccampportal/portal5/index.html",
+  "platform": "custom",
+  "note": "Campus portal"
+ },
+ {
+  "name": "Futurewei",
+  "url": "https://www.futurewei.com/careers",
+  "platform": "custom",
+  "note": "US research arm"
+ },
+ {
+  "name": "Alibaba",
+  "url": "https://talent.alibaba.com/",
+  "platform": "custom",
+  "note": "Includes DAMO Academy"
+ },
+ {
+  "name": "DJI",
+  "url": "https://we.dji.com/index_en.html",
+  "platform": "custom"
+ },
+ {
+  "name": "Electronic Arts",
+  "url": "https://jobs.ea.com/en_US/careers/Home/?8171=%5B10690%5D",
+  "platform": "Avature",
+  "note": "SEED research interns"
+ },
+ {
+  "name": "Honda",
+  "url": "https://careers.honda.com/us/en",
+  "platform": "Phenom"
+ },
+ {
+  "name": "Honda Research Institute USA",
+  "url": "https://usa.honda-ri.com/careers",
+  "platform": "custom",
+  "note": "Research internships in robotics and ML"
+ },
+ {
+  "name": "Citadel",
+  "url": "https://www.citadel.com/careers/open-opportunities/students/",
+  "platform": "custom",
+  "note": "Quant research and SWE internships. Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "Citadel Securities",
+  "url": "https://www.citadelsecurities.com/careers/open-opportunities/students/",
+  "platform": "custom",
+  "note": "Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "Two Sigma",
+  "url": "https://careers.twosigma.com/",
+  "platform": "Avature",
+  "note": "Root returns 200. The /careers/SearchJobs path 302s then 404s for curl"
+ },
+ {
+  "name": "Bloomberg",
+  "url": "https://bloomberg.avature.net/careers/SearchJobs",
+  "platform": "Avature",
+  "note": "Includes Bloomberg AI and CTO office PhD internships"
+ },
+ {
+  "name": "Renaissance Technologies",
+  "url": "https://www.rentec.com/Careers.action",
+  "platform": "custom",
+  "note": "No public internship listing most years"
+ },
+ {
+  "name": "Balyasny Asset Management",
+  "url": "https://www.bamfunds.com/careers",
+  "platform": "custom",
+  "note": "Applications run through a Salesforce site"
+ },
+ {
+  "name": "Quantlab",
+  "url": "https://www.quantlab.com/careers/",
+  "platform": "custom",
+  "note": "Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "D. E. Shaw Research",
+  "url": "https://www.deshawresearch.com/",
+  "platform": "custom",
+  "note": "Home page only, the careers page path I tried returned 404. Separate from D. E. Shaw group, whose iCIMS board is in candidates.json"
+ },
+ {
+  "name": "Bank of America (campus)",
+  "url": "https://careers.bankofamerica.com/en-us/students/campus-experience",
+  "platform": "custom",
+  "note": "Separate from the Workday site used for experienced hires"
+ },
+ {
+  "name": "UBS",
+  "url": "https://www.ubs.com/global/en/careers/students-and-graduates.html",
+  "platform": "custom",
+  "note": "Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "Nomura",
+  "url": "https://www.nomura.com/careers/",
+  "platform": "custom"
+ },
+ {
+  "name": "Arm",
+  "url": "https://careers.arm.com/emerging-talent",
+  "platform": "custom"
+ },
+ {
+  "name": "TSMC",
+  "url": "https://careers.tsmc.com/en_US/careers/SearchJobs",
+  "platform": "Avature",
+  "note": "403 to curl. Platform label is from the URL pattern, not confirmed"
+ },
+ {
+  "name": "MediaTek",
+  "url": "https://careers.mediatek.com/en/eREC",
+  "platform": "custom"
+ },
+ {
+  "name": "Seagate",
+  "url": "https://seagatecareers.com/",
+  "platform": "SuccessFactors"
+ },
+ {
+  "name": "Keysight",
+  "url": "https://jobs.keysight.com/external",
+  "platform": "custom"
+ },
+ {
+  "name": "Sony AI",
+  "url": "https://ai.sony/join-us",
+  "platform": "custom",
+  "note": "Research internships; Sony corporate Workday sites are in candidates.json"
+ },
+ {
+  "name": "Lockheed Martin",
+  "url": "https://www.lockheedmartinjobs.com/",
+  "platform": "TalentBrew (Radancy)",
+  "note": "Site root answers curl with a 302; deeper search paths redirected curl to a 404 page, so search for 'intern' in a browser"
+ },
+ {
+  "name": "L3Harris",
+  "url": "https://careers.l3harris.com/en/search-jobs/intern",
+  "platform": "TalentBrew (Radancy)"
+ },
+ {
+  "name": "General Atomics",
+  "url": "https://sjobs.brassring.com/TGnewUI/Search/Home/Home?partnerid=25539&siteid=5313",
+  "platform": "BrassRing",
+  "note": "ga-careers.com redirects to this BrassRing search"
+ },
+ {
+  "name": "BAE Systems",
+  "url": "https://jobs.baesystems.com/global/en/search-results?keywords=intern",
+  "platform": "Phenom"
+ },
+ {
+  "name": "SAIC",
+  "url": "https://jobs.saic.com/",
+  "platform": "custom",
+  "note": "Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "Mitsubishi Electric Research Labs (MERL)",
+  "url": "https://www.merl.com/employment/internship-openings",
+  "platform": "custom",
+  "note": "Large PhD internship program in robotics, control, ML, signal processing"
+ },
+ {
+  "name": "NEC Laboratories America",
+  "url": "https://www.nec-labs.com/careers/",
+  "platform": "custom",
+  "note": "PhD research internships"
+ },
+ {
+  "name": "NTT Research",
+  "url": "https://ntt-research.com/",
+  "platform": "custom",
+  "note": "Home page only, /careers returned 404"
+ },
+ {
+  "name": "FANUC America",
+  "url": "https://www.fanucamerica.com/careers",
+  "platform": "custom"
+ },
+ {
+  "name": "KUKA",
+  "url": "https://www.kuka.com/en-us/career",
+  "platform": "custom"
+ },
+ {
+  "name": "Teradyne / Universal Robots",
+  "url": "https://jobs.teradyne.com/",
+  "platform": "custom"
+ },
+ {
+  "name": "Allen Institute for AI (AI2)",
+  "url": "https://allenai.org/careers",
+  "platform": "custom",
+  "note": "Research internships year round"
+ },
+ {
+  "name": "Mila",
+  "url": "https://mila.quebec/en",
+  "platform": "custom",
+  "note": "Home page only, the careers paths I tried returned 404"
+ },
+ {
+  "name": "Vector Institute",
+  "url": "https://vectorinstitute.ai/about/careers/",
+  "platform": "custom"
+ },
+ {
+  "name": "NAVER LABS Europe",
+  "url": "https://careers.werecruit.io/en/naver-labs-europe",
+  "platform": "WeRecruit",
+  "note": "Robotics and vision research internships"
+ },
+ {
+  "name": "Max Planck Institute for Intelligent Systems",
+  "url": "https://is.mpg.de/jobs",
+  "platform": "custom",
+  "note": "Redirects curl to a bot challenge page (302)"
+ },
+ {
+  "name": "Inria",
+  "url": "https://jobs.inria.fr/public/classic/en/offres",
+  "platform": "custom"
+ },
+ {
+  "name": "Sandia National Laboratories",
+  "url": "https://www.sandia.gov/careers/careers/students-and-postdocs/internships-co-ops/",
+  "platform": "custom"
+ },
+ {
+  "name": "Los Alamos National Laboratory",
+  "url": "https://lanl.jobs/",
+  "platform": "custom"
+ },
+ {
+  "name": "Pacific Northwest National Laboratory",
+  "url": "https://careers.pnnl.gov/",
+  "platform": "custom"
+ },
+ {
+  "name": "Lawrence Berkeley National Laboratory",
+  "url": "https://jobs.lbl.gov/",
+  "platform": "custom"
+ },
+ {
+  "name": "Idaho National Laboratory",
+  "url": "https://inl.gov/careers/",
+  "platform": "custom",
+  "note": "Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "Princeton Plasma Physics Laboratory",
+  "url": "https://www.pppl.gov/careers",
+  "platform": "custom",
+  "note": "Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "NASA internships",
+  "url": "https://www.nasa.gov/learning-resources/internship-programs/",
+  "platform": "custom",
+  "note": "OSTEM internships at all centers"
+ },
+ {
+  "name": "NASA STEM Gateway",
+  "url": "https://stemgateway.nasa.gov/s/",
+  "platform": "custom",
+  "note": "Application system for NASA internships"
+ },
+ {
+  "name": "NIST",
+  "url": "https://www.nist.gov/careers/student-opportunities",
+  "platform": "custom",
+  "note": "SURF and Pathways"
+ },
+ {
+  "name": "MIT Lincoln Laboratory",
+  "url": "https://www.ll.mit.edu/careers/student-opportunities",
+  "platform": "custom"
+ },
+ {
+  "name": "Johns Hopkins APL",
+  "url": "https://www.jhuapl.edu/careers/internships",
+  "platform": "custom"
+ },
+ {
+  "name": "Georgia Tech Research Institute",
+  "url": "https://gtri.gatech.edu/careers",
+  "platform": "custom"
+ },
+ {
+  "name": "Southwest Research Institute",
+  "url": "https://www.swri.org/careers",
+  "platform": "custom"
+ },
+ {
+  "name": "Air Force Research Laboratory",
+  "url": "https://afresearchlab.com/careers-and-opportunities/career-employment/",
+  "platform": "custom"
+ },
+ {
+  "name": "AFRL Scholars Program",
+  "url": "https://afrlscholars.usra.edu/",
+  "platform": "custom",
+  "note": "Paid summer internships for graduate students. Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "Naval Research Laboratory",
+  "url": "https://www.nrl.navy.mil/Careers/Students/",
+  "platform": "custom",
+  "note": "Returned HTTP 403 to curl (bot protection), opens in a browser"
+ },
+ {
+  "name": "Naval Research Enterprise Internship Program (NREIP)",
+  "url": "https://www.navalsteminterns.us/internships/",
+  "platform": "custom"
+ },
+ {
+  "name": "Army Research Laboratory",
+  "url": "https://arl.devcom.army.mil/careers/",
+  "platform": "custom"
+ },
+ {
+  "name": "DOE SULI",
+  "url": "https://science.osti.gov/wdts/suli",
+  "platform": "custom",
+  "note": "Undergraduate lab internships"
+ },
+ {
+  "name": "DOE SCGSR",
+  "url": "https://science.osti.gov/wdts/scgsr",
+  "platform": "custom",
+  "note": "Graduate student research awards at DOE labs"
+ },
+ {
+  "name": "ORISE / Zintellect",
+  "url": "https://www.zintellect.com/",
+  "platform": "custom",
+  "note": "Catalog of DOE, DoD, NIH, FDA research participation programs"
+ },
+ {
+  "name": "NSA",
+  "url": "https://www.intelligencecareers.gov/nsa/students-and-internships",
+  "platform": "custom"
+ },
+ {
+  "name": "USAJOBS students",
+  "url": "https://www.usajobs.gov/Search/Results?hp=student",
+  "platform": "custom",
+  "note": "Federal Pathways internships"
+ },
+ {
+  "name": "CERN",
+  "url": "https://careers.cern/programmes/summer-studentship/",
+  "platform": "custom",
+  "note": "Summer student and technical student programs"
+ },
+ {
+  "name": "Booking.com",
+  "url": "https://jobs.booking.com/booking/jobs",
+  "platform": "custom"
+ },
+ {
+  "name": "Baidu",
+  "url": "https://talent.baidu.com/jobs/",
+  "platform": "custom",
+  "note": "China campus and intern portal; Baidu USA has a Greenhouse board in candidates.json"
+ },
+ {
+  "name": "Engineers Gate",
+  "url": "https://www.engineersgate.com/",
+  "platform": "custom",
+  "note": "Quant fund, home page only"
+ },
+ {
+  "name": "Savannah River National Laboratory",
+  "url": "https://www.srnl.gov/careers/",
+  "platform": "custom"
+ },
+ {
+  "name": "NCAR / UCAR",
+  "url": "https://www.ucar.edu/opportunities/careers",
+  "platform": "custom",
+  "note": "Includes SIParCS HPC and ML internships"
+ },
+ {
+  "name": "Institute for Defense Analyses",
+  "url": "https://www.ida.org/careers",
+  "platform": "custom"
+ },
+ {
+  "name": "NGA",
+  "url": "https://www.intelligencecareers.gov/nga/students-and-internships",
+  "platform": "custom"
+ },
+ {
+  "name": "DoD SMART Scholarship",
+  "url": "https://www.smartscholarship.org/smart",
+  "platform": "custom",
+  "note": "Scholarship with lab internships"
+ },
+ {
+  "name": "NSF MSGI",
+  "url": "https://orise.orau.gov/nsf-msgi/",
+  "platform": "custom",
+  "note": "Mathematical Sciences Graduate Internship at national labs"
+ },
+ {
+  "name": "DOE CSGF (Krell Institute)",
+  "url": "https://www.krellinst.org/csgf/",
+  "platform": "custom",
+  "note": "Fellowship with a required national lab practicum"
+ },
+ {
+  "name": "Adobe Research",
+  "url": "https://research.adobe.com/careers/internships/",
+  "platform": "custom",
+  "note": "Program page. Postings are on Adobe Workday (in candidates.json)"
+ },
+ {
+  "name": "NVIDIA Research",
+  "url": "https://www.nvidia.com/en-us/research/",
+  "platform": "custom",
+  "note": "Program page. Postings are on NVIDIA Workday (in candidates.json)"
+ },
+ {
+  "name": "Jefferson Lab",
+  "url": "https://www.jlab.org/recruiting",
+  "platform": "custom"
+ }
+]
