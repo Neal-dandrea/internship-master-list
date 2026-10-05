@@ -70,7 +70,7 @@
 },
 "ashby:AtomicSemi": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -545,7 +545,7 @@
 },
 "ashby:atomicsemi": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -3503,7 +3503,7 @@
 },
 "ashby:whatnot": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "WhatNot",
 "ok": false
 },
@@ -3659,7 +3659,7 @@
 },
 "avature:twosigma.avature.net/careers": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "Two Sigma",
 "ok": false
 },
@@ -14500,6 +14500,13 @@
 "ok": true,
 "worked": true
 },
+"jobvite:sikichcareers": {
+"added": "2026-10-05",
+"fails": 0,
+"name": "Sikich",
+"ok": true,
+"worked": true
+},
 "jobvite:tylertech": {
 "added": "2026-10-05",
 "fails": 0,
@@ -15006,7 +15013,7 @@
 },
 "lever:cirrus": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "Cirrus Logic",
 "ok": false
 },
@@ -16134,7 +16141,7 @@
 },
 "lever:quantinuum": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "Quantinuum",
 "ok": false
 },
@@ -19488,9 +19495,9 @@
 },
 "oracle:hcgn.fa.us2.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "name": "Citizens Financial Group",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hckz.fa.us2.oraclecloud.com/CX_1": {
@@ -19575,10 +19582,10 @@
 },
 "oracle:hcre.fa.us2.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Hcre (CX_1)",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hcri.fa.em2.oraclecloud.com/CX_1": {
@@ -19622,10 +19629,10 @@
 },
 "oracle:hcwt.fa.us2.oraclecloud.com/CX": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Denso",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hcwt.fa.us2.oraclecloud.com/CX_1": {
@@ -19678,18 +19685,18 @@
 },
 "oracle:hczw.fa.us2.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "CSC",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hczw.fa.us2.oraclecloud.com/CX_1001": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "CSC",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hdcs.fa.ap1.oraclecloud.com/CX_1": {
@@ -19750,10 +19757,10 @@
 },
 "oracle:hdiy.fa.us2.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "At Home",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hdjd.fa.em3.oraclecloud.com/CX_1": {
@@ -19766,18 +19773,18 @@
 },
 "oracle:hdjm.fa.ca2.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "URUS Group",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hdjm.fa.ca2.oraclecloud.com/CX_5": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Hdjm",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hdjq.fa.us2.oraclecloud.com/CX_1": {
@@ -19797,18 +19804,18 @@
 },
 "oracle:hdkk.fa.us6.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Cedars-Sinai",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hdkk.fa.us6.oraclecloud.com/CX_2001": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Hdkk",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hdks.fa.ca2.oraclecloud.com/CX_1": {
@@ -19828,9 +19835,9 @@
 },
 "oracle:hdnn.fa.us6.oraclecloud.com/CX": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "name": "Arconic",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hdow.fa.us6.oraclecloud.com/CX_1": {
@@ -19843,10 +19850,10 @@
 },
 "oracle:hdow.fa.us6.oraclecloud.com/CX_1001": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Newmark Group",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:hdow.fa.us6.oraclecloud.com/CX_1003": {
@@ -22912,13 +22919,13 @@
 },
 "taleo:energytransfer/etp_ext": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "Energy Transfer Partners",
 "ok": false
 },
 "taleo:kp/external": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "Kaiser Permanente",
 "ok": false
 },
@@ -31605,7 +31612,7 @@
 },
 "workday:intel/wd1/en-us": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "Intel",
 "ok": false
 },
@@ -33938,7 +33945,7 @@
 },
 "workday:nio/wd3/NIO_Careers": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "Nio",
 "ok": false
 },
@@ -34430,7 +34437,7 @@
 },
 "workday:osv-cci/wd1/CCICareers": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "Castleton Commodities International",
 "ok": false
 },
@@ -38494,7 +38501,7 @@
 },
 "workday:vhr-epri/wd1/epricareers": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "name": "EPRI",
 "ok": false
 },
