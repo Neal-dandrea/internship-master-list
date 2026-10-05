@@ -953,6 +953,22 @@
 "name": "Zuru",
 "ok": true
 },
+"eightfold:bostonscientific.eightfold.ai|": {
+"added": "2026-10-05",
+"name": "Boston Scientific"
+},
+"eightfold:eaton.eightfold.ai|": {
+"added": "2026-10-05",
+"name": "Eaton"
+},
+"eightfold:johndeere.eightfold.ai|": {
+"added": "2026-10-05",
+"name": "John Deere"
+},
+"eightfold:qualcomm.eightfold.ai|": {
+"added": "2026-10-05",
+"name": "Qualcomm"
+},
 "greenhouse:10alabs": {
 "added": "2026-10-04",
 "name": "10a Labs",
@@ -1853,6 +1869,242 @@
 "name": "ZipRecruiter",
 "ok": true
 },
+"icims:americas-cookmedical": {
+"added": "2026-10-05",
+"name": "Cook Group"
+},
+"icims:campus-americas": {
+"added": "2026-10-05",
+"name": "Atlassian"
+},
+"icims:campus-globalcareers-atlassian": {
+"added": "2026-10-05",
+"name": "Atlassian"
+},
+"icims:campus-libertymutual": {
+"added": "2026-10-05",
+"name": "Liberty Mutual"
+},
+"icims:campus-us-corgan": {
+"added": "2026-10-05",
+"name": "Corgan"
+},
+"icims:career-schwab": {
+"added": "2026-10-05",
+"name": "Charles Schwab"
+},
+"icims:careers-aluminumdynamics": {
+"added": "2026-10-05",
+"name": "Steel Dynamics"
+},
+"icims:careers-americas": {
+"added": "2026-10-05",
+"name": "Atlassian"
+},
+"icims:careers-apogeeusa": {
+"added": "2026-10-05",
+"name": "Apogee Engineering"
+},
+"icims:careers-benjaminmoore": {
+"added": "2026-10-05",
+"name": "Benjamin Moore"
+},
+"icims:careers-berkley": {
+"added": "2026-10-05",
+"name": "W.R. Berkley"
+},
+"icims:careers-blackhawknetwork": {
+"added": "2026-10-05",
+"name": "Blackhawk Network Holdings"
+},
+"icims:careers-bocusa": {
+"added": "2026-10-05",
+"name": "Bank of China USA"
+},
+"icims:careers-calamp": {
+"added": "2026-10-05",
+"name": "CalAmp"
+},
+"icims:careers-cooperhealth": {
+"added": "2026-10-05",
+"name": "Cooper University Health Care"
+},
+"icims:careers-cotiviti": {
+"added": "2026-10-05",
+"name": "Cotiviti"
+},
+"icims:careers-daktronics": {
+"added": "2026-10-05",
+"name": "Daktronics"
+},
+"icims:careers-daytonfreight": {
+"added": "2026-10-05",
+"name": "Dayton Freight Lines"
+},
+"icims:careers-empiricalfoods": {
+"added": "2026-10-05",
+"name": "Empirical Foods"
+},
+"icims:careers-federatedinsurance": {
+"added": "2026-10-05",
+"name": "Federated Insurance"
+},
+"icims:careers-framatome": {
+"added": "2026-10-05",
+"name": "Framatome"
+},
+"icims:careers-gdeb": {
+"added": "2026-10-05",
+"name": "General Dynamics"
+},
+"icims:careers-gdms": {
+"added": "2026-10-05",
+"name": "General Dynamics Mission Systems"
+},
+"icims:careers-growfinancial": {
+"added": "2026-10-05",
+"name": "Grow Financial Federal Credit Union"
+},
+"icims:careers-heart": {
+"added": "2026-10-05",
+"name": "American Heart Association"
+},
+"icims:careers-hexagonpositioning": {
+"added": "2026-10-05",
+"name": "Hexagon AB"
+},
+"icims:careers-hhsys": {
+"added": "2026-10-05",
+"name": "Star Dental Partners"
+},
+"icims:careers-hrblock": {
+"added": "2026-10-05",
+"name": "H&R Block"
+},
+"icims:careers-kinaxis": {
+"added": "2026-10-05",
+"name": "Kinaxis"
+},
+"icims:careers-nacg": {
+"added": "2026-10-05",
+"name": "North American Construction Group"
+},
+"icims:careers-nasco": {
+"added": "2026-10-05",
+"name": "NASCO"
+},
+"icims:careers-novelis": {
+"added": "2026-10-05",
+"name": "Novelis"
+},
+"icims:careers-peraton": {
+"added": "2026-10-05",
+"name": "Peraton"
+},
+"icims:careers-rcm": {
+"added": "2026-10-05",
+"name": "Rockefeller Capital Management"
+},
+"icims:careers-resonetics": {
+"added": "2026-10-05",
+"name": "Resonetics"
+},
+"icims:careers-rovisys": {
+"added": "2026-10-05",
+"name": "RoviSys"
+},
+"icims:careers-sas": {
+"added": "2026-10-05",
+"name": "SAS"
+},
+"icims:careers-sdsurf": {
+"added": "2026-10-05",
+"name": "SDSU Research Foundation"
+},
+"icims:careers-sig": {
+"added": "2026-10-05",
+"name": "Susquehanna International Group (SIG)"
+},
+"icims:careers-springswindowfashions": {
+"added": "2026-10-05",
+"name": "Springs Window Fashions"
+},
+"icims:careers-sscgp": {
+"added": "2026-10-05",
+"name": "Southern Star Central Gas Pipeline"
+},
+"icims:careers-steeldynamics": {
+"added": "2026-10-05",
+"name": "Steel Dynamics"
+},
+"icims:careers-thesilverlining": {
+"added": "2026-10-05",
+"name": "West Bend Insurance"
+},
+"icims:careers-tighebond": {
+"added": "2026-10-05",
+"name": "Tighe & Bond"
+},
+"icims:careers-upbring": {
+"added": "2026-10-05",
+"name": "Upbring"
+},
+"icims:careers-usa-titanmaterials": {
+"added": "2026-10-05",
+"name": "Titan Materials Group"
+},
+"icims:careers-westernsouthern": {
+"added": "2026-10-05",
+"name": "Western & Southern Financial Group"
+},
+"icims:careersen-mackenzieinvestments": {
+"added": "2026-10-05",
+"name": "Mackenzie Investments"
+},
+"icims:careersenus-itt-inc": {
+"added": "2026-10-05",
+"name": "ITT"
+},
+"icims:careersus-shure": {
+"added": "2026-10-05",
+"name": "Shure"
+},
+"icims:externalhourly-highgate": {
+"added": "2026-10-05",
+"name": "Highgate"
+},
+"icims:homeoffice-na-urbn": {
+"added": "2026-10-05",
+"name": "URBN"
+},
+"icims:ideas-sas": {
+"added": "2026-10-05",
+"name": "IDeaS"
+},
+"icims:jobs-cesi": {
+"added": "2026-10-05",
+"name": "Cole Engineering Services"
+},
+"icims:studentemployment-stthomas": {
+"added": "2026-10-05",
+"name": "University of St. Thomas"
+},
+"icims:university-uber": {
+"added": "2026-10-05",
+"name": "Uber"
+},
+"icims:us-erac": {
+"added": "2026-10-05",
+"name": "Enterprise Holdings"
+},
+"icims:uscampus-pepsico": {
+"added": "2026-10-05",
+"name": "PepsiCo"
+},
+"icims:uscareers-lennox": {
+"added": "2026-10-05",
+"name": "Lennox International"
+},
 "lever:CesiumAstro": {
 "added": "2026-10-04",
 "name": "CesiumAstro",
@@ -2087,6 +2339,190 @@
 "added": "2026-10-04",
 "name": "Zoox",
 "ok": true
+},
+"oracle:ebgj.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "Pella"
+},
+"oracle:ebxr.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "DTCC"
+},
+"oracle:ebxs.fa.us2.oraclecloud.com/CX_2": {
+"added": "2026-10-05",
+"name": "Michael Baker International"
+},
+"oracle:ecnf.fa.us2.oraclecloud.com/CX": {
+"added": "2026-10-05",
+"name": "Tradeweb"
+},
+"oracle:edbz.fa.us2.oraclecloud.com/CX": {
+"added": "2026-10-05",
+"name": "Texas Instruments"
+},
+"oracle:edel.fa.us2.oraclecloud.com/CX_2001": {
+"added": "2026-10-05",
+"name": "Fortinet"
+},
+"oracle:eedu.fa.em3.oraclecloud.com/CX_1003": {
+"added": "2026-10-05",
+"name": "WTW"
+},
+"oracle:eeho.fa.us2.oraclecloud.com/CX_45001": {
+"added": "2026-10-05",
+"name": "Oracle"
+},
+"oracle:eevd.fa.us6.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "Hearst"
+},
+"oracle:eexs.fa.us2.oraclecloud.com/GreenwoodVillageSouth": {
+"added": "2026-10-05",
+"name": "Greenwood Village South"
+},
+"oracle:eezy.fa.ca2.oraclecloud.com/CX": {
+"added": "2026-10-05",
+"name": "ATCO"
+},
+"oracle:efet.fa.us2.oraclecloud.com/CX_1009": {
+"added": "2026-10-05",
+"name": "Hilton Worldwide"
+},
+"oracle:efsp.fa.us6.oraclecloud.com/CX": {
+"added": "2026-10-05",
+"name": "Hoffman Construction"
+},
+"oracle:egay.fa.us6.oraclecloud.com/CX_4001": {
+"added": "2026-10-05",
+"name": "NOV"
+},
+"oracle:egud.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "AutoZone"
+},
+"oracle:egug.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "American Express"
+},
+"oracle:egup.fa.us2.oraclecloud.com/CX": {
+"added": "2026-10-05",
+"name": "Vertiv"
+},
+"oracle:ehpv.fa.em2.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "DP World"
+},
+"oracle:ejia.fa.us6.oraclecloud.com/CX_1001": {
+"added": "2026-10-05",
+"name": "S&C Electric Company"
+},
+"oracle:ekkh.fa.us2.oraclecloud.com/CX_2002": {
+"added": "2026-10-05",
+"name": "Hormel Foods"
+},
+"oracle:elyq.fa.em3.oraclecloud.com/CX": {
+"added": "2026-10-05",
+"name": "Newham"
+},
+"oracle:emit.fa.ca3.oraclecloud.com/CX_2001": {
+"added": "2026-10-05",
+"name": "WSP"
+},
+"oracle:eofe.fa.us2.oraclecloud.com/CX_1001": {
+"added": "2026-10-05",
+"name": "BNY"
+},
+"oracle:fa-eowa-saasfaprod1.fa.ocs.oraclecloud.com/CSXCareers": {
+"added": "2026-10-05",
+"name": "CSX"
+},
+"oracle:fa-eqcd-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "Hunt Oil Company"
+},
+"oracle:fa-errt-saasfaprod1.fa.ocs.oraclecloud.com/CX_2001": {
+"added": "2026-10-05",
+"name": "SCOR"
+},
+"oracle:fa-esgu-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "Montenson"
+},
+"oracle:fa-espx-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "Cummins"
+},
+"oracle:fa-etbx-saasfaprod1.fa.ocs.oraclecloud.com/nfcu": {
+"added": "2026-10-05",
+"name": "Navy Federal"
+},
+"oracle:fa-etqo-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "HEXAWARE"
+},
+"oracle:fa-etum-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "GuideWell Mutual"
+},
+"oracle:fa-eups-saasfaprod1.fa.ocs.oraclecloud.com/ULSolutionsCareers": {
+"added": "2026-10-05",
+"name": "UL Solutions"
+},
+"oracle:fa-evcg-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "BGIS"
+},
+"oracle:fa-evmr-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "Nokia"
+},
+"oracle:fa-exki-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "Fanatics"
+},
+"oracle:fa-exvu-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "GM financial"
+},
+"oracle:hcgn.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "Citizens Financial Group"
+},
+"oracle:hctz.fa.us2.oraclecloud.com/CX_1001": {
+"added": "2026-10-05",
+"name": "onsemi"
+},
+"oracle:hdjq.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "Emerson Electric"
+},
+"oracle:hdks.fa.ca2.oraclecloud.com/CX_1": {
+"added": "2026-10-05",
+"name": "Definity Financial"
+},
+"oracle:hdnn.fa.us6.oraclecloud.com/CX": {
+"added": "2026-10-05",
+"name": "Arconic"
+},
+"oracle:iawmqy.fa.ocs.oraclecloud.com/careers": {
+"added": "2026-10-05",
+"name": "Dell Technologies"
+},
+"oracle:ibqbjb.fa.ocs.oraclecloud.com/Honeywell": {
+"added": "2026-10-05",
+"name": "Honeywell"
+},
+"oracle:ibwujb.fa.ocs.oraclecloud.com/CX_1001": {
+"added": "2026-10-05",
+"name": "Ralliant"
+},
+"oracle:icbpjb.fa.ocs.oraclecloud.com/LazardProfessionalCareers": {
+"added": "2026-10-05",
+"name": "Lazard"
+},
+"oracle:jpmc.fa.oraclecloud.com/CX_1001": {
+"added": "2026-10-05",
+"name": "JP Morgan Chase"
 },
 "smartrecruiters:AbbVie": {
 "added": "2026-10-04",

@@ -78,6 +78,22 @@
        color:var(--dim);font-size:13px;margin-top:8px}
   .meta select{height:34px;font-size:13.5px;border-radius:10px;background-position:calc(100% - 15px) 14px,calc(100% - 10px) 14px}
 
+  /* ── tabs ── */
+  .tabs{display:flex;gap:4px;margin:6px 0 0;overflow-x:auto;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:0 0 auto;font:inherit;font-size:14.5px;font-weight:600;color:var(--dim);background:none;
+       border:0;border-bottom:3px solid transparent;padding:10px 12px;cursor:pointer;white-space:nowrap}
+  .tab[aria-selected=true]{color:var(--ink);border-bottom-color:var(--accent)}
+  .tab .n{font-weight:500;color:var(--dim);margin-left:4px}
+  .intro{color:var(--dim);font-size:14px;margin:12px 0 4px;max-width:70ch}
+  .side2{grid-row:1 / span 3;grid-column:2;text-align:right;font-size:12.5px;color:var(--dim);min-width:84px}
+  .pill{display:inline-block;font-size:12px;font-weight:650;border-radius:999px;padding:5px 10px;
+        background:var(--chip);color:var(--chip-ink);white-space:nowrap}
+  .pill.due{background:var(--mid-bg);color:var(--mid-ink)}
+  .pill.done{background:var(--hi-bg);color:var(--hi-ink)}
+  .line{color:var(--dim);font-size:13.5px;margin-top:2px}
+  .line b{color:var(--ink);font-weight:600}
+
   /* ── the list ── */
   main{padding:12px 0 80px}
   .list{display:grid;gap:10px}
@@ -150,6 +166,9 @@
   </header>
 </div>
 
+<div class="wrap"><div class="tabs" id="tabs" role="tablist"></div></div>
+
+<section id="view-jobs">
 <div class="bar"><div class="wrap">
   <div class="row">
     <input type="search" id="q" placeholder="Search company or title" aria-label="Search company or title" enterkeyhint="search">
@@ -179,6 +198,52 @@
     <div class="empty" id="empty" hidden>Nothing matches these filters. <a href="#" id="reset2">Reset them</a>.</div>
     <div id="sentinel" style="height:1px"></div>
   </main>
+</div>
+</section>
+
+<section id="view-timing" hidden>
+<div class="bar"><div class="wrap">
+  <div class="row">
+    <input type="search" id="tq" placeholder="Search company" aria-label="Search company" enterkeyhint="search">
+  </div>
+  <div class="panel open" style="max-height:none">
+    <select id="tview" aria-label="Show">
+      <option value="waiting">Not posted yet this year</option>
+      <option value="posted">Already posted this year</option>
+      <option value="all">All companies from last year</option>
+    </select>
+    <select id="tlevel" aria-label="Level">
+      <option value="">Any roles last year</option>
+      <option value="phd">Posted PhD roles last year</option>
+      <option value="big">Posted 5 or more roles last year</option>
+    </select>
+  </div>
+  <div class="meta"><span id="tcount"></span></div>
+</div></div>
+<div class="wrap"><main>
+  <p class="intro" id="tintro"></p>
+  <div class="list" id="tlist"></div>
+  <div id="tsentinel" style="height:1px"></div>
+</main></div>
+</section>
+
+<section id="view-manual" hidden>
+<div class="bar"><div class="wrap">
+  <div class="row">
+    <input type="search" id="mq" placeholder="Search employer or platform" aria-label="Search employer or platform" enterkeyhint="search">
+  </div>
+  <div class="meta"><span id="mcount"></span></div>
+</div></div>
+<div class="wrap"><main>
+  <p class="intro">These employers run their careers pages on their own software, or on a platform this list has no
+     reader for, so their openings cannot be pulled in. Each links to the place to look. Where a number is shown,
+     it is how many of that employer's postings job boards currently point to.</p>
+  <div class="list" id="mlist"></div>
+  <div id="msentinel" style="height:1px"></div>
+</main></div>
+</section>
+
+<div class="wrap">
   <footer>
     <details>
       <summary>About this list</summary>
@@ -207,6 +272,7 @@
 /* ── what differs between boards ─────────────────────────────────────────── */
 const CONFIG = {
   storageKey: "iml-filters-2",
+  tabs: [{id:"jobs", label:"Listings"}, {id:"timing", label:"Not posted yet"}, {id:"manual", label:"Check by hand"}],
   tracks: ["Robotics","AI/ML","Research","Quant","Software","Data","Hardware"],
   showFit: true,
   blank: {regions:[]},
@@ -415,7 +481,127 @@ function wire(){
   top.addEventListener("click", () => scrollTo({top:0, behavior:"smooth"}));
 }
 
-buildControls(); load(); wire();
+/* ── tabs ─────────────────────────────────────────────────────────────────── */
+const TABS = CONFIG.tabs || [{id:"jobs", label:"Listings"}];
+const loaded = {};
+function showTab(id){
+  for(const t of TABS){
+    $("view-" + t.id).hidden = t.id !== id;
+    $("tabbtn-" + t.id).setAttribute("aria-selected", t.id === id);
+  }
+  if(id === "timing" && !loaded.timing){ loaded.timing = true; loadTiming(); }
+  if(id === "manual" && !loaded.manual){ loaded.manual = true; loadManual(); }
+  try{ history.replaceState(null, "", id === "jobs" ? location.pathname + location.search : "#" + id); }catch(e){}
+}
+function buildTabs(){
+  $("tabs").innerHTML = TABS.map(t =>
+    `<button class="tab" role="tab" id="tabbtn-${t.id}" data-id="${t.id}" aria-selected="false">${esc(t.label)}<span class="n" id="tabn-${t.id}"></span></button>`).join("");
+  $("tabs").hidden = TABS.length < 2;
+  $("tabs").addEventListener("click", e => { const b = e.target.closest(".tab"); if(b) showTab(b.dataset.id); });
+}
+// A long list drawn a page at a time as the end comes into view.
+function pager(listEl, sentinelEl, draw){
+  let items = [], at = 0;
+  const more = () => {
+    if(at >= items.length) return;
+    const next = items.slice(at, at + PAGE);
+    listEl.insertAdjacentHTML("beforeend", next.map(draw).join(""));
+    at += next.length;
+  };
+  new IntersectionObserver(es => { if(es[0].isIntersecting) more(); }, {rootMargin:"900px"}).observe(sentinelEl);
+  return rows => { items = rows; at = 0; listEl.innerHTML = ""; more(); };
+}
+function longDate(iso){
+  return iso ? new Date(iso + "T12:00:00Z").toLocaleDateString(undefined, {month:"short", day:"numeric", year:"numeric"}) : "";
+}
+function monthDay(iso){
+  return iso ? new Date(iso + "T12:00:00Z").toLocaleDateString(undefined, {month:"short", day:"numeric"}) : "";
+}
+
+/* ── "Not posted yet": when each company opened applications last year ───── */
+let TIMING = null, setTiming = null;
+const tstate = {q:"", view:"waiting", level:""};
+function timingCard(c){
+  const days = Math.round((new Date(c.expected + "T12:00:00Z") - new Date()) / 864e5);
+  let pill, cls = "";
+  if(c.now_n){ pill = `Posted ${monthDay(c.now_first)}`; cls = "done"; }
+  else if(days < -7){ pill = `${-days} days past last year`; cls = "due"; }
+  else if(days <= 7){ pill = "About now"; cls = "due"; }
+  else pill = `In about ${days} days`;
+  const phd = c.last_phd ? `, ${c.last_phd} for PhD students` + (c.last_phd_first && c.last_phd_first !== c.last_first ? ` from ${monthDay(c.last_phd_first)}` : "") : "";
+  const nowLine = c.now_n
+    ? `<div class="line">This year: <b>${c.now_n} role${c.now_n === 1 ? "" : "s"}</b> so far, first seen ${longDate(c.now_first)}</div>`
+    : `<div class="line">This year: nothing yet. Going by last year, around <b>${monthDay(c.expected)}</b></div>`;
+  return `<article class="card">
+    <div class="co">${esc(c.name)}</div>
+    <div class="side2"><span class="pill ${cls}">${esc(pill)}</span></div>
+    <div class="line">Last year: first posted <b>${longDate(c.last_first)}</b>, ${c.last_n} role${c.last_n === 1 ? "" : "s"}${phd}</div>
+    ${nowLine}
+    ${c.titles && c.titles.length ? `<div class="line">Such as ${esc(c.titles.slice(0,2).join("; "))}</div>` : ""}
+  </article>`;
+}
+function applyTiming(){
+  const words = tstate.q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+  const rows = TIMING.filter(c => {
+    if(tstate.view === "waiting" && c.now_n) return false;
+    if(tstate.view === "posted" && !c.now_n) return false;
+    if(tstate.level === "phd" && !c.last_phd) return false;
+    if(tstate.level === "big" && c.last_n < 5) return false;
+    return !words.length || words.every(w => c._hay.includes(w));
+  });
+  rows.sort((a,b) => a.expected.localeCompare(b.expected) || a.name.localeCompare(b.name));
+  $("tcount").textContent = rows.length.toLocaleString() + " of " + TIMING.length.toLocaleString() + " companies";
+  setTiming(rows);
+}
+function loadTiming(){
+  setTiming = pager($("tlist"), $("tsentinel"), timingCard);
+  fetch("timing.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    TIMING = d.companies || [];
+    for(const c of TIMING) c._hay = c.name.toLowerCase();
+    $("tintro").textContent = `Each company that posted internships for ${d.last_cycle} is shown with the day its first ` +
+      `listing appeared last year. Companies tend to open around the same time each year, so that day, one year on, ` +
+      `is a rough guide to when to look. It is a guide and not a promise. Sorted by that date, earliest first.`;
+    let timer = null;
+    $("tq").addEventListener("input", e => { clearTimeout(timer); timer = setTimeout(() => { tstate.q = e.target.value; applyTiming(); }, 140); });
+    $("tview").addEventListener("change", e => { tstate.view = e.target.value; applyTiming(); });
+    $("tlevel").addEventListener("change", e => { tstate.level = e.target.value; applyTiming(); });
+    applyTiming();
+  }).catch(e => { $("tintro").textContent = "Could not load the timing data. " + e; });
+}
+
+/* ── "Check by hand": employers whose jobs cannot be read ─────────────────── */
+let MANUAL = null, setManual = null;
+function manualCard(e){
+  const bits = [];
+  if(e.count) bits.push(`${e.count} posting${e.count === 1 ? "" : "s"} on job boards now`);
+  if(e.note) bits.push(esc(e.note));
+  return `<article class="card">
+    <div class="co">${esc(e.name)}</div>
+    <div class="side2"><span class="pill">${esc(e.platform || "Own site")}</span></div>
+    <a class="title" href="${esc(safeUrl(e.url))}" target="_blank" rel="noopener noreferrer">${esc((e.url || "").replace(/^https?:\/\/(www\.)?/, "").replace(/\/$/, ""))}</a>
+    ${bits.length ? `<div class="line">${bits.join(" · ")}</div>` : ""}
+    ${e.example ? `<div class="line"><a href="${esc(safeUrl(e.example))}" target="_blank" rel="noopener noreferrer">An example posting</a></div>` : ""}
+  </article>`;
+}
+function loadManual(){
+  setManual = pager($("mlist"), $("msentinel"), manualCard);
+  fetch("manual.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
+    MANUAL = d.employers || [];
+    for(const e of MANUAL) e._hay = (e.name + " " + (e.platform || "") + " " + (e.url || "")).toLowerCase();
+    const draw = q => {
+      const words = q.trim().toLowerCase().split(/\s+/).filter(Boolean);
+      const rows = MANUAL.filter(e => !words.length || words.every(w => e._hay.includes(w)));
+      $("mcount").textContent = rows.length.toLocaleString() + " of " + MANUAL.length.toLocaleString() + " employers";
+      setManual(rows);
+    };
+    let timer = null;
+    $("mq").addEventListener("input", e => { clearTimeout(timer); timer = setTimeout(() => draw(e.target.value), 140); });
+    draw("");
+  }).catch(e => { $("mcount").textContent = "Could not load the list. " + e; });
+}
+
+buildTabs(); buildControls(); load(); wire();
+showTab(TABS.some(t => "#" + t.id === location.hash) ? location.hash.slice(1) : "jobs");
 fetch("list.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
   ALL = (d.listings || []).map(r => Object.assign({sources:[], locations:[], tracks:[], places:[]}, CONFIG.blank, r));
   today = (d.generated || "").slice(0,10);
@@ -436,9 +622,11 @@ fetch("list.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
   // the sources were last checked, which is the time worth showing.
   fetch("checked.json", {cache:"no-cache"}).then(r => r.json()).then(c => {
     if(c.checked) $("sub").textContent = CONFIG.subtitle(ALL.length, fmt(c.checked));
+    for(const [id, n] of Object.entries(c.tabs || {})) if($("tabn-" + id)) $("tabn-" + id).textContent = Number(n).toLocaleString();
   }).catch(() => {});
   const s = d.sources || {};
   $("srcline").textContent = "Last run. " + Object.keys(s).map(k => `${k} ${s[k]}`).join(" · ");
+  $("tabn-jobs").textContent = ALL.length.toLocaleString();
   apply();
 }).catch(e => { $("list").innerHTML = ""; $("sub").textContent = "Could not load the listings. " + e; });
 </script>

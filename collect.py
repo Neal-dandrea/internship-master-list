@@ -52,6 +52,7 @@ import urllib.request
 from typing import Callable, Dict, List, Optional
 
 import ats
+import manual
 import match
 import semantic
 
@@ -644,8 +645,66 @@ def unslim(rec: dict) -> dict:
     return out
 
 
+CYCLE_START = "2026-06-01"       # postings from this day on count as this year's
+
+
+def _loose(name: str) -> str:
+    """A company name reduced to letters and digits, without a bracketed part
+    or a legal suffix, for matching one source's spelling to another's."""
+    name = re.sub(r"\([^)]*\)", " ", name or "")
+    return re.sub(r"\s+", "", norm_company(name))
+
+
+def write_timing(listings: List[dict]) -> int:
+    """docs/timing.json: for each company that posted internships last summer,
+    the day it first posted then, and what it has posted so far this year.
+    Returns how many of them have posted nothing yet."""
+    hist = load_json(os.path.join(DATA, "history.json"), {})
+    now: Dict[str, dict] = {}
+    for r in listings:
+        day = r.get("posted") or r.get("first_seen") or ""
+        if day < CYCLE_START:
+            continue
+        c = now.setdefault(_loose(r["company"]), {"n": 0, "first": day})
+        c["n"] += 1
+        c["first"] = min(c["first"], day)
+    long_keys = [k for k in now if len(k) >= 6]
+
+    def this_year(name: str) -> dict:
+        """What this company has posted this year. Names differ between sources
+        ("Procter & Gamble" and "Procter & Gamble (P&G)"), so one name starting
+        with the other also counts as the same company."""
+        key = _loose(name)
+        if key in now:
+            return now[key]
+        if len(key) >= 6:
+            for k in long_keys:
+                if k.startswith(key) or key.startswith(k):
+                    return now[k]
+        return {}
+
+    out = []
+    for key, h in (hist.get("companies") or {}).items():
+        y, m, d = (int(x) for x in h["first"].split("-"))
+        if m == 2 and d == 29:
+            d = 28
+        expected = f"{y + 1:04d}-{m:02d}-{d:02d}"
+        got = this_year(h["name"])
+        row = {"name": h["name"], "last_first": h["first"], "last_n": h["n"],
+               "last_phd": h["phd"], "last_phd_first": h.get("phd_first"),
+               "expected": expected, "titles": h.get("titles", [])}
+        if got:
+            row["now_n"], row["now_first"] = got["n"], got["first"]
+        out.append(row)
+    out.sort(key=lambda c: (c["expected"], c["name"].lower()))
+    with open(os.path.join(DOCS, "timing.json"), "w") as fh:
+        json.dump({"last_cycle": hist.get("cycle", ""), "companies": out}, fh,
+                  separators=(",", ":"))
+    return sum(1 for c in out if not c.get("now_n"))
+
+
 def write_outputs(listings: List[dict], new: List[dict], report: Dict[str, str],
-                  first_run: bool) -> str:
+                  first_run: bool, tabs: Optional[Dict[str, int]] = None) -> str:
     os.makedirs(DATA, exist_ok=True)
     os.makedirs(DOCS, exist_ok=True)
     os.makedirs(OUT, exist_ok=True)
@@ -659,7 +718,7 @@ def write_outputs(listings: List[dict], new: List[dict], report: Dict[str, str],
     unchanged = (old.get("sig") == sig and os.path.exists(os.path.join(DOCS, "list.json")))
     with open(os.path.join(DOCS, "checked.json"), "w") as fh:
         json.dump({"checked": now, "changed": old.get("generated") if unchanged else now,
-                   "sources": report}, fh, separators=(",", ":"))
+                   "sources": report, "tabs": tabs or {}}, fh, separators=(",", ":"))
     path = os.path.join(OUT, f"new_{TODAY.isoformat()}.md")
     if unchanged:
         return path
@@ -742,6 +801,9 @@ def keep(rec: dict) -> bool:
     return True
 
 
+NEVER_WORKED_TRIES = 4
+
+
 def update_registry(companies: Dict[str, dict], rows: List[dict]) -> int:
     """Remember the career site behind every board link. Returns how many are new."""
     added = 0
@@ -792,6 +854,8 @@ def main() -> int:
             report[n] = f"FAILED: {type(e).__name__}: {e}"
         print(f"  {n:14s} {report[n]}  ({time.time() - t0:.1f}s)", flush=True)
 
+    board_rows = list(rows)          # kept for the "check by hand" list below
+
     # Company career sites, found through the board links above.
     os.makedirs(DATA, exist_ok=True)
     companies = load_json(os.path.join(DATA, "companies.json"), {})
@@ -808,8 +872,18 @@ def main() -> int:
                              f"sites, {len(failed_sites)} unreachable")
         print(f"  {'careers':14s} {report['careers']}  ({time.time() - t0:.1f}s)",
               flush=True)
-        for key in companies:
-            companies[key]["ok"] = key not in failed_sites
+        for key in list(companies):
+            entry = companies[key]
+            entry["ok"] = key not in failed_sites
+            if entry["ok"]:
+                entry["worked"] = True
+                entry["fails"] = 0
+            else:
+                entry["fails"] = entry.get("fails", 0) + 1
+                # An identifier that has never answered is a bad guess, not an
+                # employer that went quiet, so it is forgotten after a few tries.
+                if not entry.get("worked") and entry["fails"] >= NEVER_WORKED_TRIES:
+                    del companies[key]
     with open(os.path.join(DATA, "companies.json"), "w") as fh:
         json.dump(companies, fh, indent=0, sort_keys=True)
 
@@ -864,7 +938,17 @@ def main() -> int:
                          if sem["scored"] else f"skipped, {sem.get('note', '')}")
     print(f"  {'meaning':14s} {report['meaning']}  ({time.time() - t0:.1f}s)", flush=True)
 
-    path = write_outputs(listings, new, report, first_run)
+    # Employers whose jobs cannot be read: sites no reader understands, and
+    # career sites that used to answer and have stopped.
+    failing = [{"name": e["name"], "url": ats.careers_url(k),
+                "platform": k.split(":", 1)[0].title(), "origin": "feed not answering",
+                "note": f"Its job feed has not answered for {e['fails']} runs in a row"}
+               for k, e in companies.items() if e.get("worked") and e.get("fails", 0) >= 6]
+    by_hand = manual.write(DOCS, DATA, manual.from_listings(board_rows, ats.discover), failing)
+    waiting = write_timing(listings)
+
+    path = write_outputs(listings, new, report, first_run,
+                         tabs={"timing": waiting, "manual": by_hand})
     with open(os.path.join(DATA, "seen.json"), "w") as fh:
         json.dump(seen, fh, separators=(",", ":"), sort_keys=True)
 

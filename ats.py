@@ -43,6 +43,12 @@ _PATTERNS = [
 ]
 _WORKDAY = re.compile(r"https?://([a-z0-9-]+)\.(wd\d+)\.myworkdayjobs\.com/"
                       r"(?:[a-z]{2}-[A-Z]{2}/)?([A-Za-z0-9_-]+)")
+_ORACLE = re.compile(r"https?://([a-z0-9.-]+\.oraclecloud\.com)/hcmUI/CandidateExperience/"
+                     r"[a-z-]+/sites/([A-Za-z0-9_-]+)")
+_ICIMS = re.compile(r"https?://([a-z0-9-]+)\.icims\.com")
+_EIGHTFOLD = re.compile(r"https?://([a-z0-9-]+\.eightfold\.ai)")
+_UKG = re.compile(r"https?://((?:recruiting2?\.ultipro\.com|[a-z0-9.-]+\.ukg\.net))/"
+                  r"([A-Za-z0-9]+)/JobBoard/([0-9a-fA-F-]{36})")
 _NOT_TOKENS = {"embed", "jobs", "j", "job", "careers", "api", "wday"}
 
 
@@ -51,6 +57,18 @@ def discover(url: str) -> Optional[Tuple[str, str]]:
     m = _WORKDAY.search(url)
     if m and m.group(3).lower() not in _NOT_TOKENS:
         return "workday", "/".join(m.groups())
+    m = _ORACLE.search(url)
+    if m:
+        return "oracle", "/".join(m.groups())
+    m = _ICIMS.search(url)
+    if m and m.group(1) not in ("www", "cdn", "cdn02", "images"):
+        return "icims", m.group(1)
+    m = _EIGHTFOLD.search(url)
+    if m:
+        return "eightfold", m.group(1) + "|"
+    m = _UKG.search(url)
+    if m:
+        return "ukg", "/".join(m.groups())
     for name, pat in _PATTERNS:
         m = pat.search(url)
         if m and m.group(1).lower() not in _NOT_TOKENS:
@@ -174,10 +192,186 @@ def workday(token, company, fetch, listing, max_pages: int = 5):
     return out
 
 
+def oracle(token, company, fetch, listing, max_jobs: int = 500):
+    """Oracle Cloud career sites. The identifier is host/site."""
+    host, site = token.split("/")
+    out, offset = [], 0
+    while offset < max_jobs:
+        doc = json.loads(fetch(
+            f"https://{host}/hcmRestApi/resources/latest/recruitingCEJobRequisitions"
+            f"?onlyData=true&expand=requisitionList.secondaryLocations"
+            f"&finder=findReqs;siteNumber={site},keyword=%22intern%22,limit=100,"
+            f"offset={offset},sortBy=POSTING_DATES_DESC"))
+        item = (doc.get("items") or [{}])[0]
+        rows = item.get("requisitionList") or []
+        for j in rows:
+            if not is_internship(j.get("Title")):
+                continue
+            locs = [j.get("PrimaryLocation") or ""] + [
+                x.get("Name") or "" for x in j.get("secondaryLocations") or []]
+            out.append(listing(
+                "careers", company, j["Title"],
+                f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/job/{j['Id']}",
+                location="; ".join(x for x in locs if x), posted=_date(j.get("PostedDate"))))
+        offset += 100
+        if len(rows) < 100 or offset >= int(item.get("TotalJobsCount") or 0):
+            break
+    return out
+
+
+_ICIMS_ROW = re.compile(
+    r'<a href="(https://[^"]+?/jobs/(\d+)/[^"]*?/job)[^"]*"[^>]*class="iCIMS_Anchor"[^>]*>'
+    r'.*?<h3[^>]*>\s*(.*?)\s*</h3>', re.S)
+_ICIMS_FIELD = re.compile(r'field-label">([^<]+)</span>\s*<span[^>]*>\s*([^<]*)', re.S)
+_ICIMS_PAGES = re.compile(r"Page \d+ of (\d+)")
+_ICIMS_DATE = re.compile(r'Posted Date</span>\s*<span[^>]*title="(\d{1,2})/(\d{1,2})/(\d{4})')
+
+
+def icims(token, company, fetch, listing, max_pages: int = 15):
+    """iCIMS career sites. The identifier is the subdomain. The job list is a
+    web page, twenty postings at a time, searched for "intern"."""
+    import html as _html
+    base = (f"https://{token}.icims.com/jobs/search?ss=1&searchKeyword=intern"
+            f"&in_iframe=1&pr=")
+    out, pages, page = [], 1, 0
+    while page < min(pages, max_pages):
+        text = fetch(base + str(page)).decode("utf-8", errors="replace")
+        m = _ICIMS_PAGES.search(text)
+        if m:
+            pages = int(m.group(1))
+        found = 0
+        for block in re.split(r'<div class="row">', text):
+            row = _ICIMS_ROW.search(block)
+            if not row:
+                continue
+            found += 1
+            url, _, title = row.groups()
+            title = _html.unescape(re.sub(r"<[^>]+>", "", title)).strip()
+            if not is_internship(title):
+                continue
+            fields = [(k.strip(), _html.unescape(v).strip())
+                      for k, v in _ICIMS_FIELD.findall(block)]
+            loc = next((v for k, v in fields if "location" in k.lower() and v), "") or \
+                next((v for k, v in fields if k != "Job Title" and v), "")
+            loc = "; ".join(re.sub(r"^US-([A-Z]{2})-(.+)$", r"\2, \1", x.strip())
+                            for x in loc.split("|") if x.strip())
+            d = _ICIMS_DATE.search(block)
+            posted = f"{d.group(3)}-{int(d.group(1)):02d}-{int(d.group(2)):02d}" if d else None
+            out.append(listing("careers", company, title, url, location=loc, posted=posted))
+        if not found:
+            break
+        page += 1
+    return out
+
+
+def eightfold(token, company, fetch, listing, max_jobs: int = 400):
+    """Eightfold career sites. The identifier is host|domain. When the domain is
+    not known it is guessed from the host. Eightfold has an older feed and a
+    newer one, and a given employer answers only one of them."""
+    host, domain = token.split("|")
+    domain = domain or host.split(".")[0] + ".com"
+
+    def stamp(ts):
+        return dt.datetime.fromtimestamp(int(ts), dt.timezone.utc).date().isoformat() if ts else None
+
+    out, start = [], 0
+    try:
+        while start < max_jobs:
+            doc = json.loads(fetch(f"https://{host}/api/apply/v2/jobs?domain={domain}"
+                                   f"&query=intern&num=100&start={start}&sort_by=timestamp"))
+            rows = doc["positions"]
+            for j in rows:
+                if is_internship(j.get("name")):
+                    out.append(listing(
+                        "careers", company, j["name"],
+                        j.get("canonicalPositionUrl") or f"https://{host}/careers/job/{j.get('id')}",
+                        location="; ".join(j.get("locations") or [j.get("location") or ""]),
+                        posted=stamp(j.get("t_create"))))
+            start += 100
+            if len(rows) < 100 or start >= int(doc.get("count") or 0):
+                break
+        return out
+    except Exception:                                     # noqa: BLE001
+        out, start = [], 0
+    while start < max_jobs:
+        doc = json.loads(fetch(f"https://{host}/api/pcsx/search?domain={domain}"
+                               f"&query=intern&start={start}"))
+        data = doc.get("data") or {}
+        rows = data.get("positions") or []
+        for j in rows:
+            if is_internship(j.get("name")):
+                locs = [re.sub(r", US$", "", x) for x in
+                        (j.get("standardizedLocations") or j.get("locations") or [])]
+                out.append(listing("careers", company, j["name"],
+                                   f"https://{host}{j.get('positionUrl') or ''}",
+                                   location="; ".join(locs), posted=stamp(j.get("postedTs"))))
+        start += len(rows)
+        if not rows or start >= int(data.get("count") or 0):
+            break
+    return out
+
+
+def ukg(token, company, fetch, listing, max_jobs: int = 300):
+    """UKG (UltiPro) job boards. The identifier is host/tenant/board id."""
+    host, tenant, board = token.split("/")
+    base = f"https://{host}/{tenant}/JobBoard/{board}"
+    out, skip = [], 0
+    while skip < max_jobs:
+        doc = json.loads(fetch(base + "/JobBoardView/LoadSearchResults", json_body={
+            "opportunitySearch": {"Top": 50, "Skip": skip, "QueryString": "intern",
+                                  "OrderBy": [{"Value": "postedDateDesc",
+                                               "PropertyName": "PostedDate",
+                                               "Ascending": False}],
+                                  "Filters": []},
+            "matchCriteria": {"PreferredJobs": [], "Educations": [],
+                              "LicenseAndCertifications": [], "Skills": [],
+                              "hasNoLicenses": False, "SkippedSkills": []}}))
+        rows = doc.get("opportunities") or []
+        for j in rows:
+            if not is_internship(j.get("Title")):
+                continue
+            locs = []
+            for x in j.get("Locations") or []:
+                a = x.get("Address") or {}
+                state = (a.get("State") or {}).get("Code") or ""
+                locs.append(", ".join(v for v in (a.get("City"), state) if v)
+                            or x.get("LocalizedName") or "")
+            out.append(listing("careers", company, j["Title"],
+                               f"{base}/OpportunityDetail?opportunityId={j['Id']}",
+                               location="; ".join(v for v in locs if v),
+                               posted=_date(j.get("PostedDate"))))
+        skip += 50
+        if len(rows) < 50 or skip >= int(doc.get("totalCount") or 0):
+            break
+    return out
+
+
 READERS: Dict[str, Callable] = {
     "greenhouse": greenhouse, "lever": lever, "ashby": ashby,
     "smartrecruiters": smartrecruiters, "workable": workable, "workday": workday,
+    "oracle": oracle, "icims": icims, "eightfold": eightfold, "ukg": ukg,
 }
+
+
+def careers_url(key: str) -> str:
+    """A page a person can open for a registry entry."""
+    platform, token = key.split(":", 1)
+    if platform == "workday":
+        tenant, wd, site = token.split("/")
+        return f"https://{tenant}.{wd}.myworkdayjobs.com/{site}"
+    if platform == "oracle":
+        host, site = token.split("/")
+        return f"https://{host}/hcmUI/CandidateExperience/en/sites/{site}/jobs"
+    if platform == "icims":
+        return f"https://{token}.icims.com/jobs/search"
+    if platform == "eightfold":
+        return f"https://{token.split('|')[0]}/careers"
+    if platform == "ukg":
+        host, tenant, board = token.split("/")
+        return f"https://{host}/{tenant}/JobBoard/{board}"
+    return {"greenhouse": "https://job-boards.greenhouse.io/", "lever": "https://jobs.lever.co/",
+            "ashby": "https://jobs.ashbyhq.com/", "smartrecruiters": "https://jobs.smartrecruiters.com/",
+            "workable": "https://apply.workable.com/", "jibe": "https://"}.get(platform, "") + token
 
 
 def collect(companies: Dict[str, dict], fetch, listing, workers: int = 16,
