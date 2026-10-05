@@ -210,7 +210,7 @@ const CONFIG = {
   tracks: ["Robotics","AI/ML","Research","Quant","Software","Data","Hardware"],
   showFit: true,
   blank: {regions:[]},
-  subtitle: (n, when) => `${n.toLocaleString()} active internships and co-ops, updated ${when}`,
+  subtitle: (n, when) => `${n.toLocaleString()} active internships and co-ops, checked ${when}`,
   selects: [
     {id:"level",label:"Degree level",options:[["","Any degree level"],["phd","PhD roles"],["grad","MS or PhD roles"]]},
     {id:"region",label:"Region",options:[["","Any location"],["US","United States"],["International","Outside the US"],["Remote","Remote"]]},
@@ -430,8 +430,13 @@ fetch("list.json", {cache:"no-cache"}).then(r => r.json()).then(d => {
     r._locTokens = new Set(r._loc.split(/[^a-z0-9]+/).filter(Boolean));
   }
   ALL.sort((a,b) => dayOf(b).localeCompare(dayOf(a)) || a.company.localeCompare(b.company));
-  const when = d.generated ? new Date(d.generated).toLocaleString(undefined, {dateStyle:"medium", timeStyle:"short"}) : "";
-  $("sub").textContent = CONFIG.subtitle(ALL.length, when);
+  const fmt = iso => iso ? new Date(iso).toLocaleString(undefined, {dateStyle:"medium", timeStyle:"short"}) : "";
+  $("sub").textContent = CONFIG.subtitle(ALL.length, fmt(d.generated));
+  // The list file only changes when a listing does. This small file says when
+  // the sources were last checked, which is the time worth showing.
+  fetch("checked.json", {cache:"no-cache"}).then(r => r.json()).then(c => {
+    if(c.checked) $("sub").textContent = CONFIG.subtitle(ALL.length, fmt(c.checked));
+  }).catch(() => {});
   const s = d.sources || {};
   $("srcline").textContent = "Last run. " + Object.keys(s).map(k => `${k} ${s[k]}`).join(" · ");
   apply();

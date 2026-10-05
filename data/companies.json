@@ -654,6 +654,10 @@
 "name": "Overview Energy",
 "ok": true
 },
+"ashby:pangramlabs": {
+"added": "2026-10-05",
+"name": "Pangram Labs"
+},
 "ashby:pear-vc": {
 "added": "2026-10-04",
 "name": "Pear VC",
@@ -2414,6 +2418,10 @@
 "name": "OnLogic",
 "ok": true
 },
+"workable:palona": {
+"added": "2026-10-05",
+"name": "Palona AI"
+},
 "workable:perryhomes": {
 "added": "2026-10-04",
 "name": "Perry Homes",
@@ -2528,6 +2536,10 @@
 "added": "2026-10-04",
 "name": "AES",
 "ok": true
+},
+"workday:ag/wd3/Airbus": {
+"added": "2026-10-05",
+"name": "Airbus"
 },
 "workday:ag/wd3/airbus": {
 "added": "2026-10-04",
@@ -4778,6 +4790,10 @@
 "added": "2026-10-04",
 "name": "New York Mets",
 "ok": true
+},
+"workday:sterlingmets/wd5/mets": {
+"added": "2026-10-05",
+"name": "The New York Mets"
 },
 "workday:stryker/wd1/StrykerCareers": {
 "added": "2026-10-04",

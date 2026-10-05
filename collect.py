@@ -15,6 +15,8 @@ field, region), tracks what it has seen before, and writes
 
     docs/data.json         every active listing, with every field
     docs/list.json         the same listings with only what the web page shows
+    docs/checked.json      when the sources were last checked (written every run,
+                           while the files above change only when a listing does)
     docs/listings.csv      the same, flat, for a spreadsheet
     data/seen.json         id -> date first seen (the state between runs)
     data/companies.json    the career sites to check
@@ -647,10 +649,24 @@ def write_outputs(listings: List[dict], new: List[dict], report: Dict[str, str],
     os.makedirs(DATA, exist_ok=True)
     os.makedirs(DOCS, exist_ok=True)
     os.makedirs(OUT, exist_ok=True)
+    now = dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")
+    # With frequent runs, most find nothing changed. The large files are then
+    # left alone, so the repository does not grow by megabytes every hour, and
+    # only this small file records that the sources were checked.
+    published = [slim(r) for r in listings]
+    sig = hashlib.sha1(json.dumps(published, sort_keys=True).encode()).hexdigest()
+    old = load_json(os.path.join(DOCS, "data.json"), {})
+    unchanged = (old.get("sig") == sig and os.path.exists(os.path.join(DOCS, "list.json")))
+    with open(os.path.join(DOCS, "checked.json"), "w") as fh:
+        json.dump({"checked": now, "changed": old.get("generated") if unchanged else now,
+                   "sources": report}, fh, separators=(",", ":"))
+    path = os.path.join(OUT, f"new_{TODAY.isoformat()}.md")
+    if unchanged:
+        return path
     with open(os.path.join(DOCS, "data.json"), "w") as fh:
         json.dump({"generated": dt.datetime.now(dt.timezone.utc)
                                   .isoformat(timespec="seconds"),
-                   "count": len(listings), "sources": report,
+                   "count": len(listings), "sources": report, "sig": sig,
                    # the day of the first build, when everything was "first seen"
                    "baseline": min((r["first_seen"] for r in listings), default=""),
                    "listings": [slim(r) for r in listings]}, fh,

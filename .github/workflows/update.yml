@@ -2,10 +2,10 @@ name: Update listings
 
 on:
   schedule:
-    # 8 AM, 12 PM, 4 PM and 8 PM Eastern. GitHub schedules in UTC and does not
-    # follow daylight saving time, so both possible UTC hours are listed and the
-    # "gate" job below lets only the right one through.
-    - cron: "5 0,1,12,13,16,17,20,21 * * *"
+    # Every hour from 8 AM through 1 AM Eastern, which is 18 runs a day. GitHub
+    # schedules in UTC and does not follow daylight saving time, so the job is
+    # scheduled every hour and the "gate" job below skips 2 AM to 7 AM Eastern.
+    - cron: "5 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -25,7 +25,7 @@ jobs:
         run: |
           hour=$(TZ=America/New_York date +%H)
           echo "Eastern hour is $hour"
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || echo " 08 12 16 20 " | grep -q " $hour "; then
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || ! echo " 02 03 04 05 06 07 " | grep -q " $hour "; then
             echo "go=yes" >> "$GITHUB_OUTPUT"
           fi
 
