@@ -70,7 +70,7 @@
 },
 "ashby:AtomicSemi": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -370,10 +370,10 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Alpic",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "ashby:alta-ares": {
@@ -545,7 +545,7 @@
 },
 "ashby:atomicsemi": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -3599,7 +3599,7 @@
 },
 "ashby:whatnot": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "WhatNot",
 "ok": false
 },
@@ -3755,7 +3755,7 @@
 },
 "avature:twosigma.avature.net/careers": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "Two Sigma",
 "ok": false
 },
@@ -6768,6 +6768,13 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:goodfire": {
+"added": "2026-10-08",
+"fails": 0,
+"name": "Goodfire",
+"ok": true,
+"worked": true
+},
 "greenhouse:gotropical": {
 "added": "2026-10-05",
 "fails": 0,
@@ -7099,7 +7106,7 @@
 },
 "greenhouse:hubspotjobs": {
 "added": "2026-10-05",
-"fails": 6,
+"fails": 7,
 "from": "survey",
 "name": "HubSpot",
 "ok": false,
@@ -9331,6 +9338,13 @@
 "fails": 0,
 "from": "survey",
 "name": "Rubyhotels",
+"ok": true,
+"worked": true
+},
+"greenhouse:ruggedrobotics": {
+"added": "2026-10-08",
+"fails": 0,
+"name": "Rugged Robotics",
 "ok": true,
 "worked": true
 },
@@ -15676,7 +15690,7 @@
 },
 "lever:cirrus": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "Cirrus Logic",
 "ok": false
 },
@@ -16828,7 +16842,7 @@
 },
 "lever:quantinuum": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "Quantinuum",
 "ok": false
 },
@@ -17113,7 +17127,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 3,
+"fails": 4,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -18027,9 +18041,9 @@
 },
 "oracle:eeho.fa.us2.oraclecloud.com/CX_45001": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "name": "Oracle",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:eeho.fa.us2.oraclecloud.com/jobsearch": {
@@ -19480,10 +19494,10 @@
 },
 "oracle:fa-esbv-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "First Solar (US)",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "oracle:fa-esfc-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
@@ -21012,6 +21026,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "Impulse Space",
+"ok": true,
+"worked": true
+},
+"radancy:careers.moodys.com": {
+"added": "2026-10-08",
+"fails": 0,
+"from": "probe",
+"name": "Moodys",
 "ok": true,
 "worked": true
 },
@@ -23793,13 +23815,13 @@
 },
 "taleo:energytransfer/etp_ext": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "Energy Transfer Partners",
 "ok": false
 },
 "taleo:kp/external": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "Kaiser Permanente",
 "ok": false
 },
@@ -27628,6 +27650,13 @@
 "fails": 0,
 "from": "survey",
 "name": "Bacardi",
+"ok": true,
+"worked": true
+},
+"workday:badgermeter/wd5/US_CareerSite": {
+"added": "2026-10-08",
+"fails": 0,
+"name": "Badger Meter",
 "ok": true,
 "worked": true
 },
@@ -33150,7 +33179,7 @@
 },
 "workday:intel/wd1/en-us": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "Intel",
 "ok": false
 },
@@ -35216,10 +35245,10 @@
 },
 "workday:musc/wd1/MUSC": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Medical University of South Carolina",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:mydpr/wd5/11212017": {
@@ -36067,13 +36096,13 @@
 },
 "workday:osv-cci/wd1/CCICareers": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "Castleton Commodities International",
 "ok": false
 },
 "workday:osv-rubicon/wd5/MagniteCareers": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "Magnite",
 "ok": false
 },
@@ -37261,10 +37290,10 @@
 },
 "workday:resolvetech/wd1/rts": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Resolve Tech Solutions",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:resonantclinical/wd108/External": {
@@ -39522,7 +39551,7 @@
 },
 "workday:trojanbattery/wd5/Trojan": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "from": "survey",
 "name": "Trojanbattery",
 "ok": false,
@@ -40220,7 +40249,7 @@
 },
 "workday:vhr-epri/wd1/epricareers": {
 "added": "2026-10-07",
-"fails": 2,
+"fails": 3,
 "name": "EPRI",
 "ok": false
 },
