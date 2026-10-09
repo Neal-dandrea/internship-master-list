@@ -70,7 +70,7 @@
 },
 "ashby:AtomicSemi": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -378,7 +378,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 4,
+"fails": 5,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -553,7 +553,7 @@
 },
 "ashby:atomicsemi": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -3629,7 +3629,7 @@
 },
 "ashby:whatnot": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "WhatNot",
 "ok": false
 },
@@ -3785,7 +3785,7 @@
 },
 "avature:twosigma.avature.net/careers": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "Two Sigma",
 "ok": false
 },
@@ -4112,10 +4112,10 @@
 },
 "eightfold:microsoft.eightfold.ai|": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Microsoft",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:mlp.eightfold.ai|": {
@@ -7192,7 +7192,7 @@
 },
 "greenhouse:hubspotjobs": {
 "added": "2026-10-05",
-"fails": 10,
+"fails": 11,
 "from": "survey",
 "name": "HubSpot",
 "ok": false,
@@ -15856,7 +15856,7 @@
 },
 "lever:cirrus": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "Cirrus Logic",
 "ok": false
 },
@@ -17015,7 +17015,7 @@
 },
 "lever:quantinuum": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "Quantinuum",
 "ok": false
 },
@@ -17308,7 +17308,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 7,
+"fails": 8,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -24034,13 +24034,13 @@
 },
 "taleo:energytransfer/etp_ext": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "Energy Transfer Partners",
 "ok": false
 },
 "taleo:kp/external": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "Kaiser Permanente",
 "ok": false
 },
@@ -26847,6 +26847,13 @@
 "ok": true,
 "worked": true
 },
+"workday:aep/wd1/aepcareersite": {
+"added": "2026-10-09",
+"fails": 0,
+"name": "American Electric Power",
+"ok": true,
+"worked": true
+},
 "workday:aero/wd5/external": {
 "added": "2026-10-04",
 "fails": 0,
@@ -27987,6 +27994,13 @@
 },
 "workday:axos/wd5/Axos": {
 "added": "2026-10-04",
+"fails": 0,
+"name": "Axos Bank",
+"ok": true,
+"worked": true
+},
+"workday:axos/wd5/axos": {
+"added": "2026-10-09",
 "fails": 0,
 "name": "Axos Bank",
 "ok": true,
@@ -29313,6 +29327,13 @@
 "ok": true,
 "worked": true
 },
+"workday:centific/wd1/centific_global": {
+"added": "2026-10-09",
+"fails": 0,
+"name": "Centific",
+"ok": true,
+"worked": true
+},
 "workday:centricsoftware/wd501/Centric": {
 "added": "2026-10-05",
 "fails": 0,
@@ -30395,6 +30416,13 @@
 "added": "2026-10-05",
 "fails": 0,
 "from": "survey",
+"name": "Denver",
+"ok": true,
+"worked": true
+},
+"workday:denver/wd1/ccd-denver-denvergov-csc_jobs-civil_service_jobs-police_jobs-fire_jobs": {
+"added": "2026-10-09",
+"fails": 0,
 "name": "Denver",
 "ok": true,
 "worked": true
@@ -32139,6 +32167,13 @@
 "ok": true,
 "worked": true
 },
+"workday:gehc/wd5/gehc_externalsite": {
+"added": "2026-10-09",
+"fails": 0,
+"name": "GE HealthCare",
+"ok": true,
+"worked": true
+},
 "workday:geico/wd1/External": {
 "added": "2026-10-05",
 "fails": 0,
@@ -33588,7 +33623,7 @@
 },
 "workday:intel/wd1/en-us": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "Intel",
 "ok": false
 },
@@ -36558,13 +36593,13 @@
 },
 "workday:osv-cci/wd1/CCICareers": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "Castleton Commodities International",
 "ok": false
 },
 "workday:osv-rubicon/wd5/MagniteCareers": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "Magnite",
 "ok": false
 },
@@ -40687,10 +40722,10 @@
 },
 "workday:vfc/wd5/icebreaker_careers": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Vfc",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:vfc/wd5/napapijri_careers": {
@@ -40727,7 +40762,7 @@
 },
 "workday:vhr-epri/wd1/epricareers": {
 "added": "2026-10-09",
-"fails": 2,
+"fails": 3,
 "name": "EPRI",
 "ok": false
 },
