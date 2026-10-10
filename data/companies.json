@@ -70,7 +70,7 @@
 },
 "ashby:AtomicSemi": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -378,7 +378,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 8,
+"fails": 9,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -553,7 +553,7 @@
 },
 "ashby:atomicsemi": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -3644,7 +3644,7 @@
 },
 "ashby:whatnot": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "WhatNot",
 "ok": false
 },
@@ -3800,7 +3800,7 @@
 },
 "avature:twosigma.avature.net/careers": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "Two Sigma",
 "ok": false
 },
@@ -3906,10 +3906,10 @@
 },
 "eightfold:apply.careers.microsoft.com|microsoft.com": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "by hand",
 "name": "Microsoft",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:arcadis.eightfold.ai|": {
@@ -4040,10 +4040,10 @@
 },
 "eightfold:explore.jobs.netflix.net|netflix.com": {
 "added": "2026-10-07",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Netflix",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:faurecia.eightfold.ai|": {
@@ -7120,7 +7120,7 @@
 },
 "greenhouse:hala": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "from": "survey",
 "name": "Hala",
 "ok": false,
@@ -7293,7 +7293,7 @@
 },
 "greenhouse:hubspotjobs": {
 "added": "2026-10-05",
-"fails": 14,
+"fails": 15,
 "from": "survey",
 "name": "HubSpot",
 "ok": false,
@@ -11176,10 +11176,10 @@
 },
 "icims:adminstartup-aus": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Allied Universal",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "icims:agency-magnera": {
@@ -14688,10 +14688,10 @@
 },
 "icims:startup-aus": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Allied Universal",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "icims:studentcareers-jhuapl": {
@@ -16052,7 +16052,7 @@
 },
 "lever:cirrus": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "Cirrus Logic",
 "ok": false
 },
@@ -17226,7 +17226,7 @@
 },
 "lever:quantinuum": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "Quantinuum",
 "ok": false
 },
@@ -17519,7 +17519,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 11,
+"fails": 12,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -21798,7 +21798,7 @@
 },
 "rmk:jobs.cmc.com": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 2,
 "from": "probe",
 "name": "Commercial Metals",
 "ok": false,
@@ -24277,13 +24277,13 @@
 },
 "taleo:energytransfer/etp_ext": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "Energy Transfer Partners",
 "ok": false
 },
 "taleo:kp/external": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "Kaiser Permanente",
 "ok": false
 },
@@ -34049,7 +34049,7 @@
 },
 "workday:intel/wd1/en-us": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "Intel",
 "ok": false
 },
@@ -37050,13 +37050,13 @@
 },
 "workday:osv-cci/wd1/CCICareers": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "Castleton Commodities International",
 "ok": false
 },
 "workday:osv-rubicon/wd5/MagniteCareers": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "Magnite",
 "ok": false
 },
@@ -41235,7 +41235,7 @@
 },
 "workday:vhr-epri/wd1/epricareers": {
 "added": "2026-10-10",
-"fails": 2,
+"fails": 3,
 "name": "EPRI",
 "ok": false
 },
