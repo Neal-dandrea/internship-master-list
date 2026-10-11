@@ -68,6 +68,12 @@
 "ok": true,
 "worked": true
 },
+"ashby:AtomicSemi": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "Atomic Semi",
+"ok": false
+},
 "ashby:Carwow": {
 "added": "2026-10-05",
 "fails": 0,
@@ -372,7 +378,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 10,
+"fails": 11,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -544,6 +550,12 @@
 "name": "Atlys",
 "ok": true,
 "worked": true
+},
+"ashby:atomicsemi": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "Atomic Semi",
+"ok": false
 },
 "ashby:auctor": {
 "added": "2026-10-04",
@@ -3630,6 +3642,12 @@
 "ok": true,
 "worked": true
 },
+"ashby:whatnot": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "WhatNot",
+"ok": false
+},
 "ashby:wincent": {
 "added": "2026-10-05",
 "fails": 0,
@@ -3730,10 +3748,10 @@
 },
 "atsx:tiktok": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "by hand",
 "name": "TikTok",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "avature:bloomberg.avature.net/careers": {
@@ -3779,6 +3797,12 @@
 "name": "Pomerleau",
 "ok": true,
 "worked": true
+},
+"avature:twosigma.avature.net/careers": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "Two Sigma",
+"ok": false
 },
 "bamboohr:armstrongfluidtechnology": {
 "added": "2026-10-05",
@@ -3882,10 +3906,10 @@
 },
 "eightfold:apply.careers.microsoft.com|microsoft.com": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "by hand",
 "name": "Microsoft",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:arcadis.eightfold.ai|": {
@@ -4151,10 +4175,10 @@
 },
 "eightfold:microsoft.eightfold.ai|": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Microsoft",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "eightfold:mlp.eightfold.ai|": {
@@ -7096,7 +7120,7 @@
 },
 "greenhouse:hala": {
 "added": "2026-10-05",
-"fails": 4,
+"fails": 5,
 "from": "survey",
 "name": "Hala",
 "ok": false,
@@ -7269,7 +7293,7 @@
 },
 "greenhouse:hubspotjobs": {
 "added": "2026-10-05",
-"fails": 16,
+"fails": 17,
 "from": "survey",
 "name": "HubSpot",
 "ok": false,
@@ -11152,10 +11176,10 @@
 },
 "icims:adminstartup-aus": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Allied Universal",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "icims:agency-magnera": {
@@ -16026,6 +16050,12 @@
 "ok": true,
 "worked": true
 },
+"lever:cirrus": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "Cirrus Logic",
+"ok": false
+},
 "lever:civitech": {
 "added": "2026-10-05",
 "fails": 0,
@@ -17194,6 +17224,12 @@
 "ok": true,
 "worked": true
 },
+"lever:quantinuum": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "Quantinuum",
+"ok": false
+},
 "lever:questanalytics": {
 "added": "2026-10-05",
 "fails": 0,
@@ -17483,7 +17519,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 13,
+"fails": 14,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -21762,7 +21798,7 @@
 },
 "rmk:jobs.cmc.com": {
 "added": "2026-10-05",
-"fails": 3,
+"fails": 4,
 "from": "probe",
 "name": "Commercial Metals",
 "ok": false,
@@ -24238,6 +24274,18 @@
 "name": "Zomato",
 "ok": true,
 "worked": true
+},
+"taleo:energytransfer/etp_ext": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "Energy Transfer Partners",
+"ok": false
+},
+"taleo:kp/external": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "Kaiser Permanente",
+"ok": false
 },
 "taleo:textron/textron": {
 "added": "2026-10-05",
@@ -33999,6 +34047,12 @@
 "ok": true,
 "worked": true
 },
+"workday:intel/wd1/en-us": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "Intel",
+"ok": false
+},
 "workday:intel/wd1/external": {
 "added": "2026-10-04",
 "fails": 0,
@@ -36994,6 +37048,18 @@
 "ok": true,
 "worked": true
 },
+"workday:osv-cci/wd1/CCICareers": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "Castleton Commodities International",
+"ok": false
+},
+"workday:osv-rubicon/wd5/MagniteCareers": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "Magnite",
+"ok": false
+},
 "workday:otis/wd504/rec_ext_gateway": {
 "added": "2026-10-05",
 "fails": 0,
@@ -37448,10 +37514,10 @@
 },
 "workday:plantemoran/wd1/opportunity": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Plante Moran (Opportunity)",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:plantemoran/wd1/pmexternalcareers": {
@@ -41105,10 +41171,10 @@
 },
 "workday:veteransunited/wd1/VUHL": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Veterans United",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:vfc/wd5/altra_careers": {
@@ -41166,6 +41232,12 @@
 "name": "VF",
 "ok": true,
 "worked": true
+},
+"workday:vhr-epri/wd1/epricareers": {
+"added": "2026-10-11",
+"fails": 1,
+"name": "EPRI",
+"ok": false
 },
 "workday:vialto/wd107/vialtoexternalcareers": {
 "added": "2026-10-04",
