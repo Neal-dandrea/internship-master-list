@@ -70,7 +70,7 @@
 },
 "ashby:AtomicSemi": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -378,7 +378,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 12,
+"fails": 13,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -553,7 +553,7 @@
 },
 "ashby:atomicsemi": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -3660,7 +3660,7 @@
 },
 "ashby:whatnot": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "WhatNot",
 "ok": false
 },
@@ -3816,7 +3816,7 @@
 },
 "avature:twosigma.avature.net/careers": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "Two Sigma",
 "ok": false
 },
@@ -7208,7 +7208,7 @@
 },
 "greenhouse:hala": {
 "added": "2026-10-05",
-"fails": 6,
+"fails": 7,
 "from": "survey",
 "name": "Hala",
 "ok": false,
@@ -7389,7 +7389,7 @@
 },
 "greenhouse:hubspotjobs": {
 "added": "2026-10-05",
-"fails": 18,
+"fails": 19,
 "from": "survey",
 "name": "HubSpot",
 "ok": false,
@@ -16236,7 +16236,7 @@
 },
 "lever:cirrus": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "Cirrus Logic",
 "ok": false
 },
@@ -17434,7 +17434,7 @@
 },
 "lever:quantinuum": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "Quantinuum",
 "ok": false
 },
@@ -17727,7 +17727,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 15,
+"fails": 16,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -22046,7 +22046,7 @@
 },
 "rmk:jobs.cmc.com": {
 "added": "2026-10-05",
-"fails": 5,
+"fails": 6,
 "from": "probe",
 "name": "Commercial Metals",
 "ok": false,
@@ -24533,13 +24533,13 @@
 },
 "taleo:energytransfer/etp_ext": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "Energy Transfer Partners",
 "ok": false
 },
 "taleo:kp/external": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "Kaiser Permanente",
 "ok": false
 },
@@ -33007,18 +33007,18 @@
 },
 "workday:gcu/wd1/GCEC": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Gcu (GCEC)",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:gcu/wd1/gcuc": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "GCU's Christian worldview",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:gdit/wd5/external_career_site": {
@@ -34545,7 +34545,7 @@
 },
 "workday:intel/wd1/en-us": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "Intel",
 "ok": false
 },
@@ -37594,13 +37594,13 @@
 },
 "workday:osv-cci/wd1/CCICareers": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "Castleton Commodities International",
 "ok": false
 },
 "workday:osv-rubicon/wd5/MagniteCareers": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "Magnite",
 "ok": false
 },
@@ -41827,7 +41827,7 @@
 },
 "workday:vhr-epri/wd1/epricareers": {
 "added": "2026-10-11",
-"fails": 2,
+"fails": 3,
 "name": "EPRI",
 "ok": false
 },
