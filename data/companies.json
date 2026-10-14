@@ -75,6 +75,12 @@
 "ok": true,
 "worked": true
 },
+"ashby:AtomicSemi": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "Atomic Semi",
+"ok": false
+},
 "ashby:Carwow": {
 "added": "2026-10-05",
 "fails": 0,
@@ -379,7 +385,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 18,
+"fails": 19,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -551,6 +557,12 @@
 "name": "Atlys",
 "ok": true,
 "worked": true
+},
+"ashby:atomicsemi": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "Atomic Semi",
+"ok": false
 },
 "ashby:auctor": {
 "added": "2026-10-04",
@@ -2536,7 +2548,7 @@
 },
 "ashby:paires": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 3,
 "from": "survey",
 "name": "Paires",
 "ok": false,
@@ -3684,6 +3696,12 @@
 "ok": true,
 "worked": true
 },
+"ashby:whatnot": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "WhatNot",
+"ok": false
+},
 "ashby:wincent": {
 "added": "2026-10-05",
 "fails": 0,
@@ -3840,6 +3858,12 @@
 "name": "Siemens",
 "ok": true,
 "worked": true
+},
+"avature:twosigma.avature.net/careers": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "Two Sigma",
+"ok": false
 },
 "bamboohr:armstrongfluidtechnology": {
 "added": "2026-10-05",
@@ -4860,9 +4884,9 @@
 },
 "greenhouse:andurilindustries": {
 "added": "2026-10-04",
-"fails": 1,
+"fails": 0,
 "name": "Anduril",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "greenhouse:aninebing": {
@@ -7196,6 +7220,13 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:groma": {
+"added": "2026-10-14",
+"fails": 0,
+"name": "Groma",
+"ok": true,
+"worked": true
+},
 "greenhouse:groww": {
 "added": "2026-10-05",
 "fails": 0,
@@ -7276,7 +7307,7 @@
 },
 "greenhouse:hala": {
 "added": "2026-10-05",
-"fails": 12,
+"fails": 13,
 "from": "survey",
 "name": "Hala",
 "ok": false,
@@ -7457,7 +7488,7 @@
 },
 "greenhouse:hubspotjobs": {
 "added": "2026-10-05",
-"fails": 24,
+"fails": 25,
 "from": "survey",
 "name": "HubSpot",
 "ok": false,
@@ -16498,6 +16529,12 @@
 "ok": true,
 "worked": true
 },
+"lever:cirrus": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "Cirrus Logic",
+"ok": false
+},
 "lever:civitech": {
 "added": "2026-10-05",
 "fails": 0,
@@ -17690,6 +17727,12 @@
 "ok": true,
 "worked": true
 },
+"lever:quantinuum": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "Quantinuum",
+"ok": false
+},
 "lever:questanalytics": {
 "added": "2026-10-05",
 "fails": 0,
@@ -17986,7 +18029,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 21,
+"fails": 22,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -25019,6 +25062,18 @@
 "name": "Zomato",
 "ok": true,
 "worked": true
+},
+"taleo:energytransfer/etp_ext": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "Energy Transfer Partners",
+"ok": false
+},
+"taleo:kp/external": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "Kaiser Permanente",
+"ok": false
 },
 "taleo:textron/textron": {
 "added": "2026-10-05",
@@ -35307,6 +35362,12 @@
 "ok": true,
 "worked": true
 },
+"workday:intel/wd1/en-us": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "Intel",
+"ok": false
+},
 "workday:intel/wd1/external": {
 "added": "2026-10-04",
 "fails": 0,
@@ -37402,10 +37463,10 @@
 },
 "workday:movadogroup/wd1/careers": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Movado Group",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:mpc/wd1/MPCCareers": {
@@ -37978,9 +38039,9 @@
 },
 "workday:nordsonhcm/wd501/nordsoncareers": {
 "added": "2026-10-04",
-"fails": 1,
+"fails": 0,
 "name": "Nordson",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:norgesgruppen/wd3/karriere": {
@@ -38430,6 +38491,18 @@
 "name": "Ohio State University",
 "ok": true,
 "worked": true
+},
+"workday:osv-cci/wd1/CCICareers": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "Castleton Commodities International",
+"ok": false
+},
+"workday:osv-rubicon/wd5/MagniteCareers": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "Magnite",
+"ok": false
 },
 "workday:otis/wd504/rec_ext_gateway": {
 "added": "2026-10-05",
@@ -42748,6 +42821,12 @@
 "name": "VF",
 "ok": true,
 "worked": true
+},
+"workday:vhr-epri/wd1/epricareers": {
+"added": "2026-10-14",
+"fails": 1,
+"name": "EPRI",
+"ok": false
 },
 "workday:vialto/wd107/vialtoexternalcareers": {
 "added": "2026-10-04",
