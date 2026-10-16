@@ -77,7 +77,7 @@
 },
 "ashby:AtomicSemi": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -245,7 +245,7 @@
 },
 "ashby:a37": {
 "added": "2026-10-05",
-"fails": 3,
+"fails": 4,
 "from": "survey",
 "name": "A37",
 "ok": false,
@@ -385,7 +385,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 27,
+"fails": 28,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -560,7 +560,7 @@
 },
 "ashby:atomicsemi": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -2225,7 +2225,7 @@
 },
 "ashby:maximor": {
 "added": "2026-10-04",
-"fails": 6,
+"fails": 7,
 "name": "Maximor AI",
 "ok": false,
 "worked": true
@@ -2609,7 +2609,7 @@
 },
 "ashby:paires": {
 "added": "2026-10-05",
-"fails": 11,
+"fails": 12,
 "from": "survey",
 "name": "Paires",
 "ok": false,
@@ -3767,7 +3767,7 @@
 },
 "ashby:whatnot": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "WhatNot",
 "ok": false
 },
@@ -3930,7 +3930,7 @@
 },
 "avature:twosigma.avature.net/careers": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "Two Sigma",
 "ok": false
 },
@@ -7439,7 +7439,7 @@
 },
 "greenhouse:hala": {
 "added": "2026-10-05",
-"fails": 21,
+"fails": 22,
 "from": "survey",
 "name": "Hala",
 "ok": false,
@@ -7620,7 +7620,7 @@
 },
 "greenhouse:hubspotjobs": {
 "added": "2026-10-05",
-"fails": 33,
+"fails": 34,
 "from": "survey",
 "name": "HubSpot",
 "ok": false,
@@ -11369,7 +11369,7 @@
 },
 "greenhouse:visiersolutionsinc": {
 "added": "2026-10-11",
-"fails": 4,
+"fails": 5,
 "from": "survey",
 "name": "Visier Solutions",
 "ok": false,
@@ -11466,6 +11466,13 @@
 "fails": 0,
 "from": "survey",
 "name": "Welearn",
+"ok": true,
+"worked": true
+},
+"greenhouse:wfclainc": {
+"added": "2026-10-16",
+"fails": 0,
+"name": "Angel City",
 "ok": true,
 "worked": true
 },
@@ -15631,6 +15638,13 @@
 "ok": true,
 "worked": true
 },
+"jazzhr:healthpeak": {
+"added": "2026-10-16",
+"fails": 0,
+"name": "Healthpeak Properties",
+"ok": true,
+"worked": true
+},
 "jazzhr:hiebing": {
 "added": "2026-10-05",
 "fails": 0,
@@ -16733,7 +16747,7 @@
 },
 "lever:cirrus": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "Cirrus Logic",
 "ok": false
 },
@@ -17939,7 +17953,7 @@
 },
 "lever:quantinuum": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "Quantinuum",
 "ok": false
 },
@@ -18253,7 +18267,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 30,
+"fails": 31,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -19181,33 +19195,33 @@
 },
 "oracle:eeho.fa.us2.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Oracle",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:eeho.fa.us2.oraclecloud.com/CX_1001": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Oracle",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:eeho.fa.us2.oraclecloud.com/CX_45001": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "name": "Oracle",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:eeho.fa.us2.oraclecloud.com/jobsearch": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Oracle",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "oracle:eeih.fa.us2.oraclecloud.com/CX_6": {
@@ -19793,10 +19807,10 @@
 },
 "oracle:ejvp.fa.us2.oraclecloud.com/cx_1001": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Cherokee Nation Businesses Corporate",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "oracle:ejwl.fa.us2.oraclecloud.com/CX": {
@@ -25353,13 +25367,13 @@
 },
 "taleo:energytransfer/etp_ext": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "Energy Transfer Partners",
 "ok": false
 },
 "taleo:kp/external": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "Kaiser Permanente",
 "ok": false
 },
@@ -29821,6 +29835,13 @@
 "ok": true,
 "worked": true
 },
+"workday:axiomspace/wd5/External_Career_Site": {
+"added": "2026-10-16",
+"fails": 0,
+"name": "Axiom Space",
+"ok": true,
+"worked": true
+},
 "workday:axis/wd3/external_career_site": {
 "added": "2026-10-11",
 "fails": 0,
@@ -31555,9 +31576,9 @@
 },
 "workday:citi/wd5/2": {
 "added": "2026-10-04",
-"fails": 1,
+"fails": 0,
 "name": "Citi",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:citjpl/wd5/Jobs": {
@@ -35803,7 +35824,7 @@
 },
 "workday:intel/wd1/en-us": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "Intel",
 "ok": false
 },
@@ -39002,13 +39023,13 @@
 },
 "workday:osv-cci/wd1/CCICareers": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "Castleton Commodities International",
 "ok": false
 },
 "workday:osv-rubicon/wd5/MagniteCareers": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "Magnite",
 "ok": false
 },
@@ -39412,9 +39433,9 @@
 },
 "workday:pimco/wd1/pimco-careers": {
 "added": "2026-10-04",
-"fails": 0,
+"fails": 1,
 "name": "PIMCO",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:pinerest/wd5/PineRest": {
@@ -42499,6 +42520,13 @@
 "ok": true,
 "worked": true
 },
+"workday:tmobile/wd1/External": {
+"added": "2026-10-16",
+"fails": 0,
+"name": "T-Mobile",
+"ok": true,
+"worked": true
+},
 "workday:tmx/wd3/TMX_Careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -43392,7 +43420,7 @@
 },
 "workday:vhr-epri/wd1/epricareers": {
 "added": "2026-10-16",
-"fails": 1,
+"fails": 2,
 "name": "EPRI",
 "ok": false
 },
