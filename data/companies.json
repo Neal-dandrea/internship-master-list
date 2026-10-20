@@ -3243,6 +3243,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:satispay": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Satispay",
+"ok": true,
+"worked": true
+},
 "ashby:scientech-research": {
 "added": "2026-10-05",
 "fails": 0,
@@ -3619,6 +3627,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Tessera Labs",
+"ok": true,
+"worked": true
+},
+"ashby:teya": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Teya",
 "ok": true,
 "worked": true
 },
@@ -4941,11 +4957,27 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:aidashinc": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Aidashinc",
+"ok": true,
+"worked": true
+},
 "greenhouse:aift": {
 "added": "2026-10-05",
 "fails": 0,
 "from": "survey",
 "name": "Aift",
+"ok": true,
+"worked": true
+},
+"greenhouse:airbnb": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Airbnb",
 "ok": true,
 "worked": true
 },
@@ -5137,6 +5169,14 @@
 "fails": 0,
 "from": "careers page",
 "name": "American Equity",
+"ok": true,
+"worked": true
+},
+"greenhouse:americanmarketingassociation": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "American Marketing Association",
 "ok": true,
 "worked": true
 },
@@ -6439,6 +6479,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:cyclicmaterialsinc": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Cyclic Materials Inc.",
+"ok": true,
+"worked": true
+},
 "greenhouse:d2l": {
 "added": "2026-10-05",
 "fails": 0,
@@ -6823,6 +6871,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Energize Colleges",
+"ok": true,
+"worked": true
+},
+"greenhouse:energysolutionsinternships": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Energysolutionsinternships",
 "ok": true,
 "worked": true
 },
@@ -8711,6 +8767,22 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:liscinternships": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Internship Opportunities",
+"ok": true,
+"worked": true
+},
+"greenhouse:llrpartnersjobs": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "LLR Partners",
+"ok": true,
+"worked": true
+},
 "greenhouse:lockwood": {
 "added": "2026-10-05",
 "fails": 0,
@@ -8906,6 +8978,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Maven Securities",
+"ok": true,
+"worked": true
+},
+"greenhouse:mbarecruitingcra": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Mbarecruitingcra",
 "ok": true,
 "worked": true
 },
@@ -9359,6 +9439,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Nextiva",
+"ok": true,
+"worked": true
+},
+"greenhouse:nintendo": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Nintendo",
 "ok": true,
 "worked": true
 },
@@ -10840,6 +10928,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:solidpower": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Solid Power",
+"ok": true,
+"worked": true
+},
 "greenhouse:solomonpartnersstudentsgraduates": {
 "added": "2026-10-05",
 "fails": 0,
@@ -11387,6 +11483,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:think-cell": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Think Cell",
+"ok": true,
+"worked": true
+},
 "greenhouse:thinkacademysg": {
 "added": "2026-10-05",
 "fails": 0,
@@ -11918,6 +12022,14 @@
 "added": "2026-10-16",
 "fails": 0,
 "name": "Wikimedia Foundation",
+"ok": true,
+"worked": true
+},
+"greenhouse:wikimediainternship": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Wikimediainternship",
 "ok": true,
 "worked": true
 },
@@ -13329,6 +13441,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-healthequity": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "HealthEquity Inc.",
+"ok": true,
+"worked": true
+},
 "icims:careers-heart": {
 "added": "2026-10-05",
 "fails": 0,
@@ -13822,6 +13942,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Palmetto Citizens Federal Credit Union",
+"ok": true,
+"worked": true
+},
+"icims:careers-parkhill": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Parkhill",
 "ok": true,
 "worked": true
 },
@@ -18302,6 +18430,14 @@
 "ok": true,
 "worked": true
 },
+"lever:neowiz": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Neowiz",
+"ok": true,
+"worked": true
+},
 "lever:netlight": {
 "added": "2026-10-05",
 "fails": 0,
@@ -21257,6 +21393,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Fa Elxu Test Saasfaprod1",
+"ok": true,
+"worked": true
+},
+"oracle:fa-elzs-saasfaprod1.fa.ocs.oraclecloud.com/CX": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Manhattan District Attorney's Office",
 "ok": true,
 "worked": true
 },
@@ -27166,6 +27310,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/NED1000NEDE/e7b33ed9-42e0-4099-ba3c-e1b6fb24621e": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/NET1004/4854471e-f2ab-4bed-a3cd-3f7a1072bfef": {
 "added": "2026-10-17",
 "fails": 0,
@@ -32118,6 +32270,14 @@
 "ok": true,
 "worked": true
 },
+"workday:capitalhealth/wd1/CapitalHealthCareers": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Capital Health",
+"ok": true,
+"worked": true
+},
 "workday:capitalone/wd12/Capital_One": {
 "added": "2026-10-04",
 "fails": 0,
@@ -34833,6 +34993,14 @@
 "ok": true,
 "worked": true
 },
+"workday:fhi/wd1/FHI_360_External_Career_Portal": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Fhi",
+"ok": true,
+"worked": true
+},
 "workday:fhlb/wd1/FHLB_Careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -36787,6 +36955,14 @@
 "ok": true,
 "worked": true
 },
+"workday:iberdrola/wd3/iberdrola": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Iberdrola Group",
+"ok": true,
+"worked": true
+},
 "workday:icf/wd5/icfexternal_career_site": {
 "added": "2026-10-04",
 "fails": 0,
@@ -37534,6 +37710,14 @@
 "fails": 0,
 "from": "survey",
 "name": "The University of Kansas Hospital",
+"ok": true,
+"worked": true
+},
+"workday:kantar/wd3/kantar": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Kantar",
 "ok": true,
 "worked": true
 },
@@ -40280,6 +40464,14 @@
 "ok": true,
 "worked": true
 },
+"workday:orix/wd5/External_ORIX": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Orix",
+"ok": true,
+"worked": true
+},
 "workday:oshkoshcorporation/wd5/Oshkosh": {
 "added": "2026-10-04",
 "fails": 0,
@@ -40478,6 +40670,14 @@
 },
 "workday:panduit/wd1/International": {
 "added": "2026-10-06",
+"fails": 0,
+"from": "survey",
+"name": "Panduit",
+"ok": true,
+"worked": true
+},
+"workday:panduit/wd1/interncoop": {
+"added": "2026-10-20",
 "fails": 0,
 "from": "survey",
 "name": "Panduit",
@@ -41501,6 +41701,14 @@
 "added": "2026-10-06",
 "fails": 0,
 "name": "LexisNexis Legal & Professional",
+"ok": true,
+"worked": true
+},
+"workday:relx/wd3/ReedExhibitions": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "RX",
 "ok": true,
 "worked": true
 },
@@ -44503,6 +44711,14 @@
 "ok": true,
 "worked": true
 },
+"workday:upm/wd103/Careers": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Upm",
+"ok": true,
+"worked": true
+},
 "workday:uq/wd3/broadbean_external": {
 "added": "2026-10-05",
 "fails": 0,
@@ -44575,6 +44791,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "University System of New Hampshire",
+"ok": true,
+"worked": true
+},
+"workday:utahcounty/wd1/Utah_County_Careers": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Assessor The Utah County Assessor's office",
 "ok": true,
 "worked": true
 },
@@ -44949,6 +45173,14 @@
 "fails": 0,
 "from": "survey",
 "name": "AssetWorks",
+"ok": true,
+"worked": true
+},
+"workday:volarisgroup/wd3/Cultura": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Volarisgroup (Cultura)",
 "ok": true,
 "worked": true
 },
@@ -45365,6 +45597,14 @@
 "ok": true,
 "worked": true
 },
+"workday:whitecap/wd1/careers": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "White Cap Supply Holdings",
+"ok": true,
+"worked": true
+},
 "workday:wilburellis/wd12/wilbur-ellis": {
 "added": "2026-10-04",
 "fails": 0,
@@ -45409,6 +45649,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Winland Foods",
+"ok": true,
+"worked": true
+},
+"workday:wintrust/wd1/search": {
+"added": "2026-10-20",
+"fails": 0,
+"from": "survey",
+"name": "Wintrust",
 "ok": true,
 "worked": true
 },
