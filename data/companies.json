@@ -1388,6 +1388,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:escape": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Escape Technologies",
+"ok": true,
+"worked": true
+},
 "ashby:espa": {
 "added": "2026-10-04",
 "fails": 0,
@@ -6502,6 +6510,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:clutch": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Clutch Technologies Inc.",
+"ok": true,
+"worked": true
+},
 "greenhouse:cmt": {
 "added": "2026-10-05",
 "fails": 0,
@@ -8850,6 +8866,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Kolmacintegratedbehavioralhealth",
+"ok": true,
+"worked": true
+},
+"greenhouse:konovo": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Konovo",
 "ok": true,
 "worked": true
 },
@@ -12007,6 +12031,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:uberfreight": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Uber Freight",
+"ok": true,
+"worked": true
+},
 "greenhouse:udig": {
 "added": "2026-10-05",
 "fails": 0,
@@ -12142,6 +12174,14 @@
 "added": "2026-10-13",
 "fails": 0,
 "name": "Vestmark",
+"ok": true,
+"worked": true
+},
+"greenhouse:vestwell": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Vestwell",
 "ok": true,
 "worked": true
 },
@@ -12822,6 +12862,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "Atlassian",
+"ok": true,
+"worked": true
+},
+"icims:careers-amtrustgroup": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "AmTrust Financial",
 "ok": true,
 "worked": true
 },
@@ -15570,6 +15618,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Emeacareers Trinseo",
+"ok": true,
+"worked": true
+},
+"icims:employees-hrblock": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "H&R Block",
 "ok": true,
 "worked": true
 },
@@ -22603,6 +22659,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:fa-ewwt-saasfaprod1.fa.ocs.oraclecloud.com/cx_6001": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Americold Global",
+"ok": true,
+"worked": true
+},
 "oracle:fa-ewye-saasfaprod1.fa.ocs.oraclecloud.com/AkosomboHotelsLtd": {
 "added": "2026-10-05",
 "fails": 0,
@@ -23542,6 +23606,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "Honeywell",
+"ok": true,
+"worked": true
+},
+"oracle:ibtcjb.fa.ocs.oraclecloud.com/careers": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Cherokee Federal",
 "ok": true,
 "worked": true
 },
@@ -26558,6 +26630,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:rrbusinessconsultants": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "R&R Business Consultants",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:santen": {
 "added": "2026-10-07",
 "fails": 0,
@@ -28343,6 +28423,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/TEC1006TESER/18180d88-ced0-4361-bd09-d5eef66dab24": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "TechnoServe",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/TEK1000TAC/e469dd97-cdcf-4a0b-affc-cdf255040c75": {
 "added": "2026-10-05",
 "fails": 0,
@@ -29084,6 +29172,14 @@
 "ok": true,
 "worked": true
 },
+"workable:carma-1": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "CARMA",
+"ok": true,
+"worked": true
+},
 "workable:celsius": {
 "added": "2026-10-06",
 "fails": 0,
@@ -29236,6 +29332,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Cryptonext Security",
+"ok": true,
+"worked": true
+},
+"workable:cxg": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Cxg",
 "ok": true,
 "worked": true
 },
@@ -40019,6 +40123,14 @@
 "ok": true,
 "worked": true
 },
+"workday:microchiphr/wd5/external": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Microchip Technology",
+"ok": true,
+"worked": true
+},
 "workday:micron/wd1/External": {
 "added": "2026-10-04",
 "fails": 0,
@@ -43216,6 +43328,14 @@
 "ok": true,
 "worked": true
 },
+"workday:russell/wd5/russellinvestments": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Russell Investments",
+"ok": true,
+"worked": true
+},
 "workday:ryan/wd1/RyanCareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -43418,6 +43538,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Sartorius",
+"ok": true,
+"worked": true
+},
+"workday:saxobank/wd3/careeratsaxobank": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Saxobank",
 "ok": true,
 "worked": true
 },
@@ -43850,6 +43978,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Sluhn",
+"ok": true,
+"worked": true
+},
+"workday:smithfieldfoods/wd1/Careers": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Smithfield Foods",
 "ok": true,
 "worked": true
 },
@@ -44391,6 +44527,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Sulzer",
+"ok": true,
+"worked": true
+},
+"workday:sunbeltrentals/wd1/sbcareers": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Sb",
 "ok": true,
 "worked": true
 },
@@ -45599,6 +45743,14 @@
 "ok": true,
 "worked": true
 },
+"workday:ucumberlands/wd1/careers": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Ucumberlands",
+"ok": true,
+"worked": true
+},
 "workday:uhyus/wd12/uhy": {
 "added": "2026-10-05",
 "fails": 0,
@@ -45857,6 +46009,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Assessor The Utah County Assessor's office",
+"ok": true,
+"worked": true
+},
+"workday:utaustin/wd1/UTstaff": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "University of Texas - Austin",
 "ok": true,
 "worked": true
 },
@@ -47075,6 +47235,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Youthvillages",
+"ok": true,
+"worked": true
+},
+"workday:zalando/wd3/zalandositewd": {
+"added": "2026-10-23",
+"fails": 0,
+"from": "survey",
+"name": "Zalando",
 "ok": true,
 "worked": true
 },
