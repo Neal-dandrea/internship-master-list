@@ -75,6 +75,12 @@
 "ok": true,
 "worked": true
 },
+"ashby:AtomicSemi": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Atomic Semi",
+"ok": false
+},
 "ashby:Carwow": {
 "added": "2026-10-05",
 "fails": 0,
@@ -254,7 +260,7 @@
 },
 "ashby:a37": {
 "added": "2026-10-05",
-"fails": 42,
+"fails": 43,
 "from": "survey",
 "name": "A37",
 "ok": false,
@@ -401,7 +407,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 66,
+"fails": 67,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -587,6 +593,12 @@
 "name": "Atlys",
 "ok": true,
 "worked": true
+},
+"ashby:atomicsemi": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Atomic Semi",
+"ok": false
 },
 "ashby:auctor": {
 "added": "2026-10-04",
@@ -902,6 +914,12 @@
 "name": "Chai Discovery",
 "ok": true,
 "worked": true
+},
+"ashby:chainlink-labs": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Chainlink Labs",
+"ok": false
 },
 "ashby:chartahealth": {
 "added": "2026-10-04",
@@ -2380,7 +2398,7 @@
 },
 "ashby:maximor": {
 "added": "2026-10-04",
-"fails": 45,
+"fails": 46,
 "name": "Maximor AI",
 "ok": false,
 "worked": true
@@ -2808,7 +2826,7 @@
 },
 "ashby:paires": {
 "added": "2026-10-05",
-"fails": 50,
+"fails": 51,
 "from": "survey",
 "name": "Paires",
 "ok": false,
@@ -3844,7 +3862,7 @@
 },
 "ashby:twin-so": {
 "added": "2026-10-05",
-"fails": 28,
+"fails": 29,
 "from": "survey",
 "name": "Twin Labs",
 "ok": false,
@@ -4067,6 +4085,12 @@
 "ok": true,
 "worked": true
 },
+"ashby:whatnot": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "WhatNot",
+"ok": false
+},
 "ashby:wincent": {
 "added": "2026-10-05",
 "fails": 0,
@@ -4268,6 +4292,12 @@
 "ok": true,
 "worked": true
 },
+"avature:twosigma.avature.net/careers": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Two Sigma",
+"ok": false
+},
 "bamboohr:armstrongfluidtechnology": {
 "added": "2026-10-05",
 "fails": 0,
@@ -4414,10 +4444,10 @@
 },
 "eightfold:apply.careers.microsoft.com|microsoft.com": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "by hand",
 "name": "Microsoft",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:arcadis.eightfold.ai|": {
@@ -4739,10 +4769,10 @@
 },
 "eightfold:microsoft.eightfold.ai|": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 0,
 "from": "survey",
 "name": "Microsoft",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:mlp.eightfold.ai|": {
@@ -6094,7 +6124,7 @@
 },
 "greenhouse:bucknerinternational": {
 "added": "2026-10-05",
-"fails": 10,
+"fails": 11,
 "from": "survey",
 "name": "Bucknerinternational",
 "ok": false,
@@ -8020,7 +8050,7 @@
 },
 "greenhouse:hala": {
 "added": "2026-10-05",
-"fails": 60,
+"fails": 61,
 "from": "survey",
 "name": "Hala",
 "ok": false,
@@ -8571,7 +8601,7 @@
 },
 "greenhouse:isidor": {
 "added": "2026-10-05",
-"fails": 34,
+"fails": 35,
 "from": "survey",
 "name": "Isidor",
 "ok": false,
@@ -9931,7 +9961,7 @@
 },
 "greenhouse:oldmissioncapital": {
 "added": "2026-10-05",
-"fails": 15,
+"fails": 16,
 "from": "survey",
 "name": "Old Mission Capital",
 "ok": false,
@@ -10962,7 +10992,7 @@
 },
 "greenhouse:scoutai": {
 "added": "2026-10-05",
-"fails": 21,
+"fails": 22,
 "from": "survey",
 "name": "Scout AI",
 "ok": false,
@@ -12292,7 +12322,7 @@
 },
 "greenhouse:visiersolutionsinc": {
 "added": "2026-10-11",
-"fails": 43,
+"fails": 44,
 "from": "survey",
 "name": "Visier Solutions",
 "ok": false,
@@ -17955,6 +17985,12 @@
 "ok": true,
 "worked": true
 },
+"lever:cirrus": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Cirrus Logic",
+"ok": false
+},
 "lever:civitech": {
 "added": "2026-10-05",
 "fails": 0,
@@ -18637,10 +18673,10 @@
 },
 "lever:jobgether": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Jobgether",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "lever:kabam": {
@@ -19215,6 +19251,12 @@
 "ok": true,
 "worked": true
 },
+"lever:quantinuum": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Quantinuum",
+"ok": false
+},
 "lever:questanalytics": {
 "added": "2026-10-05",
 "fails": 0,
@@ -19408,9 +19450,9 @@
 },
 "lever:shyftlabs": {
 "added": "2026-10-04",
-"fails": 1,
+"fails": 0,
 "name": "ShyftLabs",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "lever:sierraclub": {
@@ -19549,7 +19591,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 69,
+"fails": 70,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -23638,10 +23680,10 @@
 },
 "oracle:iazuqy.fa.ocs.oraclecloud.com/CX_1": {
 "added": "2026-10-07",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Iazuqy",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "oracle:ibaeqy.fa.ocs.oraclecloud.com/CX_1": {
@@ -26990,6 +27032,12 @@
 "name": "Zomato",
 "ok": true,
 "worked": true
+},
+"taleo:energytransfer/etp_ext": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Energy Transfer Partners",
+"ok": false
 },
 "taleo:massanf/ex": {
 "added": "2026-10-20",
@@ -34525,10 +34573,10 @@
 },
 "workday:cw/wd1/external": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Cushman & Wakefield",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:cwi/wd1/CW_Careers": {
@@ -35396,10 +35444,10 @@
 },
 "workday:embryriddle/wd1/External": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Embry-Riddle Aeronautical University",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:emcins/wd5/EMC_Careers": {
@@ -38351,6 +38399,12 @@
 "name": "Intel",
 "ok": true,
 "worked": true
+},
+"workday:intel/wd1/en-us": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Intel",
+"ok": false
 },
 "workday:intel/wd1/external": {
 "added": "2026-10-04",
@@ -41774,6 +41828,18 @@
 "name": "Ohio State University",
 "ok": true,
 "worked": true
+},
+"workday:osv-cci/wd1/CCICareers": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Castleton Commodities International",
+"ok": false
+},
+"workday:osv-rubicon/wd5/MagniteCareers": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Magnite",
+"ok": false
 },
 "workday:otis/wd504/rec_ext_gateway": {
 "added": "2026-10-05",
@@ -46598,7 +46664,7 @@
 },
 "workday:vhr-genband/wd1/ribboncareers": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Ribbon",
 "ok": false
 },
