@@ -1190,6 +1190,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:datasnipper": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Datasnipper",
+"ok": true,
+"worked": true
+},
 "ashby:decagon": {
 "added": "2026-10-04",
 "fails": 0,
@@ -6432,6 +6440,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:chenmoore": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Chenmoore",
+"ok": true,
+"worked": true
+},
 "greenhouse:chicagotradingcampus": {
 "added": "2026-10-04",
 "fails": 0,
@@ -7820,6 +7836,14 @@
 "added": "2026-10-08",
 "fails": 0,
 "name": "Goodfire",
+"ok": true,
+"worked": true
+},
+"greenhouse:gostudent": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Gostudent",
 "ok": true,
 "worked": true
 },
@@ -10585,6 +10609,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:revloncorporate": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Revlon Corporate",
+"ok": true,
+"worked": true
+},
 "greenhouse:rfsmart": {
 "added": "2026-10-04",
 "fails": 0,
@@ -11480,6 +11512,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Strategicmissioncritical",
+"ok": true,
+"worked": true
+},
+"greenhouse:stratolaunch": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Stratolaunch",
 "ok": true,
 "worked": true
 },
@@ -23028,6 +23068,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:hcjy.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Cooper Companies",
+"ok": true,
+"worked": true
+},
 "oracle:hckz.fa.us2.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
 "fails": 0,
@@ -28500,6 +28548,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/SUR1004SRGY/aa616d8f-f2a8-46c2-8f8e-1ca56e162ffd": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Surgery Partners",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/SVA1000SVA/2db3be96-4ece-41eb-b975-60fddaead530": {
 "added": "2026-10-05",
 "fails": 0,
@@ -29874,6 +29930,14 @@
 "fails": 0,
 "from": "survey",
 "name": "PeakMade Real Estate",
+"ok": true,
+"worked": true
+},
+"workable:peopleworth": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Peopleworth",
 "ok": true,
 "worked": true
 },
@@ -32670,6 +32734,14 @@
 "ok": true,
 "worked": true
 },
+"workday:boydgroup/wd1/boydcareers": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "The Boyd Group",
+"ok": true,
+"worked": true
+},
 "workday:boystown/wd1/boystowncareers": {
 "added": "2026-10-10",
 "fails": 0,
@@ -33529,6 +33601,14 @@
 "ok": true,
 "worked": true
 },
+"workday:charlottenc/wd12/citgov": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "City of Charlotte",
+"ok": true,
+"worked": true
+},
 "workday:charlottenc/wd12/citgovintern": {
 "added": "2026-10-21",
 "fails": 0,
@@ -33881,6 +33961,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Clorox",
+"ok": true,
+"worked": true
+},
+"workday:cloudflight/wd103/external_career_site": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Cloudflight",
 "ok": true,
 "worked": true
 },
@@ -35811,6 +35899,14 @@
 "added": "2026-10-13",
 "fails": 0,
 "name": "Expedia Group",
+"ok": true,
+"worked": true
+},
+"workday:factset/wd108/FactSetCareers": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Factset",
 "ok": true,
 "worked": true
 },
@@ -38136,6 +38232,14 @@
 "ok": true,
 "worked": true
 },
+"workday:imerys/wd3/imerys-careers": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Imerys",
+"ok": true,
+"worked": true
+},
 "workday:imf/wd5/IMF": {
 "added": "2026-10-05",
 "fails": 0,
@@ -38204,6 +38308,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Ing",
+"ok": true,
+"worked": true
+},
+"workday:ingevity/wd1/ingevity": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Ingevity",
 "ok": true,
 "worked": true
 },
@@ -38404,6 +38516,14 @@
 "fails": 0,
 "from": "survey",
 "name": "PSP Investments",
+"ok": true,
+"worked": true
+},
+"workday:invitationhomes/wd503/INVH": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Invitation Homes",
 "ok": true,
 "worked": true
 },
@@ -39407,6 +39527,14 @@
 "ok": true,
 "worked": true
 },
+"workday:lnw/wd5/lightwonderexternalcareers": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Light & Wonder",
+"ok": true,
+"worked": true
+},
 "workday:loganhealth/wd1/logan_careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -40088,6 +40216,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Mercy Health Australia",
+"ok": true,
+"worked": true
+},
+"workday:mercycare/wd5/Mercy_Cedar_Rapids_Careers": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Mercy Cedar Rapids",
 "ok": true,
 "worked": true
 },
@@ -41061,6 +41197,14 @@
 "ok": true,
 "worked": true
 },
+"workday:nextdecade/wd501/GlobalCareers": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Nextdecade",
+"ok": true,
+"worked": true
+},
 "workday:ngc/wd1/Northrop_Grumman_External_Site": {
 "added": "2026-10-04",
 "fails": 0,
@@ -41358,6 +41502,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Data centers",
+"ok": true,
+"worked": true
+},
+"workday:nttlimited/wd3/internal_employees_not_on_workday": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Nttlimited (Internal Employees Not On Workday)",
 "ok": true,
 "worked": true
 },
@@ -44044,6 +44196,14 @@
 "ok": true,
 "worked": true
 },
+"workday:sjrmc/wd1/SJRMC": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Sjrmc",
+"ok": true,
+"worked": true
+},
 "workday:sjrmc/wd1/sjrmc_student": {
 "added": "2026-10-05",
 "fails": 0,
@@ -45107,6 +45267,14 @@
 "ok": true,
 "worked": true
 },
+"workday:teladoc/wd503/teladochealth_is_hiring": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Teladoc",
+"ok": true,
+"worked": true
+},
 "workday:tempurpedic/wd108/tempur-sealy-careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -45571,6 +45739,14 @@
 "ok": true,
 "worked": true
 },
+"workday:trekbikes/wd1/TREK": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "TREK",
+"ok": true,
+"worked": true
+},
 "workday:trendmicro/wd3/External": {
 "added": "2026-10-05",
 "fails": 0,
@@ -45829,6 +46005,14 @@
 "ok": true,
 "worked": true
 },
+"workday:uasys/wd5/UAF_External_Career_Site": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "University of Arkansas",
+"ok": true,
+"worked": true
+},
 "workday:uasys/wd5/uada_external_career_site": {
 "added": "2026-10-05",
 "fails": 0,
@@ -46006,6 +46190,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Unilever",
+"ok": true,
+"worked": true
+},
+"workday:unisys/wd5/External": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Unisys",
 "ok": true,
 "worked": true
 },
@@ -46735,6 +46927,14 @@
 "workday:wattswater/wd5/Intern-External": {
 "added": "2026-10-04",
 "fails": 0,
+"name": "Watts Water",
+"ok": true,
+"worked": true
+},
+"workday:wattswater/wd5/external": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
 "name": "Watts Water",
 "ok": true,
 "worked": true
@@ -47486,6 +47686,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "ZOLL Medical",
+"ok": true,
+"worked": true
+},
+"workday:zrg/wd3/jobs": {
+"added": "2026-10-24",
+"fails": 0,
+"from": "survey",
+"name": "Zrg",
 "ok": true,
 "worked": true
 },
