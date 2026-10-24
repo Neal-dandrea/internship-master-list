@@ -77,7 +77,7 @@
 },
 "ashby:AtomicSemi": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -260,7 +260,7 @@
 },
 "ashby:a37": {
 "added": "2026-10-05",
-"fails": 40,
+"fails": 41,
 "from": "survey",
 "name": "A37",
 "ok": false,
@@ -407,7 +407,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 64,
+"fails": 65,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -596,7 +596,7 @@
 },
 "ashby:atomicsemi": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -917,7 +917,7 @@
 },
 "ashby:chainlink-labs": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Chainlink Labs",
 "ok": false
 },
@@ -2398,7 +2398,7 @@
 },
 "ashby:maximor": {
 "added": "2026-10-04",
-"fails": 43,
+"fails": 44,
 "name": "Maximor AI",
 "ok": false,
 "worked": true
@@ -2826,7 +2826,7 @@
 },
 "ashby:paires": {
 "added": "2026-10-05",
-"fails": 48,
+"fails": 49,
 "from": "survey",
 "name": "Paires",
 "ok": false,
@@ -3862,7 +3862,7 @@
 },
 "ashby:twin-so": {
 "added": "2026-10-05",
-"fails": 26,
+"fails": 27,
 "from": "survey",
 "name": "Twin Labs",
 "ok": false,
@@ -4087,7 +4087,7 @@
 },
 "ashby:whatnot": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "WhatNot",
 "ok": false
 },
@@ -4245,9 +4245,9 @@
 },
 "avature:koch.avature.net/en_US/careers": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "name": "Koch Industries",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "avature:mantech.avature.net/en_US/careers": {
@@ -4294,7 +4294,7 @@
 },
 "avature:twosigma.avature.net/careers": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Two Sigma",
 "ok": false
 },
@@ -4769,10 +4769,10 @@
 },
 "eightfold:microsoft.eightfold.ai|": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Microsoft",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "eightfold:mlp.eightfold.ai|": {
@@ -6124,7 +6124,7 @@
 },
 "greenhouse:bucknerinternational": {
 "added": "2026-10-05",
-"fails": 8,
+"fails": 9,
 "from": "survey",
 "name": "Bucknerinternational",
 "ok": false,
@@ -8050,7 +8050,7 @@
 },
 "greenhouse:hala": {
 "added": "2026-10-05",
-"fails": 58,
+"fails": 59,
 "from": "survey",
 "name": "Hala",
 "ok": false,
@@ -8601,7 +8601,7 @@
 },
 "greenhouse:isidor": {
 "added": "2026-10-05",
-"fails": 32,
+"fails": 33,
 "from": "survey",
 "name": "Isidor",
 "ok": false,
@@ -9961,7 +9961,7 @@
 },
 "greenhouse:oldmissioncapital": {
 "added": "2026-10-05",
-"fails": 13,
+"fails": 14,
 "from": "survey",
 "name": "Old Mission Capital",
 "ok": false,
@@ -10992,7 +10992,7 @@
 },
 "greenhouse:scoutai": {
 "added": "2026-10-05",
-"fails": 19,
+"fails": 20,
 "from": "survey",
 "name": "Scout AI",
 "ok": false,
@@ -12322,7 +12322,7 @@
 },
 "greenhouse:visiersolutionsinc": {
 "added": "2026-10-11",
-"fails": 41,
+"fails": 42,
 "from": "survey",
 "name": "Visier Solutions",
 "ok": false,
@@ -17742,10 +17742,10 @@
 },
 "lever:ashoka": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Ashoka",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "lever:athenapsych": {
@@ -17987,7 +17987,7 @@
 },
 "lever:cirrus": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Cirrus Logic",
 "ok": false
 },
@@ -19253,7 +19253,7 @@
 },
 "lever:quantinuum": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Quantinuum",
 "ok": false
 },
@@ -19591,7 +19591,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 67,
+"fails": 68,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -27035,7 +27035,7 @@
 },
 "taleo:energytransfer/etp_ext": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Energy Transfer Partners",
 "ok": false
 },
@@ -38402,7 +38402,7 @@
 },
 "workday:intel/wd1/en-us": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Intel",
 "ok": false
 },
@@ -41831,13 +41831,13 @@
 },
 "workday:osv-cci/wd1/CCICareers": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Castleton Commodities International",
 "ok": false
 },
 "workday:osv-rubicon/wd5/MagniteCareers": {
 "added": "2026-10-24",
-"fails": 2,
+"fails": 3,
 "name": "Magnite",
 "ok": false
 },
@@ -42911,16 +42911,16 @@
 },
 "workday:rbc/wd3/RBCEARLYTALENT1": {
 "added": "2026-10-04",
-"fails": 0,
+"fails": 1,
 "name": "Royal Bank of Canada",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:rbc/wd3/rbcglobal1": {
 "added": "2026-10-04",
-"fails": 0,
+"fails": 1,
 "name": "Royal Bank of Canada",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:rbi/wd3/RBI_External_Career_Site": {
@@ -46661,6 +46661,12 @@
 "name": "VF",
 "ok": true,
 "worked": true
+},
+"workday:vhr-genband/wd1/ribboncareers": {
+"added": "2026-10-24",
+"fails": 1,
+"name": "Ribbon",
+"ok": false
 },
 "workday:vialto/wd107/vialtoexternalcareers": {
 "added": "2026-10-04",
