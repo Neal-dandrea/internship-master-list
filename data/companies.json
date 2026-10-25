@@ -254,7 +254,7 @@
 },
 "ashby:a37": {
 "added": "2026-10-05",
-"fails": 47,
+"fails": 48,
 "from": "survey",
 "name": "A37",
 "ok": false,
@@ -401,7 +401,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 71,
+"fails": 72,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -590,7 +590,7 @@
 },
 "ashby:atomicsemi": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 2,
 "name": "Atomic Semi",
 "ok": false
 },
@@ -911,7 +911,7 @@
 },
 "ashby:chainlink-labs": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 2,
 "name": "Chainlink Labs",
 "ok": false
 },
@@ -2400,7 +2400,7 @@
 },
 "ashby:maximor": {
 "added": "2026-10-04",
-"fails": 50,
+"fails": 51,
 "name": "Maximor AI",
 "ok": false,
 "worked": true
@@ -2828,7 +2828,7 @@
 },
 "ashby:paires": {
 "added": "2026-10-05",
-"fails": 55,
+"fails": 56,
 "from": "survey",
 "name": "Paires",
 "ok": false,
@@ -3864,7 +3864,7 @@
 },
 "ashby:twin-so": {
 "added": "2026-10-05",
-"fails": 33,
+"fails": 34,
 "from": "survey",
 "name": "Twin Labs",
 "ok": false,
@@ -4089,7 +4089,7 @@
 },
 "ashby:whatnot": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 2,
 "name": "WhatNot",
 "ok": false
 },
@@ -4296,7 +4296,7 @@
 },
 "avature:twosigma.avature.net/careers": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 2,
 "name": "Two Sigma",
 "ok": false
 },
@@ -4771,10 +4771,10 @@
 },
 "eightfold:microsoft.eightfold.ai|": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Microsoft",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "eightfold:mlp.eightfold.ai|": {
@@ -6134,7 +6134,7 @@
 },
 "greenhouse:bucknerinternational": {
 "added": "2026-10-05",
-"fails": 15,
+"fails": 16,
 "from": "survey",
 "name": "Bucknerinternational",
 "ok": false,
@@ -8060,7 +8060,7 @@
 },
 "greenhouse:hala": {
 "added": "2026-10-05",
-"fails": 65,
+"fails": 66,
 "from": "survey",
 "name": "Hala",
 "ok": false,
@@ -8611,7 +8611,7 @@
 },
 "greenhouse:isidor": {
 "added": "2026-10-05",
-"fails": 39,
+"fails": 40,
 "from": "survey",
 "name": "Isidor",
 "ok": false,
@@ -9987,7 +9987,7 @@
 },
 "greenhouse:oldmissioncapital": {
 "added": "2026-10-05",
-"fails": 20,
+"fails": 21,
 "from": "survey",
 "name": "Old Mission Capital",
 "ok": false,
@@ -11026,7 +11026,7 @@
 },
 "greenhouse:scoutai": {
 "added": "2026-10-05",
-"fails": 26,
+"fails": 27,
 "from": "survey",
 "name": "Scout AI",
 "ok": false,
@@ -12372,7 +12372,7 @@
 },
 "greenhouse:visiersolutionsinc": {
 "added": "2026-10-11",
-"fails": 48,
+"fails": 49,
 "from": "survey",
 "name": "Visier Solutions",
 "ok": false,
@@ -17463,10 +17463,10 @@
 },
 "lever:Aprio": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Aprio",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "lever:Beamy": {
@@ -18068,7 +18068,7 @@
 },
 "lever:cirrus": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 2,
 "name": "Cirrus Logic",
 "ok": false
 },
@@ -19342,7 +19342,7 @@
 },
 "lever:quantinuum": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 2,
 "name": "Quantinuum",
 "ok": false
 },
@@ -19680,7 +19680,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 74,
+"fails": 75,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -27132,7 +27132,7 @@
 },
 "taleo:energytransfer/etp_ext": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 2,
 "name": "Energy Transfer Partners",
 "ok": false
 },
@@ -28343,10 +28343,10 @@
 },
 "ukg:recruiting.ultipro.com/PER1024TPRR/0bdb3fe3-3e6f-4027-bd0c-2fab56710606": {
 "added": "2026-10-08",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "ukg:recruiting.ultipro.com/PIL1003PNAI/916ab5e0-bc26-4b04-ae0d-7f8b7a349fec": {
@@ -38570,7 +38570,7 @@
 },
 "workday:intel/wd1/en-us": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 2,
 "name": "Intel",
 "ok": false
 },
@@ -42006,13 +42006,13 @@
 },
 "workday:osv-cci/wd1/CCICareers": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 2,
 "name": "Castleton Commodities International",
 "ok": false
 },
 "workday:osv-rubicon/wd5/MagniteCareers": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 2,
 "name": "Magnite",
 "ok": false
 },
@@ -46313,9 +46313,9 @@
 },
 "workday:umd/wd1/UMCP": {
 "added": "2026-10-04",
-"fails": 1,
+"fails": 0,
 "name": "University of Maryland - College Park",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:umd/wd1/umces": {
@@ -46858,12 +46858,6 @@
 "name": "VF",
 "ok": true,
 "worked": true
-},
-"workday:vhr-genband/wd1/ribboncareers": {
-"added": "2026-10-25",
-"fails": 3,
-"name": "Ribbon",
-"ok": false
 },
 "workday:vialto/wd107/vialtoexternalcareers": {
 "added": "2026-10-04",
