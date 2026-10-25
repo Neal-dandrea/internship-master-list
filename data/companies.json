@@ -254,7 +254,7 @@
 },
 "ashby:a37": {
 "added": "2026-10-05",
-"fails": 46,
+"fails": 47,
 "from": "survey",
 "name": "A37",
 "ok": false,
@@ -401,7 +401,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 70,
+"fails": 71,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -587,6 +587,12 @@
 "name": "Atlys",
 "ok": true,
 "worked": true
+},
+"ashby:atomicsemi": {
+"added": "2026-10-25",
+"fails": 1,
+"name": "Atomic Semi",
+"ok": false
 },
 "ashby:auctor": {
 "added": "2026-10-04",
@@ -902,6 +908,12 @@
 "name": "Chai Discovery",
 "ok": true,
 "worked": true
+},
+"ashby:chainlink-labs": {
+"added": "2026-10-25",
+"fails": 1,
+"name": "Chainlink Labs",
+"ok": false
 },
 "ashby:chartahealth": {
 "added": "2026-10-04",
@@ -2388,7 +2400,7 @@
 },
 "ashby:maximor": {
 "added": "2026-10-04",
-"fails": 49,
+"fails": 50,
 "name": "Maximor AI",
 "ok": false,
 "worked": true
@@ -2816,7 +2828,7 @@
 },
 "ashby:paires": {
 "added": "2026-10-05",
-"fails": 54,
+"fails": 55,
 "from": "survey",
 "name": "Paires",
 "ok": false,
@@ -3852,7 +3864,7 @@
 },
 "ashby:twin-so": {
 "added": "2026-10-05",
-"fails": 32,
+"fails": 33,
 "from": "survey",
 "name": "Twin Labs",
 "ok": false,
@@ -4075,6 +4087,12 @@
 "ok": true,
 "worked": true
 },
+"ashby:whatnot": {
+"added": "2026-10-25",
+"fails": 1,
+"name": "WhatNot",
+"ok": false
+},
 "ashby:wincent": {
 "added": "2026-10-05",
 "fails": 0,
@@ -4276,6 +4294,12 @@
 "ok": true,
 "worked": true
 },
+"avature:twosigma.avature.net/careers": {
+"added": "2026-10-25",
+"fails": 1,
+"name": "Two Sigma",
+"ok": false
+},
 "bamboohr:armstrongfluidtechnology": {
 "added": "2026-10-05",
 "fails": 0,
@@ -4422,10 +4446,10 @@
 },
 "eightfold:apply.careers.microsoft.com|microsoft.com": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "by hand",
 "name": "Microsoft",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:arcadis.eightfold.ai|": {
@@ -4493,10 +4517,10 @@
 },
 "eightfold:careers.qualcomm.com|qualcomm.com": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 0,
 "from": "by hand",
 "name": "Qualcomm",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:ccep.eightfold.ai|": {
@@ -4827,9 +4851,9 @@
 },
 "eightfold:qualcomm.eightfold.ai|": {
 "added": "2026-10-05",
-"fails": 2,
+"fails": 0,
 "name": "Qualcomm",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:ralliant.eightfold.ai|": {
@@ -6110,7 +6134,7 @@
 },
 "greenhouse:bucknerinternational": {
 "added": "2026-10-05",
-"fails": 14,
+"fails": 15,
 "from": "survey",
 "name": "Bucknerinternational",
 "ok": false,
@@ -8036,7 +8060,7 @@
 },
 "greenhouse:hala": {
 "added": "2026-10-05",
-"fails": 64,
+"fails": 65,
 "from": "survey",
 "name": "Hala",
 "ok": false,
@@ -8587,7 +8611,7 @@
 },
 "greenhouse:isidor": {
 "added": "2026-10-05",
-"fails": 38,
+"fails": 39,
 "from": "survey",
 "name": "Isidor",
 "ok": false,
@@ -9963,7 +9987,7 @@
 },
 "greenhouse:oldmissioncapital": {
 "added": "2026-10-05",
-"fails": 19,
+"fails": 20,
 "from": "survey",
 "name": "Old Mission Capital",
 "ok": false,
@@ -11002,7 +11026,7 @@
 },
 "greenhouse:scoutai": {
 "added": "2026-10-05",
-"fails": 25,
+"fails": 26,
 "from": "survey",
 "name": "Scout AI",
 "ok": false,
@@ -12348,7 +12372,7 @@
 },
 "greenhouse:visiersolutionsinc": {
 "added": "2026-10-11",
-"fails": 47,
+"fails": 48,
 "from": "survey",
 "name": "Visier Solutions",
 "ok": false,
@@ -18042,6 +18066,12 @@
 "ok": true,
 "worked": true
 },
+"lever:cirrus": {
+"added": "2026-10-25",
+"fails": 1,
+"name": "Cirrus Logic",
+"ok": false
+},
 "lever:civitech": {
 "added": "2026-10-05",
 "fails": 0,
@@ -19310,6 +19340,12 @@
 "ok": true,
 "worked": true
 },
+"lever:quantinuum": {
+"added": "2026-10-25",
+"fails": 1,
+"name": "Quantinuum",
+"ok": false
+},
 "lever:questanalytics": {
 "added": "2026-10-05",
 "fails": 0,
@@ -19628,10 +19664,10 @@
 },
 "lever:stanleygroup": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Stanley Consultants",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "lever:steerbridge": {
@@ -19644,7 +19680,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 73,
+"fails": 74,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -27093,6 +27129,12 @@
 "name": "Zomato",
 "ok": true,
 "worked": true
+},
+"taleo:energytransfer/etp_ext": {
+"added": "2026-10-25",
+"fails": 1,
+"name": "Energy Transfer Partners",
+"ok": false
 },
 "taleo:massanf/ex": {
 "added": "2026-10-20",
@@ -38526,6 +38568,12 @@
 "ok": true,
 "worked": true
 },
+"workday:intel/wd1/en-us": {
+"added": "2026-10-25",
+"fails": 1,
+"name": "Intel",
+"ok": false
+},
 "workday:intel/wd1/external": {
 "added": "2026-10-04",
 "fails": 0,
@@ -39378,10 +39426,10 @@
 },
 "workday:lcmchealth/wd1/lcmchealth": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Lcmchealth",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:leerink/wd5/leerinkpartners": {
@@ -40624,24 +40672,24 @@
 },
 "workday:mmc/wd1/MMC": {
 "added": "2026-10-07",
-"fails": 1,
+"fails": 0,
 "name": "Marsh",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:mmc/wd1/careers": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Mmc",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:mmc/wd1/mmc": {
 "added": "2026-10-04",
-"fails": 1,
+"fails": 0,
 "name": "Marsh",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:modernatx/wd1/M_tx": {
@@ -41480,10 +41528,10 @@
 },
 "workday:northeastern/wd1/careers": {
 "added": "2026-10-21",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Northeastern University",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:northmark/wd108/NMS": {
@@ -41955,6 +42003,18 @@
 "name": "Ohio State University",
 "ok": true,
 "worked": true
+},
+"workday:osv-cci/wd1/CCICareers": {
+"added": "2026-10-25",
+"fails": 1,
+"name": "Castleton Commodities International",
+"ok": false
+},
+"workday:osv-rubicon/wd5/MagniteCareers": {
+"added": "2026-10-25",
+"fails": 1,
+"name": "Magnite",
+"ok": false
 },
 "workday:otis/wd504/rec_ext_gateway": {
 "added": "2026-10-05",
@@ -46253,9 +46313,9 @@
 },
 "workday:umd/wd1/UMCP": {
 "added": "2026-10-04",
-"fails": 0,
+"fails": 1,
 "name": "University of Maryland - College Park",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:umd/wd1/umces": {
@@ -46801,7 +46861,7 @@
 },
 "workday:vhr-genband/wd1/ribboncareers": {
 "added": "2026-10-25",
-"fails": 2,
+"fails": 3,
 "name": "Ribbon",
 "ok": false
 },
