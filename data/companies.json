@@ -2285,6 +2285,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:lorikeet": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Lorikeet",
+"ok": true,
+"worked": true
+},
 "ashby:lottie": {
 "added": "2026-10-05",
 "fails": 0,
@@ -5278,6 +5286,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Alma",
+"ok": true,
+"worked": true
+},
+"greenhouse:aloyoga": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Alo Yoga",
 "ok": true,
 "worked": true
 },
@@ -8860,6 +8876,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:khaite": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Khaite",
+"ok": true,
+"worked": true
+},
 "greenhouse:khanacademy": {
 "added": "2026-10-06",
 "fails": 0,
@@ -9170,6 +9194,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Lucashorsfall",
+"ok": true,
+"worked": true
+},
+"greenhouse:lucidmotors": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Lucid Motors",
 "ok": true,
 "worked": true
 },
@@ -10320,6 +10352,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:prms": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Personal Risk Management Solutions",
+"ok": true,
+"worked": true
+},
 "greenhouse:proalphagroup": {
 "added": "2026-10-05",
 "fails": 0,
@@ -11356,6 +11396,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:spauldingridge": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Spaulding Ridge",
+"ok": true,
+"worked": true
+},
 "greenhouse:spcareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -11971,6 +12019,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Toradex",
+"ok": true,
+"worked": true
+},
+"greenhouse:toshibaglobalcommercesolutions": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Toshiba Global Commerce",
 "ok": true,
 "worked": true
 },
@@ -12991,6 +13047,14 @@
 "fails": 0,
 "from": "survey",
 "name": "ARAG North America",
+"ok": true,
+"worked": true
+},
+"icims:careers-arcwoodenviro": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Arcwood Environmental, LLC",
 "ok": true,
 "worked": true
 },
@@ -14186,6 +14250,14 @@
 "fails": 0,
 "from": "survey",
 "name": "MACNY - Manufacturers Association of Central New York",
+"ok": true,
+"worked": true
+},
+"icims:careers-mafint": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Mission Aviation Fellowship International",
 "ok": true,
 "worked": true
 },
@@ -16293,6 +16365,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Live! Casino\u00b7Hotel",
+"ok": true,
+"worked": true
+},
+"icims:menusandvenues-na-urbn": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Urban Outfitters, Inc.",
 "ok": true,
 "worked": true
 },
@@ -18840,6 +18920,14 @@
 "fails": 0,
 "from": "survey",
 "name": "MARGO",
+"ok": true,
+"worked": true
+},
+"lever:markham": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Markham LLC",
 "ok": true,
 "worked": true
 },
@@ -22780,6 +22868,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Duracell",
+"ok": true,
+"worked": true
+},
+"oracle:fa-ewwt-saasfaprod1.fa.ocs.oraclecloud.com/Americold-Careers": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Fa Ewwt Saasfaprod1",
 "ok": true,
 "worked": true
 },
@@ -28156,6 +28252,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/OLY1003OYP/0994b40b-350b-4a1b-83f4-412ca2878c38": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/ONE1004ONEB/72fdae0d-0544-4d81-ae26-562ccfcb8266": {
 "added": "2026-10-05",
 "fails": 0,
@@ -28630,6 +28734,14 @@
 },
 "ukg:recruiting.ultipro.com/TRI1018/2172ba69-3733-a300-e248-8c98670ef85b": {
 "added": "2026-10-08",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/TWI1003TRPCL/549d8e05-4389-4190-918a-67a08cb620d8": {
+"added": "2026-10-25",
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
@@ -30134,6 +30246,14 @@
 "ok": true,
 "worked": true
 },
+"workable:sarmad": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Sarmad",
+"ok": true,
+"worked": true
+},
 "workable:scout-clean-energy": {
 "added": "2026-10-04",
 "fails": 0,
@@ -30405,6 +30525,14 @@
 "ok": true,
 "worked": true
 },
+"workable:worldfish": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Worldfish",
+"ok": true,
+"worked": true
+},
 "workable:yodeck": {
 "added": "2026-10-09",
 "fails": 0,
@@ -30579,6 +30707,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Accuray",
+"ok": true,
+"worked": true
+},
+"workday:acehardware/wd1/External": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Ace Hardware",
 "ok": true,
 "worked": true
 },
@@ -33632,6 +33768,14 @@
 "ok": true,
 "worked": true
 },
+"workday:chathamfinancial/wd501/ChathamFinancial": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Chathamfinancial",
+"ok": true,
+"worked": true
+},
 "workday:chemours/wd103/Chemours": {
 "added": "2026-10-04",
 "fails": 0,
@@ -33870,6 +34014,14 @@
 "fails": 0,
 "from": "survey",
 "name": "NASA Jet Propulsion Laboratory",
+"ok": true,
+"worked": true
+},
+"workday:cityofgainesville/wd5/careers": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "City of Gainesville",
 "ok": true,
 "worked": true
 },
@@ -34614,6 +34766,14 @@
 "added": "2026-10-16",
 "fails": 0,
 "name": "Dairyland Power Cooperative",
+"ok": true,
+"worked": true
+},
+"workday:dallascityhall/wd5/CODCareers": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "The City of Dallas",
 "ok": true,
 "worked": true
 },
@@ -46511,6 +46671,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Ventas",
+"ok": true,
+"worked": true
+},
+"workday:veoliauki/wd3/veoliairelandcareers": {
+"added": "2026-10-25",
+"fails": 0,
+"from": "survey",
+"name": "Veoliauki",
 "ok": true,
 "worked": true
 },
