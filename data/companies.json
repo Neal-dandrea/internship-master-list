@@ -2040,6 +2040,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:julius": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Julius AI",
+"ok": true,
+"worked": true
+},
 "ashby:k-id": {
 "added": "2026-10-04",
 "fails": 0,
@@ -2631,6 +2639,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Nomos",
+"ok": true,
+"worked": true
+},
+"ashby:nord-security": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Nord Security",
 "ok": true,
 "worked": true
 },
@@ -3722,6 +3738,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:teamworks": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Teamworks",
+"ok": true,
+"worked": true
+},
 "ashby:telli": {
 "added": "2026-10-05",
 "fails": 0,
@@ -3797,10 +3821,26 @@
 "ok": true,
 "worked": true
 },
+"ashby:thorit": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Thorit",
+"ok": true,
+"worked": true
+},
 "ashby:tilderesearch": {
 "added": "2026-10-04",
 "fails": 0,
 "name": "Tilde Research",
+"ok": true,
+"worked": true
+},
+"ashby:toku": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Toku",
 "ok": true,
 "worked": true
 },
@@ -5323,6 +5363,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:aluinternalopenings": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Aluinternalopenings",
+"ok": true,
+"worked": true
+},
 "greenhouse:alxafrica": {
 "added": "2026-10-19",
 "fails": 0,
@@ -5526,6 +5574,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Argmax",
+"ok": true,
+"worked": true
+},
+"greenhouse:arizonacommerceauthority": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Arizona Commerce Authority",
 "ok": true,
 "worked": true
 },
@@ -6093,6 +6149,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:btgpactualla": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "BTG Pactual LA",
+"ok": true,
+"worked": true
+},
 "greenhouse:bti36021": {
 "added": "2026-10-04",
 "fails": 0,
@@ -6160,6 +6224,14 @@
 "fails": 0,
 "from": "survey",
 "name": "C3 AI Ascend Internship Program: Summer 2027",
+"ok": true,
+"worked": true
+},
+"greenhouse:c3integratedsolutions": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "C3 Integrated Solutions",
 "ok": true,
 "worked": true
 },
@@ -10151,6 +10223,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:patientpoint": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Patientpoint",
+"ok": true,
+"worked": true
+},
 "greenhouse:payoneer": {
 "added": "2026-10-05",
 "fails": 0,
@@ -11690,6 +11770,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:tempo": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Tempo",
+"ok": true,
+"worked": true
+},
 "greenhouse:temus": {
 "added": "2026-10-05",
 "fails": 0,
@@ -11726,6 +11814,14 @@
 "added": "2026-10-10",
 "fails": 0,
 "name": "Tenet3",
+"ok": true,
+"worked": true
+},
+"greenhouse:tensorops": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Tensorops",
 "ok": true,
 "worked": true
 },
@@ -22550,6 +22646,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:fa-euup-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Fa Euup Saasfaprod1",
+"ok": true,
+"worked": true
+},
 "oracle:fa-euwp-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
 "fails": 0,
@@ -23799,6 +23903,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "Honeywell",
+"ok": true,
+"worked": true
+},
+"oracle:ibtcjb.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Cherokee Federal",
 "ok": true,
 "worked": true
 },
@@ -25403,6 +25515,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:NorthwesternMedicine": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Northwestern Medicine",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:NorthwesternMutual": {
 "added": "2026-10-04",
 "fails": 0,
@@ -25888,6 +26008,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Wellmark",
+"ok": true,
+"worked": true
+},
+"smartrecruiters:WernerMertzGmbH": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Werner & Mertz GmbH",
 "ok": true,
 "worked": true
 },
@@ -27653,6 +27781,14 @@
 },
 "ukg:recruiting.ultipro.com/FRE1018FSHM/e772196a-bbe5-48fd-94ae-cdf5909c1033": {
 "added": "2026-10-10",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/GAI1001GAII/9e7a337c-fc28-4f1a-baf7-5872b4fb4763": {
+"added": "2026-10-26",
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
@@ -29468,6 +29604,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Cognna",
+"ok": true,
+"worked": true
+},
+"workable:commify": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Commify",
 "ok": true,
 "worked": true
 },
@@ -31975,6 +32119,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Autostore",
+"ok": true,
+"worked": true
+},
+"workday:avalonbay/wd5/avbexternal": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Avalonbay",
 "ok": true,
 "worked": true
 },
@@ -36528,6 +36680,14 @@
 "ok": true,
 "worked": true
 },
+"workday:foxfactory/wd1/FOX": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "FOX",
+"ok": true,
+"worked": true
+},
 "workday:franciscanalliance/wd5/fa_external_career_site": {
 "added": "2026-10-05",
 "fails": 0,
@@ -40125,6 +40285,14 @@
 "ok": true,
 "worked": true
 },
+"workday:mazarslu/wd3/forvis_mazars": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Forvis Mazars in Luxembourg",
+"ok": true,
+"worked": true
+},
 "workday:mbda/wd3/MBDA-UK": {
 "added": "2026-10-04",
 "fails": 0,
@@ -40552,6 +40720,14 @@
 "ok": true,
 "worked": true
 },
+"workday:misterspex/wd103/Mister_Spex_Careers": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Mister Spex",
+"ok": true,
+"worked": true
+},
 "workday:mitel/wd3/mitelcareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -40806,6 +40982,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Marathon Petroleum",
+"ok": true,
+"worked": true
+},
+"workday:mq/wd3/careersatmqhealth": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Mq",
 "ok": true,
 "worked": true
 },
@@ -41948,6 +42132,14 @@
 "ok": true,
 "worked": true
 },
+"workday:ossur/wd3/ossurcareersglobal": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Ossur",
+"ok": true,
+"worked": true
+},
 "workday:osu/wd1/OSUCareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -42664,6 +42856,14 @@
 "added": "2026-10-25",
 "fails": 0,
 "name": "ProPetro",
+"ok": true,
+"worked": true
+},
+"workday:propetroservices/wd5/propwr_careers": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Propetroservices",
 "ok": true,
 "worked": true
 },
@@ -45807,6 +46007,14 @@
 "ok": true,
 "worked": true
 },
+"workday:transamerica/wd5/AUK_JobSite": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Transamerica (AUK JobSite)",
+"ok": true,
+"worked": true
+},
 "workday:transamerica/wd5/TLB": {
 "added": "2026-10-05",
 "fails": 0,
@@ -46248,6 +46456,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Umb",
+"ok": true,
+"worked": true
+},
+"workday:umchealthsystem/wd1/External": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "UMC Health System",
 "ok": true,
 "worked": true
 },
@@ -46712,6 +46928,14 @@
 "ok": true,
 "worked": true
 },
+"workday:vertexinc/wd1/VertexInc": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Vertex",
+"ok": true,
+"worked": true
+},
 "workday:vertexinc/wd1/referrals": {
 "added": "2026-10-22",
 "fails": 0,
@@ -46788,6 +47012,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Timberland",
+"ok": true,
+"worked": true
+},
+"workday:vfc/wd5/vans_careers": {
+"added": "2026-10-26",
+"fails": 0,
+"from": "survey",
+"name": "Vans",
 "ok": true,
 "worked": true
 },
