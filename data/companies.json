@@ -1607,6 +1607,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:fourth-power": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Fourth Power",
+"ok": true,
+"worked": true
+},
 "ashby:fundwell": {
 "added": "2026-10-05",
 "fails": 0,
@@ -8060,6 +8068,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:gramgamescareers": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Gram Games",
+"ok": true,
+"worked": true
+},
 "greenhouse:graphcore": {
 "added": "2026-10-04",
 "fails": 0,
@@ -9733,6 +9749,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:missionhealthcare": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Missionhealthcare",
+"ok": true,
+"worked": true
+},
 "greenhouse:modelcorp": {
 "added": "2026-10-05",
 "fails": 0,
@@ -9995,6 +10019,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:nielenschuman": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Nielen Schuman",
+"ok": true,
+"worked": true
+},
 "greenhouse:nintendo": {
 "added": "2026-10-20",
 "fails": 0,
@@ -10247,6 +10279,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Onetrust",
+"ok": true,
+"worked": true
+},
+"greenhouse:openfertility": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Openfertility",
 "ok": true,
 "worked": true
 },
@@ -12668,6 +12708,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Wasabi Technologies",
+"ok": true,
+"worked": true
+},
+"greenhouse:waterloocoop": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "PlayStation",
 "ok": true,
 "worked": true
 },
@@ -16155,6 +16203,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Fox Pest Control",
+"ok": true,
+"worked": true
+},
+"icims:frenchcancareers-pepsico": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "PepsiCo",
 "ok": true,
 "worked": true
 },
@@ -21084,6 +21140,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:efds.fa.em5.oraclecloud.com/Ford-Model-e": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Ford Model-e U.S.",
+"ok": true,
+"worked": true
+},
 "oracle:efet.fa.us2.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
 "fails": 0,
@@ -21362,6 +21426,14 @@
 "fails": 0,
 "from": "survey",
 "name": "MAREK",
+"ok": true,
+"worked": true
+},
+"oracle:ejcu.fa.us6.oraclecloud.com/CX_1033": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Consolidated Edison",
 "ok": true,
 "worked": true
 },
@@ -24026,6 +24098,22 @@
 "fails": 0,
 "from": "survey",
 "name": "Socomec",
+"ok": true,
+"worked": true
+},
+"oracle:iaings.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Sinch",
+"ok": true,
+"worked": true
+},
+"oracle:iaings.fa.ocs.oraclecloud.com/SinchCareer": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Iaings",
 "ok": true,
 "worked": true
 },
@@ -27752,6 +27840,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/CAP1020CABB/29d16d3f-4fbe-4ef4-8212-d3e58d53d3ae": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/CAR1060CRTM/2625b169-13d2-4dbc-a867-a2ef29e59ef2": {
 "added": "2026-10-05",
 "fails": 0,
@@ -28618,6 +28714,14 @@
 },
 "ukg:recruiting.ultipro.com/NSK1001NSKA/96964bb4-da3b-4f74-9ed5-7d1aa469d3e8": {
 "added": "2026-10-05",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/NTI1000NTVA/d98c8254-3001-4c86-b495-aba5cf3b6868": {
+"added": "2026-10-28",
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
@@ -30077,6 +30181,14 @@
 "ok": true,
 "worked": true
 },
+"workable:ecareers": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "e-Careers",
+"ok": true,
+"worked": true
+},
 "workable:egypt-education-platform": {
 "added": "2026-10-08",
 "fails": 0,
@@ -30331,6 +30443,14 @@
 "ok": true,
 "worked": true
 },
+"workable:motork": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Motork",
+"ok": true,
+"worked": true
+},
 "workable:move-for-hunger": {
 "added": "2026-10-08",
 "fails": 0,
@@ -30413,6 +30533,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Oppizi",
+"ok": true,
+"worked": true
+},
+"workable:otiv": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Otiv",
 "ok": true,
 "worked": true
 },
@@ -30578,6 +30706,14 @@
 "fails": 0,
 "from": "survey",
 "name": "PT Link Net Tbk",
+"ok": true,
+"worked": true
+},
+"workable:qcp-group": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "QCP",
 "ok": true,
 "worked": true
 },
@@ -31010,6 +31146,14 @@
 "fails": 0,
 "from": "survey",
 "name": "A1Group (A1 Jobs mk)",
+"ok": true,
+"worked": true
+},
+"workday:a1group/wd3/karriere_at": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "A1Group (Karriere At)",
 "ok": true,
 "worked": true
 },
@@ -33390,6 +33534,14 @@
 "ok": true,
 "worked": true
 },
+"workday:brambles/wd5/Brambles_Careers": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "CHEP",
+"ok": true,
+"worked": true
+},
 "workday:braunintertec/wd5/brauninterteccareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -33441,6 +33593,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Bristol Myers Squibb",
+"ok": true,
+"worked": true
+},
+"workday:bristow/wd1/careers": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Bristow",
 "ok": true,
 "worked": true
 },
@@ -35447,6 +35607,14 @@
 "added": "2026-10-09",
 "fails": 0,
 "name": "Denver",
+"ok": true,
+"worked": true
+},
+"workday:denverhealth/wd1/DHHA-Main": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Denver Health",
 "ok": true,
 "worked": true
 },
@@ -37470,6 +37638,14 @@
 "ok": true,
 "worked": true
 },
+"workday:generac/wd5/externalcareers": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Generac",
+"ok": true,
+"worked": true
+},
 "workday:generalmotors/wd5/Careers_GM": {
 "added": "2026-10-04",
 "fails": 0,
@@ -37748,6 +37924,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "GoTo Group",
+"ok": true,
+"worked": true
+},
+"workday:gphealth/wd5/GPH": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Gphealth",
 "ok": true,
 "worked": true
 },
@@ -41231,6 +41415,14 @@
 "ok": true,
 "worked": true
 },
+"workday:moffitt/wd108/Moffitt": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Moffitt Cancer Center",
+"ok": true,
+"worked": true
+},
 "workday:mohegan/wd1/mohegan": {
 "added": "2026-10-22",
 "fails": 0,
@@ -41537,6 +41729,14 @@
 "fails": 0,
 "from": "survey",
 "name": "DPR Family of Companies",
+"ok": true,
+"worked": true
+},
+"workday:myhana/wd5/mauijim": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Myhana",
 "ok": true,
 "worked": true
 },
@@ -41910,6 +42110,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Nextdecade",
+"ok": true,
+"worked": true
+},
+"workday:nextracker/wd5/nextpower_careers": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Nextracker",
 "ok": true,
 "worked": true
 },
@@ -43050,6 +43258,14 @@
 "ok": true,
 "worked": true
 },
+"workday:pitneybowes/wd1/pbcareers": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Pitney Bowes",
+"ok": true,
+"worked": true
+},
 "workday:pjtpartners/wd1/Students": {
 "added": "2026-10-05",
 "fails": 0,
@@ -43183,6 +43399,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Politico (POLITICO)",
+"ok": true,
+"worked": true
+},
+"workday:powdr/wd12/powdr_careers": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Powdr",
 "ok": true,
 "worked": true
 },
@@ -45604,6 +45828,14 @@
 "ok": true,
 "worked": true
 },
+"workday:summitbhc/wd1/summit_bhc": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Summit BHC",
+"ok": true,
+"worked": true
+},
 "workday:sunbeltrentals/wd1/sbcareers": {
 "added": "2026-10-23",
 "fails": 0,
@@ -45950,6 +46182,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Prairie View A&M University",
+"ok": true,
+"worked": true
+},
+"workday:tapestry/wd108/Tapestry_Careers": {
+"added": "2026-10-28",
+"fails": 0,
+"from": "survey",
+"name": "Tapestry",
 "ok": true,
 "worked": true
 },
