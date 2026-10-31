@@ -6457,6 +6457,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:braineffectjobs": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Braineffectjobs",
+"ok": true,
+"worked": true
+},
 "greenhouse:brave": {
 "added": "2026-10-04",
 "fails": 0,
@@ -8954,6 +8962,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:imafinancialgroup": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "IMA Financial Group",
+"ok": true,
+"worked": true
+},
 "greenhouse:imc": {
 "added": "2026-10-04",
 "fails": 0,
@@ -9661,6 +9677,14 @@
 "added": "2026-10-20",
 "fails": 0,
 "name": "Legend Biotech",
+"ok": true,
+"worked": true
+},
+"greenhouse:legendcareerseu": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Legend Biotech EU",
 "ok": true,
 "worked": true
 },
@@ -13286,6 +13310,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:watchmakergenomics": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Watchmakergenomics",
+"ok": true,
+"worked": true
+},
 "greenhouse:waterloocoop": {
 "added": "2026-10-28",
 "fails": 0,
@@ -14095,6 +14127,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-blade": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Blade",
+"ok": true,
+"worked": true
+},
 "icims:careers-bluegracegroup": {
 "added": "2026-10-05",
 "fails": 0,
@@ -14675,6 +14715,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Gannet Fleming",
+"ok": true,
+"worked": true
+},
+"icims:careers-gatx": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "GATX",
 "ok": true,
 "worked": true
 },
@@ -15784,6 +15832,14 @@
 "added": "2026-10-06",
 "fails": 0,
 "name": "Sentinel Technologies",
+"ok": true,
+"worked": true
+},
+"icims:careers-servetogrow": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Servetogrow",
 "ok": true,
 "worked": true
 },
@@ -18644,6 +18700,14 @@
 "ok": true,
 "worked": true
 },
+"lever:Qover": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Qover",
+"ok": true,
+"worked": true
+},
 "lever:SimbeRobotics": {
 "added": "2026-10-23",
 "fails": 0,
@@ -19165,6 +19229,14 @@
 "fails": 0,
 "from": "survey",
 "name": "CLO Virtual Fashion",
+"ok": true,
+"worked": true
+},
+"lever:coderpad": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Coderpad",
 "ok": true,
 "worked": true
 },
@@ -19696,6 +19768,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Greenlight",
+"ok": true,
+"worked": true
+},
+"lever:gursey": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Gursey",
 "ok": true,
 "worked": true
 },
@@ -21969,6 +22049,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:efds.fa.em5.oraclecloud.com/CX_1": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Ford Motor Company",
+"ok": true,
+"worked": true
+},
 "oracle:efds.fa.em5.oraclecloud.com/Ford-Model-e": {
 "added": "2026-10-28",
 "fails": 0,
@@ -22059,6 +22147,14 @@
 "fails": 0,
 "from": "survey",
 "name": "MAS Holdings",
+"ok": true,
+"worked": true
+},
+"oracle:egmn.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Harmonic Inc.",
 "ok": true,
 "worked": true
 },
@@ -26255,6 +26351,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:Endava": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Endava",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:Enero": {
 "added": "2026-10-16",
 "fails": 0,
@@ -29184,6 +29288,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/GRE1037GSPAD/bf7d9506-bcec-456d-9c6b-7610ffe5938d": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/GRE1050GNHP/2b67ecb4-00fb-4863-931a-7bf0ebcb493a": {
 "added": "2026-10-05",
 "fails": 0,
@@ -29210,6 +29322,14 @@
 },
 "ukg:recruiting.ultipro.com/HEA1016/b65eff40-a22e-46be-92a9-0801a4b30161": {
 "added": "2026-10-05",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/HEN1002HENL/f6331d73-426f-40dc-8e2f-04e322b60259": {
+"added": "2026-10-31",
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
@@ -29776,6 +29896,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/PHI1012PSHP/0c249280-d8e4-4995-8566-77ba7689e58a": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/PIL1003PNAI/916ab5e0-bc26-4b04-ae0d-7f8b7a349fec": {
 "added": "2026-10-05",
 "fails": 0,
@@ -29989,6 +30117,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/SER1005SEIU/e131b2ae-a5ce-4fb1-a93c-84c36a485721": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Service Employees International Union",
 "ok": true,
 "worked": true
 },
@@ -31614,6 +31750,14 @@
 "added": "2026-10-20",
 "fails": 0,
 "name": "Nuovo Photography",
+"ok": true,
+"worked": true
+},
+"workable:nus-enterprise": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "NUS Enterprise",
 "ok": true,
 "worked": true
 },
@@ -33752,6 +33896,14 @@
 "ok": true,
 "worked": true
 },
+"workday:austalusa/wd1/austal": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Austal USA",
+"ok": true,
+"worked": true
+},
 "workday:austincc/wd1/external": {
 "added": "2026-10-05",
 "fails": 0,
@@ -33975,6 +34127,14 @@
 "added": "2026-10-08",
 "fails": 0,
 "name": "Badger Meter",
+"ok": true,
+"worked": true
+},
+"workday:badgermeter/wd5/badger_meter_europe": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Badgermeter",
 "ok": true,
 "worked": true
 },
@@ -34282,6 +34442,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Horizon NJ Health",
+"ok": true,
+"worked": true
+},
+"workday:bcbsri/wd1/BCBSRICareers": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Blue Cross and Blue Shield of Rhode Island",
 "ok": true,
 "worked": true
 },
@@ -36584,6 +36752,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Customers Bank",
+"ok": true,
+"worked": true
+},
+"workday:cvgrp/wd5/cvg": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "CVG",
 "ok": true,
 "worked": true
 },
@@ -40890,6 +41066,14 @@
 "ok": true,
 "worked": true
 },
+"workday:javararesearch/wd12/External_Career_Site": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Javararesearch",
+"ok": true,
+"worked": true
+},
 "workday:jbhunt/wd501/Careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -44152,6 +44336,14 @@
 "ok": true,
 "worked": true
 },
+"workday:ourhrconnect/wd501/SCBlues": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "BlueCross BlueShield of South Carolina",
+"ok": true,
+"worked": true
+},
 "workday:outfrontmedia/wd1/outfrontmedia": {
 "added": "2026-10-05",
 "fails": 0,
@@ -46111,6 +46303,14 @@
 "fails": 3,
 "name": "Sallie Mae",
 "ok": false
+},
+"workday:salvationarmy/wd3/Salvos": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Salvationarmy (Salvos)",
+"ok": true,
+"worked": true
 },
 "workday:sandoz/wd103/sandoz_careers": {
 "added": "2026-10-05",
@@ -48101,6 +48301,14 @@
 "ok": true,
 "worked": true
 },
+"workday:tp/wd107/TP-ICAP": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Tp",
+"ok": true,
+"worked": true
+},
 "workday:tranetechnologies/wd12/Trane_Technologies_Careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -48724,6 +48932,14 @@
 "ok": true,
 "worked": true
 },
+"workday:upenn/wd1/careers-at-penn": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "University of Pennsylvania",
+"ok": true,
+"worked": true
+},
 "workday:upm/wd103/Careers": {
 "added": "2026-10-20",
 "fails": 0,
@@ -49306,6 +49522,14 @@
 "ok": true,
 "worked": true
 },
+"workday:volarisgroup/wd3/medaptus": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Volarisgroup",
+"ok": true,
+"worked": true
+},
 "workday:volarisgroup/wd3/volaris": {
 "added": "2026-10-05",
 "fails": 0,
@@ -49645,6 +49869,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Western Alliance Bancorporation",
+"ok": true,
+"worked": true
+},
+"workday:westernalliancebank/wd5/amh": {
+"added": "2026-10-31",
+"fails": 0,
+"from": "survey",
+"name": "Westernalliancebank",
 "ok": true,
 "worked": true
 },
