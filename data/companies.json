@@ -2691,6 +2691,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:moss": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Moss",
+"ok": true,
+"worked": true
+},
 "ashby:munich-electrification": {
 "added": "2026-10-05",
 "fails": 0,
@@ -8321,6 +8329,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:gipathfinder": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Gipathfinder",
+"ok": true,
+"worked": true
+},
 "greenhouse:gitai": {
 "added": "2026-10-04",
 "fails": 0,
@@ -9559,6 +9575,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Kodiak Solutions",
+"ok": true,
+"worked": true
+},
+"greenhouse:koleyjessen": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Koley Jessen P.C., L.L.O",
 "ok": true,
 "worked": true
 },
@@ -14956,6 +14980,14 @@
 "fails": 0,
 "from": "survey",
 "name": "H.W. Kaufman Group",
+"ok": true,
+"worked": true
+},
+"icims:careers-i3-corps": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Integration Innovation (i3)",
 "ok": true,
 "worked": true
 },
@@ -21460,6 +21492,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:ebdt.fa.us2.oraclecloud.com/cx_9003": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Apps Associates",
+"ok": true,
+"worked": true
+},
 "oracle:ebez.fa.us2.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
 "fails": 0,
@@ -22335,6 +22375,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Private Destinations",
+"ok": true,
+"worked": true
+},
+"oracle:eimy.fa.us6.oraclecloud.com/CX_1": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "UW Health",
 "ok": true,
 "worked": true
 },
@@ -28221,6 +28269,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:polygontechnology": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Polygon Technology",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:proceptassociatesprofessionalserviceslimited": {
 "added": "2026-10-05",
 "fails": 0,
@@ -28322,6 +28378,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Ripplesedgemedia",
+"ok": true,
+"worked": true
+},
+"smartrecruiters:rmgxtechnologiesllp": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Rmgxtechnologiesllp",
 "ok": true,
 "worked": true
 },
@@ -29205,6 +29269,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/GAS1003/6eb19b1f-4963-9bbd-eff5-d321e7265519": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "GTI Energy",
 "ok": true,
 "worked": true
 },
@@ -30200,6 +30272,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/STS1000SCO/bdcbc22d-c568-4b9f-bc84-421f9522fd47": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/SUP1006SPTR/faf78e82-f25d-4212-be7e-8458e882f616": {
 "added": "2026-10-05",
 "fails": 0,
@@ -31127,6 +31207,14 @@
 "ok": true,
 "worked": true
 },
+"workable:connexity": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Connexity | Skimlinks, a Taboola company",
+"ok": true,
+"worked": true
+},
 "workable:control-risks-6": {
 "added": "2026-10-06",
 "fails": 0,
@@ -31503,6 +31591,14 @@
 "ok": true,
 "worked": true
 },
+"workable:indico": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Indico",
+"ok": true,
+"worked": true
+},
 "workable:innovaccer-analytics": {
 "added": "2026-10-18",
 "fails": 0,
@@ -31563,6 +31659,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Lengow",
+"ok": true,
+"worked": true
+},
+"workable:lgbt-great": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "LGBT Great",
 "ok": true,
 "worked": true
 },
@@ -32140,6 +32244,14 @@
 "ok": true,
 "worked": true
 },
+"workable:smarttechsa": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Smarttechsa",
+"ok": true,
+"worked": true
+},
 "workable:somerce": {
 "added": "2026-10-04",
 "fails": 0,
@@ -32252,6 +32364,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Tatu City",
+"ok": true,
+"worked": true
+},
+"workable:team-consulting": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Team Consulting",
 "ok": true,
 "worked": true
 },
@@ -32399,6 +32519,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Xcellink Pte Ltd",
+"ok": true,
+"worked": true
+},
+"workable:yap-global": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "YAP Global",
 "ok": true,
 "worked": true
 },
@@ -32630,6 +32758,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Acendahealth",
+"ok": true,
+"worked": true
+},
+"workday:acrisure/wd1/Acrisure": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Acrisure",
 "ok": true,
 "worked": true
 },
@@ -33235,6 +33371,14 @@
 "ok": true,
 "worked": true
 },
+"workday:ambgroup/wd1/Appl_Only_Site": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "AMB Sports & Entertainment (Appl Only Site)",
+"ok": true,
+"worked": true
+},
 "workday:ambgroup/wd1/ambse": {
 "added": "2026-10-30",
 "fails": 0,
@@ -33625,6 +33769,14 @@
 "fails": 0,
 "from": "survey",
 "name": "AriensCo",
+"ok": true,
+"worked": true
+},
+"workday:aristocrat/wd3/aristocratexternalcareerssite": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Aristocrat Leisure",
 "ok": true,
 "worked": true
 },
@@ -34577,6 +34729,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Bernco",
+"ok": true,
+"worked": true
+},
+"workday:bernergroup/wd3/Careers_Berner_Group": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Bernergroup",
 "ok": true,
 "worked": true
 },
@@ -36739,6 +36899,14 @@
 "ok": true,
 "worked": true
 },
+"workday:cumminggroup/wd1/cgc": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Cgc",
+"ok": true,
+"worked": true
+},
 "workday:curtisswright/wd1/cw_external_career_site": {
 "added": "2026-10-05",
 "fails": 0,
@@ -37415,6 +37583,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "DriveTime",
+"ok": true,
+"worked": true
+},
+"workday:druryhotels/wd5/druryjobs": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Druryhotels",
 "ok": true,
 "worked": true
 },
@@ -38508,6 +38684,14 @@
 "ok": true,
 "worked": true
 },
+"workday:fiskars/wd3/fiskarsgroup": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Fiskars",
+"ok": true,
+"worked": true
+},
 "workday:flaschenpost/wd103/flaschenpost": {
 "added": "2026-10-05",
 "fails": 0,
@@ -39152,6 +39336,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Genesys",
+"ok": true,
+"worked": true
+},
+"workday:genevausa/wd5/careersatgeneva": {
+"added": "2026-11-01",
+"fails": 0,
+"from": "survey",
+"name": "Genevausa",
 "ok": true,
 "worked": true
 },
