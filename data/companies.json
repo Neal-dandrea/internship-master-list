@@ -260,6 +260,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:a16z": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "A16Z",
+"ok": true,
+"worked": true
+},
 "ashby:a37": {
 "added": "2026-10-05",
 "fails": 78,
@@ -4492,6 +4500,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:zefir": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Zefir",
+"ok": true,
+"worked": true
+},
 "ashby:zenjob": {
 "added": "2026-10-05",
 "fails": 0,
@@ -5564,6 +5580,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:alayacare": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Alayacare",
+"ok": true,
+"worked": true
+},
 "greenhouse:alfredbeneschco": {
 "added": "2026-10-05",
 "fails": 0,
@@ -6302,10 +6326,26 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:bbyo": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Bbyo",
+"ok": true,
+"worked": true
+},
 "greenhouse:beamtherapeutics": {
 "added": "2026-10-04",
 "fails": 0,
 "name": "Beam Therapeutics",
+"ok": true,
+"worked": true
+},
+"greenhouse:berkshiregroupllc": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Berkshire Group, LLC",
 "ok": true,
 "worked": true
 },
@@ -7685,6 +7725,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Entrupy",
+"ok": true,
+"worked": true
+},
+"greenhouse:environmentalscienceassociates": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Environmental Science Associates",
 "ok": true,
 "worked": true
 },
@@ -13225,6 +13273,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:veterinaryemergencygroupst": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Veterinaryemergencygroupst",
+"ok": true,
+"worked": true
+},
 "greenhouse:via": {
 "added": "2026-10-09",
 "fails": 0,
@@ -15487,6 +15543,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-patternenergy": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Pattern Energy Group",
+"ok": true,
+"worked": true
+},
 "icims:careers-peagroup": {
 "added": "2026-10-17",
 "fails": 0,
@@ -16191,6 +16255,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Titancement Usa",
+"ok": true,
+"worked": true
+},
+"icims:careers-tmo": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "The Michaels Organization",
 "ok": true,
 "worked": true
 },
@@ -17524,6 +17596,14 @@
 "ok": true,
 "worked": true
 },
+"icims:pppl-princeton": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Pppl Princeton",
+"ok": true,
+"worked": true
+},
 "icims:pr-erac": {
 "added": "2026-10-27",
 "fails": 0,
@@ -17553,6 +17633,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Salaried Allanmyers",
+"ok": true,
+"worked": true
+},
+"icims:servicesite-ampact": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Ampact",
 "ok": true,
 "worked": true
 },
@@ -17694,6 +17782,14 @@
 "fails": 0,
 "from": "careers page",
 "name": "Pacific Northwest National Laboratory",
+"ok": true,
+"worked": true
+},
+"icims:us-envoyair": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Envoy Air Inc.",
 "ok": true,
 "worked": true
 },
@@ -19393,6 +19489,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Constellation Technologies, Inc",
+"ok": true,
+"worked": true
+},
+"lever:cwsc": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Computer World Services",
 "ok": true,
 "worked": true
 },
@@ -22475,6 +22579,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:ejcu.fa.us6.oraclecloud.com/CX_1": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "CECONY Career Site",
+"ok": true,
+"worked": true
+},
 "oracle:ejcu.fa.us6.oraclecloud.com/CX_1033": {
 "added": "2026-10-28",
 "fails": 0,
@@ -23985,6 +24097,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "UL Solutions",
+"ok": true,
+"worked": true
+},
+"oracle:fa-euqk-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Network International",
 "ok": true,
 "worked": true
 },
@@ -29099,6 +29219,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/CLE1005/cb250f0d-7f5e-4583-7b1f-d74442b2b8b8": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/COL1030CWF/d1d83d8e-bd7f-41c5-ac90-f1b4796fa63f": {
 "added": "2026-10-11",
 "fails": 0,
@@ -31668,6 +31796,14 @@
 "ok": true,
 "worked": true
 },
+"workable:fioneer": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "SAP Fioneer",
+"ok": true,
+"worked": true
+},
 "workable:focusrite": {
 "added": "2026-10-06",
 "fails": 0,
@@ -31691,11 +31827,27 @@
 "ok": true,
 "worked": true
 },
+"workable:g-20-advisors-ag": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "G-20 Group",
+"ok": true,
+"worked": true
+},
 "workable:genetec-inc": {
 "added": "2026-10-08",
 "fails": 0,
 "from": "survey",
 "name": "Genetec",
+"ok": true,
+"worked": true
+},
+"workable:getolo": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "getolo GmbH",
 "ok": true,
 "worked": true
 },
@@ -31946,6 +32098,14 @@
 "fails": 0,
 "from": "survey",
 "name": "MORROW & MORROW Medical",
+"ok": true,
+"worked": true
+},
+"workable:motor-coach-industries": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Motor Coach Industries",
 "ok": true,
 "worked": true
 },
@@ -32376,6 +32536,14 @@
 "ok": true,
 "worked": true
 },
+"workable:seosherpa": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "SEO Sherpa",
+"ok": true,
+"worked": true
+},
 "workable:serko-ltd": {
 "added": "2026-10-07",
 "fails": 0,
@@ -32561,6 +32729,14 @@
 "ok": true,
 "worked": true
 },
+"workable:the-collecting-group": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "The Collecting Group",
+"ok": true,
+"worked": true
+},
 "workable:the-jean-tweed-centre": {
 "added": "2026-10-12",
 "fails": 0,
@@ -32681,6 +32857,22 @@
 "fails": 0,
 "from": "survey",
 "name": "Weatherbys Banking Group",
+"ok": true,
+"worked": true
+},
+"workable:winthrop-technologies": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Winthrop Technologies",
+"ok": true,
+"worked": true
+},
+"workable:withings": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Withings",
 "ok": true,
 "worked": true
 },
@@ -33646,6 +33838,14 @@
 "ok": true,
 "worked": true
 },
+"workday:amerilife/wd5/External": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Amerilife",
+"ok": true,
+"worked": true
+},
 "workday:ameriprise/wd5/Ameriprise": {
 "added": "2026-10-04",
 "fails": 0,
@@ -33777,6 +33977,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Ankura Consulting Group",
+"ok": true,
+"worked": true
+},
+"workday:anokacounty/wd1/anoka_county_career_opportunities": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Anoka County Minnesota",
 "ok": true,
 "worked": true
 },
@@ -35489,6 +35697,14 @@
 "ok": true,
 "worked": true
 },
+"workday:byu/wd1/byu-careers": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Brigham Young University - Provo",
+"ok": true,
+"worked": true
+},
 "workday:caa/wd1/Campus": {
 "added": "2026-10-12",
 "fails": 0,
@@ -36053,6 +36269,14 @@
 "ok": true,
 "worked": true
 },
+"workday:cfr/wd5/buc-careers": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Buc-ee's",
+"ok": true,
+"worked": true
+},
 "workday:cgg/wd103/viridiencareers": {
 "added": "2026-10-04",
 "fails": 0,
@@ -36196,6 +36420,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Choa",
+"ok": true,
+"worked": true
+},
+"workday:christianacare/wd5/CCHS": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Christianacare",
 "ok": true,
 "worked": true
 },
@@ -38068,6 +38300,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Elringklinger",
+"ok": true,
+"worked": true
+},
+"workday:embecta/wd1/embectacareers": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Embecta",
 "ok": true,
 "worked": true
 },
@@ -42006,6 +42246,14 @@
 "ok": true,
 "worked": true
 },
+"workday:latticesemi/wd5/latticesemiconductorscareers": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Lattice",
+"ok": true,
+"worked": true
+},
 "workday:lazboy/wd1/lzbcareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -42524,6 +42772,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Magna",
+"ok": true,
+"worked": true
+},
+"workday:mahec/wd5/MAHEC": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Mahec",
 "ok": true,
 "worked": true
 },
@@ -43244,6 +43500,14 @@
 "ok": true,
 "worked": true
 },
+"workday:mitsubishichemicalgroup/wd3/mccgroupcareers": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Mcc Group",
+"ok": true,
+"worked": true
+},
 "workday:mizuho/wd1/Mizuho_Confidential": {
 "added": "2026-10-04",
 "fails": 0,
@@ -43418,6 +43682,14 @@
 "ok": true,
 "worked": true
 },
+"workday:monumenthealth/wd1/goldcareers": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Gold",
+"ok": true,
+"worked": true
+},
 "workday:moog/wd5/MOOG_External_Career_Site": {
 "added": "2026-10-17",
 "fails": 0,
@@ -43574,6 +43846,14 @@
 },
 "workday:mtb/wd5/Campus": {
 "added": "2026-10-05",
+"fails": 0,
+"from": "survey",
+"name": "M&T Bank",
+"ok": true,
+"worked": true
+},
+"workday:mtb/wd5/MTB": {
+"added": "2026-11-03",
 "fails": 0,
 "from": "survey",
 "name": "M&T Bank",
@@ -44549,6 +44829,14 @@
 "ok": true,
 "worked": true
 },
+"workday:okgov/wd1/okgovjobs": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Oklahoma State Government",
+"ok": true,
+"worked": true
+},
 "workday:olatheks/wd1/olatheks": {
 "added": "2026-10-22",
 "fails": 0,
@@ -44599,6 +44887,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "ONEOK",
+"ok": true,
+"worked": true
+},
+"workday:oneoncology/wd1/NYCBS": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Oneoncology (NYCBS)",
 "ok": true,
 "worked": true
 },
@@ -44732,6 +45028,14 @@
 "fails": 0,
 "from": "survey",
 "name": "BlueCross BlueShield of South Carolina",
+"ok": true,
+"worked": true
+},
+"workday:ourhrconnect/wd501/pgba": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Ourhrconnect",
 "ok": true,
 "worked": true
 },
@@ -46891,6 +47195,14 @@
 "ok": true,
 "worked": true
 },
+"workday:seattlechildrens/wd5/external": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Seattle Children's",
+"ok": true,
+"worked": true
+},
 "workday:seaworldentertainment/wd1/SEA": {
 "added": "2026-10-05",
 "fails": 0,
@@ -47343,6 +47655,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Solera Holdings",
+"ok": true,
+"worked": true
+},
+"workday:som/wd5/external": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Som",
 "ok": true,
 "worked": true
 },
@@ -49161,6 +49481,14 @@
 "ok": true,
 "worked": true
 },
+"workday:uhaul/wd1/UhaulJobs": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Uhaul",
+"ok": true,
+"worked": true
+},
 "workday:uhyus/wd12/uhy": {
 "added": "2026-10-05",
 "fails": 0,
@@ -50678,6 +51006,14 @@
 "ok": true,
 "worked": true
 },
+"workday:wwecorp/wd5/tko": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "TKO Group Holdings, Inc",
+"ok": true,
+"worked": true
+},
 "workday:wycokck/wd1/recexternalcareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -50808,6 +51144,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Zalando",
+"ok": true,
+"worked": true
+},
+"workday:zayo/wd1/zayo_careers": {
+"added": "2026-11-03",
+"fails": 0,
+"from": "survey",
+"name": "Zayo",
 "ok": true,
 "worked": true
 },
