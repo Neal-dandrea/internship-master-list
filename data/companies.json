@@ -150,6 +150,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:Luminovo": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Luminovo",
+"ok": true,
+"worked": true
+},
 "ashby:MUBI": {
 "added": "2026-10-17",
 "fails": 0,
@@ -786,6 +794,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:blockhouse": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Blockhouse",
+"ok": true,
+"worked": true
+},
 "ashby:blocktech": {
 "added": "2026-10-05",
 "fails": 0,
@@ -928,6 +944,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Cantina",
+"ok": true,
+"worked": true
+},
+"ashby:capable": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Capable",
 "ok": true,
 "worked": true
 },
@@ -2421,6 +2445,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Libra",
+"ok": true,
+"worked": true
+},
+"ashby:lifen": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Lifen",
 "ok": true,
 "worked": true
 },
@@ -4013,6 +4045,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Sunday Natural",
+"ok": true,
+"worked": true
+},
+"ashby:super.com": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Super",
 "ok": true,
 "worked": true
 },
@@ -6759,6 +6799,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Businessolver",
+"ok": true,
+"worked": true
+},
+"greenhouse:bvpanalyst": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Bessemer Venture Partners - Analyst Program",
 "ok": true,
 "worked": true
 },
@@ -10807,6 +10855,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:nmi": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Nmi",
+"ok": true,
+"worked": true
+},
 "greenhouse:nordeus": {
 "added": "2026-10-05",
 "fails": 0,
@@ -12284,6 +12340,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:simula": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Simula Research Laboratory",
+"ok": true,
+"worked": true
+},
 "greenhouse:singlestore": {
 "added": "2026-10-04",
 "fails": 0,
@@ -13258,6 +13322,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:trovebrands": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Trovebrands",
+"ok": true,
+"worked": true
+},
 "greenhouse:trumid": {
 "added": "2026-10-07",
 "fails": 0,
@@ -13340,6 +13412,14 @@
 "fails": 0,
 "from": "careers page",
 "name": "Upstart",
+"ok": true,
+"worked": true
+},
+"greenhouse:urbansystems": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Urbansystems",
 "ok": true,
 "worked": true
 },
@@ -15421,6 +15501,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "Kinaxis",
+"ok": true,
+"worked": true
+},
+"icims:careers-kleinfelder": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Kleinfelder Inc",
 "ok": true,
 "worked": true
 },
@@ -19839,6 +19927,14 @@
 "ok": true,
 "worked": true
 },
+"lever:dnb": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "dun & bradstreet",
+"ok": true,
+"worked": true
+},
 "lever:dnllc": {
 "added": "2026-10-05",
 "fails": 0,
@@ -20961,6 +21057,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Portcast",
+"ok": true,
+"worked": true
+},
+"lever:powerex": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Powerex Corp.",
 "ok": true,
 "worked": true
 },
@@ -22363,6 +22467,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:eduu.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Eduu",
+"ok": true,
+"worked": true
+},
 "oracle:edxn.fa.us2.oraclecloud.com/CX_1": {
 "added": "2026-10-05",
 "fails": 0,
@@ -22525,6 +22637,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Sundt",
+"ok": true,
+"worked": true
+},
+"oracle:eexh.fa.em3.oraclecloud.com/CX_1": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "IRENA Employment",
 "ok": true,
 "worked": true
 },
@@ -29128,6 +29248,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:somfygroup": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "SOMFY Group",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:statkraft1": {
 "added": "2026-10-05",
 "fails": 0,
@@ -29149,6 +29277,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Strersecokgaastrergruppe",
+"ok": true,
+"worked": true
+},
+"smartrecruiters:swgroup": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "SW Group",
 "ok": true,
 "worked": true
 },
@@ -29461,6 +29597,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/BET1004BETIN/d52d424e-e228-427d-a798-d39e5950150d": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/BIO1009BIPH/62507471-7936-4fae-aad4-d0bf9ffa0787": {
 "added": "2026-10-05",
 "fails": 0,
@@ -29607,6 +29751,14 @@
 },
 "ukg:recruiting.ultipro.com/CHI1023/6f16dad2-aeb7-b3ae-7e8c-63d0684114fc": {
 "added": "2026-10-05",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/CIB1001CBTHO/651e26e3-d67c-4622-8ee3-62b19eab9aa9": {
+"added": "2026-11-06",
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
@@ -29770,6 +29922,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/EIN1000EINK/a41773f4-adab-4192-88a9-8bc27fbad529": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "E Ink",
 "ok": true,
 "worked": true
 },
@@ -30237,6 +30397,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/LOV1004TLSI/7de189ab-30da-416f-8b71-70b34ffcde9b": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/LUC1003/4639ab85-5ea8-53dd-4e60-d9064b71b95b": {
 "added": "2026-10-05",
 "fails": 0,
@@ -30394,6 +30562,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/NAT1047NWF/1ca8346a-33cc-401d-90d9-d7f752fdfd7d": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "National Wildlife Federation",
 "ok": true,
 "worked": true
 },
@@ -31752,6 +31928,14 @@
 "ok": true,
 "worked": true
 },
+"workable:brc-group-inc": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "BRC Group Inc.",
+"ok": true,
+"worked": true
+},
 "workable:brightharbor": {
 "added": "2026-10-05",
 "fails": 0,
@@ -32846,6 +33030,14 @@
 "ok": true,
 "worked": true
 },
+"workable:prismplus": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "PRISM+",
+"ok": true,
+"worked": true
+},
 "workable:progressoft": {
 "added": "2026-10-10",
 "fails": 0,
@@ -32875,6 +33067,14 @@
 "fails": 0,
 "from": "survey",
 "name": "QCP",
+"ok": true,
+"worked": true
+},
+"workable:quantis": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Quantis",
 "ok": true,
 "worked": true
 },
@@ -38959,6 +39159,14 @@
 "ok": true,
 "worked": true
 },
+"workday:employeeownedbrands/wd501/Leer_New_Lisbon_Operations": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Employeeownedbrands (Leer New Lisbon Operations)",
+"ok": true,
+"worked": true
+},
 "workday:empower/wd12/PanAgora": {
 "added": "2026-10-05",
 "fails": 0,
@@ -40604,6 +40812,14 @@
 "ok": true,
 "worked": true
 },
+"workday:golimitless/wd1/Staff_External_career_site": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "International Mission Board",
+"ok": true,
+"worked": true
+},
 "workday:goodwinprocter/wd5/co_op_external_careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -41254,6 +41470,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Hilb Group",
+"ok": true,
+"worked": true
+},
+"workday:hiscox/wd3/Hiscox_External_Site": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Hiscox",
 "ok": true,
 "worked": true
 },
@@ -45271,6 +45495,14 @@
 "ok": true,
 "worked": true
 },
+"workday:nsminc/wd1/Novacore_Careers": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Nsminc",
+"ok": true,
+"worked": true
+},
 "workday:ntrs/wd1/northerntrust": {
 "added": "2026-10-04",
 "fails": 0,
@@ -48983,6 +49215,14 @@
 "fails": 0,
 "from": "survey",
 "name": "SWBC (CollegeInternships)",
+"ok": true,
+"worked": true
+},
+"workday:swbc/wd1/accounting": {
+"added": "2026-11-06",
+"fails": 0,
+"from": "survey",
+"name": "Swbc",
 "ok": true,
 "worked": true
 },
