@@ -278,7 +278,7 @@
 },
 "ashby:a37": {
 "added": "2026-10-05",
-"fails": 86,
+"fails": 87,
 "from": "survey",
 "name": "A37",
 "ok": false,
@@ -425,7 +425,7 @@
 },
 "ashby:alpic": {
 "added": "2026-10-05",
-"fails": 110,
+"fails": 111,
 "from": "survey",
 "name": "Alpic",
 "ok": false,
@@ -626,6 +626,12 @@
 "ok": true,
 "worked": true
 },
+"ashby:atomicsemi": {
+"added": "2026-11-06",
+"fails": 1,
+"name": "Atomic Semi",
+"ok": false
+},
 "ashby:auctor": {
 "added": "2026-10-04",
 "fails": 0,
@@ -719,7 +725,7 @@
 },
 "ashby:beaconsoftware": {
 "added": "2026-10-04",
-"fails": 29,
+"fails": 30,
 "name": "Beacon Software",
 "ok": false,
 "worked": true
@@ -1061,7 +1067,7 @@
 },
 "ashby:coinhako": {
 "added": "2026-10-05",
-"fails": 13,
+"fails": 14,
 "from": "survey",
 "name": "Coinhako",
 "ok": false,
@@ -1647,7 +1653,7 @@
 },
 "ashby:firetiger": {
 "added": "2026-10-04",
-"fails": 24,
+"fails": 25,
 "name": "Firetiger",
 "ok": false,
 "worked": true
@@ -2064,6 +2070,13 @@
 "fails": 0,
 "from": "survey",
 "name": "Hook Music",
+"ok": true,
+"worked": true
+},
+"ashby:hoyoverse": {
+"added": "2026-11-06",
+"fails": 0,
+"name": "HoYoverse",
 "ok": true,
 "worked": true
 },
@@ -2639,7 +2652,7 @@
 },
 "ashby:maximor": {
 "added": "2026-10-04",
-"fails": 89,
+"fails": 90,
 "name": "Maximor AI",
 "ok": false,
 "worked": true
@@ -3132,7 +3145,7 @@
 },
 "ashby:paires": {
 "added": "2026-10-05",
-"fails": 94,
+"fails": 95,
 "from": "survey",
 "name": "Paires",
 "ok": false,
@@ -4249,7 +4262,7 @@
 },
 "ashby:tilderesearch": {
 "added": "2026-10-04",
-"fails": 23,
+"fails": 24,
 "name": "Tilde Research",
 "ok": false,
 "worked": true
@@ -4318,7 +4331,7 @@
 },
 "ashby:twin-so": {
 "added": "2026-10-05",
-"fails": 72,
+"fails": 73,
 "from": "survey",
 "name": "Twin Labs",
 "ok": false,
@@ -4548,6 +4561,12 @@
 "ok": true,
 "worked": true
 },
+"ashby:whatnot": {
+"added": "2026-11-06",
+"fails": 1,
+"name": "WhatNot",
+"ok": false
+},
 "ashby:wincent": {
 "added": "2026-10-05",
 "fails": 0,
@@ -4770,6 +4789,12 @@
 "name": "Tesco",
 "ok": true,
 "worked": true
+},
+"avature:twosigma.avature.net/careers": {
+"added": "2026-11-06",
+"fails": 1,
+"name": "Two Sigma",
+"ok": false
 },
 "bamboohr:armstrongfluidtechnology": {
 "added": "2026-10-05",
@@ -5256,10 +5281,10 @@
 },
 "eightfold:microsoft.eightfold.ai|": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Microsoft",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:mlp.eightfold.ai|": {
@@ -5343,9 +5368,9 @@
 },
 "eightfold:qualcomm.eightfold.ai|": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "name": "Qualcomm",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "eightfold:ralliant.eightfold.ai|": {
@@ -5768,7 +5793,7 @@
 },
 "greenhouse:allencontrolsystems": {
 "added": "2026-10-05",
-"fails": 6,
+"fails": 7,
 "from": "survey",
 "name": "Allen Control Systems",
 "ok": false,
@@ -5958,9 +5983,9 @@
 },
 "greenhouse:andurilindustries": {
 "added": "2026-10-04",
-"fails": 0,
+"fails": 1,
 "name": "Anduril",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "greenhouse:aninebing": {
@@ -6765,7 +6790,7 @@
 },
 "greenhouse:bucknerinternational": {
 "added": "2026-10-05",
-"fails": 54,
+"fails": 55,
 "from": "survey",
 "name": "Bucknerinternational",
 "ok": false,
@@ -7687,7 +7712,7 @@
 },
 "greenhouse:doctolib": {
 "added": "2026-10-05",
-"fails": 12,
+"fails": 13,
 "from": "survey",
 "name": "Doctolib",
 "ok": false,
@@ -8016,7 +8041,7 @@
 },
 "greenhouse:everstreamanalytics": {
 "added": "2026-10-05",
-"fails": 16,
+"fails": 17,
 "from": "survey",
 "name": "Everstreamanalytics",
 "ok": false,
@@ -8901,7 +8926,7 @@
 },
 "greenhouse:hala": {
 "added": "2026-10-05",
-"fails": 104,
+"fails": 105,
 "from": "survey",
 "name": "Hala",
 "ok": false,
@@ -9520,7 +9545,7 @@
 },
 "greenhouse:isidor": {
 "added": "2026-10-05",
-"fails": 78,
+"fails": 79,
 "from": "survey",
 "name": "Isidor",
 "ok": false,
@@ -11009,7 +11034,7 @@
 },
 "greenhouse:oldmissioncapital": {
 "added": "2026-10-05",
-"fails": 59,
+"fails": 60,
 "from": "survey",
 "name": "Old Mission Capital",
 "ok": false,
@@ -11198,10 +11223,10 @@
 },
 "greenhouse:parloa": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Parloa",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "greenhouse:pathai": {
@@ -12131,7 +12156,7 @@
 },
 "greenhouse:scoutai": {
 "added": "2026-10-05",
-"fails": 65,
+"fails": 66,
 "from": "survey",
 "name": "Scout AI",
 "ok": false,
@@ -13630,7 +13655,7 @@
 },
 "greenhouse:visiersolutionsinc": {
 "added": "2026-10-11",
-"fails": 87,
+"fails": 88,
 "from": "survey",
 "name": "Visier Solutions",
 "ok": false,
@@ -13660,10 +13685,10 @@
 },
 "greenhouse:voter": {
 "added": "2026-10-10",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Vot-ER",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "greenhouse:voyagertechnologiesinc": {
@@ -18937,10 +18962,10 @@
 },
 "jibe:jobs.stryten.com": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "probe",
 "name": "Stryten",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "jibe:jobs.uhsinc.com": {
@@ -19121,10 +19146,10 @@
 },
 "lever:BusaraCenter": {
 "added": "2026-11-02",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Busara Center for Behavioral Economics",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "lever:CesiumAstro": {
@@ -19184,7 +19209,7 @@
 },
 "lever:InfrastructureandCapitalProjects": {
 "added": "2026-10-05",
-"fails": 6,
+"fails": 7,
 "from": "survey",
 "name": "Accenture Infrastructure and Capital Projects, LLC",
 "ok": false,
@@ -19200,10 +19225,10 @@
 },
 "lever:MBRDNA": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Mercedes-Benz",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "lever:MachinaLabs": {
@@ -19332,7 +19357,7 @@
 },
 "lever:aircall": {
 "added": "2026-10-05",
-"fails": 13,
+"fails": 14,
 "from": "survey",
 "name": "Aircall",
 "ok": false,
@@ -19363,10 +19388,10 @@
 },
 "lever:alice-bob": {
 "added": "2026-10-22",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Alice & Bob",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "lever:allegiantair": {
@@ -19638,10 +19663,10 @@
 },
 "lever:brindleyengineering": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Brindley Engineering",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "lever:brooksrunning": {
@@ -19730,6 +19755,12 @@
 "name": "Cheerz",
 "ok": true,
 "worked": true
+},
+"lever:cirrus": {
+"added": "2026-11-06",
+"fails": 1,
+"name": "Cirrus Logic",
+"ok": false
 },
 "lever:civitech": {
 "added": "2026-10-05",
@@ -19874,10 +19905,10 @@
 },
 "lever:daniels-sharpsmart": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Daniels Health",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "lever:deliverect": {
@@ -19969,10 +20000,10 @@
 },
 "lever:drivetrain": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Drivetrain",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "lever:dynamiccatholic": {
@@ -20181,10 +20212,10 @@
 },
 "lever:finn": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Finn",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "lever:fireworkhq": {
@@ -20663,9 +20694,9 @@
 },
 "lever:make-rain": {
 "added": "2026-10-04",
-"fails": 0,
+"fails": 1,
 "name": "Rainmaker",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "lever:malt": {
@@ -21131,6 +21162,12 @@
 "ok": true,
 "worked": true
 },
+"lever:quantinuum": {
+"added": "2026-11-06",
+"fails": 1,
+"name": "Quantinuum",
+"ok": false
+},
 "lever:questanalytics": {
 "added": "2026-10-05",
 "fails": 0,
@@ -21502,7 +21539,7 @@
 },
 "lever:suger": {
 "added": "2026-10-05",
-"fails": 113,
+"fails": 114,
 "from": "survey",
 "name": "Suger.io",
 "ok": false,
@@ -29432,6 +29469,12 @@
 "ok": true,
 "worked": true
 },
+"taleo:energytransfer/etp_ext": {
+"added": "2026-11-06",
+"fails": 1,
+"name": "Energy Transfer Partners",
+"ok": false
+},
 "taleo:massanf/ex": {
 "added": "2026-10-20",
 "fails": 0,
@@ -35097,7 +35140,7 @@
 },
 "workday:athene/wd5/apollononpubliccareersite": {
 "added": "2026-10-05",
-"fails": 9,
+"fails": 10,
 "from": "survey",
 "name": "Athene",
 "ok": false,
@@ -37904,16 +37947,16 @@
 },
 "workday:cox/wd1/Cox_External_Career_Site_1": {
 "added": "2026-10-04",
-"fails": 1,
+"fails": 0,
 "name": "Cox",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:cox/wd1/cox_external_career_site_1": {
 "added": "2026-10-04",
-"fails": 1,
+"fails": 0,
 "name": "Cox",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:cranecompany/wd5/Careers": {
@@ -38020,10 +38063,10 @@
 },
 "workday:csl/wd1/CSL_External": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Csl",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:csusystem/wd12/fortcollins_careers": {
@@ -38036,41 +38079,41 @@
 },
 "workday:cswg/wd1/cs_careers": {
 "added": "2026-10-04",
-"fails": 1,
+"fails": 0,
 "name": "C&S Wholesale Grocers",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:cubic/wd1/cubic_USA_careers": {
 "added": "2026-10-15",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Cubic",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:cumminggroup/wd1/cgc": {
 "added": "2026-11-01",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Cgc",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:curtisswright/wd1/cw_external_career_site": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Curtiss-Wright Corporation",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:customersbank/wd1/customersbankcareers": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Customers Bank",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:cvgrp/wd5/cvg": {
@@ -38091,10 +38134,10 @@
 },
 "workday:cvshealth/wd1/CVS_Health_Careers": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "CVS Health",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:cvshealth/wd1/Private_Postings_Intern_Conversion_ONLY": {
@@ -38106,33 +38149,33 @@
 },
 "workday:cvshealth/wd1/cvs_health_careers": {
 "added": "2026-10-25",
-"fails": 1,
+"fails": 0,
 "name": "CVS Health",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:cw/wd1/external": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Cushman & Wakefield",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:cwi/wd1/CW_Careers": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Cwi",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:daikinapplied/wd1/Daikin-Careers": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Daikin Applied",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:daikinapplied/wd1/Pre-Selected_Candidate_Site": {
@@ -38145,9 +38188,9 @@
 },
 "workday:dairynet/wd1/DPCcareers": {
 "added": "2026-10-04",
-"fails": 1,
+"fails": 0,
 "name": "Dairyland Power Cooperative",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:dairynet/wd1/dpccareers": {
@@ -38455,10 +38498,10 @@
 },
 "workday:dexcom/wd1/Dexcom": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Dexcom",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:dfwairport/wd5/External": {
@@ -38538,9 +38581,9 @@
 },
 "workday:directv/wd1/careers": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "name": "DIRECTV",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:discoverylandco/wd5/DLC": {
@@ -38690,9 +38733,9 @@
 },
 "workday:draftkings/wd1/Campus_Career_Portal": {
 "added": "2026-10-04",
-"fails": 0,
+"fails": 1,
 "name": "DraftKings",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:draftkings/wd1/Employee_Referral_Portal": {
@@ -42217,6 +42260,12 @@
 "ok": true,
 "worked": true
 },
+"workday:intel/wd1/en-us": {
+"added": "2026-11-06",
+"fails": 1,
+"name": "Intel",
+"ok": false
+},
 "workday:intel/wd1/external": {
 "added": "2026-10-04",
 "fails": 0,
@@ -44321,7 +44370,7 @@
 },
 "workday:mii/wd5/universityrecruiting": {
 "added": "2026-10-21",
-"fails": 33,
+"fails": 34,
 "name": "MiTek",
 "ok": false,
 "worked": true
@@ -45466,10 +45515,10 @@
 },
 "workday:nshe/wd1/NSHE-external": {
 "added": "2026-10-05",
-"fails": 0,
+"fails": 1,
 "from": "survey",
 "name": "Nshe (NSHE external)",
-"ok": true,
+"ok": false,
 "worked": true
 },
 "workday:nshe/wd1/UNR-external": {
@@ -45888,6 +45937,12 @@
 "name": "Ohio State University",
 "ok": true,
 "worked": true
+},
+"workday:osv-cci/wd1/CCICareers": {
+"added": "2026-11-06",
+"fails": 1,
+"name": "Castleton Commodities International",
+"ok": false
 },
 "workday:otis/wd504/rec_ext_gateway": {
 "added": "2026-10-05",
@@ -47910,13 +47965,13 @@
 },
 "workday:sallie-mae/wd5/Careers": {
 "added": "2026-11-05",
-"fails": 2,
+"fails": 3,
 "name": "Sallie Mae",
 "ok": false
 },
 "workday:sallie-mae/wd5/careers": {
 "added": "2026-11-05",
-"fails": 2,
+"fails": 3,
 "name": "Sallie Mae",
 "ok": false
 },
@@ -48734,6 +48789,13 @@
 "fails": 0,
 "from": "survey",
 "name": "Hottinger Br\u00fcel & Kjaer (HBK)",
+"ok": true,
+"worked": true
+},
+"workday:spectrumcontrol/wd1/spectrumcontrol": {
+"added": "2026-11-06",
+"fails": 0,
+"name": "Spectrum Control",
 "ok": true,
 "worked": true
 },
@@ -50312,10 +50374,10 @@
 },
 "workday:tti/wd1/tti_pe": {
 "added": "2026-10-05",
-"fails": 1,
+"fails": 0,
 "from": "survey",
 "name": "Techtronic Industries",
-"ok": false,
+"ok": true,
 "worked": true
 },
 "workday:ttmtech/wd5/jobs": {
