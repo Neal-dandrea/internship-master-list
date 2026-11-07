@@ -737,6 +737,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:ben": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Ben",
+"ok": true,
+"worked": true
+},
 "ashby:better-mortgage": {
 "added": "2026-10-05",
 "fails": 0,
@@ -1640,6 +1648,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Finary",
+"ok": true,
+"worked": true
+},
+"ashby:finni-health": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Finni Health",
 "ok": true,
 "worked": true
 },
@@ -2834,6 +2850,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Nano Qt",
+"ok": true,
+"worked": true
+},
+"ashby:nebuly": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Nebuly",
 "ok": true,
 "worked": true
 },
@@ -4259,6 +4283,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:the-global-talent-co": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "The Global Talent Co.",
+"ok": true,
+"worked": true
+},
 "ashby:the-robotics-company": {
 "added": "2026-10-28",
 "fails": 0,
@@ -5314,6 +5346,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Morgan Stanley",
+"ok": true,
+"worked": true
+},
+"eightfold:mtsi-va.eightfold.ai|": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Modern Technology Solutions Inc",
 "ok": true,
 "worked": true
 },
@@ -6965,6 +7005,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Cariadinc",
+"ok": true,
+"worked": true
+},
+"greenhouse:carta": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Carta",
 "ok": true,
 "worked": true
 },
@@ -9009,6 +9057,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:hawthornemachineryco": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Hawthorne Machinery Co.",
+"ok": true,
+"worked": true
+},
 "greenhouse:headoutcareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -10009,6 +10065,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Later",
+"ok": true,
+"worked": true
+},
+"greenhouse:lawzero": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Lawzero",
 "ok": true,
 "worked": true
 },
@@ -11133,6 +11197,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:openfarminc": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Open Farm Pet",
+"ok": true,
+"worked": true
+},
 "greenhouse:openfertility": {
 "added": "2026-10-28",
 "fails": 0,
@@ -11678,6 +11750,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:raft": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Raft",
+"ok": true,
+"worked": true
+},
 "greenhouse:raisin": {
 "added": "2026-10-05",
 "fails": 0,
@@ -11715,6 +11795,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Recursion",
+"ok": true,
+"worked": true
+},
+"greenhouse:redcellpartners": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Red Cell Partners",
 "ok": true,
 "worked": true
 },
@@ -13381,6 +13469,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Trumid",
+"ok": true,
+"worked": true
+},
+"greenhouse:trustautomation": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Trust Automation",
 "ok": true,
 "worked": true
 },
@@ -15590,6 +15686,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-lhbcorp": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "LHB",
+"ok": true,
+"worked": true
+},
 "icims:careers-libertycompaniesllc": {
 "added": "2026-10-05",
 "fails": 0,
@@ -17060,6 +17164,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Careersita Itt Inc",
+"ok": true,
+"worked": true
+},
+"icims:careerslongform-silvi": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Careerslongform Silvi",
 "ok": true,
 "worked": true
 },
@@ -21093,6 +21205,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Pivotal Software",
+"ok": true,
+"worked": true
+},
+"lever:placeshowroom.com": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Place Showroom",
 "ok": true,
 "worked": true
 },
@@ -26963,6 +27083,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:CityAndCountyOfSanFrancisco1": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "City and County of San Francisco",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:CityOfNewYork": {
 "added": "2026-10-05",
 "fails": 0,
@@ -27642,6 +27770,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:NatixisInPortugal": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Natixis in Portugal",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:Nemera": {
 "added": "2026-10-05",
 "fails": 0,
@@ -27694,6 +27830,14 @@
 "fails": 0,
 "from": "survey",
 "name": "O I",
+"ok": true,
+"worked": true
+},
+"smartrecruiters:OTTOFUCHSKG": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "OTTO FUCHS KG",
 "ok": true,
 "worked": true
 },
@@ -29829,6 +29973,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/CIT1004CITI/b48efc2b-169c-4b1f-8e3e-93646c8439c0": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/CIT1012CITAD/69156559-163e-4102-92c8-43771e19e8e5": {
 "added": "2026-11-04",
 "fails": 0,
@@ -31453,6 +31605,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/YMC1012YGM/4f65b2b8-68ab-4ab7-bce8-b8a3c5a10cd6": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/YOU1000YOUTH/34300ca7-6a4e-4cc1-bc46-6595a65fd50d": {
 "added": "2026-10-05",
 "fails": 0,
@@ -32449,6 +32609,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Eurostar International",
+"ok": true,
+"worked": true
+},
+"workable:everyday-dose-inc": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Everyday Dose Inc.",
 "ok": true,
 "worked": true
 },
@@ -33573,6 +33741,14 @@
 "ok": true,
 "worked": true
 },
+"workable:vpsa": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Valor Protection Safety Agency",
+"ok": true,
+"worked": true
+},
 "workable:waggoner-financial": {
 "added": "2026-10-30",
 "fails": 0,
@@ -33662,6 +33838,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Zaber Technologies",
+"ok": true,
+"worked": true
+},
+"workable:zaincash-jordan": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Zaincash Jordan",
 "ok": true,
 "worked": true
 },
@@ -34719,6 +34903,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "Ancestry",
+"ok": true,
+"worked": true
+},
+"workday:anchorglass/wd1/careers": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Anchorglass",
 "ok": true,
 "worked": true
 },
@@ -36458,6 +36650,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Brunswick",
+"ok": true,
+"worked": true
+},
+"workday:bsigroup/wd3/BSI_Careers": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "BSI Group",
 "ok": true,
 "worked": true
 },
@@ -39771,6 +39971,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Fedex",
+"ok": true,
+"worked": true
+},
+"workday:fednav/wd3/fednav_careers": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Fednav",
 "ok": true,
 "worked": true
 },
@@ -44187,6 +44395,14 @@
 "ok": true,
 "worked": true
 },
+"workday:memorialhermann/wd5/external": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Memorial Hermann",
+"ok": true,
+"worked": true
+},
 "workday:menasha/wd12/menashacorp": {
 "added": "2026-10-05",
 "fails": 0,
@@ -44665,6 +44881,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Morningstar",
+"ok": true,
+"worked": true
+},
+"workday:morsco/wd5/reece_mexico_careers": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Morsco",
 "ok": true,
 "worked": true
 },
@@ -45496,6 +45720,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Novanta",
+"ok": true,
+"worked": true
+},
+"workday:novartis/wd3/Internal_Careers_for_Acquired_Entities": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Novartis (Internal Careers for Acquired Entities)",
 "ok": true,
 "worked": true
 },
@@ -50937,6 +51169,14 @@
 "ok": true,
 "worked": true
 },
+"workday:vaderstad/wd3/External_Careers": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Vaderstad",
+"ok": true,
+"worked": true
+},
 "workday:vai/wd1/vaicareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -50956,6 +51196,14 @@
 "added": "2026-10-30",
 "fails": 0,
 "name": "Valeris",
+"ok": true,
+"worked": true
+},
+"workday:valleychildrens/wd12/VCH_External": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Valleychildrens",
 "ok": true,
 "worked": true
 },
@@ -51070,6 +51318,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Velux",
+"ok": true,
+"worked": true
+},
+"workday:venaenergy/wd102/external": {
+"added": "2026-11-07",
+"fails": 0,
+"from": "survey",
+"name": "Vena Energy",
 "ok": true,
 "worked": true
 },
