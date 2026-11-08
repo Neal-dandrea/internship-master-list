@@ -953,6 +953,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:campfire": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Campfire",
+"ok": true,
+"worked": true
+},
 "ashby:cantina": {
 "added": "2026-10-05",
 "fails": 0,
@@ -4302,6 +4310,14 @@
 "added": "2026-10-28",
 "fails": 0,
 "name": "The Robotics Company",
+"ok": true,
+"worked": true
+},
+"ashby:the-studio": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "The Utopia Venture Platform",
 "ok": true,
 "worked": true
 },
@@ -8169,6 +8185,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:fanaticscollectibles": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Fanatics",
+"ok": true,
+"worked": true
+},
 "greenhouse:fanaticsinc": {
 "added": "2026-10-19",
 "fails": 0,
@@ -9845,6 +9869,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Keeleyconstruction",
+"ok": true,
+"worked": true
+},
+"greenhouse:keenfootwear": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Keenfootwear",
 "ok": true,
 "worked": true
 },
@@ -25783,6 +25815,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:hdox.fa.us6.oraclecloud.com/CX_1": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Quest Diagnostics Careers",
+"ok": true,
+"worked": true
+},
 "oracle:hdpc.fa.us2.oraclecloud.com/CampusHiring": {
 "added": "2026-10-05",
 "fails": 0,
@@ -27048,6 +27088,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Bosch Home Comfort",
+"ok": true,
+"worked": true
+},
+"smartrecruiters:CERN": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Cern",
 "ok": true,
 "worked": true
 },
@@ -30988,6 +31036,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/PEA1006PEAA/c36308a9-3cc9-405a-a034-40797ac7607e": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/PEA1007PEHO/3fa301cc-3f29-4a93-be0d-269c11b36327": {
 "added": "2026-10-06",
 "fails": 0,
@@ -31102,6 +31158,14 @@
 },
 "ukg:recruiting.ultipro.com/REY1002RPLAN/4ad02ea2-6f3e-4877-8f51-dac9fa3838d1": {
 "added": "2026-10-08",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/RIC1009RCPL/3c253197-10cb-4ad5-847c-8264da0b4c44": {
+"added": "2026-11-08",
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
@@ -32878,6 +32942,14 @@
 "ok": true,
 "worked": true
 },
+"workable:liberty-mutual-canada": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Liberty Mutual Canada",
+"ok": true,
+"worked": true
+},
 "workable:lokal-app": {
 "added": "2026-10-22",
 "fails": 0,
@@ -33031,6 +33103,14 @@
 "fails": 0,
 "from": "survey",
 "name": "mylo",
+"ok": true,
+"worked": true
+},
+"workable:nacrecapital": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Nacre Capital",
 "ok": true,
 "worked": true
 },
@@ -37181,6 +37261,14 @@
 "ok": true,
 "worked": true
 },
+"workday:cemstone/wd1/CemstoneCareers": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Cemstone",
+"ok": true,
+"worked": true
+},
 "workday:cenhud/wd5/cenhud": {
 "added": "2026-10-04",
 "fails": 0,
@@ -37732,6 +37820,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Clorox",
+"ok": true,
+"worked": true
+},
+"workday:cloudera/wd5/external_career": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Cloudera",
 "ok": true,
 "worked": true
 },
@@ -40137,6 +40233,14 @@
 "ok": true,
 "worked": true
 },
+"workday:finastra/wd3/FINC": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Finastra",
+"ok": true,
+"worked": true
+},
 "workday:firstam/wd1/faicareers": {
 "added": "2026-10-19",
 "fails": 0,
@@ -41895,6 +41999,14 @@
 "ok": true,
 "worked": true
 },
+"workday:howard/wd1/HU": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Howard University",
+"ok": true,
+"worked": true
+},
 "workday:hp/wd5/EXTEU-AC-CareerSite": {
 "added": "2026-10-04",
 "fails": 0,
@@ -43291,6 +43403,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Kpluss",
+"ok": true,
+"worked": true
+},
+"workday:kramp/wd502/Krampcareers": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Kramp",
 "ok": true,
 "worked": true
 },
@@ -50963,6 +51083,14 @@
 "ok": true,
 "worked": true
 },
+"workday:unitedchurchhomes/wd1/uchcareers": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Unitedchurchhomes",
+"ok": true,
+"worked": true
+},
 "workday:unitytech/wd1/Unity": {
 "added": "2026-10-13",
 "fails": 0,
@@ -51665,6 +51793,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Volaris Group",
+"ok": true,
+"worked": true
+},
+"workday:vontobel/wd3/linkedin": {
+"added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Vontobel",
 "ok": true,
 "worked": true
 },
