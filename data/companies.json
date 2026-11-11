@@ -6321,6 +6321,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:artofproblemsolving": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Art of Problem Solving",
+"ok": true,
+"worked": true
+},
 "greenhouse:arxroboticsgmbh": {
 "added": "2026-10-05",
 "fails": 0,
@@ -8433,6 +8441,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Financial Times",
+"ok": true,
+"worked": true
+},
+"greenhouse:firstglobalmanagementservicesinc": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "First Global Management Services, Inc.",
 "ok": true,
 "worked": true
 },
@@ -11120,6 +11136,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Nielen Schuman",
+"ok": true,
+"worked": true
+},
+"greenhouse:ninedotholdingsinc": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "NineDot Energy",
 "ok": true,
 "worked": true
 },
@@ -15663,6 +15687,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-here": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "HERE Technologies",
+"ok": true,
+"worked": true
+},
 "icims:careers-hexagonpositioning": {
 "added": "2026-10-05",
 "fails": 0,
@@ -16095,6 +16127,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Mynorthsidecareer",
+"ok": true,
+"worked": true
+},
+"icims:careers-mysagedental": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Sage Dental Job Listings",
 "ok": true,
 "worked": true
 },
@@ -16872,6 +16912,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Structurepoint",
+"ok": true,
+"worked": true
+},
+"icims:careers-studyville": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Studyville LLC",
 "ok": true,
 "worked": true
 },
@@ -18619,6 +18667,14 @@
 "ok": true,
 "worked": true
 },
+"icims:uscareers-msci": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Msci",
+"ok": true,
+"worked": true
+},
 "icims:uscareers-nyu": {
 "added": "2026-10-05",
 "fails": 0,
@@ -19918,6 +19974,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Ambergroup",
+"ok": true,
+"worked": true
+},
+"lever:ammobia": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Ammobia",
 "ok": true,
 "worked": true
 },
@@ -23075,6 +23139,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Sinclair",
+"ok": true,
+"worked": true
+},
+"oracle:edzz.fa.em3.oraclecloud.com/CX_6001": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "UoB Employee",
 "ok": true,
 "worked": true
 },
@@ -29212,6 +29284,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:enertrag": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "ENERTRAG SE",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:equinox": {
 "added": "2026-10-05",
 "fails": 0,
@@ -30232,6 +30312,14 @@
 },
 "ukg:recruiting.ultipro.com/ASS1011/76f52471-7853-962f-b13f-e5190c56fd9c": {
 "added": "2026-10-05",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/AUG1000AUG/02a29cd6-e7aa-4501-96be-6336647e3184": {
+"added": "2026-11-11",
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
@@ -31982,6 +32070,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/USA1002USAL/003df104-d0d0-4233-8068-07ba35aacc79": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "USAble Life",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/UTI1000UMIC/0ae8178f-b389-4b3d-aaf4-e68b3756f2c7": {
 "added": "2026-10-05",
 "fails": 0,
@@ -32385,6 +32481,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Angkas",
+"ok": true,
+"worked": true
+},
+"workable:anthro": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Anthro",
 "ok": true,
 "worked": true
 },
@@ -34003,6 +34107,14 @@
 "ok": true,
 "worked": true
 },
+"workable:redairship": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Red Airship",
+"ok": true,
+"worked": true
+},
 "workable:redlion-mobility": {
 "added": "2026-10-22",
 "fails": 0,
@@ -34139,6 +34251,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Singulier",
+"ok": true,
+"worked": true
+},
+"workable:skeletontech": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Skeleton Technologies",
 "ok": true,
 "worked": true
 },
@@ -37562,6 +37682,14 @@
 "ok": true,
 "worked": true
 },
+"workday:calpolycorporation/wd12/CalPolyPartner_External_Careers": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Calpolycorporation",
+"ok": true,
+"worked": true
+},
 "workday:calvin/wd5/CalvinUniversityCareers": {
 "added": "2026-10-19",
 "fails": 0,
@@ -37737,6 +37865,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Caresource",
+"ok": true,
+"worked": true
+},
+"workday:carilionclinic/wd12/external_careers": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Carilion Clinic",
 "ok": true,
 "worked": true
 },
@@ -37919,6 +38055,14 @@
 },
 "workday:cemstone/wd1/CemstoneCareers": {
 "added": "2026-11-08",
+"fails": 0,
+"from": "survey",
+"name": "Cemstone",
+"ok": true,
+"worked": true
+},
+"workday:cemstone/wd1/tccmaterialscareers": {
+"added": "2026-11-11",
 "fails": 0,
 "from": "survey",
 "name": "Cemstone",
@@ -47150,6 +47294,14 @@
 "ok": true,
 "worked": true
 },
+"workday:owensminor/wd1/OMCareers": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Owens & Minor",
+"ok": true,
+"worked": true
+},
 "workday:oxford/wd5/TheBeaufortBonnetCompany": {
 "added": "2026-10-18",
 "fails": 0,
@@ -51346,6 +51498,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Trend Micro",
+"ok": true,
+"worked": true
+},
+"workday:tricon/wd3/tricon": {
+"added": "2026-11-11",
+"fails": 0,
+"from": "survey",
+"name": "Tricon",
 "ok": true,
 "worked": true
 },
