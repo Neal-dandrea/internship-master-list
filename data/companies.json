@@ -5386,6 +5386,14 @@
 "ok": true,
 "worked": true
 },
+"eightfold:insight.eightfold.ai|": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Insight",
+"ok": true,
+"worked": true
+},
 "eightfold:johndeere.eightfold.ai|": {
 "added": "2026-10-05",
 "fails": 0,
@@ -5862,6 +5870,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Agile Robots SE",
+"ok": true,
+"worked": true
+},
+"greenhouse:agoda": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Agoda",
 "ok": true,
 "worked": true
 },
@@ -6575,6 +6591,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:autotradercanada": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "AutoTrader.ca",
+"ok": true,
+"worked": true
+},
 "greenhouse:avepoint": {
 "added": "2026-10-05",
 "fails": 0,
@@ -6923,6 +6947,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Brevium",
+"ok": true,
+"worked": true
+},
+"greenhouse:brex": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Brex",
 "ok": true,
 "worked": true
 },
@@ -10119,6 +10151,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Kikoff",
+"ok": true,
+"worked": true
+},
+"greenhouse:kinelo": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Kinelo",
 "ok": true,
 "worked": true
 },
@@ -14081,6 +14121,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:waldensecurity": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Waldensecurity",
+"ok": true,
+"worked": true
+},
 "greenhouse:walkersands": {
 "added": "2026-11-02",
 "fails": 0,
@@ -14604,6 +14652,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Actalent Services",
+"ok": true,
+"worked": true
+},
+"icims:careers-adl": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "ADL",
 "ok": true,
 "worked": true
 },
@@ -16100,6 +16156,22 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-mccarthyca": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "McCarthy T\u00e9trault LLP",
+"ok": true,
+"worked": true
+},
+"icims:careers-mg2": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Colliers Engineering & Design",
+"ok": true,
+"worked": true
+},
 "icims:careers-middlesexcountynj": {
 "added": "2026-10-05",
 "fails": 0,
@@ -16289,6 +16361,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-ovgcan": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Oak View Group",
+"ok": true,
+"worked": true
+},
 "icims:careers-palmettocitizens": {
 "added": "2026-10-05",
 "fails": 0,
@@ -16349,6 +16429,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Perry's Ice Cream",
+"ok": true,
+"worked": true
+},
+"icims:careers-petsuppliesplus": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Pet Supplies Plus",
 "ok": true,
 "worked": true
 },
@@ -17222,6 +17310,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-voancnn": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Volunteers of America NCNN, Inc.",
+"ok": true,
+"worked": true
+},
 "icims:careers-volunteer-racker": {
 "added": "2026-10-05",
 "fails": 0,
@@ -17636,6 +17732,14 @@
 "added": "2026-11-05",
 "fails": 0,
 "name": "Alaska Air Group",
+"ok": true,
+"worked": true
+},
+"icims:craftcareers-bernhard": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Craftcareers Bernhard",
 "ok": true,
 "worked": true
 },
@@ -18351,6 +18455,14 @@
 "ok": true,
 "worked": true
 },
+"icims:manitowoc-alliancelaundry": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Manitowoc Alliancelaundry",
+"ok": true,
+"worked": true
+},
 "icims:mdcareers-livech": {
 "added": "2026-10-16",
 "fails": 0,
@@ -18484,6 +18596,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Enterprise",
+"ok": true,
+"worked": true
+},
+"icims:professional-headfirstcamps": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "HF HQ",
 "ok": true,
 "worked": true
 },
@@ -20503,6 +20623,14 @@
 "ok": true,
 "worked": true
 },
+"lever:communityactionhouse": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Community Action House",
+"ok": true,
+"worked": true
+},
 "lever:contentsquare": {
 "added": "2026-10-05",
 "fails": 0,
@@ -20759,6 +20887,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Endpoint Clinical",
+"ok": true,
+"worked": true
+},
+"lever:enveda": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Enveda",
 "ok": true,
 "worked": true
 },
@@ -32044,6 +32180,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/STV1001STVNH/1853026e-6618-48a5-80b8-9cb8923131a9": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/SUP1006SPTR/faf78e82-f25d-4212-be7e-8458e882f616": {
 "added": "2026-10-05",
 "fails": 0,
@@ -32567,6 +32711,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Amartha",
+"ok": true,
+"worked": true
+},
+"workable:amax-1": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "AMAX",
 "ok": true,
 "worked": true
 },
@@ -33115,6 +33267,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Cresilon, Inc.",
+"ok": true,
+"worked": true
+},
+"workable:crewbloom": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Crewbloom",
 "ok": true,
 "worked": true
 },
@@ -34325,6 +34485,14 @@
 "ok": true,
 "worked": true
 },
+"workable:search-fund-accelerator": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Search Fund Accelerator",
+"ok": true,
+"worked": true
+},
 "workable:secheron-s-dot-a": {
 "added": "2026-10-07",
 "fails": 0,
@@ -35158,6 +35326,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "The Aerospace Corporation",
+"ok": true,
+"worked": true
+},
+"workday:aersale/wd5/aer1001": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Aersale",
 "ok": true,
 "worked": true
 },
@@ -41275,6 +41451,14 @@
 "ok": true,
 "worked": true
 },
+"workday:fiserv/wd5/ext": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Fiserv",
+"ok": true,
+"worked": true
+},
 "workday:fiskars/wd3/fiskarsgroup": {
 "added": "2026-11-01",
 "fails": 0,
@@ -47122,6 +47306,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Oakland County, Michigan",
+"ok": true,
+"worked": true
+},
+"workday:oaktree/wd1/oaktree": {
+"added": "2026-11-12",
+"fails": 0,
+"from": "survey",
+"name": "Oaktree Capital Management",
 "ok": true,
 "worked": true
 },
