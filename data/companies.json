@@ -312,6 +312,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:adaptivesecurity": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Adaptive Security",
+"ok": true,
+"worked": true
+},
 "ashby:adaptyv": {
 "added": "2026-10-05",
 "fails": 0,
@@ -2351,6 +2359,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:kantiv": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Kantiv",
+"ok": true,
+"worked": true
+},
 "ashby:kastle": {
 "added": "2026-10-04",
 "fails": 0,
@@ -2558,6 +2574,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Lightspeed Commerce, Inc.",
+"ok": true,
+"worked": true
+},
+"ashby:lighttable": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Lighttable",
 "ok": true,
 "worked": true
 },
@@ -3037,6 +3061,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "northwoodspace",
+"ok": true,
+"worked": true
+},
+"ashby:nory-co": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "NORY",
 "ok": true,
 "worked": true
 },
@@ -6435,6 +6467,14 @@
 "fails": 0,
 "from": "survey",
 "name": "AST SpaceMobile",
+"ok": true,
+"worked": true
+},
+"greenhouse:atariinc": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Atari, Inc.",
 "ok": true,
 "worked": true
 },
@@ -13702,6 +13742,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:transfergo": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Transfergo",
+"ok": true,
+"worked": true
+},
 "greenhouse:transmarketgroup": {
 "added": "2026-10-04",
 "fails": 0,
@@ -13846,6 +13894,14 @@
 "fails": 0,
 "from": "careers page",
 "name": "UDig",
+"ok": true,
+"worked": true
+},
+"greenhouse:ultragenyxpharmaceutical": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Ultragenyxpharmaceutical",
 "ok": true,
 "worked": true
 },
@@ -14807,6 +14863,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-aptean": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Aptean",
+"ok": true,
+"worked": true
+},
 "icims:careers-araglegal": {
 "added": "2026-10-05",
 "fails": 0,
@@ -15450,6 +15514,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Entercom",
+"ok": true,
+"worked": true
+},
+"icims:careers-envoyair": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Envoy Air Inc.",
 "ok": true,
 "worked": true
 },
@@ -16191,6 +16263,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-morganplc": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Morgan Advanced Materials, PLC",
+"ok": true,
+"worked": true
+},
 "icims:careers-mpi": {
 "added": "2026-10-05",
 "fails": 0,
@@ -16464,6 +16544,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Piedmont Healthcare Inc.",
+"ok": true,
+"worked": true
+},
+"icims:careers-plannedparenthood": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Planned Parenthood of Orange and San Bernardino Counties",
 "ok": true,
 "worked": true
 },
@@ -16879,6 +16967,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "Susquehanna International Group (SIG)",
+"ok": true,
+"worked": true
+},
+"icims:careers-silvi": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Silvi Concrete Products",
 "ok": true,
 "worked": true
 },
@@ -17746,6 +17842,14 @@
 "ok": true,
 "worked": true
 },
+"icims:craftcareers-enfra": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "ENFRA",
+"ok": true,
+"worked": true
+},
 "icims:cretexmedicalcdt-cretex": {
 "added": "2026-10-05",
 "fails": 0,
@@ -17823,6 +17927,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Earlycareers Cundall",
+"ok": true,
+"worked": true
+},
+"icims:element-ext-hub": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Element Materials Technology",
 "ok": true,
 "worked": true
 },
@@ -21013,6 +21125,14 @@
 "ok": true,
 "worked": true
 },
+"lever:fenwaysports": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Fenway Sports Management",
+"ok": true,
+"worked": true
+},
 "lever:field-ai": {
 "added": "2026-10-05",
 "fails": 0,
@@ -21189,6 +21309,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "GoMaterials",
+"ok": true,
+"worked": true
+},
+"lever:gravisrobotics": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Gravis Robotics",
 "ok": true,
 "worked": true
 },
@@ -22402,6 +22530,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Tekton",
+"ok": true,
+"worked": true
+},
+"lever:telligen": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Telligen",
 "ok": true,
 "worked": true
 },
@@ -27799,6 +27935,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Beumergroup1",
+"ok": true,
+"worked": true
+},
+"smartrecruiters:BayWaAG": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "BayWa AG",
 "ok": true,
 "worked": true
 },
@@ -33371,6 +33515,14 @@
 "ok": true,
 "worked": true
 },
+"workable:demo-workable-academy-2": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Demo Workable Academy 2",
+"ok": true,
+"worked": true
+},
 "workable:devsinc-17": {
 "added": "2026-10-05",
 "fails": 0,
@@ -34452,6 +34604,14 @@
 "ok": true,
 "worked": true
 },
+"workable:riot": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Riot",
+"ok": true,
+"worked": true
+},
 "workable:risingedgegroup": {
 "added": "2026-10-10",
 "fails": 0,
@@ -34730,6 +34890,14 @@
 "ok": true,
 "worked": true
 },
+"workable:teleport-careers": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Teleport",
+"ok": true,
+"worked": true
+},
 "workable:testronic": {
 "added": "2026-10-09",
 "fails": 0,
@@ -34759,6 +34927,14 @@
 "fails": 0,
 "from": "survey",
 "name": "The Jean Tweed Centre",
+"ok": true,
+"worked": true
+},
+"workable:threenitas": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Threenitas",
 "ok": true,
 "worked": true
 },
@@ -45055,6 +45231,14 @@
 "ok": true,
 "worked": true
 },
+"workday:livenation/wd503/TMExternalSite": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Ticketmaster",
+"ok": true,
+"worked": true
+},
 "workday:liveoakbancshares/wd1/Live_Oak": {
 "added": "2026-10-04",
 "fails": 0,
@@ -47597,6 +47781,14 @@
 "ok": true,
 "worked": true
 },
+"workday:originbank/wd1/forth_careers": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Originbank",
+"ok": true,
+"worked": true
+},
 "workday:orionsteel/wd5/externalcareers": {
 "added": "2026-10-16",
 "fails": 0,
@@ -49340,6 +49532,14 @@
 "fails": 0,
 "from": "survey",
 "name": "RLI",
+"ok": true,
+"worked": true
+},
+"workday:rmit/wd3/Job_On_Campus": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "RMIT University (Job On Campus)",
 "ok": true,
 "worked": true
 },
@@ -51580,6 +51780,14 @@
 "ok": true,
 "worked": true
 },
+"workday:thekineticgroup/wd1/EXTERNAL_TKG": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "The Kinetic Group",
+"ok": true,
+"worked": true
+},
 "workday:themutualgroup/wd108/TMG": {
 "added": "2026-10-05",
 "fails": 0,
@@ -52122,6 +52330,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Tsc",
+"ok": true,
+"worked": true
+},
+"workday:tstc/wd1/tstc_jobs": {
+"added": "2026-11-13",
+"fails": 0,
+"from": "survey",
+"name": "Tstc",
 "ok": true,
 "worked": true
 },
