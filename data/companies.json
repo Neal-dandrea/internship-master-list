@@ -2257,6 +2257,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:inertia": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Inertia",
+"ok": true,
+"worked": true
+},
 "ashby:inferact": {
 "added": "2026-10-04",
 "fails": 0,
@@ -6813,6 +6821,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:bcapitalgroup54": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Bcapitalgroup54",
+"ok": true,
+"worked": true
+},
 "greenhouse:beamtherapeutics": {
 "added": "2026-10-04",
 "fails": 0,
@@ -8403,6 +8419,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:exnessinternship": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Exness Internship",
+"ok": true,
+"worked": true
+},
 "greenhouse:exoduspoint": {
 "added": "2026-10-04",
 "fails": 0,
@@ -9057,6 +9081,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:goldenpetbrands": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Golden Pet Brands",
+"ok": true,
+"worked": true
+},
 "greenhouse:goodfire": {
 "added": "2026-10-08",
 "fails": 0,
@@ -9334,6 +9366,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Hasbro",
+"ok": true,
+"worked": true
+},
+"greenhouse:hatchinternships": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Hatchinternships",
 "ok": true,
 "worked": true
 },
@@ -9627,6 +9667,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Hydrite",
+"ok": true,
+"worked": true
+},
+"greenhouse:ians": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Ians",
 "ok": true,
 "worked": true
 },
@@ -11386,6 +11434,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:numa": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Numa",
+"ok": true,
+"worked": true
+},
 "greenhouse:nuro": {
 "added": "2026-10-05",
 "fails": 0,
@@ -12757,6 +12813,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "SharkNinja",
+"ok": true,
+"worked": true
+},
+"greenhouse:sharpelectronics": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Sharp Electronics",
 "ok": true,
 "worked": true
 },
@@ -15286,6 +15350,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Council on Foreign Relations",
+"ok": true,
+"worked": true
+},
+"icims:careers-chai": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Clinton Health Access Initiative",
 "ok": true,
 "worked": true
 },
@@ -17977,6 +18049,14 @@
 "ok": true,
 "worked": true
 },
+"icims:element-ext-us": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Element Materials Technology",
+"ok": true,
+"worked": true
+},
 "icims:emea-aptean": {
 "added": "2026-11-04",
 "fails": 0,
@@ -18062,6 +18142,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Canon",
+"ok": true,
+"worked": true
+},
+"icims:external-careers-friedkin": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "The Friedkin Group",
 "ok": true,
 "worked": true
 },
@@ -24043,6 +24131,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:eicl.fa.em5.oraclecloud.com/CX_1": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Carnival Corporation",
+"ok": true,
+"worked": true
+},
 "oracle:eicl.fa.em5.oraclecloud.com/CX_4001": {
 "added": "2026-10-13",
 "fails": 0,
@@ -28886,6 +28982,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:PSLogistics": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "PS Logistics",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:PilotCompany": {
 "added": "2026-10-04",
 "fails": 0,
@@ -30013,6 +30117,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Iron Cumberland LLC",
+"ok": true,
+"worked": true
+},
+"smartrecruiters:itsecurityct1": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Itsecurityct1",
 "ok": true,
 "worked": true
 },
@@ -34892,6 +35004,14 @@
 "ok": true,
 "worked": true
 },
+"workable:studyportals": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Studyportals",
+"ok": true,
+"worked": true
+},
 "workable:super-soccer-stars": {
 "added": "2026-10-07",
 "fails": 0,
@@ -38329,6 +38449,14 @@
 "ok": false,
 "worked": true
 },
+"workday:campingworld/wd5/Jobs": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Camping World",
+"ok": true,
+"worked": true
+},
 "workday:canadagoose/wd3/canadagoosecareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -41695,6 +41823,14 @@
 "ok": true,
 "worked": true
 },
+"workday:finning/wd3/External": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Finning",
+"ok": true,
+"worked": true
+},
 "workday:firstam/wd1/faicareers": {
 "added": "2026-10-19",
 "fails": 1,
@@ -44262,6 +44398,14 @@
 "ok": true,
 "worked": true
 },
+"workday:ipsen/wd103/ipsen_careers": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Ipsen",
+"ok": true,
+"worked": true
+},
 "workday:iqvia/wd1/IQVIA": {
 "added": "2026-10-05",
 "fails": 1,
@@ -44886,6 +45030,14 @@
 "from": "survey",
 "name": "Knitwellgroup",
 "ok": false,
+"worked": true
+},
+"workday:kodiakgas/wd12/KodiakGasCareers": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Kodiak",
+"ok": true,
 "worked": true
 },
 "workday:kokosing/wd5/Kokosing_External_Career_Site": {
@@ -47757,6 +47909,14 @@
 "ok": false,
 "worked": true
 },
+"workday:olemiss/wd12/external__staff": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Staff Openings",
+"ok": true,
+"worked": true
+},
 "workday:olg/wd3/Careers-Students": {
 "added": "2026-10-04",
 "fails": 0,
@@ -47871,6 +48031,14 @@
 "from": "survey",
 "name": "Organon",
 "ok": false,
+"worked": true
+},
+"workday:originbank/wd1/Careers": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
+"name": "Originbank",
+"ok": true,
 "worked": true
 },
 "workday:originbank/wd1/forth_careers": {
@@ -49991,6 +50159,14 @@
 "workday:salesforce/wd12/Futureforce_NewGradRoles": {
 "added": "2026-10-15",
 "fails": 0,
+"name": "Salesforce",
+"ok": true,
+"worked": true
+},
+"workday:salesforce/wd12/Salesforce_Research": {
+"added": "2026-11-14",
+"fails": 0,
+"from": "survey",
 "name": "Salesforce",
 "ok": true,
 "worked": true
