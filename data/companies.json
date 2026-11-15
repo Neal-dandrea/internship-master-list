@@ -499,6 +499,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:ampeers": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Ampeers",
+"ok": true,
+"worked": true
+},
 "ashby:amplify": {
 "added": "2026-10-20",
 "fails": 0,
@@ -1870,6 +1878,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:generalist": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Generalist",
+"ok": true,
+"worked": true
+},
 "ashby:generalmagic": {
 "added": "2026-10-28",
 "fails": 0,
@@ -2555,6 +2571,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Lendable",
+"ok": true,
+"worked": true
+},
+"ashby:leveragedmedia": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Leveraged Media",
 "ok": true,
 "worked": true
 },
@@ -4634,6 +4658,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Vendelux",
+"ok": true,
+"worked": true
+},
+"ashby:verne": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Verne Robotics",
 "ok": true,
 "worked": true
 },
@@ -10843,6 +10875,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:mcmastercarr": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "McMaster-Carr",
+"ok": true,
+"worked": true
+},
 "greenhouse:mdbgeneralreferrals": {
 "added": "2026-10-11",
 "fails": 0,
@@ -13282,6 +13322,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Straitsx",
+"ok": true,
+"worked": true
+},
+"greenhouse:strandtherapeutics": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Strand Therapeutics",
 "ok": true,
 "worked": true
 },
@@ -22116,6 +22164,14 @@
 "ok": true,
 "worked": true
 },
+"lever:peakgames": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Peak",
+"ok": true,
+"worked": true
+},
 "lever:pentagrp": {
 "added": "2026-10-04",
 "fails": 0,
@@ -22826,6 +22882,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Veeva Systems",
+"ok": true,
+"worked": true
+},
+"lever:venusaero": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Venus Aerospace",
 "ok": true,
 "worked": true
 },
@@ -24816,6 +24880,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:enxp.fa.us6.oraclecloud.com/CX_1": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Enxp",
+"ok": true,
+"worked": true
+},
 "oracle:eoct.fa.em2.oraclecloud.com/careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -26452,6 +26524,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Irving",
+"ok": true,
+"worked": true
+},
+"oracle:hcpo.fa.ap1.oraclecloud.com/CX_2001": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Hcpo",
 "ok": true,
 "worked": true
 },
@@ -30032,6 +30112,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:heimstaden": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Heimstaden",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:heliumseo": {
 "added": "2026-10-05",
 "fails": 0,
@@ -30615,6 +30703,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:sqli1": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "SQLI",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:statkraft1": {
 "added": "2026-10-05",
 "fails": 0,
@@ -30644,6 +30740,14 @@
 "fails": 0,
 "from": "survey",
 "name": "SW Group",
+"ok": true,
+"worked": true
+},
+"smartrecruiters:swissquote": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Swissquote",
 "ok": true,
 "worked": true
 },
@@ -31826,6 +31930,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/MAR1036MBCI/0127d5ea-e4e8-48ee-a74a-cc71dcd13133": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/MCK1004MCKI/f29e8f64-6bcd-4988-8fad-851c4970ffe4": {
 "added": "2026-10-05",
 "fails": 0,
@@ -32284,6 +32396,14 @@
 },
 "ukg:recruiting.ultipro.com/RDV1000RDVC/77c03b95-8610-4af8-9b9b-1cfed32aa9ed": {
 "added": "2026-10-05",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/REG1000REGAL/1bbca4e6-7b2d-4f4f-bb34-681fc9385364": {
+"added": "2026-11-15",
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
@@ -34725,6 +34845,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Quantis",
+"ok": true,
+"worked": true
+},
+"workable:quistor": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Broadpin",
 "ok": true,
 "worked": true
 },
@@ -38275,6 +38403,14 @@
 "ok": true,
 "worked": true
 },
+"workday:burkert/wd502/burkert-career": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Burkert",
+"ok": true,
+"worked": true
+},
 "workday:burlington/wd5/BurlingtonCareers": {
 "added": "2026-10-04",
 "fails": 0,
@@ -38318,6 +38454,14 @@
 "added": "2026-10-20",
 "fails": 0,
 "name": "Creative Artists Agency",
+"ok": true,
+"worked": true
+},
+"workday:cableone/wd1/Cable_One_External_Careers": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Cable One",
 "ok": true,
 "worked": true
 },
@@ -40959,6 +41103,14 @@
 "ok": true,
 "worked": true
 },
+"workday:eisai/wd5/eisai": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Eisai",
+"ok": true,
+"worked": true
+},
 "workday:eisneramper/wd1/EisnerAmperEarlyCareers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -42490,6 +42642,14 @@
 "ok": true,
 "worked": true
 },
+"workday:gdit/wd5/GDIT_Empl_Ref": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Gdit",
+"ok": true,
+"worked": true
+},
 "workday:gdit/wd5/external_career_site": {
 "added": "2026-10-04",
 "fails": 0,
@@ -42682,6 +42842,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "GE Vernova",
+"ok": true,
+"worked": true
+},
+"workday:gfs/wd5/salescareers": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Sales",
 "ok": true,
 "worked": true
 },
@@ -43612,6 +43780,14 @@
 "ok": true,
 "worked": true
 },
+"workday:hoganas/wd3/Careers": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "H\u00f6gan\u00e4s",
+"ok": true,
+"worked": true
+},
 "workday:hoganlovells/wd3/search": {
 "added": "2026-10-05",
 "fails": 0,
@@ -44021,6 +44197,14 @@
 "fails": 0,
 "from": "survey",
 "name": "IDEX",
+"ok": true,
+"worked": true
+},
+"workday:ielfreight/wd1/external": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "IEL",
 "ok": true,
 "worked": true
 },
@@ -47060,6 +47244,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Loblaw Companies",
+"ok": true,
+"worked": true
+},
+"workday:myworkdaycenter/wd5/tpco": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Tpco",
 "ok": true,
 "worked": true
 },
@@ -51325,6 +51517,14 @@
 "ok": true,
 "worked": true
 },
+"workday:storaenso/wd502/Stora_Enso_site_opportunities": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Storaenso",
+"ok": true,
+"worked": true
+},
 "workday:storebrand/wd3/Storebrand_Careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -52103,6 +52303,14 @@
 "fails": 0,
 "from": "survey",
 "name": "The Kinetic Group",
+"ok": true,
+"worked": true
+},
+"workday:thekineticgroup/wd1/external_fed": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Thekineticgroup",
 "ok": true,
 "worked": true
 },
@@ -54418,6 +54626,14 @@
 "added": "2026-10-09",
 "fails": 0,
 "name": "WSFS Bank",
+"ok": true,
+"worked": true
+},
+"workday:wsu/wd5/WSU_Jobs": {
+"added": "2026-11-15",
+"fails": 0,
+"from": "survey",
+"name": "Washington State University",
 "ok": true,
 "worked": true
 },
