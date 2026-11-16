@@ -2375,6 +2375,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:junipersquare": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Juniper Square",
+"ok": true,
+"worked": true
+},
 "ashby:k-id": {
 "added": "2026-10-04",
 "fails": 0,
@@ -7690,6 +7698,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:cogstateinc": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Cogstate",
+"ok": true,
+"worked": true
+},
 "greenhouse:coinbase": {
 "added": "2026-10-05",
 "fails": 0,
@@ -12387,6 +12403,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:roarkcapitalgroup": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Roarkcapitalgroup",
+"ok": true,
+"worked": true
+},
 "greenhouse:robinhood": {
 "added": "2026-10-04",
 "fails": 0,
@@ -13381,6 +13405,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Sumup",
+"ok": true,
+"worked": true
+},
+"greenhouse:suntimes": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Suntimes",
 "ok": true,
 "worked": true
 },
@@ -16141,6 +16173,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-it-kiwa": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "It Kiwa",
+"ok": true,
+"worked": true
+},
 "icims:careers-jhuapl": {
 "added": "2026-10-05",
 "fails": 0,
@@ -18854,6 +18894,14 @@
 "ok": true,
 "worked": true
 },
+"icims:polywestenglish-poly-america": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Poly America",
+"ok": true,
+"worked": true
+},
 "icims:postdoc-pnnl": {
 "added": "2026-10-05",
 "fails": 0,
@@ -21105,6 +21153,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Drivetrain",
+"ok": true,
+"worked": true
+},
+"lever:duetti": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Duetti",
 "ok": true,
 "worked": true
 },
@@ -23518,6 +23574,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Adventist Health",
+"ok": true,
+"worked": true
+},
+"oracle:ecwl.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "ClubCorp",
 "ok": true,
 "worked": true
 },
@@ -27109,6 +27173,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Ibaeqy",
+"ok": true,
+"worked": true
+},
+"oracle:ibanqy.fa.ocs.oraclecloud.com/CX_4": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Ibanqy",
 "ok": true,
 "worked": true
 },
@@ -31059,6 +31131,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/BHI1000BHIS/0b59f80d-07d2-4b59-afb0-af4583194a3c": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/BIO1009BIPH/62507471-7936-4fae-aad4-d0bf9ffa0787": {
 "added": "2026-10-05",
 "fails": 0,
@@ -31264,6 +31344,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
+"ukg:recruiting.ultipro.com/COM1063CHRI/b94848f1-373d-444d-80f0-e324dae8d006": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Community Health Resources",
 "ok": true,
 "worked": true
 },
@@ -33138,6 +33226,14 @@
 "ok": true,
 "worked": true
 },
+"workable:almag-aluminum": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Almag Aluminum",
+"ok": true,
+"worked": true
+},
 "workable:alphax": {
 "added": "2026-10-08",
 "fails": 0,
@@ -34894,6 +34990,14 @@
 "ok": true,
 "worked": true
 },
+"workable:rentokil-initial": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Rentokil Initial",
+"ok": true,
+"worked": true
+},
 "workable:resource-innovations": {
 "added": "2026-10-12",
 "fails": 0,
@@ -34921,6 +35025,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Riot",
+"ok": true,
+"worked": true
+},
+"workable:rise-robotics": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "RISE Robotics",
 "ok": true,
 "worked": true
 },
@@ -35906,6 +36018,14 @@
 "ok": true,
 "worked": true
 },
+"workday:agrana/wd3/careers": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Agrana",
+"ok": true,
+"worked": true
+},
 "workday:agropur/wd3/Agropur_Careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -36176,6 +36296,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Alliance",
+"ok": true,
+"worked": true
+},
+"workday:alliancedata/wd5/breadfinancial_us": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Bread Financial",
 "ok": true,
 "worked": true
 },
@@ -42271,6 +42399,14 @@
 "ok": true,
 "worked": true
 },
+"workday:fox/wd1/foxtvst_east": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Fox",
+"ok": true,
+"worked": true
+},
 "workday:foxfactory/wd1/FOX": {
 "added": "2026-10-26",
 "fails": 0,
@@ -44986,6 +45122,14 @@
 "ok": true,
 "worked": true
 },
+"workday:juliusbaer/wd3/technology": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Julius Baer Technology",
+"ok": true,
+"worked": true
+},
 "workday:kainos/wd3/kainos": {
 "added": "2026-10-12",
 "fails": 0,
@@ -46270,6 +46414,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "McKesson",
+"ok": true,
+"worked": true
+},
+"workday:mckesson/wd3/acquisition_campus": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Mckesson",
 "ok": true,
 "worked": true
 },
@@ -49635,6 +49787,14 @@
 "ok": true,
 "worked": true
 },
+"workday:reliaquest/wd5/ReliaQuest_Careers": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Reliaquest",
+"ok": true,
+"worked": true
+},
 "workday:relx/wd3/ElsevierJobs": {
 "added": "2026-10-05",
 "fails": 0,
@@ -51714,6 +51874,14 @@
 "ok": true,
 "worked": true
 },
+"workday:sutterhealth/wd1/SH": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Sutterhealth",
+"ok": true,
+"worked": true
+},
 "workday:suzano/wd108/suzanopackaging": {
 "added": "2026-10-05",
 "fails": 0,
@@ -51985,6 +52153,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Jonas (Perseus Careers1)",
+"ok": true,
+"worked": true
+},
+"workday:tamus/wd1/ETAMU_External": {
+"added": "2026-11-16",
+"fails": 0,
+"from": "survey",
+"name": "Tamus (ETAMU External)",
 "ok": true,
 "worked": true
 },
