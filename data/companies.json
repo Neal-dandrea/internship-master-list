@@ -7851,6 +7851,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:coherentsolutions": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Coherentsolutions",
+"ok": true,
+"worked": true
+},
 "greenhouse:coinbase": {
 "added": "2026-10-05",
 "fails": 0,
@@ -8450,6 +8458,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Ensco",
+"ok": true,
+"worked": true
+},
+"greenhouse:ensono": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Ensono",
 "ok": true,
 "worked": true
 },
@@ -9957,6 +9973,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Indie Campers | LinkedIn",
+"ok": true,
+"worked": true
+},
+"greenhouse:indiesemiconductor": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Indie Semiconductor",
 "ok": true,
 "worked": true
 },
@@ -15661,6 +15685,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-commonwealth": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Commonwealth Financial Network",
+"ok": true,
+"worked": true
+},
 "icims:careers-consoreng": {
 "added": "2026-10-05",
 "fails": 0,
@@ -16471,6 +16503,14 @@
 "fails": 0,
 "from": "survey",
 "name": "LHB",
+"ok": true,
+"worked": true
+},
+"icims:careers-lhs": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Legacy Health",
 "ok": true,
 "worked": true
 },
@@ -17307,6 +17347,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Shure Incorporated",
+"ok": true,
+"worked": true
+},
+"icims:careers-shv-kiwa": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Shv Kiwa",
 "ok": true,
 "worked": true
 },
@@ -19082,6 +19130,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Enterprise",
+"ok": true,
+"worked": true
+},
+"icims:professional-fisd": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Professional Fisd",
 "ok": true,
 "worked": true
 },
@@ -22218,6 +22274,14 @@
 "ok": true,
 "worked": true
 },
+"lever:nationaljournal": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "National Journal",
+"ok": true,
+"worked": true
+},
 "lever:neighbor": {
 "added": "2026-10-04",
 "fails": 0,
@@ -23156,6 +23220,14 @@
 "ok": true,
 "worked": true
 },
+"lever:vivenu": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Vivenu",
+"ok": true,
+"worked": true
+},
 "lever:vivrelle": {
 "added": "2026-10-05",
 "fails": 0,
@@ -23239,6 +23311,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "WEP Clinical",
+"ok": true,
+"worked": true
+},
+"lever:weride": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Weride",
 "ok": true,
 "worked": true
 },
@@ -32543,6 +32623,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/OUT1001OGC/4319a30f-585a-4160-b128-32076e21a778": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/OZA1000/027d36c9-c6b1-72d5-d53f-1559ca224f28": {
 "added": "2026-10-05",
 "fails": 0,
@@ -33223,6 +33311,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/YAS1000YAAMI/8a2317d2-a61e-4259-a857-722d164a211c": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Yaskawa Drives & Motion",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/YMC1010YMCAD/9ab3be82-7895-4efd-a55b-47d24e067f68": {
 "added": "2026-10-05",
 "fails": 0,
@@ -33356,6 +33452,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Academy of Medical Sciences",
+"ok": true,
+"worked": true
+},
+"workable:access-services-3": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Access Services",
 "ok": true,
 "worked": true
 },
@@ -33829,6 +33933,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Bright Harbor Healthcare",
+"ok": true,
+"worked": true
+},
+"workable:bswarena": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Bon Secours Wellness Arena",
 "ok": true,
 "worked": true
 },
@@ -35457,6 +35569,22 @@
 "ok": true,
 "worked": true
 },
+"workable:stranger-soccer-1": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Stranger Soccer",
+"ok": true,
+"worked": true
+},
+"workable:streetchildcareers": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Street Child",
+"ok": true,
+"worked": true
+},
 "workable:studyportals": {
 "added": "2026-11-14",
 "fails": 0,
@@ -35721,6 +35849,14 @@
 "ok": true,
 "worked": true
 },
+"workable:whiteshield": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Whiteshield",
+"ok": true,
+"worked": true
+},
 "workable:winthrop-technologies": {
 "added": "2026-11-03",
 "fails": 0,
@@ -35902,6 +36038,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Abbott",
+"ok": true,
+"worked": true
+},
+"workday:abcfinancial/wd5/abcfinancialservices": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Trainerize",
 "ok": true,
 "worked": true
 },
@@ -37322,6 +37466,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Alexion",
+"ok": true,
+"worked": true
+},
+"workday:astrazeneca/wd3/broadbean_external": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Astrazeneca",
 "ok": true,
 "worked": true
 },
@@ -43093,6 +43245,14 @@
 "ok": true,
 "worked": true
 },
+"workday:genesishcs/wd1/genesishcs": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Genesishcs",
+"ok": true,
+"worked": true
+},
 "workday:genesys/wd1/2_genesys_jobs": {
 "added": "2026-11-15",
 "fails": 0,
@@ -43434,6 +43594,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Granite Construction",
+"ok": true,
+"worked": true
+},
+"workday:graybar/wd1/Careers": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Graybar",
 "ok": true,
 "worked": true
 },
@@ -45370,6 +45538,14 @@
 "ok": true,
 "worked": true
 },
+"workday:juliusbaer/wd3/wealth_managers": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Wealth Managers",
+"ok": true,
+"worked": true
+},
 "workday:kainos/wd3/kainos": {
 "added": "2026-10-12",
 "fails": 0,
@@ -46259,6 +46435,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Lehigh Valley Health Network (LVHN)",
+"ok": true,
+"worked": true
+},
+"workday:lvvwd/wd1/lvvwdwaterjobs": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Las Vegas Valley Water District",
 "ok": true,
 "worked": true
 },
@@ -48783,6 +48967,14 @@
 "ok": true,
 "worked": true
 },
+"workday:oxford/wd5/LillyPulitzer": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Oxford",
+"ok": true,
+"worked": true
+},
 "workday:oxford/wd5/TheBeaufortBonnetCompany": {
 "added": "2026-10-18",
 "fails": 0,
@@ -50989,6 +51181,14 @@
 "ok": true,
 "worked": true
 },
+"workday:scripps/wd115/Scripps_Careers": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Scripps",
+"ok": true,
+"worked": true
+},
 "workday:seatrium/wd3/seatriumcareers": {
 "added": "2026-10-07",
 "fails": 0,
@@ -52425,6 +52625,14 @@
 "ok": true,
 "worked": true
 },
+"workday:tamus/wd1/TAMUSA_External": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "Tamus (TAMUSA External)",
+"ok": true,
+"worked": true
+},
 "workday:tamus/wd1/pvamu_external": {
 "added": "2026-10-04",
 "fails": 0,
@@ -52476,6 +52684,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Taylor Corporation",
+"ok": true,
+"worked": true
+},
+"workday:tcbrands/wd1/TravisMathew-Careers": {
+"added": "2026-11-17",
+"fails": 0,
+"from": "survey",
+"name": "TravisMathew",
 "ok": true,
 "worked": true
 },
