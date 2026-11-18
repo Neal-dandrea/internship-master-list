@@ -1523,6 +1523,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:endra": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Endra",
+"ok": true,
+"worked": true
+},
 "ashby:eneba": {
 "added": "2026-11-10",
 "fails": 0,
@@ -2880,6 +2888,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Melotech",
+"ok": true,
+"worked": true
+},
+"ashby:menlosecurity": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Menlo Security",
 "ok": true,
 "worked": true
 },
@@ -8159,6 +8175,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:deepwatchindia": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Deepwatchindia",
+"ok": true,
+"worked": true
+},
 "greenhouse:defenseunicorns": {
 "added": "2026-10-05",
 "fails": 0,
@@ -8281,6 +8305,14 @@
 "fails": 0,
 "from": "survey",
 "name": "DLR Group",
+"ok": true,
+"worked": true
+},
+"greenhouse:dna": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Dna",
 "ok": true,
 "worked": true
 },
@@ -10926,6 +10958,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:m3": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "M3",
+"ok": true,
+"worked": true
+},
 "greenhouse:machindustries": {
 "added": "2026-10-05",
 "fails": 0,
@@ -13516,6 +13556,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:stanley1913-us": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Stanley 1913",
+"ok": true,
+"worked": true
+},
 "greenhouse:star-catcher": {
 "added": "2026-10-05",
 "fails": 0,
@@ -15427,6 +15475,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-bgca": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Boys & Girls Clubs of America",
+"ok": true,
+"worked": true
+},
 "icims:careers-biocarbonsolutions": {
 "added": "2026-10-05",
 "fails": 0,
@@ -15549,6 +15605,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "CalAmp",
+"ok": true,
+"worked": true
+},
+"icims:careers-califiafarms": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Califia Farms",
 "ok": true,
 "worked": true
 },
@@ -15904,6 +15968,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "Empirical Foods",
+"ok": true,
+"worked": true
+},
+"icims:careers-en-kiwa": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "En Kiwa",
 "ok": true,
 "worked": true
 },
@@ -18965,6 +19037,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Sierra Lobo, Inc.",
+"ok": true,
+"worked": true
+},
+"icims:jobs-tollbrothers": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Toll Brothers",
 "ok": true,
 "worked": true
 },
@@ -23942,6 +24022,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:ecwl.fa.us2.oraclecloud.com/CX": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Ecwl",
+"ok": true,
+"worked": true
+},
 "oracle:ecwl.fa.us2.oraclecloud.com/CX_1": {
 "added": "2026-11-16",
 "fails": 0,
@@ -26551,6 +26639,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:fa-ewqm-saasfaprod1.fa.ocs.oraclecloud.com/CX_1": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Fa Ewqm Saasfaprod1",
+"ok": true,
+"worked": true
+},
 "oracle:fa-ewub-saasfaprod1.fa.ocs.oraclecloud.com/CX_26": {
 "added": "2026-10-05",
 "fails": 0,
@@ -26849,6 +26945,22 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "Citizens Financial Group",
+"ok": true,
+"worked": true
+},
+"oracle:hcib.fa.us2.oraclecloud.com/CX_1": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Hill Minimal 112022",
+"ok": true,
+"worked": true
+},
+"oracle:hcib.fa.us2.oraclecloud.com/CX_1001": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Hcib",
 "ok": true,
 "worked": true
 },
@@ -30980,6 +31092,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:qadinc": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "QAD, Inc.",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:questns": {
 "added": "2026-10-05",
 "fails": 0,
@@ -34174,6 +34294,14 @@
 "ok": true,
 "worked": true
 },
+"workable:clipperton": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Clipperton",
+"ok": true,
+"worked": true
+},
 "workable:cloudstuff": {
 "added": "2026-10-08",
 "fails": 0,
@@ -34380,6 +34508,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Demo Workable Academy 2",
+"ok": true,
+"worked": true
+},
+"workable:destinusgroup": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Destinus",
 "ok": true,
 "worked": true
 },
@@ -34633,6 +34769,14 @@
 "ok": true,
 "worked": true
 },
+"workable:fundingsocieties": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Funding Societies | Modalku Group",
+"ok": true,
+"worked": true
+},
 "workable:fuseenergy": {
 "added": "2026-10-29",
 "fails": 0,
@@ -34670,6 +34814,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Getvocal Ai",
+"ok": true,
+"worked": true
+},
+"workable:glenveagh-properties-plc": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Glenveagh Properties PLC",
 "ok": true,
 "worked": true
 },
@@ -34780,6 +34932,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Igloo",
+"ok": true,
+"worked": true
+},
+"workable:impactastrategy": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Impactastrategy",
 "ok": true,
 "worked": true
 },
@@ -35965,6 +36125,14 @@
 "added": "2026-10-30",
 "fails": 0,
 "name": "Waterworth",
+"ok": true,
+"worked": true
+},
+"workable:wati-dot-i-o": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "WATI.io",
 "ok": true,
 "worked": true
 },
@@ -37459,6 +37627,14 @@
 "ok": true,
 "worked": true
 },
+"workday:arriva/wd3/careers": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Arriva",
+"ok": true,
+"worked": true
+},
 "workday:arrow/wd1/ac": {
 "added": "2026-10-18",
 "fails": 0,
@@ -38853,6 +39029,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Bridgestone (Wf External Careers)",
+"ok": true,
+"worked": true
+},
+"workday:brightli/wd5/BrightliTalent": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Brightli",
 "ok": true,
 "worked": true
 },
@@ -41746,6 +41930,14 @@
 },
 "workday:eisneramper/wd1/EisnerAmperEarlyCareers": {
 "added": "2026-10-05",
+"fails": 0,
+"from": "survey",
+"name": "Eisneramper",
+"ok": true,
+"worked": true
+},
+"workday:eisneramper/wd1/EisnerAmper_External": {
+"added": "2026-11-18",
 "fails": 0,
 "from": "survey",
 "name": "Eisneramper",
@@ -48655,6 +48847,14 @@
 "ok": true,
 "worked": true
 },
+"workday:ntu/wd3/careers": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Ntu",
+"ok": true,
+"worked": true
+},
 "workday:nuecesco/wd5/external": {
 "added": "2026-10-05",
 "fails": 0,
@@ -50912,6 +51112,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Rolls-Royce",
+"ok": true,
+"worked": true
+},
+"workday:rollsroyce/wd3/rrpowersystems": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Rollsroyce (Rrpowersystems)",
 "ok": true,
 "worked": true
 },
@@ -55254,6 +55462,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Wisconsin",
+"ok": true,
+"worked": true
+},
+"workday:wit/wd1/WIT": {
+"added": "2026-11-18",
+"fails": 0,
+"from": "survey",
+"name": "Wit",
 "ok": true,
 "worked": true
 },
