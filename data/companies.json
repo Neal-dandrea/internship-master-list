@@ -2596,6 +2596,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:lemlist": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Lemlist",
+"ok": true,
+"worked": true
+},
 "ashby:lemon-markets": {
 "added": "2026-10-05",
 "fails": 0,
@@ -6462,6 +6470,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:amperity": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Amperity",
+"ok": true,
+"worked": true
+},
 "greenhouse:anaplan": {
 "added": "2026-10-05",
 "fails": 0,
@@ -9105,6 +9121,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:fwdus": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "FWD.us",
+"ok": true,
+"worked": true
+},
 "greenhouse:g2vp": {
 "added": "2026-10-05",
 "fails": 0,
@@ -9313,6 +9337,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Globalcampus",
+"ok": true,
+"worked": true
+},
+"greenhouse:globalizationpartners": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Globalization Partners",
 "ok": true,
 "worked": true
 },
@@ -9780,6 +9812,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Hillel International",
+"ok": true,
+"worked": true
+},
+"greenhouse:hillhousehome": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Hill House Home",
 "ok": true,
 "worked": true
 },
@@ -12009,6 +12049,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:pacvue": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Pacvue",
+"ok": true,
+"worked": true
+},
 "greenhouse:panthalassa": {
 "added": "2026-10-05",
 "fails": 0,
@@ -12177,6 +12225,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Plume",
+"ok": true,
+"worked": true
+},
+"greenhouse:pmg": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Pmg",
 "ok": true,
 "worked": true
 },
@@ -12885,6 +12941,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Sandstonecarevirginiabeach",
+"ok": true,
+"worked": true
+},
+"greenhouse:sandstonechantilly": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Sandstonechantilly",
 "ok": true,
 "worked": true
 },
@@ -22211,6 +22275,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Klivvr",
+"ok": true,
+"worked": true
+},
+"lever:kogan": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Kogan.com",
 "ok": true,
 "worked": true
 },
@@ -33341,6 +33413,14 @@
 "ok": true,
 "worked": true
 },
+"ukg:recruiting.ultipro.com/TEC1003/981a3aea-a9ea-35fd-9a20-79e1ce161cdc": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Recruiting.Ultipro.Com",
+"ok": true,
+"worked": true
+},
 "ukg:recruiting.ultipro.com/TEC1006TESER/18180d88-ced0-4361-bd09-d5eef66dab24": {
 "added": "2026-10-23",
 "fails": 0,
@@ -35786,6 +35866,14 @@
 "ok": true,
 "worked": true
 },
+"workable:sideinc": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Side",
+"ok": true,
+"worked": true
+},
 "workable:singulier": {
 "added": "2026-10-21",
 "fails": 0,
@@ -35907,6 +35995,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Super Soccer Stars",
+"ok": true,
+"worked": true
+},
+"workable:suri-3": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "SURI",
 "ok": true,
 "worked": true
 },
@@ -38274,6 +38370,14 @@
 "ok": true,
 "worked": true
 },
+"workday:bankatfirst/wd1/ffb": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "First Financial Bank",
+"ok": true,
+"worked": true
+},
 "workday:bankeasy/wd5/bank-easy-job-openings": {
 "added": "2026-10-04",
 "fails": 0,
@@ -38888,6 +38992,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Boeing",
+"ok": true,
+"worked": true
+},
+"workday:boliden/wd3/bolidenjobs": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Boliden",
 "ok": true,
 "worked": true
 },
@@ -44709,6 +44821,14 @@
 "ok": true,
 "worked": true
 },
+"workday:honorhealth/wd12/HonorHealth_careers": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Honorhealth",
+"ok": true,
+"worked": true
+},
 "workday:houstonmethodist/wd12/GTI": {
 "added": "2026-10-05",
 "fails": 0,
@@ -45266,6 +45386,14 @@
 "ok": true,
 "worked": true
 },
+"workday:ing/wd3/icsnldgen": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Ing",
+"ok": true,
+"worked": true
+},
 "workday:ingevity/wd1/ingevity": {
 "added": "2026-10-24",
 "fails": 0,
@@ -45731,6 +45859,14 @@
 "added": "2026-10-29",
 "fails": 0,
 "name": "Johnson Controls",
+"ok": true,
+"worked": true
+},
+"workday:jci/wd5/TUPU": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Jci (TUPU)",
 "ok": true,
 "worked": true
 },
@@ -48815,6 +48951,14 @@
 "ok": true,
 "worked": true
 },
+"workday:nshs/wd1/ns-eeh": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Endeavor Health",
+"ok": true,
+"worked": true
+},
 "workday:nsminc/wd1/Novacore_Careers": {
 "added": "2026-11-06",
 "fails": 0,
@@ -49658,6 +49802,14 @@
 },
 "workday:pfizer/wd1/PfizerCareers": {
 "added": "2026-10-05",
+"fails": 0,
+"from": "survey",
+"name": "Pfizer",
+"ok": true,
+"worked": true
+},
+"workday:pfizer/wd1/internaljobs": {
+"added": "2026-11-19",
 "fails": 0,
 "from": "survey",
 "name": "Pfizer",
@@ -53697,6 +53849,14 @@
 "ok": true,
 "worked": true
 },
+"workday:trellix/wd1/EnterpriseCareers": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Trellix",
+"ok": true,
+"worked": true
+},
 "workday:trendmicro/wd3/External": {
 "added": "2026-10-05",
 "fails": 0,
@@ -55479,6 +55639,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Winland Foods",
+"ok": true,
+"worked": true
+},
+"workday:wintrust/wd1/casearch": {
+"added": "2026-11-19",
+"fails": 0,
+"from": "survey",
+"name": "Wintrust",
 "ok": true,
 "worked": true
 },
