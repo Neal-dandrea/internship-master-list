@@ -7506,6 +7506,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:bottomlinetechnologies": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Bottom Line",
+"ok": true,
+"worked": true
+},
 "greenhouse:bracebridgecapital": {
 "added": "2026-10-05",
 "fails": 0,
@@ -8094,6 +8102,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:climatefirstbank": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Climate First Bank",
+"ok": true,
+"worked": true
+},
 "greenhouse:clinchoice": {
 "added": "2026-11-04",
 "fails": 0,
@@ -8238,6 +8254,14 @@
 "fails": 0,
 "from": "careers page",
 "name": "DL Trading",
+"ok": true,
+"worked": true
+},
+"greenhouse:constructorknowledg": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Constructorknowledg",
 "ok": true,
 "worked": true
 },
@@ -9248,6 +9272,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:florafoodgroup": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Flora Food Group",
+"ok": true,
+"worked": true
+},
 "greenhouse:flowtraders": {
 "added": "2026-10-05",
 "fails": 0,
@@ -9378,6 +9410,14 @@
 "added": "2026-10-23",
 "fails": 0,
 "name": "Freestone Capital Management",
+"ok": true,
+"worked": true
+},
+"greenhouse:freshprints": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Fresh Prints",
 "ok": true,
 "worked": true
 },
@@ -11983,6 +12023,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:neptunemedical": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Neptune Medical",
+"ok": true,
+"worked": true
+},
 "greenhouse:nerostechnologies": {
 "added": "2026-11-22",
 "fails": 0,
@@ -12111,6 +12159,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Northpointrecoveryholdingsllc",
+"ok": true,
+"worked": true
+},
+"greenhouse:northpointtechnology": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "North Point Technology",
 "ok": true,
 "worked": true
 },
@@ -13052,6 +13108,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Reolink",
+"ok": true,
+"worked": true
+},
+"greenhouse:reprofreedomforallinternships": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Internship Program at Reproductive Freedom for All",
 "ok": true,
 "worked": true
 },
@@ -15301,6 +15365,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:wolt": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Wolt - English",
+"ok": true,
+"worked": true
+},
 "greenhouse:wongdoody": {
 "added": "2026-10-08",
 "fails": 0,
@@ -15785,6 +15857,14 @@
 "added": "2026-10-05",
 "fails": 0,
 "name": "Atlassian",
+"ok": true,
+"worked": true
+},
+"icims:careers-amersports": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Amer Sports Company",
 "ok": true,
 "worked": true
 },
@@ -16978,6 +17058,14 @@
 "fails": 0,
 "from": "survey",
 "name": "International Development Law Organization",
+"ok": true,
+"worked": true
+},
+"icims:careers-ieedu": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "IE University",
 "ok": true,
 "worked": true
 },
@@ -19318,6 +19406,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Midland Health",
+"ok": true,
+"worked": true
+},
+"icims:hq-lifeway": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Lifeway",
 "ok": true,
 "worked": true
 },
@@ -22139,6 +22235,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Despegar",
+"ok": true,
+"worked": true
+},
+"lever:didomi": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Didomi",
 "ok": true,
 "worked": true
 },
@@ -26990,6 +27094,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Synlab",
+"ok": true,
+"worked": true
+},
+"oracle:fa-eugp-saasfaprod1.fa.ocs.oraclecloud.com/career-synlab": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Fa Eugp Saasfaprod1",
 "ok": true,
 "worked": true
 },
@@ -32200,6 +32312,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:wilshireadvisorsllc": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Wilshire Advisors LLC",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:wiser": {
 "added": "2026-10-05",
 "fails": 0,
@@ -35360,6 +35480,14 @@
 "ok": true,
 "worked": true
 },
+"workable:cluse": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Cluse",
+"ok": true,
+"worked": true
+},
 "workable:cogna": {
 "added": "2026-10-04",
 "fails": 0,
@@ -37298,6 +37426,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Vita Green Health Product Company Limited",
+"ok": true,
+"worked": true
+},
+"workable:vividfront": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Vividfront",
 "ok": true,
 "worked": true
 },
@@ -41585,6 +41721,14 @@
 "ok": true,
 "worked": true
 },
+"workday:clevelandmetroschools/wd1/jobs": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Clevelandmetroschools",
+"ok": true,
+"worked": true
+},
 "workday:cliftonlarsonallen/wd115/cla": {
 "added": "2026-10-16",
 "fails": 0,
@@ -41920,6 +42064,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Confluentmedical",
+"ok": true,
+"worked": true
+},
+"workday:conning/wd503/conningcareers": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Conning",
 "ok": true,
 "worked": true
 },
@@ -51048,6 +51200,14 @@
 "ok": true,
 "worked": true
 },
+"workday:pbk/wd5/pbk": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Pbk",
+"ok": true,
+"worked": true
+},
 "workday:pbv/wd503/external": {
 "added": "2026-10-05",
 "fails": 0,
@@ -52288,6 +52448,14 @@
 "added": "2026-10-29",
 "fails": 0,
 "name": "Revantage",
+"ok": true,
+"worked": true
+},
+"workday:revelyst/wd1/EXTERNAL_REVELYST": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Revelyst",
 "ok": true,
 "worked": true
 },
@@ -54618,6 +54786,14 @@
 "ok": true,
 "worked": true
 },
+"workday:tbkbank/wd1/tfin": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Triumph",
+"ok": true,
+"worked": true
+},
 "workday:tcbrands/wd1/TravisMathew-Careers": {
 "added": "2026-11-17",
 "fails": 0,
@@ -55334,6 +55510,14 @@
 "ok": true,
 "worked": true
 },
+"workday:triumf/wd10/student-jobs": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "Triumf",
+"ok": true,
+"worked": true
+},
 "workday:trojanbattery/wd5/Trojan": {
 "added": "2026-10-05",
 "fails": 0,
@@ -55511,6 +55695,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Techtronic Industries",
+"ok": true,
+"worked": true
+},
+"workday:ttiemea/wd3/TTI": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "TTi Group",
 "ok": true,
 "worked": true
 },
@@ -57141,6 +57333,14 @@
 "fails": 0,
 "from": "survey",
 "name": "WME (WMEGRP)",
+"ok": true,
+"worked": true
+},
+"workday:wmeimg/wd1/private": {
+"added": "2026-11-23",
+"fails": 0,
+"from": "survey",
+"name": "WME (Private)",
 "ok": true,
 "worked": true
 },
