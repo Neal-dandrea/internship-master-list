@@ -289,6 +289,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:Trener-Robotics": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Trener",
+"ok": true,
+"worked": true
+},
 "ashby:Valon": {
 "added": "2026-10-04",
 "fails": 0,
@@ -1288,6 +1296,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Creatify Lab",
+"ok": true,
+"worked": true
+},
+"ashby:crisp": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Crisp",
 "ok": true,
 "worked": true
 },
@@ -8607,6 +8623,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:dhpace": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "DH Pace",
+"ok": true,
+"worked": true
+},
 "greenhouse:dialecticch": {
 "added": "2026-10-05",
 "fails": 0,
@@ -10255,6 +10279,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Hometap",
+"ok": true,
+"worked": true
+},
+"greenhouse:hoodhp": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "HP Hood",
 "ok": true,
 "worked": true
 },
@@ -12955,6 +12987,22 @@
 "added": "2026-10-07",
 "fails": 0,
 "name": "Pure Storage",
+"ok": true,
+"worked": true
+},
+"greenhouse:purple": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Purple",
+"ok": true,
+"worked": true
+},
+"greenhouse:purplestrategies": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Purplestrategies",
 "ok": true,
 "worked": true
 },
@@ -17355,6 +17403,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-lmi": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "LMI",
+"ok": true,
+"worked": true
+},
 "icims:careers-lordabbett": {
 "added": "2026-10-05",
 "fails": 0,
@@ -18500,6 +18556,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Turn5",
+"ok": true,
+"worked": true
+},
+"icims:careers-uiccu": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Uiccu",
 "ok": true,
 "worked": true
 },
@@ -21846,6 +21910,14 @@
 "ok": true,
 "worked": true
 },
+"lever:arrivelogistics": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Arrive Logistics",
+"ok": true,
+"worked": true
+},
 "lever:arsiem": {
 "added": "2026-10-05",
 "fails": 0,
@@ -23596,6 +23668,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Protolabs",
+"ok": true,
+"worked": true
+},
+"lever:pslove-pte": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Blood",
 "ok": true,
 "worked": true
 },
@@ -31922,6 +32002,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:muchprosperitytradinginternationalinc": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Much Prosperity Trading International Inc.",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:munsonhealthcare1": {
 "added": "2026-10-05",
 "fails": 0,
@@ -37409,6 +37497,22 @@
 "ok": true,
 "worked": true
 },
+"workable:therecoveryvillage": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Therecoveryvillage",
+"ok": true,
+"worked": true
+},
+"workable:thorlabs": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Thorlabs",
+"ok": true,
+"worked": true
+},
 "workable:threenitas": {
 "added": "2026-11-13",
 "fails": 0,
@@ -37702,6 +37806,14 @@
 "added": "2026-10-28",
 "fails": 0,
 "name": "CSAA Insurance Group",
+"ok": true,
+"worked": true
+},
+"workday:aaaie/wd1/csaacareers": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "AAA Club Alliance",
 "ok": true,
 "worked": true
 },
@@ -44136,6 +44248,14 @@
 "ok": true,
 "worked": true
 },
+"workday:fastretailing/wd3/headquarters_eu_uniqlo": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Fast Retailing Group (Headquarters Eu Uniqlo)",
+"ok": true,
+"worked": true
+},
 "workday:fastretailing/wd3/headquarters_my_uniqlo": {
 "added": "2026-10-05",
 "fails": 0,
@@ -45834,6 +45954,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Halifax Health",
+"ok": true,
+"worked": true
+},
+"workday:hancockwhitney/wd5/Careers": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Hancock Whitney",
 "ok": true,
 "worked": true
 },
@@ -50151,6 +50279,14 @@
 "ok": true,
 "worked": true
 },
+"workday:newperkinelmer/wd1/External": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "PerkinElmer",
+"ok": true,
+"worked": true
+},
 "workday:newrez/wd1/NRZ": {
 "added": "2026-10-04",
 "fails": 0,
@@ -54326,6 +54462,14 @@
 "ok": true,
 "worked": true
 },
+"workday:strada/wd12/careers": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Strada",
+"ok": true,
+"worked": true
+},
 "workday:strathconaresources/wd10/Careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -55609,6 +55753,14 @@
 "fails": 0,
 "from": "survey",
 "name": "T. Rowe Price",
+"ok": true,
+"worked": true
+},
+"workday:troweprice/wd5/trowepriceinternational": {
+"added": "2026-11-24",
+"fails": 0,
+"from": "survey",
+"name": "Troweprice",
 "ok": true,
 "worked": true
 },
