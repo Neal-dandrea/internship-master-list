@@ -2633,6 +2633,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:lap": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "LAP Coffee",
+"ok": true,
+"worked": true
+},
 "ashby:latent defense": {
 "added": "2026-10-28",
 "fails": 0,
@@ -8283,6 +8291,14 @@
 "ok": false,
 "worked": true
 },
+"greenhouse:coalition": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Coalition, Inc.",
+"ok": true,
+"worked": true
+},
 "greenhouse:codeandtheory": {
 "added": "2026-10-05",
 "fails": 0,
@@ -12885,6 +12901,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:pqshield": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Pqshield",
+"ok": true,
+"worked": true
+},
 "greenhouse:praxisprecisionmedicines": {
 "added": "2026-11-09",
 "fails": 0,
@@ -15035,6 +15059,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:trueanomalyinc": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "True Anomaly",
+"ok": true,
+"worked": true
+},
 "greenhouse:trumid": {
 "added": "2026-10-07",
 "fails": 0,
@@ -17149,6 +17181,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-harvard": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Harvard",
+"ok": true,
+"worked": true
+},
 "icims:careers-haskell": {
 "added": "2026-11-12",
 "fails": 0,
@@ -17364,6 +17404,14 @@
 "fails": 0,
 "from": "survey",
 "name": "JP Cullen",
+"ok": true,
+"worked": true
+},
+"icims:careers-judge": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "The Judge Group",
 "ok": true,
 "worked": true
 },
@@ -19961,6 +20009,14 @@
 "added": "2026-11-25",
 "fails": 0,
 "name": "HOPE International",
+"ok": true,
+"worked": true
+},
+"icims:jobs-jhpiego": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Jhpiego",
 "ok": true,
 "worked": true
 },
@@ -25876,6 +25932,14 @@
 "ok": true,
 "worked": true
 },
+"oracle:eiqg.fa.us2.oraclecloud.com/CX_1001": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Eiqg",
+"ok": true,
+"worked": true
+},
 "oracle:eixy.fa.us6.oraclecloud.com/cx_2002": {
 "added": "2026-10-05",
 "fails": 0,
@@ -27060,6 +27124,14 @@
 "fails": 0,
 "from": "survey",
 "name": "UTHealth Houston",
+"ok": true,
+"worked": true
+},
+"oracle:fa-eotc-saasfaprod1.fa.ocs.oraclecloud.com/CX_1001": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Fa Eotc Saasfaprod1",
 "ok": true,
 "worked": true
 },
@@ -30424,6 +30496,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Hiflylabs",
+"ok": true,
+"worked": true
+},
+"smartrecruiters:HireVue": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Hirevue",
 "ok": true,
 "worked": true
 },
@@ -37027,6 +37107,14 @@
 "ok": true,
 "worked": true
 },
+"workable:ohm-advisors": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Ohm Advisors",
+"ok": true,
+"worked": true
+},
 "workable:onlogic-inc": {
 "added": "2026-10-04",
 "fails": 0,
@@ -37244,6 +37332,14 @@
 "fails": 0,
 "from": "survey",
 "name": "ProgressSoft",
+"ok": true,
+"worked": true
+},
+"workable:proper-cloth": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Proper Cloth",
 "ok": true,
 "worked": true
 },
@@ -40028,6 +40124,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Bailliegifford",
+"ok": true,
+"worked": true
+},
+"workday:baincapital/wd1/External_Public": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Bain Capital",
 "ok": true,
 "worked": true
 },
@@ -44332,6 +44436,14 @@
 "ok": true,
 "worked": true
 },
+"workday:eset/wd3/eset_external": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Eset",
+"ok": true,
+"worked": true
+},
 "workday:esf/wd102/ESF": {
 "added": "2026-10-17",
 "fails": 0,
@@ -44462,6 +44574,14 @@
 "added": "2026-10-13",
 "fails": 0,
 "name": "Expedia Group",
+"ok": true,
+"worked": true
+},
+"workday:extraspace/wd5/ESS_Acquisitions": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Extra Space Storage (ESS Acquisitions)",
 "ok": true,
 "worked": true
 },
@@ -46699,6 +46819,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Hogan Lovells",
+"ok": true,
+"worked": true
+},
+"workday:holmanautogroup/wd1/HolmanEnterprisesCareers": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Holman",
 "ok": true,
 "worked": true
 },
@@ -49714,6 +49842,14 @@
 "ok": true,
 "worked": true
 },
+"workday:minnstate/wd115/Minnesota_State_Careers": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Minnstate",
+"ok": true,
+"worked": true
+},
 "workday:misterspex/wd103/Mister_Spex_Careers": {
 "added": "2026-10-26",
 "fails": 0,
@@ -52293,6 +52429,14 @@
 "ok": true,
 "worked": true
 },
+"workday:provo/wd1/provocityexternalcareersite": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Provo",
+"ok": true,
+"worked": true
+},
 "workday:pru/wd5/Careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -53726,6 +53870,14 @@
 "ok": true,
 "worked": true
 },
+"workday:sbasite/wd5/SBA_Communications_Careers": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "SBA Communications Corporation",
+"ok": true,
+"worked": true
+},
 "workday:sbdinc/wd1/Stanley_Black_Decker_Career_Site": {
 "added": "2026-10-04",
 "fails": 0,
@@ -53839,6 +53991,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Sedgwick Claims Management Services",
+"ok": true,
+"worked": true
+},
+"workday:sefl/wd1/sefl": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Sefl",
 "ok": true,
 "worked": true
 },
@@ -54583,6 +54743,14 @@
 "ok": true,
 "worked": true
 },
+"workday:sralab/wd1/SRAlabCareers": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Shirley Ryan AbilityLab",
+"ok": true,
+"worked": true
+},
 "workday:srsdistribution/wd1/HVAC": {
 "added": "2026-10-05",
 "fails": 0,
@@ -55134,6 +55302,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Synchrony Financial",
+"ok": true,
+"worked": true
+},
+"workday:synechron/wd1/SynechronCareers": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Synechron",
 "ok": true,
 "worked": true
 },
@@ -56591,6 +56767,14 @@
 "added": "2026-10-16",
 "fails": 0,
 "name": "Unity",
+"ok": true,
+"worked": true
+},
+"workday:univofky/wd108/UKSC": {
+"added": "2026-11-26",
+"fails": 0,
+"from": "survey",
+"name": "Univofky",
 "ok": true,
 "worked": true
 },
