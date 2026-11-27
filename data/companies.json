@@ -1522,6 +1522,14 @@
 "ok": true,
 "worked": true
 },
+"ashby:dust": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Dust",
+"ok": true,
+"worked": true
+},
 "ashby:dyna-robotics": {
 "added": "2026-10-05",
 "fails": 0,
@@ -2598,6 +2606,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Kognity",
+"ok": true,
+"worked": true
+},
+"ashby:kombo": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Kombo",
 "ok": true,
 "worked": true
 },
@@ -8008,6 +8024,14 @@
 "ok": true,
 "worked": true
 },
+"greenhouse:cellsignalingtechnology79": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Cell Signaling Technology",
+"ok": true,
+"worked": true
+},
 "greenhouse:celonis": {
 "added": "2026-10-05",
 "fails": 0,
@@ -10505,6 +10529,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Hydrite",
+"ok": true,
+"worked": true
+},
+"greenhouse:hyliion": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Hyliion",
 "ok": true,
 "worked": true
 },
@@ -16249,6 +16281,14 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-austinpcc": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Austinpcc",
+"ok": true,
+"worked": true
+},
 "icims:careers-avionyx": {
 "added": "2026-10-05",
 "fails": 0,
@@ -16839,11 +16879,27 @@
 "ok": true,
 "worked": true
 },
+"icims:careers-e3federalsolutions": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "E3Federalsolutions",
+"ok": true,
+"worked": true
+},
 "icims:careers-eastpennmanufacturing": {
 "added": "2026-10-05",
 "fails": 0,
 "from": "survey",
 "name": "East Penn Manufacturing Company",
+"ok": true,
+"worked": true
+},
+"icims:careers-efwnow": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Estes Forwarding Worldwide, LLC",
 "ok": true,
 "worked": true
 },
@@ -17858,6 +17914,14 @@
 "fails": 0,
 "from": "survey",
 "name": "NYU",
+"ok": true,
+"worked": true
+},
+"icims:careers-obmc": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "OakBend Medical Center",
 "ok": true,
 "worked": true
 },
@@ -20612,6 +20676,14 @@
 "ok": true,
 "worked": true
 },
+"icims:uscareers-yelp": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Yelp, Inc.",
+"ok": true,
+"worked": true
+},
 "icims:usjobs-ajg": {
 "added": "2026-11-12",
 "fails": 0,
@@ -22248,6 +22320,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Belvedere Trading",
+"ok": true,
+"worked": true
+},
+"lever:bfsaul": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "B.F. Saul Company",
 "ok": true,
 "worked": true
 },
@@ -30257,6 +30337,14 @@
 "ok": true,
 "worked": true
 },
+"smartrecruiters:Contilia1": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Contilia",
+"ok": true,
+"worked": true
+},
 "smartrecruiters:Continental": {
 "added": "2026-10-05",
 "fails": 0,
@@ -30726,6 +30814,14 @@
 "fails": 0,
 "from": "survey",
 "name": "KRG Technologies",
+"ok": true,
+"worked": true
+},
+"smartrecruiters:LGCGroup": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "LGC Group",
 "ok": true,
 "worked": true
 },
@@ -37144,6 +37240,14 @@
 "ok": true,
 "worked": true
 },
+"workable:odk-media": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "ODK Media",
+"ok": true,
+"worked": true
+},
 "workable:ohm-advisors": {
 "added": "2026-11-26",
 "fails": 0,
@@ -37448,6 +37552,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Rea",
+"ok": true,
+"worked": true
+},
+"workable:reapra-pte-ltd": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "REAPRA PTE. LTD.",
 "ok": true,
 "worked": true
 },
@@ -37901,11 +38013,27 @@
 "ok": true,
 "worked": true
 },
+"workable:theoceanac": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Ocean Casino Resort",
+"ok": true,
+"worked": true
+},
 "workable:therecoveryvillage": {
 "added": "2026-11-24",
 "fails": 0,
 "from": "survey",
 "name": "Therecoveryvillage",
+"ok": true,
+"worked": true
+},
+"workable:theshipyard": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "The Shipyard",
 "ok": true,
 "worked": true
 },
@@ -38016,6 +38144,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Vita Green Health Product Company Limited",
+"ok": true,
+"worked": true
+},
+"workable:vivaldi-group": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Vivaldi Group",
 "ok": true,
 "worked": true
 },
@@ -39920,6 +40056,14 @@
 "added": "2026-10-04",
 "fails": 0,
 "name": "Autodesk",
+"ok": true,
+"worked": true
+},
+"workday:autonation/wd5/Careers": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Autonation",
 "ok": true,
 "worked": true
 },
@@ -51416,6 +51560,14 @@
 "ok": true,
 "worked": true
 },
+"workday:omya/wd3/omya": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Omya",
+"ok": true,
+"worked": true
+},
 "workday:onehealthineers/wd3/SHSJB": {
 "added": "2026-10-04",
 "fails": 0,
@@ -51490,6 +51642,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Opportunityalliance",
+"ok": true,
+"worked": true
+},
+"workday:optiv/wd5/optiv_careers": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Optiv",
 "ok": true,
 "worked": true
 },
@@ -52345,6 +52505,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Politico (POLITICO)",
+"ok": true,
+"worked": true
+},
+"workday:portlandgeneral/wd5/pgn": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Portland General Electric",
 "ok": true,
 "worked": true
 },
@@ -54401,6 +54569,14 @@
 "ok": true,
 "worked": true
 },
+"workday:skookum/wd1/careers": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Skookum",
+"ok": true,
+"worked": true
+},
 "workday:sky/wd3/sky_careers": {
 "added": "2026-10-05",
 "fails": 0,
@@ -55445,6 +55621,14 @@
 "fails": 0,
 "from": "survey",
 "name": "Jonas Software",
+"ok": true,
+"worked": true
+},
+"workday:talentmanagementsolution/wd3/jonasclub-careers": {
+"added": "2026-11-27",
+"fails": 0,
+"from": "survey",
+"name": "Jonas Club Software",
 "ok": true,
 "worked": true
 },
